@@ -50,7 +50,7 @@ Os scripts antigos usam caminhos relativos à raiz e atualizam os mapeamentos JS
 
 ## Status
 
-Limpeza e agregação existentes; ambiente CPU, features e construção de HeteroData validados. Baseline IsolationForest e seu ranking implementados na amostra. Treino da GNN, comparação entre modelos, validação em três seeds e exportação para Gephi ainda estão pendentes.
+Limpeza e agregação existentes; ambiente CPU, features e construção de HeteroData validados. Baseline IsolationForest e seu ranking implementados na amostra. Treino inicial da GNN implementado; comparação entre modelos, validação em três seeds e exportação para Gephi ainda estão pendentes.
 
 ## Features e construção do grafo
 
@@ -159,3 +159,38 @@ O decoder MLP foi escolhido para aprender compatibilidade entre os dois tipos de
 O teste `tests/test_gnn.py` usa um grafo ficticio com pares repetidos para conferir particoes disjuntas, preservacao do original, reversas, reproducibilidade, dimensoes e gradientes finitos do encoder/decoder. Um forward no contexto real tambem passou: embeddings de carteiras [5000, 32], mercados [9189, 32] e 7.912 logits de treino. Os pesos ainda sao aleatorios; esses embeddings nao devem ser interpretados como resultados aprendidos.
 
 Proxima etapa: implementar negativos, loop de treino, parada antecipada, metricas de validacao e benchmark. Teste fica reservado para a avaliacao final. Optuna e ranking GNN ainda nao implementados.
+
+## GNN — etapa 2: treinamento em CPU
+
+```bash
+python src/treinar_gnn.py --epochs 100 --patience 15 --threads 2
+```
+
+A entrada padrao e `data/processed/dev/gnn_seed_42/divisao.pt`. `--seed` controla inicializacao, dropout e negativos, mas NAO altera a divisao fornecida. Use a mesma divisao para estudar a variabilidade do treinamento; mude `--input` explicitamente para outro experimento de divisao. A saida padrao recebe timestamp UTC e seed; `--output` permite escolher outra pasta, que nao pode existir para evitar sobrescrita.
+
+Funcoes de `src/treinar_gnn.py`:
+
+- `validar_divisao`: confere limites, pares unicos, cobertura, particoes disjuntas e reversas.
+- `amostrar_negativos`: sorteia pares carteira-mercado sem conexao observada, sem matriz densa e sem repeticoes dentro de cada amostra. Ausencia de conexao nao significa legitimidade.
+- `exemplos`: combina positivos e negativos com alvos 1 e 0.
+- `avaliar_validacao`: usa modo de avaliacao (dropout desligado), calcula BCE, Average Precision (AP) e ROC-AUC, incluindo grupos com ambos os endpoints conectados ao contexto ou algum endpoint isolado.
+- `treinar`: executa o loop, atualiza pesos, salva o checkpoint e verifica sua recarga.
+
+Cada epoca realiza um passo de otimizacao usando todo o grafo de contexto e todos os pares-alvo de treino (full-batch). Ha um negativo por positivo. Negativos de validacao e teste sao fixados antes do treino e excluidos do sorteio de treino; todos os positivos observados tambem sao excluidos. Negativos de treino sao renovados por epoca. Os pares de teste sao apenas reservados; suas metricas NAO sao calculadas.
+
+Configuracao inicial: Adam, learning rate 0,001, hidden 64, embedding 32, dropout 0,1 e clipping da norma de gradiente em 5. A inicializacao e deterministica em CPU com seed 42 e duas threads. A melhor configuracao de pesos e selecionada por menor perda de validacao, exigindo reducao maior que 0,0001; interrompemos apos 15 epocas sem essa melhora ou ao atingir 100 epocas. A rede sem treino tambem e medida e pode permanecer como melhor checkpoint se nenhuma epoca melhorar.
+
+Arquivos por execucao:
+
+- `historico.csv`: loss de treino, loss/AP/AUC de validacao, norma de gradiente antes do clipping e tempo por epoca.
+- `melhor_modelo.pt`: pesos, arquitetura, seed, epoca e metricas do checkpoint selecionado. E um checkpoint para inferencia; nao inclui estado de Adam para retomada exata do treino.
+- `validacao.pt` e `teste_reservado.pt`: pares e alvos fixos.
+- `treino_manifest.json`: versoes, hash da divisao, parametros, metricas iniciais/finais e tempos.
+
+Os tempos por epoca incluem sorteio, forward, backward, atualizacao e validacao, mas nao escrita dos artefatos. O tempo do loop inclui essas escritas; nao inclui inicializacao/leitura e validacao inicial. Sao medicoes de uma execucao, nao previsao do custo no dataset completo.
+
+AP e ROC-AUC aqui avaliam conexoes observadas contra negativos uniformes, NAO fraude. A validacao global tem proporcao 1:1; os subgrupos podem ter proporcoes diferentes, portanto suas APs nao sao diretamente equivalentes. Features agregadas incluem informacoes do recorte inteiro, e negativos uniformes podem tornar a tarefa facil. Uma melhora nao demonstra ganho causado pela estrutura: comparacoes futuras com modelos sem mensagens e controles por grau sao necessarias para essa conclusao. Nao foi feita busca Optuna nem avaliacao final de teste.
+
+O teste de integracao verifica negativos validos, reproducibilidade do historico e checkpoint, isolamento das particoes e protecao contra sobrescrita. Proxima etapa didatica: ler as curvas/metricas e definir a avaliacao antes de extrair o ranking GNN. A visualizacao do grafo permanece para depois do ranking.
+
+Execucao inicial com protocolo final: `data/processed/dev/gnn_seed_42/treino_20261017T230054027371Z_seed_42`. 100 epocas, melhor checkpoint na epoca 100; BCE de validacao 0.695289 -> 0.297171; AP 0.4972 -> 0.9445; ROC-AUC final 0.9461. Mediana de 0.091 s/epoca e 9.43 s no loop. Parou pelo limite de epocas, nao por convergencia ou paciencia esgotada. Uma execucao exploratoria anterior, sem negativos de teste reservados, foi preservada apenas como historico e nao deve ser usada como resultado desta versao.
