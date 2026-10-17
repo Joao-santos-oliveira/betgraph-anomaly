@@ -129,3 +129,33 @@ Execução inicial real: ajuste em aproximadamente 0,128 s e scoring em 0,025 s,
 Referência do algoritmo e convenção de score: https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.IsolationForest.html
 
 Próximo passo didático: inspecionar o ranking e entender seus limites antes de implementar a GNN. A visualização do grafo permanece para depois do ranking da GNN, conforme combinado.
+
+## GNN — etapa 1: divisao e arquitetura (ainda sem treinamento)
+
+```bash
+python src/preparar_gnn.py --seed 42
+python -m unittest discover -s tests -v
+```
+
+`src/preparar_gnn.py` le o `hetero.pt` local e cria um novo grafo para a tarefa de existencia de ligacao: cada par carteira-mercado aparece uma unica vez, independentemente do outcome. O grafo original, seus atributos de aresta e outcomes permanecem preservados. A primeira GNN nao recebe `edge_attr` nem outcomes.
+
+Os pares unicos sao divididos com seed fixa: 10% validacao, 10% teste e o restante treino (arredondamento para baixo nos dois primeiros). Dentro do treino, 25% ficam como alvos e os demais como contexto para propagacao. Alvos e contexto sao disjuntos. Somente as conexoes de contexto recebem reversas, evitando vazamento de conectividade entre particoes. O mesmo contexto sera usado em treino, validacao e teste.
+
+Saidas em `data/processed/dev/gnn_seed_42/`: `divisao.pt` e `divisao_manifest.json`. O arquivo PT contem `context`, `train_positive`, `val_positive`, `test_positive` e `all_positive`. Este ultimo devera ser usado para excluir todos os pares observados da futura amostragem negativa, inclusive os reservados para avaliacao. Negativos ainda nao foram gerados para o dataset real.
+
+Resultado real: 39.562 pares unicos a partir de 62.328 linhas, sendo 23.738 de contexto, 7.912 alvos de treino, 3.956 de validacao e 3.956 de teste. Todos os nos foram preservados. Ha 975 carteiras e 2.098 mercados sem vizinhos no contexto: GraphSAGE ainda utiliza suas features proprias, mas esses nos nao recebem mensagens de vizinhos. A avaliacao futura deve distinguir resultados com e sem contexto de vizinhanca.
+
+As features e seus scalers continuam calculados sobre o recorte selecionado inteiro, inclusive agregados de apostas reservadas. Esta etapa evita vazamento direto de conectividade, mas NAO constitui um teste independente de todas as informacoes das arestas ocultadas. O protocolo e transdutivo, condicionado a essas features; nao representa previsao temporal. Para alegar generalizacao sobre atividade nao observada sera preciso recalcular as features com dados permitidos pelo protocolo.
+
+`src/modelo_gnn.py` implementa `GNNBipartida`:
+
+1. `layer1`: HeteroConv com uma SAGEConv por direcao, saida de 64 dimensoes.
+2. ReLU e dropout 0,1 (dropout desativado em avaliacao).
+3. `layer2`: outra HeteroConv, gerando embeddings de 32 dimensoes por no.
+4. `decode`: concatena o embedding da carteira com o do mercado e usa uma rede pequena (64 unidades intermediarias) para retornar um logit por par. O treino futuro usara BCEWithLogitsLoss; nao aplicar sigmoid antes dessa perda.
+
+O decoder MLP foi escolhido para aprender compatibilidade entre os dois tipos de no sem impor apenas produto interno. Com as dimensoes da amostra, o modelo tem 20.673 parametros treinaveis. Isso e uma configuracao inicial, nao resultado de busca de hiperparametros.
+
+O teste `tests/test_gnn.py` usa um grafo ficticio com pares repetidos para conferir particoes disjuntas, preservacao do original, reversas, reproducibilidade, dimensoes e gradientes finitos do encoder/decoder. Um forward no contexto real tambem passou: embeddings de carteiras [5000, 32], mercados [9189, 32] e 7.912 logits de treino. Os pesos ainda sao aleatorios; esses embeddings nao devem ser interpretados como resultados aprendidos.
+
+Proxima etapa: implementar negativos, loop de treino, parada antecipada, metricas de validacao e benchmark. Teste fica reservado para a avaliacao final. Optuna e ranking GNN ainda nao implementados.
