@@ -50,4 +50,43 @@ Os scripts antigos usam caminhos relativos à raiz e atualizam os mapeamentos JS
 
 ## Status
 
-Limpeza e agregação existentes; ambiente CPU validado. Features e construção de HeteroData são a próxima etapa. Baseline, treino, ranking, validação em três seeds e exportação para Gephi ainda não foram implementados.
+Limpeza e agregação existentes; ambiente CPU, features e construção de HeteroData validados. Baseline, treino, ranking, validação em três seeds e exportação para Gephi ainda não foram implementados.
+
+## Features e construção do grafo
+
+```bash
+python src/preparar_features.py --sample-size 5000 --seed 42
+python src/construir_hetero.py
+python -m unittest discover -s tests -v
+```
+
+A amostra seleciona carteiras sem reposição após ordenação por ID, preserva todas as suas arestas e inclui seus mercados vizinhos. O modo completo (`--sample-size 0 --output data/processed/full`) preserva todos os nós de entrada, inclusive mercados isolados; execute-o apenas ao final do desenvolvimento.
+
+Features iniciais:
+
+| Entidade | Colunas e transformações |
+| --- | --- |
+| Carteira | `log1p` de `volume_total_usd`, `n_trades_total`, `n_mercados_distintos`, `ticket_medio_geral`; `preco_medio_ponderado`; StandardScaler nas cinco colunas |
+| Mercado | duração imputada pela mediana, seguida de `log1p` e StandardScaler; flag binária `duracao_ausente`; categoria em one-hot |
+| Aresta | `log1p(volume_usd)`, `preco_medio`, fração UTC do dia de `primeiro_trade`; StandardScaler nas três colunas |
+
+A flag e as categorias permanecem binárias. `primeira_atividade` fica como metadado da carteira nesta versão. Categorias são as já extraídas pelo pipeline antigo a partir da primeira palavra de tags; sua qualidade semântica ainda deve ser revisada. Outcomes são preservados como metadados de arestas, sem tratar seus IDs como grandezas numéricas.
+
+O ajuste atual é **transdutivo**, realizado no subgrafo selecionado, sem avaliação de generalização temporal. Para uma avaliação futura em dados separados, ajuste os transformadores apenas no treino e aplique-os aos outros conjuntos com `--preprocessador CAMINHO/preprocessador.joblib`. Esse arquivo inclui os três scalers, a mediana, o codificador de categorias e os nomes das features; categorias desconhecidas recebem vetor zero.
+
+Artefatos em `data/processed/dev/`:
+
+- `user.csv`, `event.csv`, `edge.csv`: linhas selecionadas, na mesma ordem das matrizes.
+- `features.npz`: matrizes de features; `preprocessador.joblib`: transformadores ajustados.
+- `features_manifest.json`: seed, contagens, mediana e nomes/ordem das features.
+- `hetero.pt`: HeteroData com atributos, IDs originais e arestas reversas.
+- `indices_originais.json`: ID original → índice consecutivo, separado por tipo de nó. Chaves JSON são strings.
+- `grafo_manifest.json`: contagens e graus médios contando multiarestas.
+
+As contagens do grafo são verificadas contra os CSVs selecionados. Os IDs são confrontados com os três JSONs persistentes da raiz. A construção rejeita arestas órfãs, IDs de nós duplicados e features não finitas, e verifica a relação reversa.
+
+Execução de desenvolvimento realizada com seed 42: 5.000 carteiras, 9.189 mercados, 62.328 arestas diretas e 62.328 reversas. Foram imputadas 313 durações entre os mercados selecionados, com mediana de 2.082.742,5 segundos. Isso não descarta os 707 mercados com duração ausente da entrada: os demais não são vizinhos das carteiras amostradas. A execução completa ainda não foi realizada.
+
+Validação: reutilização do preprocessador gerou matrizes idênticas; o grafo salvo foi recarregado e passou por forward/backward de HeteroConv em CPU. O teste de integração verifica mediana e flag, índices consecutivos, relação reversa e rejeição de arestas órfãs. Isso não é treino nem resultado de detecção de anomalias.
+
+**Próxima decisão do modelo:** SAGEConv não consome `edge_attr` diretamente. Os atributos estão disponíveis no grafo, mas seu uso pelo encoder ou decoder precisa ser implementado explicitamente. Para carregar um `HeteroData` próprio, use `torch.load(caminho, weights_only=False)`; carregue somente artefatos de confiança.
