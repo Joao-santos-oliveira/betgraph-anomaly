@@ -50,7 +50,7 @@ Os scripts antigos usam caminhos relativos à raiz e atualizam os mapeamentos JS
 
 ## Status
 
-Limpeza e agregação existentes; ambiente CPU, features e construção de HeteroData validados. Baseline, treino, ranking, validação em três seeds e exportação para Gephi ainda não foram implementados.
+Limpeza e agregação existentes; ambiente CPU, features e construção de HeteroData validados. Baseline IsolationForest e seu ranking implementados na amostra. Treino da GNN, comparação entre modelos, validação em três seeds e exportação para Gephi ainda estão pendentes.
 
 ## Features e construção do grafo
 
@@ -90,3 +90,42 @@ Execução de desenvolvimento realizada com seed 42: 5.000 carteiras, 9.189 merc
 Validação: reutilização do preprocessador gerou matrizes idênticas; o grafo salvo foi recarregado e passou por forward/backward de HeteroConv em CPU. O teste de integração verifica mediana e flag, índices consecutivos, relação reversa e rejeição de arestas órfãs. Isso não é treino nem resultado de detecção de anomalias.
 
 **Próxima decisão do modelo:** SAGEConv não consome `edge_attr` diretamente. Os atributos estão disponíveis no grafo, mas seu uso pelo encoder ou decoder precisa ser implementado explicitamente. Para carregar um `HeteroData` próprio, use `torch.load(caminho, weights_only=False)`; carregue somente artefatos de confiança.
+
+## Baseline: primeiro ranking sem GNN
+
+O baseline responde: quais carteiras têm combinações incomuns das cinco características individuais? Ele não recebe `edge_index`, identidade dos mercados vizinhos nem embeddings. O número de mercados distintos é uma característica agregada já existente, mas não informa com quem uma carteira compartilha mercados.
+
+```bash
+python src/baseline.py --seed 42
+python -m unittest discover -s tests -v
+```
+
+Leia `src/baseline.py` nesta ordem:
+
+1. `carregar_entrada`: carrega as carteiras, a matriz e o preprocessador. Reconstrói as features a partir do CSV e compara com a matriz para evitar associar um score à linha errada.
+2. `ajustar_ranking`: ajusta IsolationForest, calcula scores, ordena e seleciona o top. O ajuste usa apenas as features; endereços e IDs não entram no modelo.
+3. `executar`: salva os resultados, o modelo e um manifesto com versões, parâmetros, hashes das entradas e tempos.
+4. `main`: recebe argumentos do terminal e escolhe a pasta de saída.
+
+IsolationForest separa observações por divisões aleatórias em características. Pontos isolados com caminhos mais curtos tendem a ser considerados anômalos. Escolhemos essa primeira referência por considerar combinações de variáveis; um z-score seria mais simples de interpretar por coluna, mas exigiria uma regra adicional para combinar desvios. A floresta não fornece, neste script, uma explicação causal por carteira.
+
+Configuração inicial: 100 árvores (`--trees`), `max_samples='auto'` (256 carteiras por árvore nesta execução), seed 42 e uma thread. Reutilizamos as features com log1p e StandardScaler já preparadas, sem reajustar o preprocessador. A padronização não é uma exigência das árvores; aqui mantém a mesma entrada numérica disponível para a GNN. O log1p altera a distribuição usada para escolher os cortes.
+
+O score salvo é `-model.score_samples(X)`: maior significa mais anômalo. Não é probabilidade de fraude. `contamination='auto'` não define nosso top; não usamos `predict` para rotular carteiras. O top é uma fila de revisão com `ceil(n * top_fraction)` posições, por padrão 1%. Empates são resolvidos por ID crescente, sem significado adicional de risco.
+
+Saídas em `data/processed/dev/baseline_seed_42/`:
+
+- `ranking.csv`: todas as carteiras, seus valores originais, posição, score e flag de seleção.
+- `top.csv`: as primeiras 50 carteiras nesta amostra.
+- `modelo.joblib`: floresta ajustada (o preprocessador continua na pasta de entrada).
+- `manifest.json`: parâmetros, versão do sklearn, hashes, quantis dos scores e tempos separados de ajuste/scoring.
+
+O ranking mantém colunas originais para consulta, inclusive colunas que NÃO foram usadas no ajuste. A lista exata das cinco features utilizadas está no manifesto.
+
+Ajuste e scoring são realizados nas mesmas 5.000 carteiras: exploração transdutiva, sem rótulos e sem teste de generalização. Não reportamos acurácia, precisão ou recall. A comparação futura com a GNN deve usar as mesmas carteiras; estabilidade em três seeds ainda será avaliada. A repetição de uma única seed só verifica reprodutibilidade.
+
+Execução inicial real: ajuste em aproximadamente 0,128 s e scoring em 0,025 s, excluindo inicialização, leitura, validação e escrita. Não são estimativas de tempo da GNN nem um benchmark repetido. O modelo recarregado reproduziu os scores, e um novo ajuste com seed 42 reproduziu o ranking.
+
+Referência do algoritmo e convenção de score: https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.IsolationForest.html
+
+Próximo passo didático: inspecionar o ranking e entender seus limites antes de implementar a GNN. A visualização do grafo permanece para depois do ranking da GNN, conforme combinado.
