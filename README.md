@@ -48,6 +48,10 @@ Os scripts antigos usam caminhos relativos à raiz e atualizam os mapeamentos JS
 - `n_outcomes_distintos` conta rótulos globais de outcome, não posições distintas por mercado; fica fora das features iniciais.
 - Desenvolvimento em amostra reproduzível de aproximadamente 5.000 carteiras; execução completa apenas ao final.
 
+## Plano científico
+
+O roteiro de avaliação, controles, reprodução e submissão está em [docs/plano_pesquisa.md](docs/plano_pesquisa.md). Os resultados atuais são exploratórios; a próxima etapa é fixar o protocolo de comparação e testar o valor das mensagens no grafo.
+
 ## Status
 
 Limpeza e agregação existentes; ambiente CPU, features e construção de HeteroData validados. Baseline IsolationForest e seu ranking implementados na amostra. Treino inicial da GNN implementado; comparação entre modelos, validação em três seeds e exportação para Gephi ainda estão pendentes.
@@ -89,7 +93,7 @@ Execução de desenvolvimento realizada com seed 42: 5.000 carteiras, 9.189 merc
 
 Validação: reutilização do preprocessador gerou matrizes idênticas; o grafo salvo foi recarregado e passou por forward/backward de HeteroConv em CPU. O teste de integração verifica mediana e flag, índices consecutivos, relação reversa e rejeição de arestas órfãs. Isso não é treino nem resultado de detecção de anomalias.
 
-**Próxima decisão do modelo:** SAGEConv não consome `edge_attr` diretamente. Os atributos estão disponíveis no grafo, mas seu uso pelo encoder ou decoder precisa ser implementado explicitamente. Para carregar um `HeteroData` próprio, use `torch.load(caminho, weights_only=False)`; carregue somente artefatos de confiança.
+**Decisão da primeira versão:** SAGEConv não consome `edge_attr` diretamente. Os atributos estão preservados no grafo original, mas não são usados pelo encoder ou decoder atual. Para carregar um `HeteroData` próprio, use `torch.load(caminho, weights_only=False)`; carregue somente artefatos de confiança.
 
 ## Baseline: primeiro ranking sem GNN
 
@@ -128,9 +132,9 @@ Execução inicial real: ajuste em aproximadamente 0,128 s e scoring em 0,025 s,
 
 Referência do algoritmo e convenção de score: https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.IsolationForest.html
 
-Próximo passo didático: inspecionar o ranking e entender seus limites antes de implementar a GNN. A visualização do grafo permanece para depois do ranking da GNN, conforme combinado.
+O ranking do baseline já foi inspecionado exploratoriamente; a comparação com a GNN ainda está pendente. A visualização do grafo permanece para depois do ranking da GNN, conforme combinado.
 
-## GNN — etapa 1: divisao e arquitetura (ainda sem treinamento)
+## GNN — etapa 1: divisao e arquitetura
 
 ```bash
 python src/preparar_gnn.py --seed 42
@@ -141,7 +145,7 @@ python -m unittest discover -s tests -v
 
 Os pares unicos sao divididos com seed fixa: 10% validacao, 10% teste e o restante treino (arredondamento para baixo nos dois primeiros). Dentro do treino, 25% ficam como alvos e os demais como contexto para propagacao. Alvos e contexto sao disjuntos. Somente as conexoes de contexto recebem reversas, evitando vazamento de conectividade entre particoes. O mesmo contexto sera usado em treino, validacao e teste.
 
-Saidas em `data/processed/dev/gnn_seed_42/`: `divisao.pt` e `divisao_manifest.json`. O arquivo PT contem `context`, `train_positive`, `val_positive`, `test_positive` e `all_positive`. Este ultimo devera ser usado para excluir todos os pares observados da futura amostragem negativa, inclusive os reservados para avaliacao. Negativos ainda nao foram gerados para o dataset real.
+Saidas em `data/processed/dev/gnn_seed_42/`: `divisao.pt` e `divisao_manifest.json`. O arquivo PT contem `context`, `train_positive`, `val_positive`, `test_positive` e `all_positive`. Este ultimo devera ser usado para excluir todos os pares observados da futura amostragem negativa, inclusive os reservados para avaliacao. Os negativos são gerados e reservados na etapa de treinamento descrita abaixo.
 
 Resultado real: 39.562 pares unicos a partir de 62.328 linhas, sendo 23.738 de contexto, 7.912 alvos de treino, 3.956 de validacao e 3.956 de teste. Todos os nos foram preservados. Ha 975 carteiras e 2.098 mercados sem vizinhos no contexto: GraphSAGE ainda utiliza suas features proprias, mas esses nos nao recebem mensagens de vizinhos. A avaliacao futura deve distinguir resultados com e sem contexto de vizinhanca.
 
@@ -152,13 +156,13 @@ As features e seus scalers continuam calculados sobre o recorte selecionado inte
 1. `layer1`: HeteroConv com uma SAGEConv por direcao, saida de 64 dimensoes.
 2. ReLU e dropout 0,1 (dropout desativado em avaliacao).
 3. `layer2`: outra HeteroConv, gerando embeddings de 32 dimensoes por no.
-4. `decode`: concatena o embedding da carteira com o do mercado e usa uma rede pequena (64 unidades intermediarias) para retornar um logit por par. O treino futuro usara BCEWithLogitsLoss; nao aplicar sigmoid antes dessa perda.
+4. `decode`: concatena o embedding da carteira com o do mercado e usa uma rede pequena (64 unidades intermediarias) para retornar um logit por par. O treinamento usa BCEWithLogitsLoss; nao aplicar sigmoid antes dessa perda.
 
 O decoder MLP foi escolhido para aprender compatibilidade entre os dois tipos de no sem impor apenas produto interno. Com as dimensoes da amostra, o modelo tem 20.673 parametros treinaveis. Isso e uma configuracao inicial, nao resultado de busca de hiperparametros.
 
-O teste `tests/test_gnn.py` usa um grafo ficticio com pares repetidos para conferir particoes disjuntas, preservacao do original, reversas, reproducibilidade, dimensoes e gradientes finitos do encoder/decoder. Um forward no contexto real tambem passou: embeddings de carteiras [5000, 32], mercados [9189, 32] e 7.912 logits de treino. Os pesos ainda sao aleatorios; esses embeddings nao devem ser interpretados como resultados aprendidos.
+O teste `tests/test_gnn.py` usa um grafo ficticio com pares repetidos para conferir particoes disjuntas, preservacao do original, reversas, reproducibilidade, dimensoes e gradientes finitos do encoder/decoder. Um forward no contexto real tambem passou: embeddings de carteiras [5000, 32], mercados [9189, 32] e 7.912 logits de treino. Esse teste inicial usou pesos aleatórios; os resultados aprendidos pertencem aos checkpoints da etapa de treinamento.
 
-Proxima etapa: implementar negativos, loop de treino, parada antecipada, metricas de validacao e benchmark. Teste fica reservado para a avaliacao final. Optuna e ranking GNN ainda nao implementados.
+Negativos, loop de treino, parada antecipada, métricas de validação e benchmark estão implementados na etapa 2. Teste fica reservado para a avaliacao final. Optuna e ranking GNN ainda nao implementados.
 
 ## GNN — etapa 2: treinamento em CPU
 
