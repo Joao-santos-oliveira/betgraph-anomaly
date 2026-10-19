@@ -1,6 +1,6 @@
 # Plano de pesquisa e submissão — Betgraph Anomaly
 
-Versão inicial: 17/10/2026. Documento de planejamento, não declaração de resultados nem garantia de aprovação. O desenvolvimento será feito em etapas pequenas, explicadas e verificáveis. Alterações de protocolo devem ser registradas antes da execução correspondente, sem apagar resultados anteriores.
+Versão inicial: 17/10/2026. Atualização: primeira rodada controlada concluída; ver [resultados](resultados_gnn_v1.md). Documento de planejamento, não declaração de resultados nem garantia de aprovação. O desenvolvimento será feito em etapas pequenas, explicadas e verificáveis. Alterações de protocolo devem ser registradas antes da execução correspondente, sem apagar resultados anteriores.
 
 ## 1. Pergunta e contribuição pretendida
 
@@ -18,7 +18,7 @@ Resultados nulos ou contrários devem ser reportados. Uma diferença de ranking 
 
 ## 2. Estado e limites atuais
 
-Já existem: preparação, HeteroData, baseline IsolationForest, divisão de pares, GraphSAGE heterogêneo e treinamento inicial em CPU. Os resultados atuais são exploratórios. Ainda não existe ranking GNN validado, comparação controlada ou avaliação final de teste.
+Já existem: preparação, HeteroData, baseline IsolationForest, divisão de pares, GraphSAGE heterogêneo e treinamento inicial em CPU. Os resultados atuais são exploratórios. A primeira comparação controlada e os rankings exploratórios foram executados em três seeds (ver relatório). Ainda não existe validação da qualidade das anomalias nem avaliação final de teste.
 
 - Um dia de dados: 16/09/2026, com filtros já aplicados. O conjunto completo significa todo esse dia tratado, não toda a história da plataforma.
 - Amostra de desenvolvimento: 5.000 carteiras. O experimento final usará o recorte completo após validação do protocolo e dimensionamento.
@@ -34,7 +34,7 @@ Já existem: preparação, HeteroData, baseline IsolationForest, divisão de par
 
 Antes de novos rankings, produzir um protocolo versionado com exemplos de avaliação fixos e um relatório de integridade.
 
-1. Separar seed da divisão, seed dos exemplos de avaliação, seed do treino e seed do IsolationForest. Hoje `--seed` do treino também muda os negativos de validação/teste; corrigir essa ligação antes de comparar inicializações.
+1. Separar seed da divisão, seed dos exemplos de avaliação, seed do treino e seed do IsolationForest. Implementado: `--seed` varia inicialização/dropout; `--eval-seed` e `--negative-seed` mantêm avaliação e negativos de treino independentes.
 2. Reutilizar exatamente os mesmos positivos e negativos de validação/teste entre modelos e seeds do mesmo protocolo. Reservar ambos os conjuntos fora do treino, incluindo reversas e pares com múltiplos outcomes.
 3. Decidir e registrar duas condições, sem misturá-las: (a) reconstrução transdutiva com features do dia inteiro; (b) controle com agregados das carteiras calculados somente das arestas de contexto e preprocessamento ajustado nas entradas permitidas. Declarar como tratar carteiras sem histórico no contexto. Nenhuma condição deve ser chamada de previsão futura sem uma separação temporal apropriada.
 4. Preservar os artefatos e métricas atuais como exploração. Gerar novas pastas para as condições revisadas.
@@ -113,15 +113,18 @@ Antes da submissão:
 
 Após pareceres: classificar críticas em método, evidência, escopo e redação; responder cada ponto e registrar correções. Rejeição pode exigir revisão ou outro veículo; não prometer aprovação nem alterar conclusões para agradar revisores.
 
-## 8. Ordem das próximas entregas
+## 8. Ordem das entregas e situação atual
 
-1. Protocolo de avaliação fixo e controle de features; fechar as decisões antes da execução.
-2. Controle sem mensagens e baseline de grau; comparação inicial em validação.
-3. Três seeds e, se viável, ablação estrutural.
-4. Ranking GNN e comparação com baseline.
+1. Concluído na rodada 1: protocolo fixo e duas condições de features, registrados antes da execução.
+2. Concluído na rodada 1: controle sem mensagens e baseline de grau; comparação em validação.
+3. Três seeds concluídas; ablação estrutural ainda pendente.
+4. Rankings GNN/MLP e comparação com baseline concluídos; qualidade dos casos ainda não validada.
 5. Inspeção com controles e visualização dos subgrafos.
 6. Recorte completo e, conforme acesso, novos dias.
 7. Makefile, reprodução externa, artigo e revisão com orientador.
 8. Adequação à chamada, submissão pelo autor responsável e tratamento dos pareceres.
 
 Optuna e arquiteturas mais complexas são opcionais posteriores. Prioridade: evidências e clareza, não quantidade de ferramentas.
+
+
+Retomada em 18/10/2026: [roteiro operacional](proximos_passos.md). Priorizar piloto sintético e inspeção real na amostra antes da bateria completa; a visualização didática já foi apresentada, mas a qualidade das anomalias ainda não foi validada.

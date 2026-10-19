@@ -1,4 +1,4 @@
-"""Encoder bipartido GraphSAGE e decoder de conexoes, sem treino completo."""
+"""Encoders GraphSAGE e MLP sem mensagens, com decoder de conexoes."""
 import torch
 from torch import nn
 from torch.nn import functional as F
@@ -38,3 +38,26 @@ class GNNBipartida(nn.Module):
         user = embeddings['user'][pairs[0]]
         event = embeddings['event'][pairs[1]]
         return self.decoder(torch.cat([user, event], dim=-1)).squeeze(-1)
+
+
+class MLPSemMensagens(nn.Module):
+    """Controle: mesmos tipos de no e decoder, sem consultar vizinhos."""
+
+    def __init__(self, user_features, event_features, hidden=64, embedding=32, dropout=.1):
+        super().__init__()
+        if min(user_features, event_features, hidden, embedding) < 1 or not 0 <= dropout < 1:
+            raise ValueError('Dimensoes ou dropout invalidos')
+        self.encoders = nn.ModuleDict({kind: nn.Sequential(
+            nn.Linear(size, hidden), nn.ReLU(), nn.Dropout(dropout), nn.Linear(hidden, embedding))
+            for kind, size in [('user', user_features), ('event', event_features)]})
+        self.decoder = nn.Sequential(nn.Linear(2 * embedding, hidden), nn.ReLU(), nn.Linear(hidden, 1))
+
+    def forward(self, x_dict, edge_index_dict):
+        return {kind: encoder(x_dict[kind]) for kind, encoder in self.encoders.items()}
+
+    def decode(self, embeddings, pairs):
+        return self.decoder(torch.cat([embeddings['user'][pairs[0]],
+                                       embeddings['event'][pairs[1]]], dim=-1)).squeeze(-1)
+
+
+MODELOS = {'gnn': GNNBipartida, 'mlp': MLPSemMensagens}

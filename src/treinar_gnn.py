@@ -15,7 +15,7 @@ import torch_geometric
 from sklearn.metrics import average_precision_score, roc_auc_score
 from torch.nn import functional as F
 
-from modelo_gnn import GNNBipartida
+from modelo_gnn import MODELOS
 from preparar_features import ROOT
 from preparar_gnn import FORWARD, REVERSE
 
@@ -110,7 +110,8 @@ def avaliar_validacao(model, graph, pairs, labels):
 
 
 def treinar(source, output, seed=42, epochs=100, patience=15, lr=.001,
-            hidden=64, embedding=32, dropout=.1, threads=2, min_delta=.0001):
+            hidden=64, embedding=32, dropout=.1, threads=2, min_delta=.0001, model_kind='gnn', eval_seed=43, negative_seed=42,
+            feature_condition='full_day'):
     """Treina com negativos renovados, checkpoint e early stopping por loss."""
     if min(epochs, patience, threads) < 1 or lr <= 0 or min_delta < 0:
         raise ValueError('Parametros de treino invalidos')
@@ -124,16 +125,16 @@ def treinar(source, output, seed=42, epochs=100, patience=15, lr=.001,
     observed = validar_divisao(split)
     graph = split['context']
     nu, ne = graph['user'].num_nodes, graph['event'].num_nodes
-    rng_train = np.random.default_rng(seed)
-    rng_val = np.random.default_rng(seed + 1)
+    rng_train = np.random.default_rng(negative_seed)
+    rng_val = np.random.default_rng(eval_seed)
     val_negative = amostrar_negativos(nu, ne, split['val_positive'].shape[1], observed, rng_val)
     test_negative = amostrar_negativos(nu, ne, split['test_positive'].shape[1],
-                                       observed | codigos(val_negative, ne), np.random.default_rng(seed + 2))
+                                       observed | codigos(val_negative, ne), np.random.default_rng(eval_seed + 1))
     train_forbidden = observed | codigos(val_negative, ne) | codigos(test_negative, ne)
     val_pairs, val_labels = exemplos(split['val_positive'], val_negative)
     config = {'user_features': graph['user'].x.shape[1], 'event_features': graph['event'].x.shape[1],
               'hidden': hidden, 'embedding': embedding, 'dropout': dropout}
-    model = GNNBipartida(**config)
+    model = MODELOS[model_kind](**config)
     optimizer = torch.optim.Adam(model.parameters(), lr=lr)
     initial = avaliar_validacao(model, graph, val_pairs, val_labels)
     output.mkdir(parents=True)
@@ -146,7 +147,9 @@ def treinar(source, output, seed=42, epochs=100, patience=15, lr=.001,
 
     def salvar(epoch, metrics):
         torch.save({'model_state': model.state_dict(), 'model_config': config,
-                    'epoch': epoch, 'validation': metrics, 'seed': seed}, checkpoint)
+                    'epoch': epoch, 'validation': metrics, 'seed': seed,
+                    'model_kind': model_kind,
+                    'sha256_divisao': hashlib.sha256(source.read_bytes()).hexdigest()}, checkpoint)
 
     salvar(0, initial)
     history = []
@@ -189,7 +192,11 @@ def treinar(source, output, seed=42, epochs=100, patience=15, lr=.001,
     if not np.isclose(restored['loss'], best_metrics['loss'], rtol=1e-7, atol=1e-8):
         raise RuntimeError('Checkpoint nao reproduziu a validacao')
     report = {
-        'seed': seed, 'source': str(source.resolve()),
+        'seed': seed, 'eval_seed': eval_seed, 'negative_seed': negative_seed,
+        'model_kind': model_kind, 'feature_condition': feature_condition,
+        'n_parametros': sum(p.numel() for p in model.parameters()),
+        'sha256_pares_validacao': hashlib.sha256(val_pairs.numpy().tobytes()).hexdigest(),
+        'source': str(source.resolve()),
         'sha256_divisao': hashlib.sha256(source.read_bytes()).hexdigest(),
         'config': config, 'lr': lr, 'epochs_limit': epochs, 'patience': patience,
         'min_delta': min_delta, 'gradient_clip': 5., 'threads': threads, 'device': 'cpu',
@@ -200,7 +207,7 @@ def treinar(source, output, seed=42, epochs=100, patience=15, lr=.001,
         'tempo_loop_segundos': elapsed,
         'mediana_epoca_segundos': float(np.median([h['seconds'] for h in history])),
         'teste_avaliado': False,
-        'limitacoes': ['features agregadas do recorte inteiro', 'negativos uniformes podem ser faceis',
+        'limitacoes': ['features do dia inteiro' if feature_condition == 'full_day' else 'agregados de carteira restritos ao contexto; metadados de mercado transdutivos', 'negativos uniformes podem ser faceis',
                        'metricas de conexao, nao de fraude', 'sem teste de generalizacao temporal'],
         'versoes': {'python': platform.python_version(), 'torch': torch.__version__,
                     'pyg': torch_geometric.__version__, 'numpy': np.__version__, 'sklearn': sklearn.__version__},
@@ -215,6 +222,10 @@ def main():
     parser.add_argument('--input', type=Path, default=ROOT / 'data/processed/dev/gnn_seed_42/divisao.pt')
     parser.add_argument('--output', type=Path)
     parser.add_argument('--seed', type=int, default=42)
+    parser.add_argument('--model', choices=list(MODELOS), default='gnn')
+    parser.add_argument('--eval-seed', type=int, default=43)
+    parser.add_argument('--negative-seed', type=int, default=42)
+    parser.add_argument('--feature-condition', choices=['full_day', 'context_only'], default='full_day')
     parser.add_argument('--epochs', type=int, default=100)
     parser.add_argument('--patience', type=int, default=15)
     parser.add_argument('--lr', type=float, default=.001)
@@ -226,7 +237,9 @@ def main():
     stamp = datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%S%fZ')
     output = args.output or args.input.parent / f'treino_{stamp}_seed_{args.seed}'
     treinar(args.input, output, args.seed, args.epochs, args.patience, args.lr,
-            args.hidden, args.embedding, args.dropout, args.threads)
+            args.hidden, args.embedding, args.dropout, args.threads,
+            model_kind=args.model, eval_seed=args.eval_seed, negative_seed=args.negative_seed,
+            feature_condition=args.feature_condition)
 
 
 if __name__ == '__main__':

@@ -2,6 +2,9 @@
 
 Projeto universitário de detecção não supervisionada de carteiras anômalas em dados do Polymarket (Polygon), no recorte de 16/09/2026. Um score de anomalia não confirma fraude. A metodologia pode ser estudada em outros mercados, mas os valores não são numericamente comparáveis a casas de apostas tradicionais.
 
+
+Roteiro de retomada (18/10/2026): [próximos passos](docs/proximos_passos.md). Começar pelo protocolo do piloto sintético, seguido da inspeção dos casos reais e controles.
+
 ## Estrutura e dados
 
 - `src/`: scripts Python, executados a partir da raiz do projeto.
@@ -162,7 +165,7 @@ O decoder MLP foi escolhido para aprender compatibilidade entre os dois tipos de
 
 O teste `tests/test_gnn.py` usa um grafo ficticio com pares repetidos para conferir particoes disjuntas, preservacao do original, reversas, reproducibilidade, dimensoes e gradientes finitos do encoder/decoder. Um forward no contexto real tambem passou: embeddings de carteiras [5000, 32], mercados [9189, 32] e 7.912 logits de treino. Esse teste inicial usou pesos aleatórios; os resultados aprendidos pertencem aos checkpoints da etapa de treinamento.
 
-Negativos, loop de treino, parada antecipada, métricas de validação e benchmark estão implementados na etapa 2. Teste fica reservado para a avaliacao final. Optuna e ranking GNN ainda nao implementados.
+Negativos, loop de treino, parada antecipada, métricas de validação e benchmark estão implementados na etapa 2. Teste fica reservado para a avaliacao final. Optuna permanece opcional; o ranking GNN foi implementado na etapa 3 abaixo.
 
 ## GNN — etapa 2: treinamento em CPU
 
@@ -170,7 +173,7 @@ Negativos, loop de treino, parada antecipada, métricas de validação e benchma
 python src/treinar_gnn.py --epochs 100 --patience 15 --threads 2
 ```
 
-A entrada padrao e `data/processed/dev/gnn_seed_42/divisao.pt`. `--seed` controla inicializacao, dropout e negativos, mas NAO altera a divisao fornecida. Use a mesma divisao para estudar a variabilidade do treinamento; mude `--input` explicitamente para outro experimento de divisao. A saida padrao recebe timestamp UTC e seed; `--output` permite escolher outra pasta, que nao pode existir para evitar sobrescrita.
+A entrada padrao e `data/processed/dev/gnn_seed_42/divisao.pt`. `--seed` controla inicializacao e dropout; `--negative-seed` controla negativos de treino e `--eval-seed` controla os negativos de avaliacao (teste usa eval-seed + 1). Nenhuma dessas flags altera a divisao fornecida. Use a mesma divisao para estudar a variabilidade do treinamento; mude `--input` explicitamente para outro experimento de divisao. A saida padrao recebe timestamp UTC e seed; `--output` permite escolher outra pasta, que nao pode existir para evitar sobrescrita.
 
 Funcoes de `src/treinar_gnn.py`:
 
@@ -195,6 +198,67 @@ Os tempos por epoca incluem sorteio, forward, backward, atualizacao e validacao,
 
 AP e ROC-AUC aqui avaliam conexoes observadas contra negativos uniformes, NAO fraude. A validacao global tem proporcao 1:1; os subgrupos podem ter proporcoes diferentes, portanto suas APs nao sao diretamente equivalentes. Features agregadas incluem informacoes do recorte inteiro, e negativos uniformes podem tornar a tarefa facil. Uma melhora nao demonstra ganho causado pela estrutura: comparacoes futuras com modelos sem mensagens e controles por grau sao necessarias para essa conclusao. Nao foi feita busca Optuna nem avaliacao final de teste.
 
-O teste de integracao verifica negativos validos, reproducibilidade do historico e checkpoint, isolamento das particoes e protecao contra sobrescrita. Proxima etapa didatica: ler as curvas/metricas e definir a avaliacao antes de extrair o ranking GNN. A visualizacao do grafo permanece para depois do ranking.
+O teste de integracao verifica negativos validos, reproducibilidade do historico e checkpoint, isolamento das particoes e protecao contra sobrescrita. A comparacao controlada e o ranking estao descritos na etapa 3. A visualizacao do grafo permanece para depois do ranking.
 
-Execucao inicial com protocolo final: `data/processed/dev/gnn_seed_42/treino_20261017T230054027371Z_seed_42`. 100 epocas, melhor checkpoint na epoca 100; BCE de validacao 0.695289 -> 0.297171; AP 0.4972 -> 0.9445; ROC-AUC final 0.9461. Mediana de 0.091 s/epoca e 9.43 s no loop. Parou pelo limite de epocas, nao por convergencia ou paciencia esgotada. Uma execucao exploratoria anterior, sem negativos de teste reservados, foi preservada apenas como historico e nao deve ser usada como resultado desta versao.
+Execucao historica com o protocolo inicial de treino (anterior aos controles da etapa 3): `data/processed/dev/gnn_seed_42/treino_20261017T230054027371Z_seed_42`. 100 epocas, melhor checkpoint na epoca 100; BCE de validacao 0.695289 -> 0.297171; AP 0.4972 -> 0.9445; ROC-AUC final 0.9461. Mediana de 0.091 s/epoca e 9.43 s no loop. Parou pelo limite de epocas, nao por convergencia ou paciencia esgotada. Uma execucao exploratoria anterior, sem negativos de teste reservados, foi preservada apenas como historico e nao deve ser usada como resultado desta versao.
+
+
+## GNN — etapa 3: controles, estabilidade e rankings
+
+Executar na raiz com a .venv ativada (WSL/Linux):
+
+```bash
+python -m unittest discover -s tests -v
+python src/experimento_gnn.py
+```
+
+A pasta de saida recebe timestamp. Para escolher o destino, use `--output data/processed/dev/NOME_NOVO`; uma pasta existente e rejeitada. O experimento completo executa 12 treinos: GNN e MLP sem mensagens, duas condicoes de features e seeds 42, 43 e 44. Cada treino tem ate 100 epocas e paciencia 15, com o mesmo decoder, dimensoes e hiperparametros. A quantidade de parametros difere entre encoders e e registrada, portanto nao e uma comparacao com capacidade exatamente igual.
+
+- `full_day`: features originais do dia inteiro; inclui agregados relacionados a conexoes ocultadas. Mantida como referencia transdutiva.
+- `context_only`: agrega todos os outcomes apenas dos pares de contexto. Contagens, volume, ticket e preco das carteiras sao recalculados. Scalers, medianas e categorias sao ajustados nos nos ativos no contexto. Carteiras isoladas recebem contagens/volume/ticket zero, preco mediano dos ativos e flag `sem_contexto`. Metadados dos mercados continuam transdutivos; isto nao transforma o experimento em previsao temporal.
+
+As duas condicoes preservam nos e particoes. A divisao existente fica fixa, assim como as seeds de avaliacao (43, teste reservado 44), negativos de treino (42) e IsolationForest (42). Apenas inicializacao e dropout variam entre as tres seeds do encoder. Os exemplos de avaliacao sao conferidos por igualdade exata entre todas as execucoes. O teste permanece reservado; nao ha metricas de teste.
+
+Funcoes principais:
+
+- `features_contexto.py`: `alinhar` organiza pelos IDs originais; `features_contexto` recalcula os agregados permitidos e salva a definicao dos transformadores.
+- `modelo_gnn.py`: `MLPSemMensagens` codifica cada no individualmente, ignorando arestas, e usa o mesmo tipo de decoder da GNN.
+- `experimento_gnn.py`: `executar` registra o protocolo antes dos treinos, roda os controles e consolida resultados; `comparar_rankings` calcula Spearman com postos medios para empates, intersecao e Jaccard nos cortes 0,5%, 1% e 2%. Correlacao de scores constantes e indefinida e fica vazia.
+- `ranking_gnn.py`: `exportar` confere o hash da divisao do checkpoint, extrai embeddings no contexto fixo e preserva os IDs; `salvar_ranking` aplica IsolationForest e salva scores, top 1% e detector.
+
+O controle de atividade usa produto dos graus dos endpoints no contexto e calcula AP/AUC de ligacao. Nao recebe BCE porque o produto nao e um logit calibrado. Rankings sao gerados para GNN, MLP e features individuais; scores de metodos diferentes nao sao probabilidades nem possuem escala diretamente comparavel.
+
+Artefatos por experimento (em `data/`, ignorado pelo Git):
+
+- `protocolo.json`: seeds, orcamento, condicoes, hashes de entradas e codigo.
+- `preprocessador_contexto.joblib`, `features_contexto.csv`: transformadores e agregados permitidos.
+- `resultados.csv`, `resumo_seeds.csv`, `controle_grau.json`: resultados individuais, media/desvio-padrao amostral e controle de grau.
+- `comparacoes_rankings.csv`, `integridade.json`: estabilidade e igualdade dos exemplos.
+- Em cada condicao/modelo/seed: historico, checkpoint, manifestos e pasta `ranking/` com `ranking.csv`, `top.csv`, `embeddings.npz`, `indices_originais.json` e `isolation_forest.joblib`. O baseline de features fica em `baseline_features/` de cada condicao.
+
+Os embeddings incluem carteiras e mercados; o ranking e de carteiras. Sao usados os checkpoints selecionados por validacao, sem reajustar no grafo completo. O top 1% corresponde a 50 carteiras priorizadas para inspecao, nao a 50 fraudes. Carteiras sem contexto permanecem sinalizadas no ranking. Os testes cobrem isolamento das features, alinhamento de IDs, MLP independente das arestas, avaliacao fixa entre seeds/modelos, exportacao e rejeicao de checkpoint de outra divisao.
+
+Resultados desta rodada e interpretacao: [relatorio do experimento](docs/resultados_gnn_v1.md). Os resultados anteriores permanecem preservados. Proximas etapas: inspecao com controles e visualizacao dos subgrafos; a ablacao com vizinhos aleatorizados e a sensibilidade a seed do IsolationForest ainda estao pendentes. Makefile, conjunto completo e avaliacao final continuam para etapas posteriores.
+
+## Curvas ROC e novas seeds
+
+Para repetir a comparação com as seeds escolhidas (inicialização/dropout):
+
+```bash
+python src/experimento_gnn.py --seeds 42 73 2026 --output data/processed/dev/experimento_seeds_42_73_2026
+python src/avaliar_curvas.py --input data/processed/dev/experimento_seeds_42_73_2026 --output data/processed/dev/experimento_seeds_42_73_2026/curvas
+```
+
+Escolha destinos novos se essas pastas já existirem. A seed da divisão, os negativos de treino/avaliação e o IsolationForest continuam fixos. A rodada anterior (42, 43, 44) é preservada, sem selecionar só as melhores execuções.
+
+`avaliar_curvas.py` recarrega os checkpoints selecionados por BCE, confere o hash da divisão, verifica a igualdade dos pares de validação e reproduz a AUC registrada. Salva ROC por seed/modelo e controle por grau, perdas por época, PNG/PDF e os pontos das curvas em CSV. Os logits são usados diretamente: sigmoid preservaria a ordenação da ROC. Não abre o arquivo de teste reservado. A ROC é de reconstrução de conexões, não de fraude, e usa a mesma validação que selecionou os checkpoints; não substitui avaliação final independente.
+
+Resumo da rodada: [seeds 42, 73 e 2026](docs/resultados_seeds_42_73_2026.md).
+
+Para gerar ROC média, faixa de ±1 desvio-padrão amostral e maior/menor AUC entre seeds:
+
+```bash
+python src/resumir_roc.py --input data/processed/dev/experimento_seeds_42_73_2026/curvas
+```
+
+Saídas `roc_resumo_CONDICAO_MODELO.png/.pdf/.csv`, separadas por condição e modelo. A média usa interpolação numa grade comum de FPR; a legenda informa média/desvio das AUCs individuais. As três seeds compartilham divisão e exemplos: não são folds nem réplicas independentes de dados. A faixa é descritiva, não intervalo de confiança; os extremos são mostrados apenas para comparação, sem selecionar uma seed vencedora.
