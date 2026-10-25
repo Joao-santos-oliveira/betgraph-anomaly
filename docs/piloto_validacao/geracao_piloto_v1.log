@@ -1,0 +1,13 @@
+/home/aliss/.cache/betgraph-piloto-v1/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/mnt/c/Users/aliss/OneDrive/Área de Trabalho/PROJETOS NO GITHUB/betgraph-anomaly/experimentos/piloto_sintetico/gerar.py", line 212, in <module>
+    generate(args.protocolo, args.input, args.split, args.output)
+  File "/mnt/c/Users/aliss/OneDrive/Área de Trabalho/PROJETOS NO GITHUB/betgraph-anomaly/experimentos/piloto_sintetico/gerar.py", line 172, in generate
+    changed, changed_edges, swaps, labels, diagnostic = inject(split, users, edges, p)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/aliss/OneDrive/Área de Trabalho/PROJETOS NO GITHUB/betgraph-anomaly/experimentos/piloto_sintetico/gerar.py", line 86, in inject
+    raise Inviavel('Nao foi possivel atingir a concentracao sem relaxar as regras', diagnostic)
+Inviavel: Nao foi possivel atingir a concentracao sem relaxar as regras

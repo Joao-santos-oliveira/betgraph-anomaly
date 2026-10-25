@@ -1,0 +1,142 @@
+/home/aliss/.cache/betgraph-piloto-v1/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+{
+  "seed": 42,
+  "sample_size": 5000,
+  "entrada": {
+    "user": 27039,
+    "event": 16693,
+    "edge": 358689
+  },
+  "selecionados": {
+    "user": 5000,
+    "event": 9189,
+    "edge": 62328
+  },
+  "duracoes_ausentes_entrada": 707,
+  "duracoes_imputadas_selecao": 313,
+  "mediana_duracao": 2082742.5,
+  "features": {
+    "user": [
+      "log1p_volume_total_usd",
+      "log1p_n_trades_total",
+      "log1p_n_mercados_distintos",
+      "log1p_ticket_medio_geral",
+      "preco_medio_ponderado"
+    ],
+    "event": [
+      "log1p_duracao_mercado_segundos",
+      "duracao_ausente",
+      "categoria_principal_AI",
+      "categoria_principal_Airdrops",
+      "categoria_principal_Apple",
+      "categoria_principal_Awards",
+      "categoria_principal_Box",
+      "categoria_principal_Boxing",
+      "categoria_principal_Business",
+      "categoria_principal_Canada",
+      "categoria_principal_Celebrities",
+      "categoria_principal_China",
+      "categoria_principal_Crypto",
+      "categoria_principal_Culture",
+      "categoria_principal_Elections",
+      "categoria_principal_Elon",
+      "categoria_principal_Fed",
+      "categoria_principal_Finance",
+      "categoria_principal_GDP",
+      "categoria_principal_GTA",
+      "categoria_principal_Gaza",
+      "categoria_principal_Geopolitics",
+      "categoria_principal_Inflation",
+      "categoria_principal_Iran",
+      "categoria_principal_Israel",
+      "categoria_principal_Middle",
+      "categoria_principal_Movies",
+      "categoria_principal_MrBeast",
+      "categoria_principal_Music",
+      "categoria_principal_North",
+      "categoria_principal_Politics",
+      "categoria_principal_Prediction",
+      "categoria_principal_Russia",
+      "categoria_principal_Science",
+      "categoria_principal_South",
+      "categoria_principal_SpaceX",
+      "categoria_principal_Sports",
+      "categoria_principal_Syria",
+      "categoria_principal_Tennis",
+      "categoria_principal_Trump",
+      "categoria_principal_UK",
+      "categoria_principal_Ukraine",
+      "categoria_principal_Weather",
+      "categoria_principal_baseball",
+      "categoria_principal_conspiracy",
+      "categoria_principal_deprecgeopolitcs",
+      "categoria_principal_federal",
+      "categoria_principal_football",
+      "categoria_principal_gaming",
+      "categoria_principal_nomination",
+      "categoria_principal_relationships",
+      "categoria_principal_sam",
+      "categoria_principal_social",
+      "categoria_principal_strike",
+      "categoria_principal_unemployment",
+      "categoria_principal_us",
+      "categoria_principal_video",
+      "categoria_principal_world"
+    ],
+    "edge": [
+      "log1p_volume_usd",
+      "preco_medio",
+      "primeiro_trade_fracao_dia_utc"
+    ]
+  },
+  "ajuste": "transdutivo no subgrafo selecionado"
+}
+HeteroData(
+  user={
+    x=[5000, 5],
+    original_id=[5000],
+  },
+  event={
+    x=[9189, 58],
+    original_id=[9189],
+  },
+  (user, bets_on, event)={
+    edge_index=[2, 62328],
+    edge_attr=[62328, 3],
+    outcome_id=[62328],
+  },
+  (event, rev_bets_on, user)={
+    edge_index=[2, 62328],
+    edge_attr=[62328, 3],
+    outcome_id=[62328],
+  }
+)
+{
+  "users": 5000,
+  "events": 9189,
+  "arestas_diretas": 62328,
+  "arestas_reversas": 62328,
+  "grau_medio_user_com_multiarestas": 12.4656,
+  "grau_medio_event_com_multiarestas": 6.782892588965067,
+  "pares_user_event_distintos": 39562
+}
+{
+  "seed": 42,
+  "sha256_hetero": "bbe49fea2e356f407912791f0daf2b74189b3d5075ef781934288c3fed8cec96",
+  "fracao_validacao": 0.1,
+  "fracao_teste": 0.1,
+  "fracao_alvos_dentro_treino": 0.25,
+  "arestas_originais": 62328,
+  "pares_unicos": 39562,
+  "pares_contexto": 23738,
+  "alvos_treino": 7912,
+  "alvos_validacao": 3956,
+  "alvos_teste": 3956,
+  "nos_sem_vizinhos_no_contexto": {
+    "user": 975,
+    "event": 2098
+  },
+  "protocolo": "contexto fixo para treino, validacao e teste; features do recorte inteiro",
+  "limitacao": "reconstrucao transdutiva, nao previsao temporal; sem edge_attr e sem outcomes"
+}
