@@ -1,0 +1,6 @@
+{
+  "baseline": "gnn_base_seed_42 original",
+  "pesos_identicos_ao_treinador_main": true,
+  "melhor_epoca": 100,
+  "teste_avaliado": false
+}

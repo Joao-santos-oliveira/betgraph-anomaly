@@ -1,0 +1,10 @@
+{
+  "reason": "paralelizar cenarios independentes; sem mudanca de modelo/parametro/seed",
+  "workers": 3,
+  "threads_per_training": 2,
+  "partial_jobs_archived": [
+    "agendamento/interrompidos/original/gnn_contrast_seed_73"
+  ],
+  "scheduler_sha256": "725802987872e59af89e873f807824ba9ca37b1fdc2aded9a3c75780afca61ce",
+  "evaluation_not_opened": true
+}

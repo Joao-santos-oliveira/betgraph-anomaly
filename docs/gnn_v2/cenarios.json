@@ -1,0 +1,44 @@
+[
+  {
+    "name": "coparticipacao_0.3_20101",
+    "status": "viavel",
+    "family": "coparticipacao",
+    "level": 0.3,
+    "seed": 20101
+  },
+  {
+    "name": "coparticipacao_0.3_20201",
+    "status": "viavel",
+    "family": "coparticipacao",
+    "level": 0.3,
+    "seed": 20201
+  },
+  {
+    "name": "coparticipacao_0.6_20101",
+    "status": "viavel",
+    "family": "coparticipacao",
+    "level": 0.6,
+    "seed": 20101
+  },
+  {
+    "name": "coparticipacao_0.6_20201",
+    "status": "viavel",
+    "family": "coparticipacao",
+    "level": 0.6,
+    "seed": 20201
+  },
+  {
+    "name": "volume_10_20101",
+    "status": "viavel",
+    "family": "volume",
+    "level": 10,
+    "seed": 20101
+  },
+  {
+    "name": "volume_10_20201",
+    "status": "viavel",
+    "family": "volume",
+    "level": 10,
+    "seed": 20201
+  }
+]

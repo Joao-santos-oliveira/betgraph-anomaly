@@ -1,0 +1,84 @@
+{
+  "created_utc": "2026-10-26T13:32:15.146121+00:00",
+  "sha256": {
+    "experimentos/gnn_v2/detectores.py": "93e4b7d78bb235762103d7be0d993e25063c26785a8dbea12c3597c40f611ac7",
+    "experimentos/gnn_v2/objetivos.py": "6704c6a773c9d15974d65cf791ba6d906c2c8d36b4224440ba1eda42a01d794f",
+    "experimentos/gnn_v2/features.py": "d26a92c00a12e7e39d9f392b62eaaa561eddfd52d70a8d94663498bbee6183fc",
+    "experimentos/gnn_v2/__init__.py": "0587eed64a54009be8e303340f20e9048ba1b6d49d04c60f1c341867e19b6249",
+    "experimentos/gnn_v2/executar.py": "aafff8d7675962da4a0c6621537eebd953a7dd107035d84322aba0559fcc3986",
+    "experimentos/gnn_v2/treino.py": "6c35efb213d8e11188fb9c4a972fbd940013f33752a26c1e290f16a533118201",
+    "src/processar_graficos_arestas.py": "cf5f7f5cabf1db4a99c29ee8b0475953d7c14d8c11fdae7de987f38a96d01071",
+    "src/experimento_gnn.py": "04b97970afd2fe3309c6710921ac814fca6faa7507e141a142f0e6524b8b8e52",
+    "src/resumir_roc.py": "fabfdfeb8c3c686fbd8213233e1d0c28e32fe3b8eb6a599863df41d8f86d1b99",
+    "src/avaliar_curvas.py": "041aa37eaae6dfc4d86204e520d0e159268179cd9613e2c66e3f7ea51189e2cd",
+    "src/construir_hetero.py": "9e4ea72610af4b30648195c89763573ce235fc3bd988037732494efbe89fa8c2",
+    "src/ranking_gnn.py": "9c0f309a7d0e099a136b583c90772a0b32ae6f963e58ef5edc5a52e130a13e7d",
+    "src/features_contexto.py": "b233a743432263d817971a587767ecb4395aa03a2243c5c6e3a6874d0f93a673",
+    "src/treinar_gnn.py": "cbd7efe98fe225691f621fad84981b8949d34ac9d33c23d828d0a9de9e85cb13",
+    "src/validar_ambiente.py": "f032dadbffec9acc0caba361b229865a4226e0695c0f5919162409b53ccdeae1",
+    "src/preparar_features.py": "d609be560b29da5432aa9018b6d8ac9f4e5c60149477327c9ebbd2248cdb0139",
+    "src/processar_graficos_nos.py": "7ae7b07f2f8a72bb822f98329fd95792f6e0f79796d22d755084dbbf20a43a01",
+    "src/baseline.py": "42174ee3b1a755835c3fb109bc00d0855a0bc46d6853e7b6ff9305bc1ceec260",
+    "src/filtrar_recorrentes.py": "ec968ea8eb984d608c7ce1f34e3bce474e515df233083e921af143d9248a9dd4",
+    "src/modelo_gnn.py": "5e3ee5b2dc48e0fec32352095e1de54d053216cca1d18a6589d4ee7d8081463c",
+    "src/processar_graficos_wallets.py": "4e214126494ab01c091250687924d326eb889bf87958b8e41b4eee3f7d337aad",
+    "src/preparar_gnn.py": "e5789f4cf4cccd9bf8d49de8879a226b948d4a005591070d005a98da09fa4cdb",
+    "experimentos/piloto_sintetico/gerar.py": "e43df4d17d5dde557337a852612f2ac4e883f95f1af538f2b119aaa6759a9b4b",
+    "experimentos/piloto_sintetico/__init__.py": "e756542ba1514caae7905e99397dfa4e90cae4903e502fb368aaa585198dac12",
+    "experimentos/piloto_sintetico/executar.py": "269a737db764bf8e89e5404bf56ecee69ae8febcb615e0cda239aec324fedb76",
+    "experimentos/piloto_sintetico/avaliar.py": "394ab920c43ab64c7fe982658056a460828d6583cd8d2ad6fd550ebaeae0a0bc",
+    "experimentos/piloto_sintetico/elegibilidade_v2.py": "2d82ba0cf4761c68bd27cdf52652ef86c33e2b0f8668d52c23ab739afbd68c44",
+    "experimentos/piloto_sintetico/comum.py": "078f0fa0af63b571d1503977ba20d378e092146b9f37d5902ecee9e274fa4154",
+    "experimentos/piloto_sintetico/protocolo_v2.json": "3348702f2840de1938e90e3b60987e5c868fa91738fde933e193ad1bd09e1efb",
+    "experimentos/validacao_ampliada/executar.py": "81583219433dbbb0d0e23810eaf9b0a42493821f097230d6eeb804600d466291",
+    "experimentos/investigacao_anomalias/relacional.py": "3f08f752320dee7c05f50d31a8a6ce8b34339011564151820684a3917e2c28e1",
+    "tests/test_gnn_v2.py": "1e5c9df88de0c1990a3a919892db49ab0a06ef6a171b1f90e9c9c7d082c79f2c",
+    "docs/gnn_v2/protocolo.md": "60b24a99add6fbe1a2d5cf038f9842153313d20e1bd17e51ce8a3358887fce67",
+    "data/processed/validacao_ampliada_v1/novo/user.csv": "09c124cec39c8025923d2f0cd852bb5afecf61da6e3ae3abb5f416a1367a125f",
+    "data/processed/validacao_ampliada_v1/novo/event.csv": "cec3c8ec175155b224f20e94a1228c04aa94a08439d5e830226278cf293f7816",
+    "data/processed/validacao_ampliada_v1/novo/edge.csv": "60f73a27fec494bf3768e0f5ff1a69ad4d5cd4973e3cf6e8aaba62db747b3326",
+    "data/processed/validacao_ampliada_v1/novo/divisao.pt": "0e337250e0403f636577ee75c3d73dba835871dd0cb07f4fb83b0ece3c18cc02"
+  },
+  "model_seeds": [
+    42,
+    73,
+    2026
+  ],
+  "injection_seeds": [
+    20101,
+    20201
+  ],
+  "variants": {
+    "gnn_base": [
+      "gnn",
+      false,
+      false
+    ],
+    "mlp_base": [
+      "mlp",
+      false,
+      false
+    ],
+    "gnn_struct": [
+      "gnn",
+      true,
+      false
+    ],
+    "mlp_struct": [
+      "mlp",
+      true,
+      false
+    ],
+    "gnn_contrast": [
+      "gnn",
+      true,
+      true
+    ],
+    "mlp_contrast": [
+      "mlp",
+      true,
+      true
+    ]
+  },
+  "test_evaluated": false
+}

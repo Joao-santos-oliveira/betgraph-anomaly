@@ -1,5 +1,7 @@
 # Retomada do projeto — atualização em 26/10/2026
 
+**Branch experimental GNN v2 — 26/10/2026:** [comparação e próximos passos](gnn_v2/resultado.md). Features estruturais, objetivo contrastivo e ranking híbrido implementados; 126 treinos e 32 testes concluídos. Em coparticipação de 60%, GNN + IF continuou sem alvos no top100; o híbrido contrastivo alcançou média de 31,67/50, contra 32/50 do relacional direto. A v2 fica recomendada como ablação, sem evidência para substituir o detector simples. Main preservada; merge depende da decisão do usuário.
+
 **Validação ampliada — 26/10/2026:** [resultados e limites](validacao_ampliada/resultado.md). Foram executadas 24 tentativas: 21 cenários completos e 3 injeções não concluídas, em duas amostras disjuntas de 5.000 carteiras do mesmo dia. O detector relacional recuperou 31–32/50 alvos no novo recorte com concentração de 60%, mas 1–2 com 30%; features+IF respondeu melhor ao aumento de volume. Preparadas 50 fichas reais (25 casos, 15 controles e 10 aleatórios); revisão humana independente e outros dias ainda pendentes. 28 testes passaram. Esta rodada não retreinou a GNN nem abriu o teste final de ligações.
 
 Este documento registra a continuidade. O piloto sintético v2 foi concluído em 25/10/2026; ver [resultado](piloto_validacao_v2/resultado_piloto_v2.md). As propostas abaixo devem ser lidas com esse estado atualizado. Explicar objetivo, funções e resultados de cada etapa em linguagem simples.
@@ -72,4 +74,4 @@ Repetir controles e análise de estabilidade no universo maior. O completo ainda
 - `src/experimento_gnn.py`, `src/features_contexto.py`, `src/ranking_gnn.py`: execução, controle de informação e ranking.
 - `README.md`: comandos existentes. Os scripts do piloto sintético estão implementados e a v2 foi executada. A revisão humana permanece pendente.
 
-Próxima sessão: preencher os formulários de revisão independente já preparados e definir, antes da execução, o protocolo de uma possível GNN v2 com features estruturais e controle MLP equivalente. Os cenários já avaliados não serão reutilizados como teste reservado. Outros dias e o benchmark do conjunto completo permanecem pendentes.
+Próxima sessão: revisar o resultado da GNN v2 e preencher os formulários de revisão independente já preparados. Depois controlar mercados relacionados, obter outros dias e executar o benchmark do conjunto completo. Os cenários já avaliados não serão reutilizados como teste reservado. Consolidar Makefile/reprodução e escrita do artigo após as decisões finais.

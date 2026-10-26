@@ -1,5 +1,7 @@
 # Betgraph Anomaly
 
+**Branch experimental GNN v2 — 26/10/2026:** [comparação e próximos passos](docs/gnn_v2/resultado.md). Features estruturais, objetivo contrastivo e ranking híbrido implementados; 126 treinos e 32 testes concluídos. Em coparticipação de 60%, GNN + IF continuou sem alvos no top100; o híbrido contrastivo alcançou média de 31,67/50, contra 32/50 do relacional direto. A v2 fica recomendada como ablação, sem evidência para substituir o detector simples. Main preservada; merge depende da decisão do usuário.
+
 **Validação ampliada — 26/10/2026:** [resultados e limites](docs/validacao_ampliada/resultado.md). Foram executadas 24 tentativas: 21 cenários completos e 3 injeções não concluídas, em duas amostras disjuntas de 5.000 carteiras do mesmo dia. O detector relacional recuperou 31–32/50 alvos no novo recorte com concentração de 60%, mas 1–2 com 30%; features+IF respondeu melhor ao aumento de volume. Preparadas 50 fichas reais (25 casos, 15 controles e 10 aleatórios); revisão humana independente e outros dias ainda pendentes. 28 testes passaram. Esta rodada não retreinou a GNN nem abriu o teste final de ligações.
 
 Projeto universitário de detecção não supervisionada de carteiras anômalas em dados do Polymarket (Polygon), no recorte de 16/09/2026. Um score de anomalia não confirma fraude. A metodologia pode ser estudada em outros mercados, mas os valores não são numericamente comparáveis a casas de apostas tradicionais.
