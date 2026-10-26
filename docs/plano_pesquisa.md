@@ -1,5 +1,7 @@
 # Plano de pesquisa e submissão — Betgraph Anomaly
 
+**Validação ampliada — 26/10/2026:** [resultados e limites](validacao_ampliada/resultado.md). Foram executadas 24 tentativas: 21 cenários completos e 3 injeções não concluídas, em duas amostras disjuntas de 5.000 carteiras do mesmo dia. O detector relacional recuperou 31–32/50 alvos no novo recorte com concentração de 60%, mas 1–2 com 30%; features+IF respondeu melhor ao aumento de volume. Preparadas 50 fichas reais (25 casos, 15 controles e 10 aleatórios); revisão humana independente e outros dias ainda pendentes. 28 testes passaram. Esta rodada não retreinou a GNN nem abriu o teste final de ligações.
+
 Versão inicial: 17/10/2026. Atualização: primeira rodada controlada concluída; ver [resultados](resultados_gnn_v1.md). Documento de planejamento, não declaração de resultados nem garantia de aprovação. O desenvolvimento será feito em etapas pequenas, explicadas e verificáveis. Alterações de protocolo devem ser registradas antes da execução correspondente, sem apagar resultados anteriores.
 
 ## 1. Pergunta e contribuição pretendida
@@ -128,3 +130,6 @@ Optuna e arquiteturas mais complexas são opcionais posteriores. Prioridade: evi
 
 
 Retomada em 18/10/2026: [roteiro operacional](proximos_passos.md). Priorizar piloto sintético e inspeção real na amostra antes da bateria completa; a visualização didática já foi apresentada, mas a qualidade das anomalias ainda não foi validada.
+
+
+Atualização de 25/10/2026: piloto sintético v2 concluído com geração íntegra e baixa recuperação dos alvos. [Relatório](piloto_validacao_v2/resultado_piloto_v2.md). Não há evidência suficiente de qualidade do ranking para esse padrão; continuar com casos/controles e ablações, preservando os resultados desfavoráveis.

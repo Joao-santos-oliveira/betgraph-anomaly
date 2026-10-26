@@ -1,0 +1,11 @@
+{
+  "fontes_hashes_conferidos": true,
+  "cenarios_recalculados": 21,
+  "if_reproduzido": true,
+  "scores_relacionais_reproduzidos": true,
+  "metricas_recalculadas": true,
+  "volume_nao_altera_score_relacional": true,
+  "testes_passaram": 28,
+  "teste_ligacoes_avaliado": false,
+  "csv_float_precision": "round_trip; necessario para preservar ordenacao de scores numericamente proximos"
+}

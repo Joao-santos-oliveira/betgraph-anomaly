@@ -1,0 +1,682 @@
+{
+  "status": "viavel",
+  "protocol_sha256": "3348702f2840de1938e90e3b60987e5c868fa91738fde933e193ad1bd09e1efb",
+  "teste_avaliado": false,
+  "diagnostic": {
+    "market_candidates": 133,
+    "eligible_users": 655,
+    "eligibility_v2": {
+      "eligible_before_capacity_check": 659,
+      "excluded_by_reserved_capacity": [
+        {
+          "wallet_id": 12694,
+          "degree": 16,
+          "required": 10,
+          "allowed": 8,
+          "reserved_target_market_ids": [
+            13,
+            441
+          ]
+        },
+        {
+          "wallet_id": 12935,
+          "degree": 16,
+          "required": 10,
+          "allowed": 8,
+          "reserved_target_market_ids": [
+            65,
+            67
+          ]
+        },
+        {
+          "wallet_id": 22391,
+          "degree": 16,
+          "required": 10,
+          "allowed": 9,
+          "reserved_target_market_ids": [
+            441
+          ]
+        },
+        {
+          "wallet_id": 31184,
+          "degree": 16,
+          "required": 10,
+          "allowed": 9,
+          "reserved_target_market_ids": [
+            13
+          ]
+        }
+      ],
+      "capacity_rule": "ceil(concentration * degree) <= n_markets - reserved_target_markets",
+      "note": "Condicao necessaria; nao garante viabilidade conjunta das trocas"
+    },
+    "target_markets": [
+      4,
+      9,
+      13,
+      55,
+      65,
+      67,
+      170,
+      350,
+      441,
+      539
+    ],
+    "attempts": 512,
+    "accepted": 253,
+    "concentration": [
+      {
+        "wallet_id": 639,
+        "degree": 11,
+        "before": 0,
+        "after": 7,
+        "required": 7
+      },
+      {
+        "wallet_id": 1477,
+        "degree": 7,
+        "before": 0,
+        "after": 5,
+        "required": 5
+      },
+      {
+        "wallet_id": 1824,
+        "degree": 9,
+        "before": 0,
+        "after": 6,
+        "required": 6
+      },
+      {
+        "wallet_id": 2296,
+        "degree": 6,
+        "before": 0,
+        "after": 4,
+        "required": 4
+      },
+      {
+        "wallet_id": 2411,
+        "degree": 9,
+        "before": 0,
+        "after": 6,
+        "required": 6
+      },
+      {
+        "wallet_id": 2876,
+        "degree": 7,
+        "before": 0,
+        "after": 5,
+        "required": 5
+      },
+      {
+        "wallet_id": 2886,
+        "degree": 15,
+        "before": 0,
+        "after": 9,
+        "required": 9
+      },
+      {
+        "wallet_id": 3025,
+        "degree": 10,
+        "before": 1,
+        "after": 6,
+        "required": 6
+      },
+      {
+        "wallet_id": 3212,
+        "degree": 7,
+        "before": 0,
+        "after": 5,
+        "required": 5
+      },
+      {
+        "wallet_id": 5660,
+        "degree": 7,
+        "before": 0,
+        "after": 5,
+        "required": 5
+      },
+      {
+        "wallet_id": 5897,
+        "degree": 8,
+        "before": 0,
+        "after": 5,
+        "required": 5
+      },
+      {
+        "wallet_id": 6007,
+        "degree": 6,
+        "before": 1,
+        "after": 4,
+        "required": 4
+      },
+      {
+        "wallet_id": 6068,
+        "degree": 14,
+        "before": 0,
+        "after": 9,
+        "required": 9
+      },
+      {
+        "wallet_id": 7241,
+        "degree": 7,
+        "before": 0,
+        "after": 5,
+        "required": 5
+      },
+      {
+        "wallet_id": 7590,
+        "degree": 8,
+        "before": 0,
+        "after": 5,
+        "required": 5
+      },
+      {
+        "wallet_id": 8535,
+        "degree": 7,
+        "before": 0,
+        "after": 5,
+        "required": 5
+      },
+      {
+        "wallet_id": 8648,
+        "degree": 7,
+        "before": 0,
+        "after": 5,
+        "required": 5
+      },
+      {
+        "wallet_id": 9149,
+        "degree": 11,
+        "before": 0,
+        "after": 7,
+        "required": 7
+      },
+      {
+        "wallet_id": 9504,
+        "degree": 14,
+        "before": 1,
+        "after": 9,
+        "required": 9
+      },
+      {
+        "wallet_id": 9817,
+        "degree": 8,
+        "before": 1,
+        "after": 5,
+        "required": 5
+      },
+      {
+        "wallet_id": 11274,
+        "degree": 5,
+        "before": 0,
+        "after": 3,
+        "required": 3
+      },
+      {
+        "wallet_id": 11445,
+        "degree": 12,
+        "before": 0,
+        "after": 8,
+        "required": 8
+      },
+      {
+        "wallet_id": 11680,
+        "degree": 6,
+        "before": 0,
+        "after": 4,
+        "required": 4
+      },
+      {
+        "wallet_id": 12600,
+        "degree": 5,
+        "before": 0,
+        "after": 3,
+        "required": 3
+      },
+      {
+        "wallet_id": 12716,
+        "degree": 5,
+        "before": 1,
+        "after": 3,
+        "required": 3
+      },
+      {
+        "wallet_id": 13715,
+        "degree": 8,
+        "before": 0,
+        "after": 5,
+        "required": 5
+      },
+      {
+        "wallet_id": 14354,
+        "degree": 5,
+        "before": 1,
+        "after": 3,
+        "required": 3
+      },
+      {
+        "wallet_id": 15096,
+        "degree": 5,
+        "before": 0,
+        "after": 3,
+        "required": 3
+      },
+      {
+        "wallet_id": 15389,
+        "degree": 12,
+        "before": 0,
+        "after": 8,
+        "required": 8
+      },
+      {
+        "wallet_id": 15842,
+        "degree": 10,
+        "before": 0,
+        "after": 6,
+        "required": 6
+      },
+      {
+        "wallet_id": 16254,
+        "degree": 5,
+        "before": 0,
+        "after": 3,
+        "required": 3
+      },
+      {
+        "wallet_id": 16431,
+        "degree": 7,
+        "before": 0,
+        "after": 5,
+        "required": 5
+      },
+      {
+        "wallet_id": 17185,
+        "degree": 6,
+        "before": 0,
+        "after": 4,
+        "required": 4
+      },
+      {
+        "wallet_id": 18658,
+        "degree": 12,
+        "before": 0,
+        "after": 8,
+        "required": 8
+      },
+      {
+        "wallet_id": 19421,
+        "degree": 9,
+        "before": 0,
+        "after": 6,
+        "required": 6
+      },
+      {
+        "wallet_id": 20217,
+        "degree": 16,
+        "before": 0,
+        "after": 10,
+        "required": 10
+      },
+      {
+        "wallet_id": 23348,
+        "degree": 6,
+        "before": 1,
+        "after": 4,
+        "required": 4
+      },
+      {
+        "wallet_id": 25483,
+        "degree": 6,
+        "before": 0,
+        "after": 4,
+        "required": 4
+      },
+      {
+        "wallet_id": 26541,
+        "degree": 8,
+        "before": 0,
+        "after": 5,
+        "required": 5
+      },
+      {
+        "wallet_id": 26806,
+        "degree": 15,
+        "before": 0,
+        "after": 9,
+        "required": 9
+      },
+      {
+        "wallet_id": 31295,
+        "degree": 5,
+        "before": 0,
+        "after": 3,
+        "required": 3
+      },
+      {
+        "wallet_id": 31350,
+        "degree": 5,
+        "before": 0,
+        "after": 3,
+        "required": 3
+      },
+      {
+        "wallet_id": 31398,
+        "degree": 5,
+        "before": 0,
+        "after": 3,
+        "required": 3
+      },
+      {
+        "wallet_id": 32071,
+        "degree": 8,
+        "before": 0,
+        "after": 5,
+        "required": 5
+      },
+      {
+        "wallet_id": 32766,
+        "degree": 7,
+        "before": 0,
+        "after": 5,
+        "required": 5
+      },
+      {
+        "wallet_id": 32941,
+        "degree": 5,
+        "before": 0,
+        "after": 3,
+        "required": 3
+      },
+      {
+        "wallet_id": 33394,
+        "degree": 5,
+        "before": 0,
+        "after": 3,
+        "required": 3
+      },
+      {
+        "wallet_id": 34622,
+        "degree": 5,
+        "before": 0,
+        "after": 3,
+        "required": 3
+      },
+      {
+        "wallet_id": 34949,
+        "degree": 5,
+        "before": 0,
+        "after": 3,
+        "required": 3
+      },
+      {
+        "wallet_id": 35925,
+        "degree": 12,
+        "before": 0,
+        "after": 8,
+        "required": 8
+      }
+    ],
+    "affected_markets": [
+      0,
+      4,
+      7,
+      9,
+      13,
+      14,
+      17,
+      27,
+      41,
+      50,
+      51,
+      55,
+      59,
+      62,
+      65,
+      67,
+      70,
+      72,
+      75,
+      76,
+      78,
+      87,
+      90,
+      92,
+      97,
+      98,
+      100,
+      103,
+      104,
+      105,
+      111,
+      112,
+      123,
+      128,
+      129,
+      141,
+      142,
+      144,
+      150,
+      162,
+      170,
+      172,
+      173,
+      179,
+      184,
+      189,
+      191,
+      194,
+      197,
+      201,
+      218,
+      224,
+      227,
+      228,
+      230,
+      232,
+      246,
+      250,
+      251,
+      272,
+      273,
+      274,
+      282,
+      298,
+      302,
+      314,
+      317,
+      318,
+      330,
+      350,
+      355,
+      356,
+      374,
+      389,
+      393,
+      395,
+      396,
+      402,
+      408,
+      416,
+      422,
+      426,
+      441,
+      449,
+      454,
+      459,
+      462,
+      469,
+      482,
+      510,
+      511,
+      521,
+      526,
+      539,
+      545,
+      549,
+      574,
+      598,
+      600,
+      605,
+      610,
+      613,
+      631,
+      634,
+      642,
+      669,
+      671,
+      695,
+      696,
+      710,
+      714,
+      717,
+      729,
+      751,
+      757,
+      770,
+      774,
+      777,
+      781,
+      799,
+      828,
+      866,
+      879,
+      894,
+      914,
+      923,
+      929,
+      931,
+      983,
+      996,
+      1015,
+      1020,
+      1064,
+      1080,
+      1116,
+      1139,
+      1188,
+      1200,
+      1240,
+      1252,
+      1274,
+      1335,
+      1356,
+      1358,
+      1420,
+      1440,
+      1493,
+      1516,
+      1522,
+      1529,
+      1546,
+      1579,
+      1586,
+      1624,
+      1625,
+      1636,
+      1663,
+      1670,
+      1675,
+      1707,
+      1824,
+      1852,
+      1910,
+      1982,
+      2005,
+      2042,
+      2102,
+      2187,
+      2188,
+      2232,
+      2265,
+      2301,
+      2322,
+      2463,
+      2466,
+      2474,
+      2699,
+      2766,
+      2788,
+      2911,
+      3035,
+      3062,
+      3079,
+      3147,
+      3269,
+      3342,
+      3450,
+      3669,
+      3793,
+      3847,
+      3898,
+      4242,
+      4493,
+      4599,
+      4611,
+      5206,
+      5441,
+      5559,
+      6155,
+      6303,
+      6547,
+      6550,
+      6585,
+      6801,
+      6991,
+      7016,
+      7587,
+      7626,
+      8131,
+      8709,
+      8806,
+      8907,
+      9521,
+      9674,
+      9873,
+      10184,
+      10325,
+      10958,
+      11335,
+      11370,
+      12650,
+      15214,
+      15452,
+      15612,
+      16542,
+      16951,
+      18394,
+      18865,
+      18916,
+      19363
+    ],
+    "n_donors": 228,
+    "n_users": 5000,
+    "n_events": 9189,
+    "n_pairs": 23738,
+    "n_rows": 62328,
+    "removed_original_pairs": 506,
+    "checks": {
+      "degrees_equal": true,
+      "reserved_disjoint": true,
+      "parts_equal": true,
+      "attributes_equal_by_row": true,
+      "csv_graph_equal": true,
+      "ids_equal": true,
+      "intensity_complete": true,
+      "reverse_valid": true
+    }
+  },
+  "artifacts": {
+    "injetado/entrada/divisao.pt": "dc57cd6be7d78bf897680cfb875e466c07a0a5601750a9483d9afb9b8bf7276e",
+    "injetado/entrada/edge.csv": "fa87d2bcdbf8588135517dd18ae0ff32d827a515bc07d2f12be85c865f1c050b",
+    "injetado/entrada/event.csv": "46012d9e81d6f5d55f9d1a667ae9a0f0b3cb6c71719cfdd635b8bcebab249d44",
+    "injetado/entrada/user.csv": "bf9f72fe54cbf94ece28e6dcbb839aae12b0cbc9569d4a8bdfd67b0dd4383d4f",
+    "inventario_hashes.json": "6dce82fabec04cc3d7605528f6022408fd3873f45d83bfc1c91daa600b0e702a",
+    "original/entrada/divisao.pt": "efa858b70a1330168b33d35e9227b8aa3c9f2db33d568eac50ef3cb30af755d4",
+    "original/entrada/edge.csv": "f0fdc80aca4f3402650e9a90cb132c3d2c375ed3305f178fa01366dd91c2965d",
+    "original/entrada/event.csv": "46012d9e81d6f5d55f9d1a667ae9a0f0b3cb6c71719cfdd635b8bcebab249d44",
+    "original/entrada/user.csv": "bf9f72fe54cbf94ece28e6dcbb839aae12b0cbc9569d4a8bdfd67b0dd4383d4f",
+    "protocolo.json": "3348702f2840de1938e90e3b60987e5c868fa91738fde933e193ad1bd09e1efb",
+    "rotulos.csv": "0400d23b3c3335c393cff04734c423bc012d3c04ca3e468e4d87e526d089e108",
+    "trocas.csv": "d5d2a45e8465f01726821ec340bb989d547dc5f5ad37b03c8a3cde242fa47edb"
+  }
+}

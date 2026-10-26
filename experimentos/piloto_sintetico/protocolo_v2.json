@@ -1,0 +1,44 @@
+{
+  "version": "v2",
+  "condition": "context_only",
+  "n_targets": 50,
+  "n_markets": 10,
+  "min_user_degree": 5,
+  "min_market_degree": 25,
+  "concentration": 0.6,
+  "selection_seed": 8101,
+  "swap_seed": 8102,
+  "max_attempts": 1000000,
+  "model_seeds": [
+    42,
+    73,
+    2026
+  ],
+  "if_seed": 42,
+  "training": {
+    "epochs": 100,
+    "patience": 15,
+    "lr": 0.001,
+    "hidden": 64,
+    "embedding": 32,
+    "dropout": 0.1,
+    "threads": 2,
+    "min_delta": 0.0001,
+    "eval_seed": 43,
+    "negative_seed": 42
+  },
+  "top_k": [
+    50,
+    100
+  ],
+  "reserved_selection_swap_seeds": [
+    [
+      8201,
+      8202
+    ],
+    [
+      8301,
+      8302
+    ]
+  ]
+}

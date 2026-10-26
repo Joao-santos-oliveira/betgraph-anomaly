@@ -1,0 +1,16 @@
+{
+  "geracao": {
+    "degrees_equal": true,
+    "reserved_disjoint": true,
+    "parts_equal": true,
+    "attributes_equal_by_row": true,
+    "csv_graph_equal": true,
+    "ids_equal": true,
+    "intensity_complete": true,
+    "reverse_valid": true
+  },
+  "originais_intactos": true,
+  "treino_concluido": true,
+  "markets_equal": true,
+  "teste_avaliado": false
+}

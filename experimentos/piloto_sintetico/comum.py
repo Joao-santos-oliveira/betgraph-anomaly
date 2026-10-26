@@ -45,6 +45,7 @@ def validate_protocol(p):
                 'max_attempts', 'model_seeds', 'if_seed', 'training', 'top_k',
                 'reserved_selection_swap_seeds'}
     require(set(p) == required, 'Schema do protocolo invalido')
+    require(p['version'] in ('v1', 'v2'), 'Versao de protocolo desconhecida')
     require(p['condition'] == 'context_only', 'Somente context_only e permitido')
     for key in ('n_targets', 'n_markets', 'min_user_degree', 'min_market_degree', 'max_attempts'):
         require(type(p[key]) is int and p[key] > 0, f'Parametro invalido: {key}')
@@ -74,7 +75,8 @@ def inventory(inputs):
     tracked = git('ls-files', 'src', 'tests', 'requirements.txt', 'mapeamento_*.json').splitlines()
     protected = {str((ROOT / name).resolve()): sha(ROOT / name) for name in tracked}
     code = list((ROOT / 'experimentos/piloto_sintetico').glob('*.py'))
-    code += [ROOT / 'experimentos/piloto_sintetico/protocolo_v1.json', ROOT / 'tests/test_piloto_sintetico.py']
+    code += list((ROOT / 'experimentos/piloto_sintetico').glob('protocolo_*.json'))
+    code += list((ROOT / 'tests').glob('test_piloto_sintetico*.py'))
     return {'commit': git('rev-parse', 'HEAD'), 'git_status': git('status', '--short'),
             'protected': protected, 'inputs': {str(Path(p).resolve()): sha(p) for p in inputs},
             'new_code': {str(p.resolve()): sha(p) for p in code if p.exists()},

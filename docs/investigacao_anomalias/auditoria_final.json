@@ -1,0 +1,12 @@
+{
+  "execucoes_conferidas": [
+    "piloto_v2_8101_8102",
+    "piloto_v2_8201_8202",
+    "piloto_v2_8301_8302"
+  ],
+  "hashes_codigo_congelado": true,
+  "artefatos_treinos_conferidos": true,
+  "metricas_relacionais_recalculadas": true,
+  "teste_ligacoes_avaliado": false,
+  "testes_unitarios": 25
+}

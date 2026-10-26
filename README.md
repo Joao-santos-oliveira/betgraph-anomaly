@@ -1,9 +1,11 @@
 # Betgraph Anomaly
 
+**Validação ampliada — 26/10/2026:** [resultados e limites](docs/validacao_ampliada/resultado.md). Foram executadas 24 tentativas: 21 cenários completos e 3 injeções não concluídas, em duas amostras disjuntas de 5.000 carteiras do mesmo dia. O detector relacional recuperou 31–32/50 alvos no novo recorte com concentração de 60%, mas 1–2 com 30%; features+IF respondeu melhor ao aumento de volume. Preparadas 50 fichas reais (25 casos, 15 controles e 10 aleatórios); revisão humana independente e outros dias ainda pendentes. 28 testes passaram. Esta rodada não retreinou a GNN nem abriu o teste final de ligações.
+
 Projeto universitário de detecção não supervisionada de carteiras anômalas em dados do Polymarket (Polygon), no recorte de 16/09/2026. Um score de anomalia não confirma fraude. A metodologia pode ser estudada em outros mercados, mas os valores não são numericamente comparáveis a casas de apostas tradicionais.
 
 
-Roteiro de retomada (18/10/2026): [próximos passos](docs/proximos_passos.md). Começar pelo protocolo do piloto sintético, seguido da inspeção dos casos reais e controles.
+Roteiro atualizado: [próximos passos](docs/proximos_passos.md). Pilotos e validação ampliada concluídos; revisão humana independente pendente.
 
 ## Estrutura e dados
 
@@ -262,3 +264,19 @@ python src/resumir_roc.py --input data/processed/dev/experimento_seeds_42_73_202
 ```
 
 Saídas `roc_resumo_CONDICAO_MODELO.png/.pdf/.csv`, separadas por condição e modelo. A média usa interpolação numa grade comum de FPR; a legenda informa média/desvio das AUCs individuais. As três seeds compartilham divisão e exemplos: não são folds nem réplicas independentes de dados. A faixa é descritiva, não intervalo de confiança; os extremos são mostrados apenas para comparação, sem selecionar uma seed vencedora.
+
+
+## Piloto sintético v2 — concluído em 25/10/2026
+
+A correção da elegibilidade permitiu completar 50 alvos com 253 trocas, preservando graus e positivos reservados. Foram executados 12 treinos e avaliados 14 rankings. Resultado: GNN + IF e MLP + IF recuperaram zero alvos no top 100 em todas as seeds; features + IF recuperou 2 no top 50 e 3 no top 100. Isso registra uma limitação da recuperação deste padrão artificial, apesar da boa validação de ligações.
+
+Os 21 testes passaram e os scores/métricas dos 14 rankings foram recalculados na auditoria. Veja [protocolo v2](docs/protocolo_piloto_v2.md), [relatório e comandos de reprodução](docs/piloto_validacao_v2/resultado_piloto_v2.md) e [figura de recuperação](docs/piloto_validacao_v2/recuperacao_piloto_v2.png). A v1 inviável continua preservada. As realizações sintéticas seguintes e a inspeção descritiva foram concluídas; os relatórios atuais estão no início deste documento. Permanecem pendentes o teste final de ligações e a revisão humana independente.
+
+
+## O que compartilhar pelo Git
+
+O repositório contém código, testes, dependências, mapeamentos de IDs, protocolos, métricas resumidas e figuras PNG dos relatórios. Os resultados antigos são mantidos como evidência da evolução experimental, inclusive tentativas sem sucesso. PDFs das mesmas figuras são exportações regeneráveis e ficam fora do Git.
+
+`data/`, `.venv/`, checkpoints `.pt` e modelos/scalers `.joblib` permanecem locais. Para reproduzir em outro computador, criar a própria `.venv` e disponibilizar os CSVs de entrada separadamente; as fichas reais ficam em `data/processed/validacao_ampliada_v1/casos_reais/` e podem ser compartilhadas separadamente ou regeneradas. Os manifestos históricos registram caminhos absolutos da máquina de execução: preservá-los como evidência; para uma nova execução, gerar novos manifestos em vez de adulterar os antigos.
+
+Relatórios principais: [piloto v2](docs/piloto_validacao_v2/resultado_piloto_v2.md), [investigação](docs/investigacao_anomalias/resultado.md) e [validação ampliada](docs/validacao_ampliada/resultado.md). Cada relatório inclui comandos e limites de reprodução.

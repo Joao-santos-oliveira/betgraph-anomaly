@@ -59,6 +59,13 @@ def inject(split, users, edges, protocol):
     eligible = sorted([u for u in neighbors if du[u] >= p['min_user_degree']
                        and math.ceil(p['concentration'] * int(du[u])) <= len(markets)
                        and len(neighbors[u] & markets) < math.ceil(p['concentration'] * int(du[u]))], key=lambda i: uids[i])
+    if p['version'] == 'v2':
+        from .elegibilidade_v2 import selecionar_elegiveis
+        eligible, capacity = selecionar_elegiveis(neighbors, du, markets, reserved, uids,
+                                                  p['concentration'], p['min_user_degree'])
+        for row in capacity['excluded_by_reserved_capacity']:
+            row['reserved_target_market_ids'] = sorted(eids[e] for e in row.pop('reserved_target_market_indices'))
+        diagnostic['eligibility_v2'] = capacity
     diagnostic.update(eligible_users=len(eligible), target_markets=sorted(eids[e] for e in markets))
     if len(eligible) < p['n_targets']:
         raise Inviavel('Carteiras elegiveis insuficientes', diagnostic)

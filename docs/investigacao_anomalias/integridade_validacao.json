@@ -1,0 +1,19 @@
+{
+  "codigo_congelado_conferido": true,
+  "status": [
+    {
+      "realizacao": "piloto_v2_8201_8202",
+      "status": "concluido",
+      "seconds": 108.68773173199952,
+      "teste_ligacoes_avaliado": false
+    },
+    {
+      "realizacao": "piloto_v2_8301_8302",
+      "status": "concluido",
+      "seconds": 106.56442117000006,
+      "teste_ligacoes_avaliado": false
+    }
+  ],
+  "teste_ligacoes_avaliado": false,
+  "seeds_substituidas": false
+}

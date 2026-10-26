@@ -6,3 +6,10 @@ __pycache__/
 
 *.pt
 *.joblib
+
+# Caches e exportacoes regeneraveis dos relatorios
+.pytest_cache/
+.ruff_cache/
+docs/piloto_validacao_v2/*.pdf
+docs/investigacao_anomalias/*.pdf
+docs/validacao_ampliada/*.pdf

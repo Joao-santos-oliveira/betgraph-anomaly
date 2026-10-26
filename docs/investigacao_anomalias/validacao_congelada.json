@@ -1,0 +1,25 @@
+{
+  "created_utc": "2026-10-26T01:46:01.687752+00:00",
+  "realizacoes": [
+    [
+      8201,
+      8202
+    ],
+    [
+      8301,
+      8302
+    ]
+  ],
+  "metodo": "surpresa de coparticipacao; top3 parceiros; suporte minimo2; cauda Poisson aproximada",
+  "decisoes": "Nao ajustar parametros, trocar seeds ou remover resultados apos abrir realizacoes. Reportar inviabilidade. Teste de ligacoes fechado.",
+  "sha256": {
+    "experimentos/investigacao_anomalias/__init__.py": "9a40b840f51451f7e7c2fcbca8ec0366a7d17df443c9c6924ab1c8de9b16c273",
+    "experimentos/investigacao_anomalias/validar.py": "8edb4dab98f59f69ae99ce85ca3fa5a813bf8b01f646037f14e2d7a758ba4d1c",
+    "experimentos/investigacao_anomalias/ranking_relacional.py": "bd05228e7ce55711b4dc85477865aed276161e906b51349bd385d25d4b2234ee",
+    "experimentos/investigacao_anomalias/diagnosticar.py": "ea02845d557e7175db8e700e16812d41772c111f728ea22dca782ddb6e869d01",
+    "experimentos/investigacao_anomalias/relacional.py": "3f08f752320dee7c05f50d31a8a6ce8b34339011564151820684a3917e2c28e1",
+    "tests/test_investigacao_anomalias.py": "fbced16ba826cd226039013d8da4e800c4037f851e040d9cc64da3abe0cfb30a",
+    "docs/investigacao_anomalias/protocolo.md": "51b064d91dd5212f8dbe65e80212e4bd9abca90f7a5e1b6587a850ad2cdd13af",
+    "experimentos/piloto_sintetico/protocolo_v2.json": "3348702f2840de1938e90e3b60987e5c868fa91738fde933e193ad1bd09e1efb"
+  }
+}

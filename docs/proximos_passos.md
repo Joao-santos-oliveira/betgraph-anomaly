@@ -1,6 +1,8 @@
-# Retomada do projeto — 18/10/2026
+# Retomada do projeto — atualização em 26/10/2026
 
-Este documento prepara a continuidade; não inicia nem declara concluídos os experimentos abaixo. Não fazer commit automaticamente: o usuário fará isso posteriormente. Explicar objetivo, funções e resultados de cada etapa em linguagem simples.
+**Validação ampliada — 26/10/2026:** [resultados e limites](validacao_ampliada/resultado.md). Foram executadas 24 tentativas: 21 cenários completos e 3 injeções não concluídas, em duas amostras disjuntas de 5.000 carteiras do mesmo dia. O detector relacional recuperou 31–32/50 alvos no novo recorte com concentração de 60%, mas 1–2 com 30%; features+IF respondeu melhor ao aumento de volume. Preparadas 50 fichas reais (25 casos, 15 controles e 10 aleatórios); revisão humana independente e outros dias ainda pendentes. 28 testes passaram. Esta rodada não retreinou a GNN nem abriu o teste final de ligações.
+
+Este documento registra a continuidade. O piloto sintético v2 foi concluído em 25/10/2026; ver [resultado](piloto_validacao_v2/resultado_piloto_v2.md). As propostas abaixo devem ser lidas com esse estado atualizado. Explicar objetivo, funções e resultados de cada etapa em linguagem simples.
 
 ## Ponto de partida
 
@@ -11,15 +13,15 @@ Este documento prepara a continuidade; não inicia nem declara concluídos os ex
 - Amostra: 5.000 carteiras, 9.189 mercados, 62.328 linhas agregadas e 39.562 pares únicos. Contexto: 23.738 pares; 975 carteiras isoladas preservadas.
 - Completo tratado: 27.039 carteiras + 16.693 mercados = 43.732 nós; 358.689 linhas agregadas, 229.072 pares únicos. Antes do filtro: 22.418 mercados e 560.985 linhas. Carteiras não equivalem necessariamente a pessoas.
 - Visualização didática já mostrada para U65: três mercados de contexto. Dados e regra de seleção em `data/processed/dev/visualizacao_grafo/subgrafo.json`. Não foi inspeção de suspeitos nem validação de anomalias.
-- Nenhuma injeção artificial executada. Teste final de conexões não avaliado. Conjunto completo ainda não treinado.
+- Piloto sintético v2 concluído: 50 alvos, 253 trocas, 12 treinos, 14 rankings. GNN/MLP: zero alvos no top 100; features + IF: 3. Os 21 testes passaram. Teste final de conexões não avaliado; conjunto completo ainda não treinado.
 
-## 1. Próxima sessão: fechar e implementar o piloto sintético
+## 1. Piloto sintético — desenvolvimento concluído
 
 Objetivo: avaliar se os rankings recuperam um padrão artificial previamente definido, comparando GNN + IsolationForest, MLP + IsolationForest e IsolationForest em features.
 
-Proposta conversada, ainda não protocolo fechado: começar com 50 carteiras (1% da amostra) e um padrão de coparticipação concentrada. Alterar conexões numa cópia dos dados, tentando preservar graus por trocas de arestas. Não usar apenas volume extremo como anomalia fácil. A condição context_only será o controle principal proposto, com full_day identificado separadamente se incluído.
+Planejamento histórico que orientou os protocolos v1/v2: começar com 50 carteiras (1% da amostra) e um padrão de coparticipação concentrada. Alterar conexões numa cópia dos dados, tentando preservar graus por trocas de arestas. Não usar apenas volume extremo como anomalia fácil. A condição context_only será o controle principal proposto, com full_day identificado separadamente se incluído.
 
-Antes de executar, registrar em um protocolo:
+Decisões registradas para a v2 em docs/protocolo_piloto_v2.md; checklist de referência para futuras versões:
 
 - Seleção das carteiras, mercados-alvo, intensidade da alteração e seed de injeção independente das seeds dos encoders e do detector.
 - Algoritmo de troca, limites de tentativas, preservação de graus, rejeição de duplicatas, proibição de inserir pares positivos reservados e tratamento de carteiras isoladas. Se não houver trocas suficientes, reportar inviabilidade, não relaxar silenciosamente o cenário.
@@ -68,4 +70,6 @@ Repetir controles e análise de estabilidade no universo maior. O completo ainda
 - `docs/plano_pesquisa.md`: perguntas científicas e plano geral.
 - `docs/resultados_seeds_42_73_2026.md`: resultados atuais e limites.
 - `src/experimento_gnn.py`, `src/features_contexto.py`, `src/ranking_gnn.py`: execução, controle de informação e ranking.
-- `README.md`: comandos existentes. Os scripts do piloto sintético e da revisão humana ainda não foram implementados.
+- `README.md`: comandos existentes. Os scripts do piloto sintético estão implementados e a v2 foi executada. A revisão humana permanece pendente.
+
+Próxima sessão: preencher os formulários de revisão independente já preparados e definir, antes da execução, o protocolo de uma possível GNN v2 com features estruturais e controle MLP equivalente. Os cenários já avaliados não serão reutilizados como teste reservado. Outros dias e o benchmark do conjunto completo permanecem pendentes.

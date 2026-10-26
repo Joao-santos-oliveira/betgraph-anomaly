@@ -1,0 +1,57 @@
+{
+  "data": "2026-10-25",
+  "n_rankings_recalculados": 14,
+  "scores_if_reproduzidos": true,
+  "metricas_recalculadas": true,
+  "hashes_verificados": true,
+  "arquivos_protegidos_iguais_ao_HEAD": [
+    "mapeamento_conditions.json",
+    "mapeamento_outcomes.json",
+    "mapeamento_wallets.json",
+    "requirements.txt",
+    "src/avaliar_curvas.py",
+    "src/baseline.py",
+    "src/construir_hetero.py",
+    "src/experimento_gnn.py",
+    "src/features_contexto.py",
+    "src/filtrar_recorrentes.py",
+    "src/modelo_gnn.py",
+    "src/preparar_features.py",
+    "src/preparar_gnn.py",
+    "src/processar_graficos_arestas.py",
+    "src/processar_graficos_nos.py",
+    "src/processar_graficos_wallets.py",
+    "src/ranking_gnn.py",
+    "src/resumir_roc.py",
+    "src/treinar_gnn.py",
+    "src/validar_ambiente.py",
+    "tests/test_baseline.py",
+    "tests/test_experimento_gnn.py",
+    "tests/test_gnn.py",
+    "tests/test_piloto_sintetico.py",
+    "tests/test_preparacao.py",
+    "tests/test_treinar_gnn.py"
+  ],
+  "testes_aprovados": 21,
+  "testes_tempo_reportado_segundos": 8.107,
+  "teste_avaliado": false,
+  "n_treinos": 12,
+  "n_rankings": 14,
+  "negative_comparison": {
+    "val": {
+      "negative_original": 3956,
+      "negative_injected": 3956,
+      "intersection": 3955,
+      "equal": false
+    },
+    "test": {
+      "negative_original": 3956,
+      "negative_injected": 3956,
+      "intersection": 3956,
+      "equal": true
+    }
+  },
+  "sha256_metricas": "fa3f8213d0230497c324e246be37bf21d7eaf88905229f28855c18d0a05f485c",
+  "sha256_protocolo": "3348702f2840de1938e90e3b60987e5c868fa91738fde933e193ad1bd09e1efb",
+  "sha256_manifesto": "9dee210d293ef235ae6087b29f432ff844888f4660cecc2b60a3abb0f6eb5e87"
+}

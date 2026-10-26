@@ -1,0 +1,191 @@
+[
+  {
+    "recorte": "anterior",
+    "familia": "coparticipacao",
+    "nivel": 0.3,
+    "seed": 9201,
+    "status": "concluido",
+    "seconds": 4.103414158002124
+  },
+  {
+    "recorte": "anterior",
+    "familia": "coparticipacao",
+    "nivel": 0.3,
+    "seed": 9301,
+    "status": "concluido",
+    "seconds": 4.018136689999665
+  },
+  {
+    "recorte": "anterior",
+    "familia": "coparticipacao",
+    "nivel": 0.6,
+    "seed": 9201,
+    "status": "concluido",
+    "seconds": 5.5235746140024276
+  },
+  {
+    "recorte": "anterior",
+    "familia": "coparticipacao",
+    "nivel": 0.6,
+    "seed": 9301,
+    "status": "concluido",
+    "seconds": 8.219231820999994
+  },
+  {
+    "recorte": "anterior",
+    "familia": "coparticipacao",
+    "nivel": 0.9,
+    "seed": 9201,
+    "status": "inviavel"
+  },
+  {
+    "recorte": "anterior",
+    "familia": "coparticipacao",
+    "nivel": 0.9,
+    "seed": 9301,
+    "status": "inviavel"
+  },
+  {
+    "recorte": "anterior",
+    "familia": "volume",
+    "nivel": 10,
+    "seed": 9201,
+    "status": "concluido",
+    "seconds": 1.6666099580033915
+  },
+  {
+    "recorte": "anterior",
+    "familia": "volume",
+    "nivel": 10,
+    "seed": 9301,
+    "status": "concluido",
+    "seconds": 1.5151708429984865
+  },
+  {
+    "recorte": "anterior",
+    "familia": "volume",
+    "nivel": 50,
+    "seed": 9201,
+    "status": "concluido",
+    "seconds": 1.5568835149970255
+  },
+  {
+    "recorte": "anterior",
+    "familia": "volume",
+    "nivel": 50,
+    "seed": 9301,
+    "status": "concluido",
+    "seconds": 1.5313605129995267
+  },
+  {
+    "recorte": "anterior",
+    "familia": "volume",
+    "nivel": 100,
+    "seed": 9201,
+    "status": "concluido",
+    "seconds": 2.016889127997274
+  },
+  {
+    "recorte": "anterior",
+    "familia": "volume",
+    "nivel": 100,
+    "seed": 9301,
+    "status": "concluido",
+    "seconds": 1.975066776998574
+  },
+  {
+    "recorte": "novo",
+    "familia": "coparticipacao",
+    "nivel": 0.3,
+    "seed": 9201,
+    "status": "concluido",
+    "seconds": 6.726089192998188
+  },
+  {
+    "recorte": "novo",
+    "familia": "coparticipacao",
+    "nivel": 0.3,
+    "seed": 9301,
+    "status": "concluido",
+    "seconds": 5.640558001003228
+  },
+  {
+    "recorte": "novo",
+    "familia": "coparticipacao",
+    "nivel": 0.6,
+    "seed": 9201,
+    "status": "concluido",
+    "seconds": 5.558315595997556
+  },
+  {
+    "recorte": "novo",
+    "familia": "coparticipacao",
+    "nivel": 0.6,
+    "seed": 9301,
+    "status": "concluido",
+    "seconds": 5.956417809000413
+  },
+  {
+    "recorte": "novo",
+    "familia": "coparticipacao",
+    "nivel": 0.9,
+    "seed": 9201,
+    "status": "inviavel"
+  },
+  {
+    "recorte": "novo",
+    "familia": "coparticipacao",
+    "nivel": 0.9,
+    "seed": 9301,
+    "status": "concluido",
+    "seconds": 7.159359313001914
+  },
+  {
+    "recorte": "novo",
+    "familia": "volume",
+    "nivel": 10,
+    "seed": 9201,
+    "status": "concluido",
+    "seconds": 1.9093115910000051
+  },
+  {
+    "recorte": "novo",
+    "familia": "volume",
+    "nivel": 10,
+    "seed": 9301,
+    "status": "concluido",
+    "seconds": 2.385647240000253
+  },
+  {
+    "recorte": "novo",
+    "familia": "volume",
+    "nivel": 50,
+    "seed": 9201,
+    "status": "concluido",
+    "seconds": 1.9109219090023544
+  },
+  {
+    "recorte": "novo",
+    "familia": "volume",
+    "nivel": 50,
+    "seed": 9301,
+    "status": "concluido",
+    "seconds": 1.9324325810011942
+  },
+  {
+    "recorte": "novo",
+    "familia": "volume",
+    "nivel": 100,
+    "seed": 9201,
+    "status": "concluido",
+    "seconds": 1.8954192810051609
+  },
+  {
+    "recorte": "novo",
+    "familia": "volume",
+    "nivel": 100,
+    "seed": 9301,
+    "status": "concluido",
+    "seconds": 2.3114244919997873
+  }
+]
