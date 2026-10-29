@@ -1,0 +1,418 @@
+{
+  "hashes_intactos": true,
+  "n_arquivos_protegidos": 133,
+  "n_entradas": 5,
+  "n_codigo_novo_protocolo": 11,
+  "checkpoints_scores_reproduzidos": 81,
+  "metricas_reproduzidas": true,
+  "validacao_identica": true,
+  "teste_avaliado": false,
+  "realizacoes_reservadas_abertas": false,
+  "treinos_conferidos": [
+    {
+      "caso": "original",
+      "metodo": "C",
+      "seed": 42
+    },
+    {
+      "caso": "original",
+      "metodo": "C",
+      "seed": 73
+    },
+    {
+      "caso": "original",
+      "metodo": "C",
+      "seed": 2026
+    },
+    {
+      "caso": "original",
+      "metodo": "D",
+      "seed": 42
+    },
+    {
+      "caso": "original",
+      "metodo": "D",
+      "seed": 73
+    },
+    {
+      "caso": "original",
+      "metodo": "D",
+      "seed": 2026
+    },
+    {
+      "caso": "original",
+      "metodo": "E_v2",
+      "seed": 42
+    },
+    {
+      "caso": "original",
+      "metodo": "E_v2",
+      "seed": 73
+    },
+    {
+      "caso": "original",
+      "metodo": "E_v2",
+      "seed": 2026
+    },
+    {
+      "caso": "S1_30101",
+      "metodo": "C",
+      "seed": 42
+    },
+    {
+      "caso": "S1_30101",
+      "metodo": "C",
+      "seed": 73
+    },
+    {
+      "caso": "S1_30101",
+      "metodo": "C",
+      "seed": 2026
+    },
+    {
+      "caso": "S1_30101",
+      "metodo": "D",
+      "seed": 42
+    },
+    {
+      "caso": "S1_30101",
+      "metodo": "D",
+      "seed": 73
+    },
+    {
+      "caso": "S1_30101",
+      "metodo": "D",
+      "seed": 2026
+    },
+    {
+      "caso": "S1_30101",
+      "metodo": "E_v2",
+      "seed": 42
+    },
+    {
+      "caso": "S1_30101",
+      "metodo": "E_v2",
+      "seed": 73
+    },
+    {
+      "caso": "S1_30101",
+      "metodo": "E_v2",
+      "seed": 2026
+    },
+    {
+      "caso": "S1_30201",
+      "metodo": "C",
+      "seed": 42
+    },
+    {
+      "caso": "S1_30201",
+      "metodo": "C",
+      "seed": 73
+    },
+    {
+      "caso": "S1_30201",
+      "metodo": "C",
+      "seed": 2026
+    },
+    {
+      "caso": "S1_30201",
+      "metodo": "D",
+      "seed": 42
+    },
+    {
+      "caso": "S1_30201",
+      "metodo": "D",
+      "seed": 73
+    },
+    {
+      "caso": "S1_30201",
+      "metodo": "D",
+      "seed": 2026
+    },
+    {
+      "caso": "S1_30201",
+      "metodo": "E_v2",
+      "seed": 42
+    },
+    {
+      "caso": "S1_30201",
+      "metodo": "E_v2",
+      "seed": 73
+    },
+    {
+      "caso": "S1_30201",
+      "metodo": "E_v2",
+      "seed": 2026
+    },
+    {
+      "caso": "S2_30101",
+      "metodo": "C",
+      "seed": 42
+    },
+    {
+      "caso": "S2_30101",
+      "metodo": "C",
+      "seed": 73
+    },
+    {
+      "caso": "S2_30101",
+      "metodo": "C",
+      "seed": 2026
+    },
+    {
+      "caso": "S2_30101",
+      "metodo": "D",
+      "seed": 42
+    },
+    {
+      "caso": "S2_30101",
+      "metodo": "D",
+      "seed": 73
+    },
+    {
+      "caso": "S2_30101",
+      "metodo": "D",
+      "seed": 2026
+    },
+    {
+      "caso": "S2_30101",
+      "metodo": "E_v2",
+      "seed": 42
+    },
+    {
+      "caso": "S2_30101",
+      "metodo": "E_v2",
+      "seed": 73
+    },
+    {
+      "caso": "S2_30101",
+      "metodo": "E_v2",
+      "seed": 2026
+    },
+    {
+      "caso": "S2_30201",
+      "metodo": "C",
+      "seed": 42
+    },
+    {
+      "caso": "S2_30201",
+      "metodo": "C",
+      "seed": 73
+    },
+    {
+      "caso": "S2_30201",
+      "metodo": "C",
+      "seed": 2026
+    },
+    {
+      "caso": "S2_30201",
+      "metodo": "D",
+      "seed": 42
+    },
+    {
+      "caso": "S2_30201",
+      "metodo": "D",
+      "seed": 73
+    },
+    {
+      "caso": "S2_30201",
+      "metodo": "D",
+      "seed": 2026
+    },
+    {
+      "caso": "S2_30201",
+      "metodo": "E_v2",
+      "seed": 42
+    },
+    {
+      "caso": "S2_30201",
+      "metodo": "E_v2",
+      "seed": 73
+    },
+    {
+      "caso": "S2_30201",
+      "metodo": "E_v2",
+      "seed": 2026
+    },
+    {
+      "caso": "S3_estrutura_30101",
+      "metodo": "C",
+      "seed": 42
+    },
+    {
+      "caso": "S3_estrutura_30101",
+      "metodo": "C",
+      "seed": 73
+    },
+    {
+      "caso": "S3_estrutura_30101",
+      "metodo": "C",
+      "seed": 2026
+    },
+    {
+      "caso": "S3_estrutura_30101",
+      "metodo": "D",
+      "seed": 42
+    },
+    {
+      "caso": "S3_estrutura_30101",
+      "metodo": "D",
+      "seed": 73
+    },
+    {
+      "caso": "S3_estrutura_30101",
+      "metodo": "D",
+      "seed": 2026
+    },
+    {
+      "caso": "S3_estrutura_30101",
+      "metodo": "E_v2",
+      "seed": 42
+    },
+    {
+      "caso": "S3_estrutura_30101",
+      "metodo": "E_v2",
+      "seed": 73
+    },
+    {
+      "caso": "S3_estrutura_30101",
+      "metodo": "E_v2",
+      "seed": 2026
+    },
+    {
+      "caso": "S3_estrutura_30201",
+      "metodo": "C",
+      "seed": 42
+    },
+    {
+      "caso": "S3_estrutura_30201",
+      "metodo": "C",
+      "seed": 73
+    },
+    {
+      "caso": "S3_estrutura_30201",
+      "metodo": "C",
+      "seed": 2026
+    },
+    {
+      "caso": "S3_estrutura_30201",
+      "metodo": "D",
+      "seed": 42
+    },
+    {
+      "caso": "S3_estrutura_30201",
+      "metodo": "D",
+      "seed": 73
+    },
+    {
+      "caso": "S3_estrutura_30201",
+      "metodo": "D",
+      "seed": 2026
+    },
+    {
+      "caso": "S3_estrutura_30201",
+      "metodo": "E_v2",
+      "seed": 42
+    },
+    {
+      "caso": "S3_estrutura_30201",
+      "metodo": "E_v2",
+      "seed": 73
+    },
+    {
+      "caso": "S3_estrutura_30201",
+      "metodo": "E_v2",
+      "seed": 2026
+    },
+    {
+      "caso": "S3_volume_30101",
+      "metodo": "C",
+      "seed": 42
+    },
+    {
+      "caso": "S3_volume_30101",
+      "metodo": "C",
+      "seed": 73
+    },
+    {
+      "caso": "S3_volume_30101",
+      "metodo": "C",
+      "seed": 2026
+    },
+    {
+      "caso": "S3_volume_30101",
+      "metodo": "D",
+      "seed": 42
+    },
+    {
+      "caso": "S3_volume_30101",
+      "metodo": "D",
+      "seed": 73
+    },
+    {
+      "caso": "S3_volume_30101",
+      "metodo": "D",
+      "seed": 2026
+    },
+    {
+      "caso": "S3_volume_30101",
+      "metodo": "E_v2",
+      "seed": 42
+    },
+    {
+      "caso": "S3_volume_30101",
+      "metodo": "E_v2",
+      "seed": 73
+    },
+    {
+      "caso": "S3_volume_30101",
+      "metodo": "E_v2",
+      "seed": 2026
+    },
+    {
+      "caso": "S3_volume_30201",
+      "metodo": "C",
+      "seed": 42
+    },
+    {
+      "caso": "S3_volume_30201",
+      "metodo": "C",
+      "seed": 73
+    },
+    {
+      "caso": "S3_volume_30201",
+      "metodo": "C",
+      "seed": 2026
+    },
+    {
+      "caso": "S3_volume_30201",
+      "metodo": "D",
+      "seed": 42
+    },
+    {
+      "caso": "S3_volume_30201",
+      "metodo": "D",
+      "seed": 73
+    },
+    {
+      "caso": "S3_volume_30201",
+      "metodo": "D",
+      "seed": 2026
+    },
+    {
+      "caso": "S3_volume_30201",
+      "metodo": "E_v2",
+      "seed": 42
+    },
+    {
+      "caso": "S3_volume_30201",
+      "metodo": "E_v2",
+      "seed": 73
+    },
+    {
+      "caso": "S3_volume_30201",
+      "metodo": "E_v2",
+      "seed": 2026
+    }
+  ]
+}

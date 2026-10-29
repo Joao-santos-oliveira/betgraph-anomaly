@@ -1,0 +1,47 @@
+/home/pichau/TrabalhoFinalAEDS/betgraph-anomaly/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+test_outlier_repetibilidade_e_desempate (test_baseline.BaselineTest.test_outlier_repetibilidade_e_desempate) ... ok
+test_features_nao_usam_arestas_ocultas (test_experimento_gnn.ExperimentoTest.test_features_nao_usam_arestas_ocultas) ... ok
+test_mlp_independente_das_arestas (test_experimento_gnn.ExperimentoTest.test_mlp_independente_das_arestas) ... ok
+test_protocolo_rankings_e_seeds (test_experimento_gnn.ExperimentoTest.test_protocolo_rankings_e_seeds) ... ok
+test_divisao_e_gradientes (test_gnn.GNNTest.test_divisao_e_gradientes) ... ok
+test_corrupcao_reprodutivel_preserva_inativos_e_gradientes (test_gnn_v2.V2Test.test_corrupcao_reprodutivel_preserva_inativos_e_gradientes) ... ok
+test_features_nao_usam_particoes_reservadas (test_gnn_v2.V2Test.test_features_nao_usam_particoes_reservadas) ... ok
+test_hibrido_limites_e_reducao_ao_score_direto (test_gnn_v2.V2Test.test_hibrido_limites_e_reducao_ao_score_direto) ... ok
+test_treino_contrastivo_checkpoint_reproduzivel (test_gnn_v2.V2Test.test_treino_contrastivo_checkpoint_reproduzivel) ... ok
+test_corrupted_reserved_or_outcome_is_rejected (test_gnn_v3.V3.test_corrupted_reserved_or_outcome_is_rejected) ... ok
+test_edges_and_outcomes_affect_gnn_but_not_mlp (test_gnn_v3.V3.test_edges_and_outcomes_affect_gnn_but_not_mlp) ... ok
+test_evaluation_shared_and_no_test_forward (test_gnn_v3.V3.test_evaluation_shared_and_no_test_forward) ... ok
+test_interventions_preserve_degrees_reserved_and_attributes (test_gnn_v3.V3.test_interventions_preserve_degrees_reserved_and_attributes) ... ok
+test_manual_and_metric_universes (test_gnn_v3.V3.test_manual_and_metric_universes) ... ok
+test_mixed_timestamp_formats (test_gnn_v3.V3.test_mixed_timestamp_formats) ... ok
+test_no_flags_or_reserved_attributes_in_inputs (test_gnn_v3.V3.test_no_flags_or_reserved_attributes_in_inputs) ... ok
+test_training_checkpoint_pipeline_on_tiny_fixture (test_gnn_v3.V3.test_training_checkpoint_pipeline_on_tiny_fixture) ... ok
+test_contagem_expectativa_simetria_e_isolados (test_investigacao_anomalias.RelacionalTest.test_contagem_expectativa_simetria_e_isolados) ... ok
+test_gnn_media_nao_distingue_motivos_com_features_constantes (test_investigacao_anomalias.RelacionalTest.test_gnn_media_nao_distingue_motivos_com_features_constantes) ... ok
+test_invariancia_ordem_indices_e_blocos (test_investigacao_anomalias.RelacionalTest.test_invariancia_ordem_indices_e_blocos) ... ok
+test_rejeita_duplicatas_e_endpoints (test_investigacao_anomalias.RelacionalTest.test_rejeita_duplicatas_e_endpoints) ... ok
+test_avaliacao_scores_empates_universo_e_delta (test_piloto_sintetico.InjectionTest.test_avaliacao_scores_empates_universo_e_delta) ... ok
+test_features_nao_usam_ocultas_e_rotulos (test_piloto_sintetico.InjectionTest.test_features_nao_usam_ocultas_e_rotulos) ... ok
+test_inviabilidade_nao_relaxa_cenario (test_piloto_sintetico.InjectionTest.test_inviabilidade_nao_relaxa_cenario) ... ok
+test_ponta_a_ponta_sem_intervencao_e_tres_metodos (test_piloto_sintetico.InjectionTest.test_ponta_a_ponta_sem_intervencao_e_tres_metodos) ... ok
+test_rejeita_csv_desalinhado (test_piloto_sintetico.InjectionTest.test_rejeita_csv_desalinhado) ... ok
+test_trocas_reproduziveis_blocos_e_particoes (test_piloto_sintetico.InjectionTest.test_trocas_reproduziveis_blocos_e_particoes) ... ok
+test_entrada_ausente_e_destino_existente (test_piloto_sintetico.ProtocolTest.test_entrada_ausente_e_destino_existente) ... ok
+test_hash_detecta_alteracao (test_piloto_sintetico.ProtocolTest.test_hash_detecta_alteracao) ... ok
+test_schema_e_seeds (test_piloto_sintetico.ProtocolTest.test_schema_e_seeds) ... ok
+test_exclui_caso_12694_e_aceita_limite_exato (test_piloto_sintetico_v2.EligibilityV2Test.test_exclui_caso_12694_e_aceita_limite_exato) ... ok
+test_integracao_v2_reproduzivel_com_invariantes (test_piloto_sintetico_v2.EligibilityV2Test.test_integracao_v2_reproduzivel_com_invariantes) ... ok
+test_preserva_filtros_de_grau_e_concentracao (test_piloto_sintetico_v2.EligibilityV2Test.test_preserva_filtros_de_grau_e_concentracao) ... ok
+test_v2_muda_apenas_versao_do_protocolo (test_piloto_sintetico_v2.EligibilityV2Test.test_v2_muda_apenas_versao_do_protocolo) ... ok
+test_imputacao_indices_reversas_e_reuso (test_preparacao.PreparacaoTest.test_imputacao_indices_reversas_e_reuso) ... ok
+test_negativos (test_treinar_gnn.TreinoTest.test_negativos) ... ok
+test_treino_reproduzivel_e_checkpoint (test_treinar_gnn.TreinoTest.test_treino_reproduzivel_e_checkpoint) ... ok
+test_nulo_preserva_particoes_e_graus (test_validacao_ampliada.AmpliadaTest.test_nulo_preserva_particoes_e_graus) ... ok
+test_pareamento_sem_reposicao_e_sem_forcar_controle (test_validacao_ampliada.AmpliadaTest.test_pareamento_sem_reposicao_e_sem_forcar_controle) ... ok
+test_volume_altera_so_contexto_e_mantem_alvos (test_validacao_ampliada.AmpliadaTest.test_volume_altera_so_contexto_e_mantem_alvos) ... ok
+
+----------------------------------------------------------------------
+Ran 40 tests in 16.164s
+
+OK

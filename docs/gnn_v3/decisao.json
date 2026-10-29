@@ -1,0 +1,152 @@
+{
+  "utilidade_demonstrada": false,
+  "resultado": "negativo",
+  "checks": [
+    {
+      "condicao": "S1_supera_A_B",
+      "realizacao": 30101,
+      "seed": 42,
+      "passou": false
+    },
+    {
+      "condicao": "S2_zero_decoys_top100",
+      "realizacao": 30101,
+      "seed": 42,
+      "passou": true
+    },
+    {
+      "condicao": "S3_estrutura_sem_piora_relevante",
+      "realizacao": 30101,
+      "seed": 42,
+      "passou": false
+    },
+    {
+      "condicao": "S3_volume_sem_piora_relevante",
+      "realizacao": 30101,
+      "seed": 42,
+      "passou": false
+    },
+    {
+      "condicao": "S1_supera_A_B",
+      "realizacao": 30101,
+      "seed": 73,
+      "passou": false
+    },
+    {
+      "condicao": "S2_zero_decoys_top100",
+      "realizacao": 30101,
+      "seed": 73,
+      "passou": true
+    },
+    {
+      "condicao": "S3_estrutura_sem_piora_relevante",
+      "realizacao": 30101,
+      "seed": 73,
+      "passou": false
+    },
+    {
+      "condicao": "S3_volume_sem_piora_relevante",
+      "realizacao": 30101,
+      "seed": 73,
+      "passou": false
+    },
+    {
+      "condicao": "S1_supera_A_B",
+      "realizacao": 30101,
+      "seed": 2026,
+      "passou": false
+    },
+    {
+      "condicao": "S2_zero_decoys_top100",
+      "realizacao": 30101,
+      "seed": 2026,
+      "passou": true
+    },
+    {
+      "condicao": "S3_estrutura_sem_piora_relevante",
+      "realizacao": 30101,
+      "seed": 2026,
+      "passou": false
+    },
+    {
+      "condicao": "S3_volume_sem_piora_relevante",
+      "realizacao": 30101,
+      "seed": 2026,
+      "passou": false
+    },
+    {
+      "condicao": "S1_supera_A_B",
+      "realizacao": 30201,
+      "seed": 42,
+      "passou": false
+    },
+    {
+      "condicao": "S2_zero_decoys_top100",
+      "realizacao": 30201,
+      "seed": 42,
+      "passou": true
+    },
+    {
+      "condicao": "S3_estrutura_sem_piora_relevante",
+      "realizacao": 30201,
+      "seed": 42,
+      "passou": false
+    },
+    {
+      "condicao": "S3_volume_sem_piora_relevante",
+      "realizacao": 30201,
+      "seed": 42,
+      "passou": false
+    },
+    {
+      "condicao": "S1_supera_A_B",
+      "realizacao": 30201,
+      "seed": 73,
+      "passou": false
+    },
+    {
+      "condicao": "S2_zero_decoys_top100",
+      "realizacao": 30201,
+      "seed": 73,
+      "passou": true
+    },
+    {
+      "condicao": "S3_estrutura_sem_piora_relevante",
+      "realizacao": 30201,
+      "seed": 73,
+      "passou": false
+    },
+    {
+      "condicao": "S3_volume_sem_piora_relevante",
+      "realizacao": 30201,
+      "seed": 73,
+      "passou": false
+    },
+    {
+      "condicao": "S1_supera_A_B",
+      "realizacao": 30201,
+      "seed": 2026,
+      "passou": false
+    },
+    {
+      "condicao": "S2_zero_decoys_top100",
+      "realizacao": 30201,
+      "seed": 2026,
+      "passou": true
+    },
+    {
+      "condicao": "S3_estrutura_sem_piora_relevante",
+      "realizacao": 30201,
+      "seed": 2026,
+      "passou": false
+    },
+    {
+      "condicao": "S3_volume_sem_piora_relevante",
+      "realizacao": 30201,
+      "seed": 2026,
+      "passou": false
+    }
+  ],
+  "teste_avaliado": false,
+  "realizacoes_reservadas_abertas": false
+}

@@ -1,0 +1,98 @@
+{
+  "realizacoes": [
+    {
+      "graus_preservados": true,
+      "reservados_intactos": true,
+      "outcomes_coerentes": true,
+      "linhas_antes": 75327,
+      "linhas_depois": 75212,
+      "caso": "S1_30101",
+      "alvos": 50,
+      "doadoras": 154,
+      "tickets_alterados_coerentes": true,
+      "linhas_atributos_alteradas": 167
+    },
+    {
+      "graus_preservados": true,
+      "reservados_intactos": true,
+      "outcomes_coerentes": true,
+      "linhas_antes": 75327,
+      "linhas_depois": 75192,
+      "caso": "S1_30201",
+      "alvos": 50,
+      "doadoras": 148,
+      "tickets_alterados_coerentes": true,
+      "linhas_atributos_alteradas": 173
+    },
+    {
+      "graus_preservados": true,
+      "reservados_intactos": true,
+      "outcomes_coerentes": true,
+      "linhas_antes": 75327,
+      "linhas_depois": 75140,
+      "caso": "S2_30101",
+      "alvos": 50,
+      "doadoras": 234,
+      "tickets_alterados_coerentes": true,
+      "linhas_atributos_alteradas": 271
+    },
+    {
+      "graus_preservados": true,
+      "reservados_intactos": true,
+      "outcomes_coerentes": true,
+      "linhas_antes": 75327,
+      "linhas_depois": 75124,
+      "caso": "S2_30201",
+      "alvos": 50,
+      "doadoras": 201,
+      "tickets_alterados_coerentes": true,
+      "linhas_atributos_alteradas": 246
+    },
+    {
+      "graus_preservados": true,
+      "reservados_intactos": true,
+      "outcomes_coerentes": true,
+      "linhas_antes": 75327,
+      "linhas_depois": 75327,
+      "caso": "S3_estrutura_30101",
+      "alvos": 50,
+      "doadoras": 237
+    },
+    {
+      "graus_preservados": true,
+      "reservados_intactos": true,
+      "outcomes_coerentes": true,
+      "linhas_antes": 75327,
+      "linhas_depois": 75327,
+      "caso": "S3_estrutura_30201",
+      "alvos": 50,
+      "doadoras": 201
+    },
+    {
+      "graus_preservados": true,
+      "reservados_intactos": true,
+      "outcomes_coerentes": true,
+      "linhas_antes": 75327,
+      "linhas_depois": 75327,
+      "caso": "S3_volume_30101",
+      "alvos": 50,
+      "doadoras": 0,
+      "tickets_alterados_coerentes": true,
+      "linhas_atributos_alteradas": 5777
+    },
+    {
+      "graus_preservados": true,
+      "reservados_intactos": true,
+      "outcomes_coerentes": true,
+      "linhas_antes": 75327,
+      "linhas_depois": 75327,
+      "caso": "S3_volume_30201",
+      "alvos": 50,
+      "doadoras": 0,
+      "tickets_alterados_coerentes": true,
+      "linhas_atributos_alteradas": 945
+    }
+  ],
+  "teste_avaliado": false,
+  "realizacoes_reservadas_abertas": false
+}

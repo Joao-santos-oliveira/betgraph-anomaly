@@ -1,0 +1,15 @@
+/home/pichau/TrabalhoFinalAEDS/betgraph-anomaly/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+test_corrupted_reserved_or_outcome_is_rejected (test_gnn_v3.V3.test_corrupted_reserved_or_outcome_is_rejected) ... ok
+test_edges_and_outcomes_affect_gnn_but_not_mlp (test_gnn_v3.V3.test_edges_and_outcomes_affect_gnn_but_not_mlp) ... ok
+test_evaluation_shared_and_no_test_forward (test_gnn_v3.V3.test_evaluation_shared_and_no_test_forward) ... ok
+test_interventions_preserve_degrees_reserved_and_attributes (test_gnn_v3.V3.test_interventions_preserve_degrees_reserved_and_attributes) ... ok
+test_manual_and_metric_universes (test_gnn_v3.V3.test_manual_and_metric_universes) ... ok
+test_mixed_timestamp_formats (test_gnn_v3.V3.test_mixed_timestamp_formats) ... ok
+test_no_flags_or_reserved_attributes_in_inputs (test_gnn_v3.V3.test_no_flags_or_reserved_attributes_in_inputs) ... ok
+test_training_checkpoint_pipeline_on_tiny_fixture (test_gnn_v3.V3.test_training_checkpoint_pipeline_on_tiny_fixture) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 6.104s
+
+OK
