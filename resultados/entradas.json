@@ -1,0 +1,16 @@
+{
+  "brutos": {
+    "betgraph_arestas_16set.csv": "9724e0fa7878f82f6836feeec234099f355efeb838f6e1f1006ccfea78242102",
+    "betgraph_nos_evento_16set.csv": "bb97d2b009762fe3448a501eb2990753a92e89b11371f339a04213c45dfa00e0"
+  },
+  "tratados": {
+    "betgraph_wallets_16set_nos.csv": "54068ca834bd06d1e41614ea2e3678e7e49aa7c97bd88ba8e262f00855b54022",
+    "betgraph_nos_evento_16set_final.csv": "b4ed0ba834d04e7f3577c6f1c864505c9bcb6079888acb9de4db0d1d9341ce7f",
+    "betgraph_arestas_16set_final.csv": "00c60a7dbd4a33056ef9a8525965d5dfc6aef139a778edec63e59c688078c657"
+  },
+  "coorte_csv": {
+    "user.csv": "09c124cec39c8025923d2f0cd852bb5afecf61da6e3ae3abb5f416a1367a125f",
+    "event.csv": "cec3c8ec175155b224f20e94a1228c04aa94a08439d5e830226278cf293f7816",
+    "edge.csv": "60f73a27fec494bf3768e0f5ff1a69ad4d5cd4973e3cf6e8aaba62db747b3326"
+  }
+}
