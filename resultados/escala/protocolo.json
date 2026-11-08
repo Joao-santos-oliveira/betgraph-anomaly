@@ -1,0 +1,17 @@
+{
+  "dia": "2026-09-16",
+  "carteiras": "todas",
+  "seed_divisao": 42,
+  "contexto_fracao": 0.6,
+  "arvores_if": 100,
+  "seed_if": 42,
+  "parceiros": 3,
+  "bloco": 256,
+  "cpu_threads": 2,
+  "limite_rss_gib": 5,
+  "limite_segundos_por_estagio": 900,
+  "comparar_top": [
+    50,
+    100
+  ]
+}

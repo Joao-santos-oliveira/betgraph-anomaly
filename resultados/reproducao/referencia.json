@@ -1,0 +1,16 @@
+{
+  "entradas_sha256": {
+    "betgraph_wallets_16set_nos.csv": "e258b3239952e8c70a0d75849ff89230b83cc47ccf93f2fe2d8c750b244d18a5",
+    "betgraph_nos_evento_16set_final.csv": "95c1a0dac85fc235f1c0d106f5ca18c497097653313a7511b879c3d7dbd8c115",
+    "betgraph_arestas_16set_final.csv": "65d75ed674cf2ab042b377ed344d21f101e454a7d2569355cf74b1a25e5cfc04"
+  },
+  "carteiras": 256,
+  "mercados": 3084,
+  "linhas": 5228,
+  "pares": 3734,
+  "pares_contexto": 2241,
+  "ordem_sha256": {
+    "relacional": "9b833796484352304f997cb433ede62e8cf8ed0fdae3be2d0db71580e44f4086",
+    "floresta": "e99ecf6f6c2140fe85d8a87b9b609c36f0f90f20688a22dfe51c9bc4701ae026"
+  }
+}
