@@ -39,6 +39,24 @@ Cada chamada cria uma pasta exclusiva em `data/execucoes/` por padrão. Dentro d
 | `make reproduzir` | Partir dos CSVs brutos e executar a análise principal desta branch |
 | `make preparar` | Regenerar os tratados, verificar os CSVs da segunda coorte e preparar as intervenções, até a entrada dos treinos |
 
+O comando específico desta versão é **`make hibrido`**. Para aplicar IsolationForest aos embeddings desses mesmos encoders, use **`make embeddings-if`**. Nos alvos de intervenção, `DETECTOR=if` seleciona essa variante para os encoders. As saídas ficam em diretórios independentes com o detector registrado em `execucao.json`.
+
+## Comparação opcional no dia completo ou em 5.000 carteiras
+
+O alvo histórico `make reproduzir` mantém a rodada publicada. Para o novo benchmark, os comandos abaixo usam as 27.039 carteiras por padrão. Escolha `ESCOPO=5000` para a mesma coorte usada na comparação experimental. Todos aceitam `BRUTOS` e `DESTINO`.
+
+| Comando | Execução |
+|---|---|
+| `make redes` | GNN e controle MLP desta branch (híbrido contrastivo com features estruturais) |
+| `make baselines` | Relacional direto e IsolationForest sobre os atributos de contexto |
+| `make comparar` | Os quatro métodos sobre o mesmo grafo |
+| `make anomalias-volume` | Volume de contexto multiplicado por dez para 50 carteiras elegíveis |
+| `make anomalias-estrutura` | Coparticipação de 60% em dez mercados para 50 carteiras, preservando graus |
+
+Para as intervenções, escolha `GRUPO=todos` (padrão), `redes` ou `baselines`. A seleção usa `INJECAO=40101` ou `40201`, como na main. As redes usam seeds 42, 73 e 2026 e até 100 épocas. Um teste de instalação pode usar `EPOCAS=1`. Compare execuções entre branches com a mesma coorte, seed de injeção e cenário. A prevalência de 50 alvos varia conforme o universo escolhido.
+
+Cada execução produz rankings e `custos.csv` (tempo do método e pico RSS do processo). Nos cenários artificiais, consulte também `rotulos.csv`, `injecao.json` e `metricas.csv` (AP, AUC, precision@50, recall@100 e alvos recuperados). A preparação é compartilhada e antecede os tempos individuais. Os novos alvos usam os scores principais da branch; as variantes secundárias e os controles específicos da rodada original continuam em `make reproduzir`.
+
 ## Resultados da GNN v2
 
 A execução integral prepara a segunda coorte disjunta de 5.000 carteiras, gera as intervenções, realiza 126 treinos e compara rankings em estrutura e volume. O híbrido contrastivo recuperou 31,67/50 alvos em média no top 100 com coparticipação de 60%, diante de 32/50 do detector direto. O overlap de 94–98 carteiras indica que o híbrido reproduz em grande parte a ordenação estrutural.
