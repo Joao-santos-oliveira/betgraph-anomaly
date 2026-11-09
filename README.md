@@ -6,6 +6,24 @@ Estudo de priorização de carteiras no Polymarket em **16 de setembro de 2026**
 
 **Branch principal.** Aqui estão as referências relacional e de atributos, o benchmark do dia completo e a revisão descritiva. As branches [GNN v2](https://github.com/Joao-santos-oliveira/betgraph-anomaly/tree/feat/gnn-v2-anomalias) e [GNN v3](https://github.com/Joao-santos-oliveira/betgraph-anomaly/tree/feat/gnn-v3-anomalias) têm o mesmo roteiro de instalação e seus próprios resultados.
 
+## Testar os modelos e as anomalias na main
+
+Na raiz do clone, instale o ambiente com `make ambiente` e coloque os dois brutos em `data/raw/`, conforme indicado abaixo. Os comandos desta tabela usam **todas as 27.039 carteiras** por padrão. Acrescente **`ESCOPO=5000`** a qualquer linha para usar a segunda coorte de 5.000 carteiras da comparação v2/v3.
+
+| Comando | Modelos e dados |
+|---|---|
+| `make baselines` | Relacional e IsolationForest sobre atributos, no contexto original |
+| `make redes` | GNN inicial + IsolationForest e MLP + IsolationForest, no contexto original |
+| `make comparar` | Os quatro métodos no mesmo contexto |
+| `make anomalias-volume` | Os quatro métodos após multiplicar por dez o volume das arestas de contexto de 50 carteiras elegíveis |
+| `make anomalias-estrutura` | Os quatro métodos após concentrar pelo menos 60% das conexões de 50 carteiras elegíveis em dez mercados, preservando graus |
+
+Exemplos: `make anomalias-volume GRUPO=redes` treina GNN e MLP no dia completo alterado. `make anomalias-estrutura ESCOPO=5000 GRUPO=baselines` testa somente os dois baselines na amostra. Os atalhos `make comparar-5000`, `make redes-5000` e `make baselines-5000` continuam disponíveis. `BRUTOS` e `DESTINO` permitem escolher pastas. Cada chamada cria uma execução isolada.
+
+**Protocolo.** O universo completo usa a divisão histórica com seed 42 e 137.444 pares de contexto; a amostra usa a divisão 9103. Para cada intervenção, todos os métodos recebem a mesma cópia, os mesmos alvos e as mesmas partições. Os atributos de contexto são recalculados após a intervenção. A injeção estrutural usa as restrições e o limite de tentativas do piloto v2; se for inviável, a execução grava o diagnóstico e termina. A seleção dos alvos usa `INJECAO=40101` por padrão. Para uma segunda realização predefinida, repita com `INJECAO=40201`. As redes usam seeds 42, 73 e 2026 e até 100 épocas. Para conferir a instalação, `EPOCAS=1` permite um teste curto. Registre o orçamento usado ao comparar métodos.
+
+**Saídas.** Abra `resultados/` no caminho impresso no terminal. Cada método gera um ranking completo por seed; `coorte.json` identifica o universo e os pares de contexto, e `custos.csv` registra tempo e pico de memória por execução. Nos cenários artificiais, `rotulos.csv` identifica alvos/doadoras e `metricas.csv` reúne os resultados. Para o universo completo, consulte `recovered_100`, `recall_100`, `precision_50`, `ap` e `auc`. Os rótulos entram na avaliação após o ranking. Como o número de alvos é fixo, a prevalência muda de 1% na amostra para aproximadamente 0,185% no dia completo. Esses cenários são novas realizações de estrutura e volume da main. A rodada histórica da v3 tem também intervenções combinadas e decoys próprias.
+
 ## Reproduzir a partir dos CSVs brutos
 
 Use **um clone Git com histórico**, Linux ou Ubuntu no WSL, GNU Make, Python 3.12 com suporte a venv e acesso à internet para instalar dependências. As revisões históricas usadas pelo executor estão no histórico Git das branches. Em um clone raso, obtenha primeiro o histórico completo. A primeira execução exige somente os **dois arquivos de entrada** abaixo. Os mapeamentos de IDs persistentes acompanham o código.

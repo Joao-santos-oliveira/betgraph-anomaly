@@ -133,6 +133,42 @@ def publicar_saidas(repo, versao, parcial, historico):
         (dest/nome).symlink_to(relpath(caminho,dest))
 
 
+def executar_amostra(repo, grupo, manifest, escopo, cenario, injecao, epocas):
+    import csv
+    entrada = repo/'data/processed/validacao_ampliada_v1/novo'
+    if escopo == '5000':
+        python(repo, ROOT/'scripts/coorte.py', repo)
+        conferir(entrada, manifest['coorte_csv'])
+    else:
+        python(repo,'src/preparar_features.py','--sample-size','0','--output',entrada)
+        python(repo,'src/construir_hetero.py','--input',entrada)
+        python(repo,'src/preparar_gnn.py','--input',entrada,'--output',entrada,'--seed','42')
+    runner = ROOT/'scripts/modelos_amostra.py'
+    python(repo, runner, 'preparar','--escopo',escopo,'--cenario',cenario,'--injecao',injecao)
+    custos = []
+    metricas = []
+    for modelo in ('relacional', 'floresta', 'gnn', 'mlp'):
+        neural = modelo in ('gnn', 'mlp')
+        if (grupo == 'redes' and not neural) or (grupo == 'baselines' and neural):
+            continue
+        for seed in ((42, 73, 2026) if neural else (42,)):
+            python(repo, runner, modelo, '--seed', seed, '--epocas', epocas)
+            arquivo = repo.parent/'resultados'/f'{modelo}_{seed}'/'custos.json'
+            custos.append(json.loads(arquivo.read_text()))
+            if cenario != 'original':
+                with arquivo.with_name('metricas.csv').open() as stream:
+                    metricas.extend(csv.DictReader(stream))
+    if metricas:
+        with (repo.parent/'resultados/metricas.csv').open('w', newline='') as stream:
+            writer = csv.DictWriter(stream, fieldnames=metricas[0].keys())
+            writer.writeheader()
+            writer.writerows(metricas)
+    with (repo.parent/'resultados/custos.csv').open('w', newline='') as stream:
+        writer = csv.DictWriter(stream, fieldnames=list(dict.fromkeys(k for row in custos for k in row)))
+        writer.writeheader()
+        writer.writerows(custos)
+
+
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('versao',choices=BASE)
@@ -140,7 +176,16 @@ def main():
     parser.add_argument('--destino',type=Path,default=ROOT/'data/execucoes')
     parser.add_argument('--historico',action='store_true')
     parser.add_argument('--preparar-apenas',action='store_true')
+    parser.add_argument('--modelos','--amostra-5000', dest='grupo', choices=('baselines','redes','todos'))
+    parser.add_argument('--escopo', choices=('5000','completo'), default='5000')
+    parser.add_argument('--cenario', choices=('original','volume','estrutura'), default='original')
+    parser.add_argument('--injecao', type=int, choices=(40101,40201), default=40101)
+    parser.add_argument('--epocas', type=int, default=100)
     args=parser.parse_args()
+    if args.epocas < 1:
+        parser.error('epocas deve ser positivo')
+    if args.grupo and (args.versao != 'main' or args.historico or args.preparar_apenas):
+        parser.error('--amostra-5000 é exclusivo da execução da main na amostra')
     manifest=json.loads(REFERENCIA.read_text())
     conferir(args.raw,manifest['brutos'])
     args.destino.mkdir(parents=True,exist_ok=True)
@@ -149,7 +194,9 @@ def main():
     print('Execução:',pasta,flush=True)
     preparar_copia(repo,args.versao)
     filtrar(repo,args.raw,manifest)
-    if args.versao=='main':
+    if args.grupo:
+        executar_amostra(repo, args.grupo, manifest, args.escopo, args.cenario, args.injecao, args.epocas)
+    elif args.versao=='main':
         executar_main(repo)
         if args.historico:
             executar_pilotos(repo)
@@ -165,9 +212,14 @@ def main():
             if not args.preparar_apenas:
                 for script in ('executar_paralelo','consolidar','auditar'):
                     python(repo,f'docs/gnn_v2/{script}.py')
-    publicar_saidas(repo,args.versao,args.preparar_apenas,args.historico)
+    if not args.grupo:
+        publicar_saidas(repo,args.versao,args.preparar_apenas,args.historico)
     resumo={'versao':args.versao,'base':BASE[args.versao],'historico':args.historico,
             'preparar_apenas':args.preparar_apenas,'status':'concluido','entradas':manifest['brutos']}
+    if args.grupo:
+        resumo.update(grupo=args.grupo, escopo=args.escopo, cenario=args.cenario,
+                      seed_injecao=args.injecao if args.cenario!='original' else None, epocas_max=args.epocas)
+        resumo['runner_sha256'] = digest(ROOT/'scripts/modelos_amostra.py')
     resumo['checkout'] = subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip()
     resumo['python'] = sys.version
     resumo['pipeline_sha256'] = digest(Path(__file__))
