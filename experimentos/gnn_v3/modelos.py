@@ -44,7 +44,7 @@ def auxiliary(model,z,zc,t,tc,idx):
     real=model.edge_logits(z,t,idx);fake=model.edge_logits(zc,tc,idx)
     return F.binary_cross_entropy_with_logits(torch.cat([real,fake]),torch.cat([torch.ones_like(real),torch.zeros_like(fake)]))
 
-def train(base,x,table,out,kind,seed):
+def train(base,x,table,out,kind,seed,epochs=60):
     out.mkdir(parents=True,exist_ok=False);torch.set_num_threads(2);torch.manual_seed(seed);torch.use_deterministic_algorithms(True)
     dims={k:v.shape[1] for k,v in x.items()};model=Encoder(dims,kind);opt=torch.optim.Adam(model.parameters(),lr=.001)
     vp,vl,forbidden=evaluation_examples(base);torch.save({'pairs':vp,'labels':vl},out/'validacao.pt')
@@ -59,7 +59,7 @@ def train(base,x,table,out,kind,seed):
     def save(epoch,val):torch.save({'model_state':model.state_dict(),'dims':dims,'kind':kind,'seed':seed,'epoch':epoch,'validation':val},out/'melhor_modelo.pt')
     started=time.perf_counter();best=validation();save(0,best);best_epoch=0;stale=0;history=[];rng=np.random.default_rng(42)
     nu,ne=x['user'].shape[0],x['event'].shape[0]
-    for epoch in range(1,61):
+    for epoch in range(1,epochs+1):
         model.train();opt.zero_grad(set_to_none=True)
         negative=amostrar_negativos(nu,ne,base['train_positive'].shape[1],forbidden,rng)
         pairs,labels=exemplos(base['train_positive'],negative)

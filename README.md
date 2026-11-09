@@ -39,6 +39,26 @@ Cada chamada cria uma pasta exclusiva em `data/execucoes/` por padrão. Dentro d
 | `make reproduzir` | Partir dos CSVs brutos e executar a análise principal desta branch |
 | `make preparar` | Regenerar os tratados, verificar os CSVs da segunda coorte e preparar as intervenções, até a entrada dos treinos |
 
+O comando específico desta versão é **`make pares-arestas`**. Para aplicar IsolationForest aos embeddings desses mesmos encoders, use **`make embeddings-if`**. Nos alvos de intervenção, `DETECTOR=if` seleciona essa variante para os encoders. As saídas ficam em diretórios independentes com o detector registrado em `execucao.json`.
+
+## Comparação opcional no dia completo ou em 5.000 carteiras
+
+O alvo histórico `make reproduzir` mantém a rodada publicada. Para o novo benchmark, os comandos abaixo usam as 27.039 carteiras por padrão. Escolha `ESCOPO=5000` para a mesma coorte usada na comparação experimental. Todos aceitam `BRUTOS` e `DESTINO`.
+
+| Comando | Execução |
+|---|---|
+| `make redes` | GNN e controle MLP desta branch (modelo de arestas C e seu controle D, com similaridade entre pares) |
+| `make baselines` | Relacional direto e IsolationForest sobre os atributos de contexto |
+| `make comparar` | Os quatro métodos sobre o mesmo grafo |
+| `make anomalias-volume` | Volume de contexto multiplicado por dez para 50 carteiras elegíveis |
+| `make anomalias-estrutura` | Coparticipação de 60% em dez mercados para 50 carteiras, preservando graus |
+
+Na v3, `make anomalias-combinadas` aplica o padrão S1 e `make decoys` aplica o controle S2. Use `SEED_S1_S2=30101` ou `30201` para esses dois alvos. Em S2 a recuperação mede priorização indesejada.
+
+Para as intervenções, escolha `GRUPO=todos` (padrão), `redes` ou `baselines`. Nos cenários simples de estrutura e volume, a seleção usa `INJECAO=40101` ou `40201`, como na main. As redes usam seeds 42, 73 e 2026 e até 60 épocas. Um teste de instalação pode usar `EPOCAS=1`. Compare execuções entre branches com a mesma coorte, seed de injeção e cenário. A prevalência de 50 alvos varia conforme o universo escolhido.
+
+Cada execução produz rankings e `custos.csv` (tempo do método e pico RSS do processo). Nos cenários artificiais, consulte também `rotulos.csv`, `injecao.json` e `metricas.csv` (AP, AUC, precision@50, recall@100 e alvos recuperados). A preparação é compartilhada e antecede os tempos individuais. Os novos alvos usam os scores principais da branch; as variantes secundárias e os controles específicos da rodada original continuam em `make reproduzir`.
+
 ## Resultados da GNN v3
 
 A execução integral prepara a segunda coorte disjunta de 5.000 carteiras e oito intervenções. As três seeds de encoder, três modelos e nove grafos correspondem a 81 treinos. A GNN com atributos de aresta recuperou 0/50 no top 100 em S1 combinado nas seis combinações. Em volume ×10, sua variante secundária com IsolationForest recuperou 3,83/50 contra 9/50 do baseline de atributos. O teste de decoys e o controle MLP ajudam a interpretar o papel das mensagens.
