@@ -174,7 +174,9 @@ def main(argv=None):
     parser.add_argument('--saida', type=Path, default=ROOT / 'benchmark')
     parser.add_argument('--trabalho', type=Path, default=ROOT / 'data' / 'benchmark',
                         help='worktrees e execuções; precisa estar no mesmo sistema de arquivos do repositório')
-    parser.add_argument('--manter-execucoes', action='store_true')
+    parser.add_argument('--manter-execucoes', action='store_true',
+                        help='guarda a execução da v3 da última repetição (entrada dos subgrafos); as demais são '
+                             'apagadas para economizar disco')
     args = parser.parse_args(argv)
     if not hasattr(os, 'wait4'):
         parser.error('os.wait4 indisponível: rode no Linux ou no WSL')
@@ -199,7 +201,7 @@ def main(argv=None):
                 print(f'Repetição {r}/{args.repeticoes}: {branch} ({COMMITS[branch]}), {epocas[branch]} épocas', flush=True)
                 pasta, h = executar(branch, worktrees[branch], raw, destino, epocas[branch], r, registros)
                 hashes[f'{branch}_r{r}'] = h
-                if not args.manter_execucoes:
+                if not (args.manter_execucoes and branch == 'v3' and r == args.repeticoes):
                     shutil.rmtree(pasta)
     finally:
         for caminho in worktrees.values():
