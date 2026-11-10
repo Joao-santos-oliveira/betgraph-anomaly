@@ -1,0 +1,1041 @@
+{
+  "selecao": {
+    "execucao": "v3-puetwvs5",
+    "universo": {
+      "carteiras": 5000,
+      "pares_contexto": 28909
+    },
+    "regra": {
+      "caso": "posição 1 do ranking relacional (relacional_42)",
+      "controle": "fora do top 100; vizinho mais próximo em z de log(1+grau) e log(1+volume) no contexto; caliper 0.75",
+      "corte": "até 10 mercados da focal (compartilhados com o parceiro primeiro, depois por volume); focal, parceiro e até 5 carteiras com ≥2 mercados desenhados"
+    },
+    "pareamento": {
+      "distancia_z": 0.12244665639832565,
+      "delta_grau_z": 0.07478325529516727,
+      "delta_volume_z": -0.09695694090980522,
+      "candidatos_no_caliper": 31,
+      "caliper": 0.75
+    },
+    "resumo": {
+      "caso": {
+        "focal": 4005,
+        "parceiro": 17525,
+        "carteiras": [
+          4005,
+          17525,
+          67,
+          13447,
+          14543,
+          16887,
+          18817
+        ],
+        "mercados": [
+          231,
+          189,
+          251,
+          318,
+          282,
+          449,
+          97,
+          1088,
+          1274,
+          1074
+        ],
+        "compartilhados_com_parceiro": 33,
+        "omitidos": {
+          "mercados_da_focal": 60,
+          "carteiras_que_tocam_os_mercados": 226,
+          "mercados_totais_da_focal": 70
+        },
+        "posicao_focal": 1,
+        "score_focal": 22.747143505250204,
+        "grau_focal": 70,
+        "volume_focal_usd": 14989.710975
+      },
+      "controle": {
+        "focal": 2084,
+        "parceiro": 316,
+        "carteiras": [
+          2084,
+          316,
+          67,
+          633,
+          34,
+          947,
+          1438
+        ],
+        "mercados": [
+          4,
+          100,
+          247,
+          135,
+          149,
+          62,
+          105,
+          151,
+          308,
+          18
+        ],
+        "compartilhados_com_parceiro": 10,
+        "omitidos": {
+          "mercados_da_focal": 65,
+          "carteiras_que_tocam_os_mercados": 290,
+          "mercados_totais_da_focal": 75
+        },
+        "posicao_focal": 909,
+        "score_focal": 3.8878956138266125,
+        "grau_focal": 75,
+        "volume_focal_usd": 11443.286982
+      }
+    }
+  },
+  "paineis": {
+    "caso": {
+      "focal": 4005,
+      "parceiro": 17525,
+      "carteiras": [
+        4005,
+        17525,
+        67,
+        13447,
+        14543,
+        16887,
+        18817
+      ],
+      "mercados": [
+        231,
+        189,
+        251,
+        318,
+        282,
+        449,
+        97,
+        1088,
+        1274,
+        1074
+      ],
+      "compartilhados_com_parceiro": 33,
+      "omitidos": {
+        "mercados_da_focal": 60,
+        "carteiras_que_tocam_os_mercados": 226,
+        "mercados_totais_da_focal": 70
+      },
+      "posicao_focal": 1,
+      "score_focal": 22.747143505250204,
+      "grau_focal": 70,
+      "volume_focal_usd": 14989.710975,
+      "carteiras_info": [
+        {
+          "wallet_id": 4005,
+          "posicao": 1,
+          "grau": 70
+        },
+        {
+          "wallet_id": 17525,
+          "posicao": 2,
+          "grau": 52
+        },
+        {
+          "wallet_id": 67,
+          "posicao": 1241,
+          "grau": 569
+        },
+        {
+          "wallet_id": 13447,
+          "posicao": 4,
+          "grau": 63
+        },
+        {
+          "wallet_id": 14543,
+          "posicao": 10,
+          "grau": 278
+        },
+        {
+          "wallet_id": 16887,
+          "posicao": 9,
+          "grau": 300
+        },
+        {
+          "wallet_id": 18817,
+          "posicao": 3,
+          "grau": 66
+        }
+      ],
+      "mercados_info": [
+        {
+          "condition_node_id": 231,
+          "pergunta": "Dota 2: Yellow Submarine vs Two Move (BO3) - European Pro League Group B"
+        },
+        {
+          "condition_node_id": 189,
+          "pergunta": "Counter-Strike: Just Players vs NAVI Junior (BO3) - CCT Europe Series #9 Group Stage"
+        },
+        {
+          "condition_node_id": 251,
+          "pergunta": "Dota 2: Zero Tenacity vs PuckChamp (BO3) - European Pro League Group A"
+        },
+        {
+          "condition_node_id": 318,
+          "pergunta": "Counter-Strike: Just Players vs NAVI Junior - Map 2 Winner"
+        },
+        {
+          "condition_node_id": 282,
+          "pergunta": "Counter-Strike: Nemiga vs Team Nemesis - Map 3 Winner"
+        },
+        {
+          "condition_node_id": 449,
+          "pergunta": "Counter-Strike: QUAZAR vs ex-RUSTEC (BO3) - NODWIN Clutch Series Group Stage"
+        },
+        {
+          "condition_node_id": 97,
+          "pergunta": "Counter-Strike: Nemiga vs Team Nemesis (BO5) - CIS LAN Championship Playoffs"
+        },
+        {
+          "condition_node_id": 1088,
+          "pergunta": "Counter-Strike: Rush vs Grêmio Esports (BO3) - CCT South America Challengers #3 Playoffs"
+        },
+        {
+          "condition_node_id": 1274,
+          "pergunta": "Counter-Strike: Lavked vs Saint Sinners (BO3) - European Pro League Series 9 Group A"
+        },
+        {
+          "condition_node_id": 1074,
+          "pergunta": "Dota 2: Direborn vs Team Nemesis (BO5) - EPL World Series Southeast Asia Playoffs"
+        }
+      ],
+      "ligacoes": [
+        {
+          "wallet_id": 67,
+          "condition_node_id": 97,
+          "volume_usd": 23773.121156,
+          "n_trades": 69,
+          "lados": "Nemiga/Team Nemesis"
+        },
+        {
+          "wallet_id": 67,
+          "condition_node_id": 189,
+          "volume_usd": 29775.716923,
+          "n_trades": 270,
+          "lados": "Just Players/NAVI Junior"
+        },
+        {
+          "wallet_id": 67,
+          "condition_node_id": 251,
+          "volume_usd": 25.505879999999998,
+          "n_trades": 8,
+          "lados": "PuckChamp/Zero Tenacity"
+        },
+        {
+          "wallet_id": 67,
+          "condition_node_id": 318,
+          "volume_usd": 16298.197087,
+          "n_trades": 164,
+          "lados": "Just Players/NAVI Junior"
+        },
+        {
+          "wallet_id": 67,
+          "condition_node_id": 449,
+          "volume_usd": 509.609021,
+          "n_trades": 40,
+          "lados": "QUAZAR/ex-RUSTEC"
+        },
+        {
+          "wallet_id": 67,
+          "condition_node_id": 1088,
+          "volume_usd": 432.309884,
+          "n_trades": 30,
+          "lados": "Grêmio Esports/Rush"
+        },
+        {
+          "wallet_id": 67,
+          "condition_node_id": 1274,
+          "volume_usd": 190.20395100000002,
+          "n_trades": 20,
+          "lados": "Lavked/Saint Sinners"
+        },
+        {
+          "wallet_id": 4005,
+          "condition_node_id": 97,
+          "volume_usd": 607.39069,
+          "n_trades": 91,
+          "lados": "Nemiga/Team Nemesis"
+        },
+        {
+          "wallet_id": 4005,
+          "condition_node_id": 189,
+          "volume_usd": 1048.231176,
+          "n_trades": 137,
+          "lados": "Just Players/NAVI Junior"
+        },
+        {
+          "wallet_id": 4005,
+          "condition_node_id": 231,
+          "volume_usd": 1880.612828,
+          "n_trades": 207,
+          "lados": "Two Move/Yellow Submarine"
+        },
+        {
+          "wallet_id": 4005,
+          "condition_node_id": 251,
+          "volume_usd": 947.615562,
+          "n_trades": 105,
+          "lados": "PuckChamp/Zero Tenacity"
+        },
+        {
+          "wallet_id": 4005,
+          "condition_node_id": 282,
+          "volume_usd": 749.101361,
+          "n_trades": 125,
+          "lados": "Nemiga/Team Nemesis"
+        },
+        {
+          "wallet_id": 4005,
+          "condition_node_id": 318,
+          "volume_usd": 782.7692890000001,
+          "n_trades": 111,
+          "lados": "Just Players/NAVI Junior"
+        },
+        {
+          "wallet_id": 4005,
+          "condition_node_id": 449,
+          "volume_usd": 654.9679450000001,
+          "n_trades": 109,
+          "lados": "QUAZAR/ex-RUSTEC"
+        },
+        {
+          "wallet_id": 4005,
+          "condition_node_id": 1074,
+          "volume_usd": 361.64619000000005,
+          "n_trades": 64,
+          "lados": "Direborn/Team Nemesis"
+        },
+        {
+          "wallet_id": 4005,
+          "condition_node_id": 1088,
+          "volume_usd": 482.417995,
+          "n_trades": 74,
+          "lados": "Grêmio Esports/Rush"
+        },
+        {
+          "wallet_id": 4005,
+          "condition_node_id": 1274,
+          "volume_usd": 408.958265,
+          "n_trades": 57,
+          "lados": "Lavked/Saint Sinners"
+        },
+        {
+          "wallet_id": 13447,
+          "condition_node_id": 189,
+          "volume_usd": 128.896,
+          "n_trades": 28,
+          "lados": "Just Players/NAVI Junior"
+        },
+        {
+          "wallet_id": 13447,
+          "condition_node_id": 231,
+          "volume_usd": 22.9375,
+          "n_trades": 5,
+          "lados": "Two Move/Yellow Submarine"
+        },
+        {
+          "wallet_id": 13447,
+          "condition_node_id": 251,
+          "volume_usd": 20.1,
+          "n_trades": 5,
+          "lados": "PuckChamp/Zero Tenacity"
+        },
+        {
+          "wallet_id": 13447,
+          "condition_node_id": 318,
+          "volume_usd": 67.1,
+          "n_trades": 15,
+          "lados": "Just Players/NAVI Junior"
+        },
+        {
+          "wallet_id": 13447,
+          "condition_node_id": 1074,
+          "volume_usd": 36.705405,
+          "n_trades": 10,
+          "lados": "Direborn/Team Nemesis"
+        },
+        {
+          "wallet_id": 13447,
+          "condition_node_id": 1088,
+          "volume_usd": 46.568639,
+          "n_trades": 12,
+          "lados": "Grêmio Esports/Rush"
+        },
+        {
+          "wallet_id": 13447,
+          "condition_node_id": 1274,
+          "volume_usd": 54.1,
+          "n_trades": 12,
+          "lados": "Lavked/Saint Sinners"
+        },
+        {
+          "wallet_id": 14543,
+          "condition_node_id": 97,
+          "volume_usd": 94.90286600000002,
+          "n_trades": 21,
+          "lados": "Nemiga/Team Nemesis"
+        },
+        {
+          "wallet_id": 14543,
+          "condition_node_id": 189,
+          "volume_usd": 133.64999999999998,
+          "n_trades": 31,
+          "lados": "Just Players/NAVI Junior"
+        },
+        {
+          "wallet_id": 14543,
+          "condition_node_id": 231,
+          "volume_usd": 40.550111,
+          "n_trades": 9,
+          "lados": "Two Move/Yellow Submarine"
+        },
+        {
+          "wallet_id": 14543,
+          "condition_node_id": 251,
+          "volume_usd": 58.8,
+          "n_trades": 14,
+          "lados": "PuckChamp/Zero Tenacity"
+        },
+        {
+          "wallet_id": 14543,
+          "condition_node_id": 282,
+          "volume_usd": 84.527447,
+          "n_trades": 22,
+          "lados": "Nemiga/Team Nemesis"
+        },
+        {
+          "wallet_id": 14543,
+          "condition_node_id": 318,
+          "volume_usd": 69.69999999999999,
+          "n_trades": 15,
+          "lados": "Just Players/NAVI Junior"
+        },
+        {
+          "wallet_id": 14543,
+          "condition_node_id": 1088,
+          "volume_usd": 104.59,
+          "n_trades": 26,
+          "lados": "Grêmio Esports/Rush"
+        },
+        {
+          "wallet_id": 16887,
+          "condition_node_id": 97,
+          "volume_usd": 50.841094,
+          "n_trades": 15,
+          "lados": "Nemiga/Team Nemesis"
+        },
+        {
+          "wallet_id": 16887,
+          "condition_node_id": 189,
+          "volume_usd": 34.259315,
+          "n_trades": 9,
+          "lados": "Just Players/NAVI Junior"
+        },
+        {
+          "wallet_id": 16887,
+          "condition_node_id": 282,
+          "volume_usd": 61.265152,
+          "n_trades": 17,
+          "lados": "Nemiga/Team Nemesis"
+        },
+        {
+          "wallet_id": 16887,
+          "condition_node_id": 449,
+          "volume_usd": 28.344054,
+          "n_trades": 10,
+          "lados": "QUAZAR/ex-RUSTEC"
+        },
+        {
+          "wallet_id": 16887,
+          "condition_node_id": 1074,
+          "volume_usd": 24.933334,
+          "n_trades": 6,
+          "lados": "Direborn/Team Nemesis"
+        },
+        {
+          "wallet_id": 16887,
+          "condition_node_id": 1088,
+          "volume_usd": 20.399462,
+          "n_trades": 6,
+          "lados": "Grêmio Esports/Rush"
+        },
+        {
+          "wallet_id": 16887,
+          "condition_node_id": 1274,
+          "volume_usd": 22.6775,
+          "n_trades": 6,
+          "lados": "Lavked/Saint Sinners"
+        },
+        {
+          "wallet_id": 17525,
+          "condition_node_id": 97,
+          "volume_usd": 14.799999999999999,
+          "n_trades": 5,
+          "lados": "Nemiga/Team Nemesis"
+        },
+        {
+          "wallet_id": 17525,
+          "condition_node_id": 189,
+          "volume_usd": 7.7,
+          "n_trades": 3,
+          "lados": "Just Players/NAVI Junior"
+        },
+        {
+          "wallet_id": 17525,
+          "condition_node_id": 231,
+          "volume_usd": 74.4,
+          "n_trades": 19,
+          "lados": "Two Move/Yellow Submarine"
+        },
+        {
+          "wallet_id": 17525,
+          "condition_node_id": 251,
+          "volume_usd": 0.363846,
+          "n_trades": 1,
+          "lados": "PuckChamp"
+        },
+        {
+          "wallet_id": 17525,
+          "condition_node_id": 282,
+          "volume_usd": 21.5,
+          "n_trades": 6,
+          "lados": "Nemiga/Team Nemesis"
+        },
+        {
+          "wallet_id": 17525,
+          "condition_node_id": 318,
+          "volume_usd": 7.0,
+          "n_trades": 3,
+          "lados": "Just Players/NAVI Junior"
+        },
+        {
+          "wallet_id": 17525,
+          "condition_node_id": 449,
+          "volume_usd": 9.899999999999999,
+          "n_trades": 3,
+          "lados": "QUAZAR/ex-RUSTEC"
+        },
+        {
+          "wallet_id": 17525,
+          "condition_node_id": 1074,
+          "volume_usd": 0.2,
+          "n_trades": 1,
+          "lados": "Direborn"
+        },
+        {
+          "wallet_id": 17525,
+          "condition_node_id": 1088,
+          "volume_usd": 3.4,
+          "n_trades": 1,
+          "lados": "Grêmio Esports"
+        },
+        {
+          "wallet_id": 17525,
+          "condition_node_id": 1274,
+          "volume_usd": 0.4,
+          "n_trades": 1,
+          "lados": "Lavked"
+        },
+        {
+          "wallet_id": 18817,
+          "condition_node_id": 189,
+          "volume_usd": 7.5,
+          "n_trades": 3,
+          "lados": "Just Players/NAVI Junior"
+        },
+        {
+          "wallet_id": 18817,
+          "condition_node_id": 251,
+          "volume_usd": 2.9,
+          "n_trades": 1,
+          "lados": "PuckChamp"
+        },
+        {
+          "wallet_id": 18817,
+          "condition_node_id": 282,
+          "volume_usd": 19.1,
+          "n_trades": 6,
+          "lados": "Nemiga/Team Nemesis"
+        },
+        {
+          "wallet_id": 18817,
+          "condition_node_id": 318,
+          "volume_usd": 16.799999999999997,
+          "n_trades": 5,
+          "lados": "Just Players/NAVI Junior"
+        },
+        {
+          "wallet_id": 18817,
+          "condition_node_id": 1074,
+          "volume_usd": 0.2,
+          "n_trades": 1,
+          "lados": "Direborn"
+        },
+        {
+          "wallet_id": 18817,
+          "condition_node_id": 1088,
+          "volume_usd": 3.4,
+          "n_trades": 1,
+          "lados": "Grêmio Esports"
+        },
+        {
+          "wallet_id": 18817,
+          "condition_node_id": 1274,
+          "volume_usd": 0.1,
+          "n_trades": 1,
+          "lados": "Lavked"
+        }
+      ]
+    },
+    "controle": {
+      "focal": 2084,
+      "parceiro": 316,
+      "carteiras": [
+        2084,
+        316,
+        67,
+        633,
+        34,
+        947,
+        1438
+      ],
+      "mercados": [
+        4,
+        100,
+        247,
+        135,
+        149,
+        62,
+        105,
+        151,
+        308,
+        18
+      ],
+      "compartilhados_com_parceiro": 10,
+      "omitidos": {
+        "mercados_da_focal": 65,
+        "carteiras_que_tocam_os_mercados": 290,
+        "mercados_totais_da_focal": 75
+      },
+      "posicao_focal": 909,
+      "score_focal": 3.8878956138266125,
+      "grau_focal": 75,
+      "volume_focal_usd": 11443.286982,
+      "carteiras_info": [
+        {
+          "wallet_id": 2084,
+          "posicao": 909,
+          "grau": 75
+        },
+        {
+          "wallet_id": 316,
+          "posicao": 19,
+          "grau": 46
+        },
+        {
+          "wallet_id": 67,
+          "posicao": 1241,
+          "grau": 569
+        },
+        {
+          "wallet_id": 633,
+          "posicao": 15,
+          "grau": 89
+        },
+        {
+          "wallet_id": 34,
+          "posicao": 1737,
+          "grau": 1887
+        },
+        {
+          "wallet_id": 947,
+          "posicao": 851,
+          "grau": 121
+        },
+        {
+          "wallet_id": 1438,
+          "posicao": 227,
+          "grau": 37
+        }
+      ],
+      "mercados_info": [
+        {
+          "condition_node_id": 4,
+          "pergunta": "Will FC Barcelona win on 2026-09-16?"
+        },
+        {
+          "condition_node_id": 100,
+          "pergunta": "Boston Red Sox vs. Texas Rangers"
+        },
+        {
+          "condition_node_id": 247,
+          "pergunta": "Guangzhou: Pavel Kotov vs Akira Santillan"
+        },
+        {
+          "condition_node_id": 135,
+          "pergunta": "Guadalajara Open Akron: Diane Parry vs Peyton Stearns"
+        },
+        {
+          "condition_node_id": 149,
+          "pergunta": "Guadalajara Open Akron: Magdalena Frech vs Caroline Dolehide"
+        },
+        {
+          "condition_node_id": 62,
+          "pergunta": "San Diego Padres vs. Colorado Rockies"
+        },
+        {
+          "condition_node_id": 105,
+          "pergunta": "Will Sport Lisboa e Benfica win on 2026-09-16?"
+        },
+        {
+          "condition_node_id": 151,
+          "pergunta": "Baltimore Orioles vs. New York Mets"
+        },
+        {
+          "condition_node_id": 308,
+          "pergunta": "Biella: Oriol Roca Batalla vs Stefano Napolitano"
+        },
+        {
+          "condition_node_id": 18,
+          "pergunta": "Will FC Barcelona vs. Real Racing Club end in a draw?"
+        }
+      ],
+      "ligacoes": [
+        {
+          "wallet_id": 34,
+          "condition_node_id": 4,
+          "volume_usd": 196369.956255,
+          "n_trades": 123,
+          "lados": "No/Yes"
+        },
+        {
+          "wallet_id": 34,
+          "condition_node_id": 100,
+          "volume_usd": 1451.465211,
+          "n_trades": 106,
+          "lados": "Boston Red Sox/Texas Rangers"
+        },
+        {
+          "wallet_id": 34,
+          "condition_node_id": 105,
+          "volume_usd": 73463.50985599999,
+          "n_trades": 240,
+          "lados": "No/Yes"
+        },
+        {
+          "wallet_id": 34,
+          "condition_node_id": 135,
+          "volume_usd": 20389.403703999997,
+          "n_trades": 48,
+          "lados": "Diane Parry/Peyton Stearns"
+        },
+        {
+          "wallet_id": 34,
+          "condition_node_id": 247,
+          "volume_usd": 3673.7484889999996,
+          "n_trades": 14,
+          "lados": "Akira Santillan/Pavel Kotov"
+        },
+        {
+          "wallet_id": 67,
+          "condition_node_id": 4,
+          "volume_usd": 6478.7557209999995,
+          "n_trades": 38,
+          "lados": "No/Yes"
+        },
+        {
+          "wallet_id": 67,
+          "condition_node_id": 18,
+          "volume_usd": 334.666668,
+          "n_trades": 4,
+          "lados": "No/Yes"
+        },
+        {
+          "wallet_id": 67,
+          "condition_node_id": 62,
+          "volume_usd": 1600.2276319999999,
+          "n_trades": 14,
+          "lados": "Colorado Rockies/San Diego Padres"
+        },
+        {
+          "wallet_id": 67,
+          "condition_node_id": 100,
+          "volume_usd": 1586.4552249999997,
+          "n_trades": 22,
+          "lados": "Boston Red Sox/Texas Rangers"
+        },
+        {
+          "wallet_id": 67,
+          "condition_node_id": 105,
+          "volume_usd": 621.3955390000001,
+          "n_trades": 18,
+          "lados": "No/Yes"
+        },
+        {
+          "wallet_id": 67,
+          "condition_node_id": 151,
+          "volume_usd": 6437.524522,
+          "n_trades": 38,
+          "lados": "Baltimore Orioles/New York Mets"
+        },
+        {
+          "wallet_id": 316,
+          "condition_node_id": 4,
+          "volume_usd": 162.574179,
+          "n_trades": 6,
+          "lados": "No"
+        },
+        {
+          "wallet_id": 316,
+          "condition_node_id": 18,
+          "volume_usd": 84.0,
+          "n_trades": 5,
+          "lados": "Yes"
+        },
+        {
+          "wallet_id": 316,
+          "condition_node_id": 62,
+          "volume_usd": 6513.9728,
+          "n_trades": 12,
+          "lados": "Colorado Rockies/San Diego Padres"
+        },
+        {
+          "wallet_id": 316,
+          "condition_node_id": 100,
+          "volume_usd": 3349.4313279999997,
+          "n_trades": 10,
+          "lados": "Boston Red Sox/Texas Rangers"
+        },
+        {
+          "wallet_id": 316,
+          "condition_node_id": 105,
+          "volume_usd": 479.782485,
+          "n_trades": 5,
+          "lados": "No/Yes"
+        },
+        {
+          "wallet_id": 316,
+          "condition_node_id": 135,
+          "volume_usd": 13668.388,
+          "n_trades": 20,
+          "lados": "Peyton Stearns"
+        },
+        {
+          "wallet_id": 316,
+          "condition_node_id": 149,
+          "volume_usd": 3337.55,
+          "n_trades": 4,
+          "lados": "Magdalena Frech"
+        },
+        {
+          "wallet_id": 316,
+          "condition_node_id": 151,
+          "volume_usd": 2892.5,
+          "n_trades": 4,
+          "lados": "Baltimore Orioles"
+        },
+        {
+          "wallet_id": 316,
+          "condition_node_id": 247,
+          "volume_usd": 2459.251112,
+          "n_trades": 7,
+          "lados": "Pavel Kotov"
+        },
+        {
+          "wallet_id": 316,
+          "condition_node_id": 308,
+          "volume_usd": 2014.416148,
+          "n_trades": 10,
+          "lados": "Oriol Roca Batalla/Stefano Napolitano"
+        },
+        {
+          "wallet_id": 633,
+          "condition_node_id": 62,
+          "volume_usd": 72.996202,
+          "n_trades": 20,
+          "lados": "Colorado Rockies/San Diego Padres"
+        },
+        {
+          "wallet_id": 633,
+          "condition_node_id": 100,
+          "volume_usd": 44.6,
+          "n_trades": 9,
+          "lados": "Boston Red Sox/Texas Rangers"
+        },
+        {
+          "wallet_id": 633,
+          "condition_node_id": 135,
+          "volume_usd": 7556.196286999999,
+          "n_trades": 25,
+          "lados": "Diane Parry/Peyton Stearns"
+        },
+        {
+          "wallet_id": 633,
+          "condition_node_id": 149,
+          "volume_usd": 558.1944149999999,
+          "n_trades": 8,
+          "lados": "Caroline Dolehide/Magdalena Frech"
+        },
+        {
+          "wallet_id": 633,
+          "condition_node_id": 151,
+          "volume_usd": 32.505262,
+          "n_trades": 12,
+          "lados": "Baltimore Orioles/New York Mets"
+        },
+        {
+          "wallet_id": 633,
+          "condition_node_id": 308,
+          "volume_usd": 6693.684205,
+          "n_trades": 30,
+          "lados": "Oriol Roca Batalla/Stefano Napolitano"
+        },
+        {
+          "wallet_id": 947,
+          "condition_node_id": 4,
+          "volume_usd": 2071.84778,
+          "n_trades": 118,
+          "lados": "No/Yes"
+        },
+        {
+          "wallet_id": 947,
+          "condition_node_id": 18,
+          "volume_usd": 118.97,
+          "n_trades": 4,
+          "lados": "No/Yes"
+        },
+        {
+          "wallet_id": 947,
+          "condition_node_id": 62,
+          "volume_usd": 447.7412,
+          "n_trades": 9,
+          "lados": "Colorado Rockies/San Diego Padres"
+        },
+        {
+          "wallet_id": 947,
+          "condition_node_id": 105,
+          "volume_usd": 16.66,
+          "n_trades": 4,
+          "lados": "No/Yes"
+        },
+        {
+          "wallet_id": 947,
+          "condition_node_id": 151,
+          "volume_usd": 8.55,
+          "n_trades": 2,
+          "lados": "Baltimore Orioles/New York Mets"
+        },
+        {
+          "wallet_id": 1438,
+          "condition_node_id": 62,
+          "volume_usd": 5460.0,
+          "n_trades": 14,
+          "lados": "San Diego Padres"
+        },
+        {
+          "wallet_id": 1438,
+          "condition_node_id": 100,
+          "volume_usd": 720.0,
+          "n_trades": 4,
+          "lados": "Boston Red Sox/Texas Rangers"
+        },
+        {
+          "wallet_id": 1438,
+          "condition_node_id": 149,
+          "volume_usd": 27.2149,
+          "n_trades": 4,
+          "lados": "Caroline Dolehide"
+        },
+        {
+          "wallet_id": 1438,
+          "condition_node_id": 151,
+          "volume_usd": 500.0,
+          "n_trades": 2,
+          "lados": "Baltimore Orioles/New York Mets"
+        },
+        {
+          "wallet_id": 1438,
+          "condition_node_id": 308,
+          "volume_usd": 93.22,
+          "n_trades": 2,
+          "lados": "Oriol Roca Batalla/Stefano Napolitano"
+        },
+        {
+          "wallet_id": 2084,
+          "condition_node_id": 4,
+          "volume_usd": 1167.62942,
+          "n_trades": 9,
+          "lados": "No/Yes"
+        },
+        {
+          "wallet_id": 2084,
+          "condition_node_id": 18,
+          "volume_usd": 13.0,
+          "n_trades": 4,
+          "lados": "Yes"
+        },
+        {
+          "wallet_id": 2084,
+          "condition_node_id": 62,
+          "volume_usd": 128.0,
+          "n_trades": 7,
+          "lados": "Colorado Rockies/San Diego Padres"
+        },
+        {
+          "wallet_id": 2084,
+          "condition_node_id": 100,
+          "volume_usd": 524.65,
+          "n_trades": 10,
+          "lados": "Boston Red Sox/Texas Rangers"
+        },
+        {
+          "wallet_id": 2084,
+          "condition_node_id": 105,
+          "volume_usd": 125.91600000000001,
+          "n_trades": 4,
+          "lados": "No/Yes"
+        },
+        {
+          "wallet_id": 2084,
+          "condition_node_id": 135,
+          "volume_usd": 174.0,
+          "n_trades": 2,
+          "lados": "Diane Parry/Peyton Stearns"
+        },
+        {
+          "wallet_id": 2084,
+          "condition_node_id": 149,
+          "volume_usd": 153.0,
+          "n_trades": 2,
+          "lados": "Caroline Dolehide/Magdalena Frech"
+        },
+        {
+          "wallet_id": 2084,
+          "condition_node_id": 151,
+          "volume_usd": 85.0,
+          "n_trades": 3,
+          "lados": "Baltimore Orioles/New York Mets"
+        },
+        {
+          "wallet_id": 2084,
+          "condition_node_id": 247,
+          "volume_usd": 304.82718,
+          "n_trades": 6,
+          "lados": "Akira Santillan/Pavel Kotov"
+        },
+        {
+          "wallet_id": 2084,
+          "condition_node_id": 308,
+          "volume_usd": 46.2946,
+          "n_trades": 5,
+          "lados": "Oriol Roca Batalla/Stefano Napolitano"
+        }
+      ]
+    }
+  }
+}
