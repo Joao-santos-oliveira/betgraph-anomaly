@@ -1,0 +1,91 @@
+{
+  "execucao": "v3-puetwvs5",
+  "universo": {
+    "carteiras": 5000,
+    "pares_contexto": 28909
+  },
+  "regra": {
+    "caso": "posição 1 do ranking relacional (relacional_42)",
+    "controle": "fora do top 100; vizinho mais próximo em z de log(1+grau) e log(1+volume) no contexto; caliper 0.75",
+    "corte": "até 10 mercados da focal (compartilhados com o parceiro primeiro, depois por volume); focal, parceiro e até 5 carteiras com ≥2 mercados desenhados"
+  },
+  "pareamento": {
+    "distancia_z": 0.12244665639832565,
+    "delta_grau_z": 0.07478325529516727,
+    "delta_volume_z": -0.09695694090980522,
+    "candidatos_no_caliper": 31,
+    "caliper": 0.75
+  },
+  "resumo": {
+    "caso": {
+      "focal": 4005,
+      "parceiro": 17525,
+      "carteiras": [
+        4005,
+        17525,
+        67,
+        13447,
+        14543,
+        16887,
+        18817
+      ],
+      "mercados": [
+        231,
+        189,
+        251,
+        318,
+        282,
+        449,
+        97,
+        1088,
+        1274,
+        1074
+      ],
+      "compartilhados_com_parceiro": 33,
+      "omitidos": {
+        "mercados_da_focal": 60,
+        "carteiras_que_tocam_os_mercados": 226,
+        "mercados_totais_da_focal": 70
+      },
+      "posicao_focal": 1,
+      "score_focal": 22.747143505250204,
+      "grau_focal": 70,
+      "volume_focal_usd": 14989.710975
+    },
+    "controle": {
+      "focal": 2084,
+      "parceiro": 316,
+      "carteiras": [
+        2084,
+        316,
+        67,
+        633,
+        34,
+        947,
+        1438
+      ],
+      "mercados": [
+        4,
+        100,
+        247,
+        135,
+        149,
+        62,
+        105,
+        151,
+        308,
+        18
+      ],
+      "compartilhados_com_parceiro": 10,
+      "omitidos": {
+        "mercados_da_focal": 65,
+        "carteiras_que_tocam_os_mercados": 290,
+        "mercados_totais_da_focal": 75
+      },
+      "posicao_focal": 909,
+      "score_focal": 3.8878956138266125,
+      "grau_focal": 75,
+      "volume_focal_usd": 11443.286982
+    }
+  }
+}

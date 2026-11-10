@@ -1,0 +1,14 @@
+{
+  "versao": "main",
+  "base": "1a1d456",
+  "historico": false,
+  "preparar_apenas": false,
+  "status": "concluido",
+  "entradas": {
+    "betgraph_arestas_16set.csv": "9724e0fa7878f82f6836feeec234099f355efeb838f6e1f1006ccfea78242102",
+    "betgraph_nos_evento_16set.csv": "bb97d2b009762fe3448a501eb2990753a92e89b11371f339a04213c45dfa00e0"
+  },
+  "checkout": "601bf65f9570184e118618f1272e75703ed84d1b",
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "pipeline_sha256": "631f4b0134788598c34e956db7ee07816f96a02eb87755358ce8e99002120c00"
+}

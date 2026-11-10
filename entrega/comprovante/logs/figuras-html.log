@@ -1,0 +1,4 @@
+.venv/bin/python -B scripts/evidencias/graficos.py --sem-imagens
+Figuras gravadas em /home/aliss/betgraph-limpo/figuras
+.venv/bin/python -B scripts/evidencias/subgrafos.py desenhar --sem-imagens
+Figura gravada em /home/aliss/betgraph-limpo/figuras

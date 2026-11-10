@@ -1,0 +1,32 @@
+{
+  "preparar": {
+    "segundos": 50.746,
+    "status": "concluido",
+    "codigo": 0,
+    "rss_mib": 736.75390625
+  },
+  "grafo": {
+    "segundos": 30.062,
+    "status": "concluido",
+    "codigo": 0,
+    "rss_mib": 654.03515625
+  },
+  "contexto": {
+    "segundos": 12.033,
+    "status": "concluido",
+    "codigo": 0,
+    "rss_mib": 750.671875
+  },
+  "relacional": {
+    "segundos": 12.469,
+    "status": "concluido",
+    "codigo": 0,
+    "rss_mib": 486.58984375
+  },
+  "floresta": {
+    "segundos": 10.691,
+    "status": "concluido",
+    "codigo": 0,
+    "rss_mib": 476.09375
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "metricas": {
+    "commit": "a67bcb5",
+    "caminho": "resultados/v3/metricas.csv",
+    "sha256": "70c8b10f49c2747e192fc9ada9ff54cca8b5557ecd629e22b323ab591c184a54",
+    "filtro": "fase=injetado, universo=completo"
+  },
+  "custos": [
+    {
+      "metodo": "E_v2",
+      "branch_execucao": "v2",
+      "seeds": "42/73/2026",
+      "repeticoes": 3,
+      "fonte": "benchmark/resumo.csv",
+      "sha256_fonte": "24f58cf65fe449a79a4b47727b90fd18110fe5180fc830291c3d3c728a407b21"
+    },
+    {
+      "metodo": "E_features",
+      "branch_execucao": "v3",
+      "seeds": "42",
+      "repeticoes": 3,
+      "fonte": "benchmark/resumo.csv",
+      "sha256_fonte": "24f58cf65fe449a79a4b47727b90fd18110fe5180fc830291c3d3c728a407b21"
+    },
+    {
+      "metodo": "C",
+      "branch_execucao": "v3",
+      "seeds": "42/73/2026",
+      "repeticoes": 3,
+      "fonte": "benchmark/resumo.csv",
+      "sha256_fonte": "24f58cf65fe449a79a4b47727b90fd18110fe5180fc830291c3d3c728a407b21"
+    },
+    {
+      "metodo": "D",
+      "branch_execucao": "v3",
+      "seeds": "42/73/2026",
+      "repeticoes": 3,
+      "fonte": "benchmark/resumo.csv",
+      "sha256_fonte": "24f58cf65fe449a79a4b47727b90fd18110fe5180fc830291c3d3c728a407b21"
+    },
+    {
+      "metodo": "A",
+      "branch_execucao": "v3",
+      "seeds": "42",
+      "repeticoes": 3,
+      "fonte": "benchmark/resumo.csv",
+      "sha256_fonte": "24f58cf65fe449a79a4b47727b90fd18110fe5180fc830291c3d3c728a407b21"
+    }
+  ]
+}

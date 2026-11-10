@@ -1,0 +1,228 @@
+.venv/bin/python -B scripts/pipeline.py main --raw "data/raw" --destino "data/execucoes"
+Execução: /home/aliss/betgraph-limpo/data/execucoes/main-vlvcoush
+Switched to a new branch 'main'
+Processando: data/raw/betgraph_arestas_16set.csv
+Validação de 'data/raw/betgraph_arestas_16set.csv':
+  - 1972 outcomes distintos codificados neste arquivo (informativo).
+
+Sucesso! Arquivo processado salvo em: data/raw/betgraph_arestas_16set_processado.csv
+
+Mapeamentos salvos com sucesso em:
+ - mapeamento_wallets.json  (40218 wallets)
+ - mapeamento_conditions.json  (22418 mercados)
+ - mapeamento_outcomes.json  (1972 outcomes)
+Mapeamento de conditions carregado com sucesso!
+
+Processando: data/raw/betgraph_nos_evento_16set.csv
+Checagem de redundância das colunas de status:
+  - 'active' é sempre o oposto de 'closed'? False
+  - distribuição de 'archived': {False: 22415, True: 3}
+  - distribuição de 'outcome_status': {'no': 9278, 'unresolved': 8605, 'yes': 4445, '50/50': 90}
+
+Validação de 'data/raw/betgraph_nos_evento_16set.csv':
+  - 1339/22418 mercados com duração não confiável (duracao_mercado_segundos = NaN, duracao_mercado_valida = False). Dados do mercado preservados, só a duração é ausente.
+  - 74 categorias principais distintas (informativo).
+  - 5725/22418 mercados marcados como recorrentes (25.5%). Ainda NÃO foram removidos -- use 'filtrar_recorrentes.py' para isso depois.
+
+Sucesso! Arquivo salvo em: data/raw/betgraph_nos_evento_16set_processado.csv
+
+Mercados recorrentes identificados: 5725 de 22418
+Nós: 22418 -> 16693  (-5725)
+Arestas: 560985 -> 358689  (-202296)
+OK: nenhuma aresta órfã -- todo condition_id em arestas existe em nós.
+
+Salvos:
+ - data/raw/betgraph_nos_evento_16set_final.csv
+ - data/raw/betgraph_arestas_16set_final.csv
+Lendo: data/raw/betgraph_arestas_16set_final.csv
+358689 arestas, 27039 carteiras distintas.
+
+Resumo dos nós de usuário gerados:
+  - 27039 carteiras
+  - volume_total_usd:  min=0.00  mediana=82.92  max=4879727.57
+  - n_mercados_distintos:  min=1  mediana=2  max=3141
+
+Sucesso! Arquivo salvo em: data/raw/betgraph_wallets_16set_nos.csv
+/home/aliss/betgraph-limpo/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+{
+  "seed": 42,
+  "sample_size": 256,
+  "entrada": {
+    "user": 27039,
+    "event": 16693,
+    "edge": 358689
+  },
+  "selecionados": {
+    "user": 256,
+    "event": 3084,
+    "edge": 5228
+  },
+  "duracoes_ausentes_entrada": 707,
+  "duracoes_imputadas_selecao": 52,
+  "mediana_duracao": 6511625.5,
+  "features": {
+    "user": [
+      "log1p_volume_total_usd",
+      "log1p_n_trades_total",
+      "log1p_n_mercados_distintos",
+      "log1p_ticket_medio_geral",
+      "preco_medio_ponderado"
+    ],
+    "event": [
+      "log1p_duracao_mercado_segundos",
+      "duracao_ausente",
+      "categoria_principal_AI",
+      "categoria_principal_Apple",
+      "categoria_principal_Awards",
+      "categoria_principal_Box",
+      "categoria_principal_Business",
+      "categoria_principal_Celebrities",
+      "categoria_principal_China",
+      "categoria_principal_Crypto",
+      "categoria_principal_Culture",
+      "categoria_principal_Elections",
+      "categoria_principal_Finance",
+      "categoria_principal_GTA",
+      "categoria_principal_Gaza",
+      "categoria_principal_Geopolitics",
+      "categoria_principal_Iran",
+      "categoria_principal_Israel",
+      "categoria_principal_Middle",
+      "categoria_principal_Movies",
+      "categoria_principal_Music",
+      "categoria_principal_Politics",
+      "categoria_principal_Prediction",
+      "categoria_principal_Russia",
+      "categoria_principal_Science",
+      "categoria_principal_Sports",
+      "categoria_principal_Syria",
+      "categoria_principal_Trump",
+      "categoria_principal_Ukraine",
+      "categoria_principal_Weather",
+      "categoria_principal_conspiracy",
+      "categoria_principal_football",
+      "categoria_principal_relationships",
+      "categoria_principal_social",
+      "categoria_principal_strike",
+      "categoria_principal_video",
+      "categoria_principal_world"
+    ],
+    "edge": [
+      "log1p_volume_usd",
+      "preco_medio",
+      "primeiro_trade_fracao_dia_utc"
+    ]
+  },
+  "ajuste": "transdutivo no subgrafo selecionado"
+}
+/home/aliss/betgraph-limpo/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+{
+  "seed": 42,
+  "sample_size": 0,
+  "entrada": {
+    "user": 256,
+    "event": 3084,
+    "edge": 5228
+  },
+  "selecionados": {
+    "user": 256,
+    "event": 3084,
+    "edge": 5228
+  },
+  "duracoes_ausentes_entrada": 52,
+  "duracoes_imputadas_selecao": 52,
+  "mediana_duracao": 6511625.5,
+  "features": {
+    "user": [
+      "log1p_volume_total_usd",
+      "log1p_n_trades_total",
+      "log1p_n_mercados_distintos",
+      "log1p_ticket_medio_geral",
+      "preco_medio_ponderado"
+    ],
+    "event": [
+      "log1p_duracao_mercado_segundos",
+      "duracao_ausente",
+      "categoria_principal_AI",
+      "categoria_principal_Apple",
+      "categoria_principal_Awards",
+      "categoria_principal_Box",
+      "categoria_principal_Business",
+      "categoria_principal_Celebrities",
+      "categoria_principal_China",
+      "categoria_principal_Crypto",
+      "categoria_principal_Culture",
+      "categoria_principal_Elections",
+      "categoria_principal_Finance",
+      "categoria_principal_GTA",
+      "categoria_principal_Gaza",
+      "categoria_principal_Geopolitics",
+      "categoria_principal_Iran",
+      "categoria_principal_Israel",
+      "categoria_principal_Middle",
+      "categoria_principal_Movies",
+      "categoria_principal_Music",
+      "categoria_principal_Politics",
+      "categoria_principal_Prediction",
+      "categoria_principal_Russia",
+      "categoria_principal_Science",
+      "categoria_principal_Sports",
+      "categoria_principal_Syria",
+      "categoria_principal_Trump",
+      "categoria_principal_Ukraine",
+      "categoria_principal_Weather",
+      "categoria_principal_conspiracy",
+      "categoria_principal_football",
+      "categoria_principal_relationships",
+      "categoria_principal_social",
+      "categoria_principal_strike",
+      "categoria_principal_video",
+      "categoria_principal_world"
+    ],
+    "edge": [
+      "log1p_volume_usd",
+      "preco_medio",
+      "primeiro_trade_fracao_dia_utc"
+    ]
+  },
+  "ajuste": "transdutivo no subgrafo selecionado"
+}
+HeteroData(
+  user={
+    x=[256, 5],
+    original_id=[256],
+  },
+  event={
+    x=[3084, 37],
+    original_id=[3084],
+  },
+  (user, bets_on, event)={
+    edge_index=[2, 5228],
+    edge_attr=[5228, 3],
+    outcome_id=[5228],
+  },
+  (event, rev_bets_on, user)={
+    edge_index=[2, 5228],
+    edge_attr=[5228, 3],
+    outcome_id=[5228],
+  }
+)
+{
+  "users": 256,
+  "events": 3084,
+  "arestas_diretas": 5228,
+  "arestas_reversas": 5228,
+  "grau_medio_user_com_multiarestas": 20.421875,
+  "grau_medio_event_com_multiarestas": 1.695201037613489,
+  "pares_user_event_distintos": 3734
+}
+Relatório: /home/aliss/betgraph-limpo/data/execucoes/main-vlvcoush/projeto/data/reproducao/execucao-x0n952a4/verificacao.json
+Contagens e ordem integral dos dois rankings conferidas.
+preparar {'segundos': 50.746, 'status': 'concluido', 'codigo': 0, 'rss_mib': 736.75390625}
+grafo {'segundos': 30.062, 'status': 'concluido', 'codigo': 0, 'rss_mib': 654.03515625}
+contexto {'segundos': 12.033, 'status': 'concluido', 'codigo': 0, 'rss_mib': 750.671875}
+relacional {'segundos': 12.469, 'status': 'concluido', 'codigo': 0, 'rss_mib': 486.58984375}
+floresta {'segundos': 10.691, 'status': 'concluido', 'codigo': 0, 'rss_mib': 476.09375}
+Resultados: /home/aliss/betgraph-limpo/data/execucoes/main-vlvcoush/resultados

@@ -1,0 +1,6 @@
+.venv/bin/python -B scripts/evidencias/tabela.py --benchmark benchmark/resumo.csv
+Tabela gravada em /home/aliss/betgraph-limpo/entrega
+.venv/bin/python -B scripts/evidencias/subgrafos.py selecionar --execucao "data/benchmark/execucoes/v3-puetwvs5"
+/home/aliss/betgraph-limpo/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+Caso W4005 (posição 1), controle W2084 (posição 909); distância z 0.122

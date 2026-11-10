@@ -1,0 +1,556 @@
+.venv/bin/python -B scripts/evidencias/benchmark.py --repeticoes "3" --raw "data/raw" --manter-execucoes
+Repetição 1/3: v3 (a67bcb5), 60 épocas
+Execução: /home/aliss/betgraph-limpo/data/benchmark/execucoes/v3-a2cbdr9k
+Warning: you are leaving 4 commits behind, not connected to
+any of your branches:
+
+  a67bcb5 feat: avalia a GNN de arestas com score de pares, intervenções e decoys
+  4349593 feat: isola a GNN v3 e reproduz a comparação com a referência v2
+  ebcdfac docs: prepara continuidade desde o piloto sintetico
+  deb24e5 feat: registra tentativa controlada da GNN com atributos de aresta
+
+If you want to keep them by creating a new branch, this may be a good time
+to do so with:
+
+ git branch <new-branch-name> a67bcb5
+
+Switched to a new branch 'feat/gnn-v2-anomalias'
+Processando: data/raw/betgraph_arestas_16set.csv
+Validação de 'data/raw/betgraph_arestas_16set.csv':
+  - 1972 outcomes distintos codificados neste arquivo (informativo).
+
+Sucesso! Arquivo processado salvo em: data/raw/betgraph_arestas_16set_processado.csv
+
+Mapeamentos salvos com sucesso em:
+ - mapeamento_wallets.json  (40218 wallets)
+ - mapeamento_conditions.json  (22418 mercados)
+ - mapeamento_outcomes.json  (1972 outcomes)
+  [v3 r1] filtrar_arestas: 39.9 s, 415 MiB
+Mapeamento de conditions carregado com sucesso!
+
+Processando: data/raw/betgraph_nos_evento_16set.csv
+Checagem de redundância das colunas de status:
+  - 'active' é sempre o oposto de 'closed'? False
+  - distribuição de 'archived': {False: 22415, True: 3}
+  - distribuição de 'outcome_status': {'no': 9278, 'unresolved': 8605, 'yes': 4445, '50/50': 90}
+
+Validação de 'data/raw/betgraph_nos_evento_16set.csv':
+  - 1339/22418 mercados com duração não confiável (duracao_mercado_segundos = NaN, duracao_mercado_valida = False). Dados do mercado preservados, só a duração é ausente.
+  - 74 categorias principais distintas (informativo).
+  - 5725/22418 mercados marcados como recorrentes (25.5%). Ainda NÃO foram removidos -- use 'filtrar_recorrentes.py' para isso depois.
+
+Sucesso! Arquivo salvo em: data/raw/betgraph_nos_evento_16set_processado.csv
+
+  [v3 r1] filtrar_nos: 3.6 s, 145 MiB
+Mercados recorrentes identificados: 5725 de 22418
+Nós: 22418 -> 16693  (-5725)
+Arestas: 560985 -> 358689  (-202296)
+OK: nenhuma aresta órfã -- todo condition_id em arestas existe em nós.
+
+Salvos:
+ - data/raw/betgraph_nos_evento_16set_final.csv
+ - data/raw/betgraph_arestas_16set_final.csv
+  [v3 r1] filtrar_recorrentes: 12.4 s, 446 MiB
+Lendo: data/raw/betgraph_arestas_16set_final.csv
+358689 arestas, 27039 carteiras distintas.
+
+Resumo dos nós de usuário gerados:
+  - 27039 carteiras
+  - volume_total_usd:  min=0.00  mediana=82.92  max=4879727.57
+  - n_mercados_distintos:  min=1  mediana=2  max=3141
+
+Sucesso! Arquivo salvo em: data/raw/betgraph_wallets_16set_nos.csv
+  [v3 r1] agregar_carteiras: 38.7 s, 327 MiB
+/home/aliss/betgraph-limpo/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+  [v3 r1] coorte_5000: 23.8 s, 650 MiB
+/home/aliss/betgraph-limpo/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+  [v3 r1] preparar: 48.1 s, 557 MiB
+/home/aliss/betgraph-limpo/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+  [v3 r1] relacional seed 42: 11.7 s, 470 MiB
+/home/aliss/betgraph-limpo/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+  [v3 r1] floresta seed 42: 9.3 s, 467 MiB
+/home/aliss/betgraph-limpo/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+  [v3 r1] gnn seed 42: 50.6 s, 737 MiB
+/home/aliss/betgraph-limpo/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+  [v3 r1] gnn seed 73: 44.9 s, 733 MiB
+/home/aliss/betgraph-limpo/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+  [v3 r1] gnn seed 2026: 42.2 s, 719 MiB
+/home/aliss/betgraph-limpo/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+  [v3 r1] mlp seed 42: 16.0 s, 575 MiB
+/home/aliss/betgraph-limpo/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+  [v3 r1] mlp seed 73: 14.1 s, 578 MiB
+/home/aliss/betgraph-limpo/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+  [v3 r1] mlp seed 2026: 13.1 s, 575 MiB
+Resultados: /home/aliss/betgraph-limpo/data/benchmark/execucoes/v3-a2cbdr9k/resultados
+Repetição 1/3: v2 (5176508), 100 épocas
+Execução: /home/aliss/betgraph-limpo/data/benchmark/execucoes/v2-qgpcr2fo
+Warning: you are leaving 2 commits behind, not connected to
+any of your branches:
+
+  5176508 feat: avalia o híbrido contrastivo e os embeddings da GNN v2 por cenário
+  d203a35 feat: organiza a GNN v2 e sua reprodução desde os dados brutos
+
+If you want to keep them by creating a new branch, this may be a good time
+to do so with:
+
+ git branch <new-branch-name> 5176508
+
+Switched to a new branch 'feat/gnn-v2-anomalias'
+Processando: data/raw/betgraph_arestas_16set.csv
+Validação de 'data/raw/betgraph_arestas_16set.csv':
+  - 1972 outcomes distintos codificados neste arquivo (informativo).
+
+Sucesso! Arquivo processado salvo em: data/raw/betgraph_arestas_16set_processado.csv
+
+Mapeamentos salvos com sucesso em:
+ - mapeamento_wallets.json  (40218 wallets)
+ - mapeamento_conditions.json  (22418 mercados)
+ - mapeamento_outcomes.json  (1972 outcomes)
+  [v2 r1] filtrar_arestas: 24.2 s, 417 MiB
+Mapeamento de conditions carregado com sucesso!
+
+Processando: data/raw/betgraph_nos_evento_16set.csv
+Checagem de redundância das colunas de status:
+  - 'active' é sempre o oposto de 'closed'? False
+  - distribuição de 'archived': {False: 22415, True: 3}
+  - distribuição de 'outcome_status': {'no': 9278, 'unresolved': 8605, 'yes': 4445, '50/50': 90}
+
+Validação de 'data/raw/betgraph_nos_evento_16set.csv':
+  - 1339/22418 mercados com duração não confiável (duracao_mercado_segundos = NaN, duracao_mercado_valida = False). Dados do mercado preservados, só a duração é ausente.
+  - 74 categorias principais distintas (informativo).
+  - 5725/22418 mercados marcados como recorrentes (25.5%). Ainda NÃO foram removidos -- use 'filtrar_recorrentes.py' para isso depois.
+
+Sucesso! Arquivo salvo em: data/raw/betgraph_nos_evento_16set_processado.csv
+
+  [v2 r1] filtrar_nos: 1.1 s, 145 MiB
+Mercados recorrentes identificados: 5725 de 22418
+Nós: 22418 -> 16693  (-5725)
+Arestas: 560985 -> 358689  (-202296)
+OK: nenhuma aresta órfã -- todo condition_id em arestas existe em nós.
+
+Salvos:
+ - data/raw/betgraph_nos_evento_16set_final.csv
+ - data/raw/betgraph_arestas_16set_final.csv
+  [v2 r1] filtrar_recorrentes: 6.3 s, 459 MiB
+Lendo: data/raw/betgraph_arestas_16set_final.csv
+358689 arestas, 27039 carteiras distintas.
+
+Resumo dos nós de usuário gerados:
+  - 27039 carteiras
+  - volume_total_usd:  min=0.00  mediana=82.92  max=4879727.57
+  - n_mercados_distintos:  min=1  mediana=2  max=3141
+
+Sucesso! Arquivo salvo em: data/raw/betgraph_wallets_16set_nos.csv
+  [v2 r1] agregar_carteiras: 25.6 s, 323 MiB
+/home/aliss/betgraph-limpo/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+  [v2 r1] coorte_5000: 10.8 s, 650 MiB
+/home/aliss/betgraph-limpo/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+  [v2 r1] preparar: 7.7 s, 543 MiB
+/home/aliss/betgraph-limpo/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+  [v2 r1] relacional seed 42: 7.4 s, 470 MiB
+/home/aliss/betgraph-limpo/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+  [v2 r1] floresta seed 42: 7.6 s, 467 MiB
+/home/aliss/betgraph-limpo/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+  [v2 r1] gnn seed 42: 32.0 s, 653 MiB
+/home/aliss/betgraph-limpo/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+  [v2 r1] gnn seed 73: 31.7 s, 655 MiB
+/home/aliss/betgraph-limpo/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+  [v2 r1] gnn seed 2026: 33.7 s, 657 MiB
+/home/aliss/betgraph-limpo/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+  [v2 r1] mlp seed 42: 23.6 s, 622 MiB
+/home/aliss/betgraph-limpo/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+  [v2 r1] mlp seed 73: 23.5 s, 619 MiB
+/home/aliss/betgraph-limpo/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+  [v2 r1] mlp seed 2026: 23.1 s, 618 MiB
+Resultados: /home/aliss/betgraph-limpo/data/benchmark/execucoes/v2-qgpcr2fo/resultados
+Repetição 2/3: v2 (5176508), 100 épocas
+Execução: /home/aliss/betgraph-limpo/data/benchmark/execucoes/v2-ihjqrhcb
+Warning: you are leaving 2 commits behind, not connected to
+any of your branches:
+
+  5176508 feat: avalia o híbrido contrastivo e os embeddings da GNN v2 por cenário
+  d203a35 feat: organiza a GNN v2 e sua reprodução desde os dados brutos
+
+If you want to keep them by creating a new branch, this may be a good time
+to do so with:
+
+ git branch <new-branch-name> 5176508
+
+Switched to a new branch 'feat/gnn-v2-anomalias'
+Processando: data/raw/betgraph_arestas_16set.csv
+Validação de 'data/raw/betgraph_arestas_16set.csv':
+  - 1972 outcomes distintos codificados neste arquivo (informativo).
+
+Sucesso! Arquivo processado salvo em: data/raw/betgraph_arestas_16set_processado.csv
+
+Mapeamentos salvos com sucesso em:
+ - mapeamento_wallets.json  (40218 wallets)
+ - mapeamento_conditions.json  (22418 mercados)
+ - mapeamento_outcomes.json  (1972 outcomes)
+  [v2 r2] filtrar_arestas: 21.9 s, 413 MiB
+Mapeamento de conditions carregado com sucesso!
+
+Processando: data/raw/betgraph_nos_evento_16set.csv
+Checagem de redundância das colunas de status:
+  - 'active' é sempre o oposto de 'closed'? False
+  - distribuição de 'archived': {False: 22415, True: 3}
+  - distribuição de 'outcome_status': {'no': 9278, 'unresolved': 8605, 'yes': 4445, '50/50': 90}
+
+Validação de 'data/raw/betgraph_nos_evento_16set.csv':
+  - 1339/22418 mercados com duração não confiável (duracao_mercado_segundos = NaN, duracao_mercado_valida = False). Dados do mercado preservados, só a duração é ausente.
+  - 74 categorias principais distintas (informativo).
+  - 5725/22418 mercados marcados como recorrentes (25.5%). Ainda NÃO foram removidos -- use 'filtrar_recorrentes.py' para isso depois.
+
+Sucesso! Arquivo salvo em: data/raw/betgraph_nos_evento_16set_processado.csv
+
+  [v2 r2] filtrar_nos: 1.1 s, 145 MiB
+Mercados recorrentes identificados: 5725 de 22418
+Nós: 22418 -> 16693  (-5725)
+Arestas: 560985 -> 358689  (-202296)
+OK: nenhuma aresta órfã -- todo condition_id em arestas existe em nós.
+
+Salvos:
+ - data/raw/betgraph_nos_evento_16set_final.csv
+ - data/raw/betgraph_arestas_16set_final.csv
+  [v2 r2] filtrar_recorrentes: 5.9 s, 458 MiB
+Lendo: data/raw/betgraph_arestas_16set_final.csv
+358689 arestas, 27039 carteiras distintas.
+
+Resumo dos nós de usuário gerados:
+  - 27039 carteiras
+  - volume_total_usd:  min=0.00  mediana=82.92  max=4879727.57
+  - n_mercados_distintos:  min=1  mediana=2  max=3141
+
+Sucesso! Arquivo salvo em: data/raw/betgraph_wallets_16set_nos.csv
+  [v2 r2] agregar_carteiras: 24.6 s, 324 MiB
+/home/aliss/betgraph-limpo/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+  [v2 r2] coorte_5000: 9.5 s, 647 MiB
+/home/aliss/betgraph-limpo/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+  [v2 r2] preparar: 8.4 s, 543 MiB
+/home/aliss/betgraph-limpo/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+  [v2 r2] relacional seed 42: 7.6 s, 470 MiB
+/home/aliss/betgraph-limpo/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+  [v2 r2] floresta seed 42: 7.9 s, 467 MiB
+/home/aliss/betgraph-limpo/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+  [v2 r2] gnn seed 42: 34.2 s, 654 MiB
+/home/aliss/betgraph-limpo/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+  [v2 r2] gnn seed 73: 35.5 s, 658 MiB
+/home/aliss/betgraph-limpo/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+  [v2 r2] gnn seed 2026: 33.5 s, 654 MiB
+/home/aliss/betgraph-limpo/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+  [v2 r2] mlp seed 42: 24.0 s, 619 MiB
+/home/aliss/betgraph-limpo/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+  [v2 r2] mlp seed 73: 24.0 s, 618 MiB
+/home/aliss/betgraph-limpo/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+  [v2 r2] mlp seed 2026: 23.1 s, 617 MiB
+Resultados: /home/aliss/betgraph-limpo/data/benchmark/execucoes/v2-ihjqrhcb/resultados
+Repetição 2/3: v3 (a67bcb5), 60 épocas
+Execução: /home/aliss/betgraph-limpo/data/benchmark/execucoes/v3-alfbzogh
+Warning: you are leaving 4 commits behind, not connected to
+any of your branches:
+
+  a67bcb5 feat: avalia a GNN de arestas com score de pares, intervenções e decoys
+  4349593 feat: isola a GNN v3 e reproduz a comparação com a referência v2
+  ebcdfac docs: prepara continuidade desde o piloto sintetico
+  deb24e5 feat: registra tentativa controlada da GNN com atributos de aresta
+
+If you want to keep them by creating a new branch, this may be a good time
+to do so with:
+
+ git branch <new-branch-name> a67bcb5
+
+Switched to a new branch 'feat/gnn-v2-anomalias'
+Processando: data/raw/betgraph_arestas_16set.csv
+Validação de 'data/raw/betgraph_arestas_16set.csv':
+  - 1972 outcomes distintos codificados neste arquivo (informativo).
+
+Sucesso! Arquivo processado salvo em: data/raw/betgraph_arestas_16set_processado.csv
+
+Mapeamentos salvos com sucesso em:
+ - mapeamento_wallets.json  (40218 wallets)
+ - mapeamento_conditions.json  (22418 mercados)
+ - mapeamento_outcomes.json  (1972 outcomes)
+  [v3 r2] filtrar_arestas: 28.7 s, 413 MiB
+Mapeamento de conditions carregado com sucesso!
+
+Processando: data/raw/betgraph_nos_evento_16set.csv
+Checagem de redundância das colunas de status:
+  - 'active' é sempre o oposto de 'closed'? False
+  - distribuição de 'archived': {False: 22415, True: 3}
+  - distribuição de 'outcome_status': {'no': 9278, 'unresolved': 8605, 'yes': 4445, '50/50': 90}
+
+Validação de 'data/raw/betgraph_nos_evento_16set.csv':
+  - 1339/22418 mercados com duração não confiável (duracao_mercado_segundos = NaN, duracao_mercado_valida = False). Dados do mercado preservados, só a duração é ausente.
+  - 74 categorias principais distintas (informativo).
+  - 5725/22418 mercados marcados como recorrentes (25.5%). Ainda NÃO foram removidos -- use 'filtrar_recorrentes.py' para isso depois.
+
+Sucesso! Arquivo salvo em: data/raw/betgraph_nos_evento_16set_processado.csv
+
+  [v3 r2] filtrar_nos: 2.0 s, 145 MiB
+Mercados recorrentes identificados: 5725 de 22418
+Nós: 22418 -> 16693  (-5725)
+Arestas: 560985 -> 358689  (-202296)
+OK: nenhuma aresta órfã -- todo condition_id em arestas existe em nós.
+
+Salvos:
+ - data/raw/betgraph_nos_evento_16set_final.csv
+ - data/raw/betgraph_arestas_16set_final.csv
+  [v3 r2] filtrar_recorrentes: 8.2 s, 456 MiB
+Lendo: data/raw/betgraph_arestas_16set_final.csv
+358689 arestas, 27039 carteiras distintas.
+
+Resumo dos nós de usuário gerados:
+  - 27039 carteiras
+  - volume_total_usd:  min=0.00  mediana=82.92  max=4879727.57
+  - n_mercados_distintos:  min=1  mediana=2  max=3141
+
+Sucesso! Arquivo salvo em: data/raw/betgraph_wallets_16set_nos.csv
+  [v3 r2] agregar_carteiras: 27.1 s, 328 MiB
+/home/aliss/betgraph-limpo/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+  [v3 r2] coorte_5000: 11.3 s, 650 MiB
+/home/aliss/betgraph-limpo/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+  [v3 r2] preparar: 33.7 s, 558 MiB
+/home/aliss/betgraph-limpo/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+  [v3 r2] relacional seed 42: 7.3 s, 470 MiB
+/home/aliss/betgraph-limpo/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+  [v3 r2] floresta seed 42: 7.0 s, 467 MiB
+/home/aliss/betgraph-limpo/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+  [v3 r2] gnn seed 42: 37.7 s, 729 MiB
+/home/aliss/betgraph-limpo/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+  [v3 r2] gnn seed 73: 36.8 s, 725 MiB
+/home/aliss/betgraph-limpo/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+  [v3 r2] gnn seed 2026: 36.1 s, 731 MiB
+/home/aliss/betgraph-limpo/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+  [v3 r2] mlp seed 42: 13.3 s, 574 MiB
+/home/aliss/betgraph-limpo/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+  [v3 r2] mlp seed 73: 13.3 s, 578 MiB
+/home/aliss/betgraph-limpo/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+  [v3 r2] mlp seed 2026: 12.8 s, 575 MiB
+Resultados: /home/aliss/betgraph-limpo/data/benchmark/execucoes/v3-alfbzogh/resultados
+Repetição 3/3: v3 (a67bcb5), 60 épocas
+Execução: /home/aliss/betgraph-limpo/data/benchmark/execucoes/v3-puetwvs5
+Warning: you are leaving 4 commits behind, not connected to
+any of your branches:
+
+  a67bcb5 feat: avalia a GNN de arestas com score de pares, intervenções e decoys
+  4349593 feat: isola a GNN v3 e reproduz a comparação com a referência v2
+  ebcdfac docs: prepara continuidade desde o piloto sintetico
+  deb24e5 feat: registra tentativa controlada da GNN com atributos de aresta
+
+If you want to keep them by creating a new branch, this may be a good time
+to do so with:
+
+ git branch <new-branch-name> a67bcb5
+
+Switched to a new branch 'feat/gnn-v2-anomalias'
+Processando: data/raw/betgraph_arestas_16set.csv
+Validação de 'data/raw/betgraph_arestas_16set.csv':
+  - 1972 outcomes distintos codificados neste arquivo (informativo).
+
+Sucesso! Arquivo processado salvo em: data/raw/betgraph_arestas_16set_processado.csv
+
+Mapeamentos salvos com sucesso em:
+ - mapeamento_wallets.json  (40218 wallets)
+ - mapeamento_conditions.json  (22418 mercados)
+ - mapeamento_outcomes.json  (1972 outcomes)
+  [v3 r3] filtrar_arestas: 21.9 s, 413 MiB
+Mapeamento de conditions carregado com sucesso!
+
+Processando: data/raw/betgraph_nos_evento_16set.csv
+Checagem de redundância das colunas de status:
+  - 'active' é sempre o oposto de 'closed'? False
+  - distribuição de 'archived': {False: 22415, True: 3}
+  - distribuição de 'outcome_status': {'no': 9278, 'unresolved': 8605, 'yes': 4445, '50/50': 90}
+
+Validação de 'data/raw/betgraph_nos_evento_16set.csv':
+  - 1339/22418 mercados com duração não confiável (duracao_mercado_segundos = NaN, duracao_mercado_valida = False). Dados do mercado preservados, só a duração é ausente.
+  - 74 categorias principais distintas (informativo).
+  - 5725/22418 mercados marcados como recorrentes (25.5%). Ainda NÃO foram removidos -- use 'filtrar_recorrentes.py' para isso depois.
+
+Sucesso! Arquivo salvo em: data/raw/betgraph_nos_evento_16set_processado.csv
+
+  [v3 r3] filtrar_nos: 1.2 s, 145 MiB
+Mercados recorrentes identificados: 5725 de 22418
+Nós: 22418 -> 16693  (-5725)
+Arestas: 560985 -> 358689  (-202296)
+OK: nenhuma aresta órfã -- todo condition_id em arestas existe em nós.
+
+Salvos:
+ - data/raw/betgraph_nos_evento_16set_final.csv
+ - data/raw/betgraph_arestas_16set_final.csv
+  [v3 r3] filtrar_recorrentes: 6.3 s, 459 MiB
+Lendo: data/raw/betgraph_arestas_16set_final.csv
+358689 arestas, 27039 carteiras distintas.
+
+Resumo dos nós de usuário gerados:
+  - 27039 carteiras
+  - volume_total_usd:  min=0.00  mediana=82.92  max=4879727.57
+  - n_mercados_distintos:  min=1  mediana=2  max=3141
+
+Sucesso! Arquivo salvo em: data/raw/betgraph_wallets_16set_nos.csv
+  [v3 r3] agregar_carteiras: 25.1 s, 323 MiB
+/home/aliss/betgraph-limpo/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+  [v3 r3] coorte_5000: 9.7 s, 651 MiB
+/home/aliss/betgraph-limpo/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+  [v3 r3] preparar: 33.7 s, 557 MiB
+/home/aliss/betgraph-limpo/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+  [v3 r3] relacional seed 42: 7.5 s, 470 MiB
+/home/aliss/betgraph-limpo/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+  [v3 r3] floresta seed 42: 6.9 s, 467 MiB
+/home/aliss/betgraph-limpo/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+  [v3 r3] gnn seed 42: 36.8 s, 730 MiB
+/home/aliss/betgraph-limpo/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+  [v3 r3] gnn seed 73: 37.2 s, 723 MiB
+/home/aliss/betgraph-limpo/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+  [v3 r3] gnn seed 2026: 37.1 s, 728 MiB
+/home/aliss/betgraph-limpo/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+  [v3 r3] mlp seed 42: 13.5 s, 574 MiB
+/home/aliss/betgraph-limpo/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+  [v3 r3] mlp seed 73: 12.9 s, 578 MiB
+/home/aliss/betgraph-limpo/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+  [v3 r3] mlp seed 2026: 13.1 s, 575 MiB
+Resultados: /home/aliss/betgraph-limpo/data/benchmark/execucoes/v3-puetwvs5/resultados
+Repetição 3/3: v2 (5176508), 100 épocas
+Execução: /home/aliss/betgraph-limpo/data/benchmark/execucoes/v2-243lrbo4
+Warning: you are leaving 2 commits behind, not connected to
+any of your branches:
+
+  5176508 feat: avalia o híbrido contrastivo e os embeddings da GNN v2 por cenário
+  d203a35 feat: organiza a GNN v2 e sua reprodução desde os dados brutos
+
+If you want to keep them by creating a new branch, this may be a good time
+to do so with:
+
+ git branch <new-branch-name> 5176508
+
+Switched to a new branch 'feat/gnn-v2-anomalias'
+Processando: data/raw/betgraph_arestas_16set.csv
+Validação de 'data/raw/betgraph_arestas_16set.csv':
+  - 1972 outcomes distintos codificados neste arquivo (informativo).
+
+Sucesso! Arquivo processado salvo em: data/raw/betgraph_arestas_16set_processado.csv
+
+Mapeamentos salvos com sucesso em:
+ - mapeamento_wallets.json  (40218 wallets)
+ - mapeamento_conditions.json  (22418 mercados)
+ - mapeamento_outcomes.json  (1972 outcomes)
+  [v2 r3] filtrar_arestas: 21.7 s, 413 MiB
+Mapeamento de conditions carregado com sucesso!
+
+Processando: data/raw/betgraph_nos_evento_16set.csv
+Checagem de redundância das colunas de status:
+  - 'active' é sempre o oposto de 'closed'? False
+  - distribuição de 'archived': {False: 22415, True: 3}
+  - distribuição de 'outcome_status': {'no': 9278, 'unresolved': 8605, 'yes': 4445, '50/50': 90}
+
+Validação de 'data/raw/betgraph_nos_evento_16set.csv':
+  - 1339/22418 mercados com duração não confiável (duracao_mercado_segundos = NaN, duracao_mercado_valida = False). Dados do mercado preservados, só a duração é ausente.
+  - 74 categorias principais distintas (informativo).
+  - 5725/22418 mercados marcados como recorrentes (25.5%). Ainda NÃO foram removidos -- use 'filtrar_recorrentes.py' para isso depois.
+
+Sucesso! Arquivo salvo em: data/raw/betgraph_nos_evento_16set_processado.csv
+
+  [v2 r3] filtrar_nos: 1.1 s, 146 MiB
+Mercados recorrentes identificados: 5725 de 22418
+Nós: 22418 -> 16693  (-5725)
+Arestas: 560985 -> 358689  (-202296)
+OK: nenhuma aresta órfã -- todo condition_id em arestas existe em nós.
+
+Salvos:
+ - data/raw/betgraph_nos_evento_16set_final.csv
+ - data/raw/betgraph_arestas_16set_final.csv
+  [v2 r3] filtrar_recorrentes: 6.6 s, 458 MiB
+Lendo: data/raw/betgraph_arestas_16set_final.csv
+358689 arestas, 27039 carteiras distintas.
+
+Resumo dos nós de usuário gerados:
+  - 27039 carteiras
+  - volume_total_usd:  min=0.00  mediana=82.92  max=4879727.57
+  - n_mercados_distintos:  min=1  mediana=2  max=3141
+
+Sucesso! Arquivo salvo em: data/raw/betgraph_wallets_16set_nos.csv
+  [v2 r3] agregar_carteiras: 25.1 s, 323 MiB
+/home/aliss/betgraph-limpo/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+  [v2 r3] coorte_5000: 10.5 s, 650 MiB
+/home/aliss/betgraph-limpo/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+  [v2 r3] preparar: 8.7 s, 542 MiB
+/home/aliss/betgraph-limpo/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+  [v2 r3] relacional seed 42: 7.4 s, 470 MiB
+/home/aliss/betgraph-limpo/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+  [v2 r3] floresta seed 42: 7.5 s, 467 MiB
+/home/aliss/betgraph-limpo/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+  [v2 r3] gnn seed 42: 31.8 s, 649 MiB
+/home/aliss/betgraph-limpo/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+  [v2 r3] gnn seed 73: 32.2 s, 652 MiB
+/home/aliss/betgraph-limpo/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+  [v2 r3] gnn seed 2026: 33.2 s, 649 MiB
+/home/aliss/betgraph-limpo/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+  [v2 r3] mlp seed 42: 25.5 s, 621 MiB
+/home/aliss/betgraph-limpo/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+  [v2 r3] mlp seed 73: 23.2 s, 616 MiB
+/home/aliss/betgraph-limpo/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+  [v2 r3] mlp seed 2026: 22.5 s, 618 MiB
+Resultados: /home/aliss/betgraph-limpo/data/benchmark/execucoes/v2-243lrbo4/resultados
+/home/aliss/betgraph-limpo/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+Benchmark gravado em /home/aliss/betgraph-limpo/benchmark; rankings idênticos entre repetições: {'v3': True, 'v2': True}

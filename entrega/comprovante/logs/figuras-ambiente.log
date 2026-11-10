@@ -1,0 +1,23 @@
+.venv/bin/python -m pip install -r requirements-figuras.txt
+Collecting plotly==7.1.0 (from -r requirements-figuras.txt (line 5))
+  Downloading plotly-7.1.0-py3-none-any.whl.metadata (8.8 kB)
+Collecting kaleido==1.5.0 (from -r requirements-figuras.txt (line 6))
+  Downloading kaleido-1.5.0-py3-none-any.whl.metadata (7.5 kB)
+Requirement already satisfied: narwhals>=1.15.1 in ./.venv/lib/python3.12/site-packages (from plotly==7.1.0->-r requirements-figuras.txt (line 5)) (2.27.1)
+Requirement already satisfied: packaging in ./.venv/lib/python3.12/site-packages (from plotly==7.1.0->-r requirements-figuras.txt (line 5)) (26.3)
+Collecting choreographer>=1.4.0 (from kaleido==1.5.0->-r requirements-figuras.txt (line 6))
+  Downloading choreographer-1.4.0-py3-none-any.whl.metadata (5.5 kB)
+Collecting logistro>=1.0.8 (from kaleido==1.5.0->-r requirements-figuras.txt (line 6))
+  Downloading logistro-2.0.1-py3-none-any.whl.metadata (3.9 kB)
+Requirement already satisfied: platformdirs>=4.3.6 in ./.venv/lib/python3.12/site-packages (from choreographer>=1.4.0->kaleido==1.5.0->-r requirements-figuras.txt (line 6)) (4.11.12)
+Collecting simplejson>=3.19.3 (from choreographer>=1.4.0->kaleido==1.5.0->-r requirements-figuras.txt (line 6))
+  Downloading simplejson-4.2.0-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (3.8 kB)
+Downloading plotly-7.1.0-py3-none-any.whl (9.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.7/9.7 MB 23.3 MB/s  0:00:00
+Downloading kaleido-1.5.0-py3-none-any.whl (55 kB)
+Downloading choreographer-1.4.0-py3-none-any.whl (57 kB)
+Downloading logistro-2.0.1-py3-none-any.whl (8.6 kB)
+Downloading simplejson-4.2.0-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (198 kB)
+Installing collected packages: simplejson, plotly, logistro, choreographer, kaleido
+
+Successfully installed choreographer-1.4.0 kaleido-1.5.0 logistro-2.0.1 plotly-7.1.0 simplejson-4.2.0

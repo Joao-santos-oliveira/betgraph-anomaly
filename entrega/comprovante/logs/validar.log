@@ -1,0 +1,6 @@
+.venv/bin/python -m pip check
+No broken requirements found.
+.venv/bin/python -B src/validar_ambiente.py
+/home/aliss/betgraph-limpo/.venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+CPU e PyG forward/backward OK: 2.14.1+cpu 2.8.1

@@ -1,0 +1,9 @@
+clone: https://github.com/Joao-santos-oliveira/betgraph-anomaly + feat/evidencias-artigo (commits locais, sem push)
+HEAD: 601bf65 fix: guarda só a execução da v3 usada pelos subgrafos no benchmark
+raso: false
+caminho: /home/aliss/betgraph-limpo (ext4 no WSL2)
+execucao_reproduzir: main-vlvcoush
+execucao_v3_subgrafos: v3-puetwvs5
+brutos:
+9724e0fa7878f82f6836feeec234099f355efeb838f6e1f1006ccfea78242102  betgraph_arestas_16set.csv
+bb97d2b009762fe3448a501eb2990753a92e89b11371f339a04213c45dfa00e0  betgraph_nos_evento_16set.csv
