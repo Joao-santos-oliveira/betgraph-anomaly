@@ -1,0 +1,6 @@
+# Dependências adicionais para gerar as figuras do artigo (scripts/evidencias).
+# Instalar sobre o ambiente principal: .venv/bin/python -m pip install -r requirements-figuras.txt
+# A exportação para PDF/PNG (kaleido 1.x) precisa de um navegador Chromium.
+# Se não houver um, use `plotly_get_chrome` ou aponte BROWSER_PATH para o executável.
+plotly==7.1.0
+kaleido==1.5.0
