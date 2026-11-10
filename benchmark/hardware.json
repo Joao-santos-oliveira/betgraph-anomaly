@@ -1,0 +1,30 @@
+{
+  "data_utc": "2026-11-10T15:27:14+00:00",
+  "sistema": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "kernel": "6.6.87.2-microsoft-standard-WSL2",
+  "maquina": "x86_64",
+  "python": "3.12.3",
+  "nucleos_logicos": 8,
+  "cpu": {
+    "Model name": "13th Gen Intel(R) Core(TM) i3-1315U",
+    "Thread(s) per core": "2",
+    "Core(s) per socket": "4",
+    "Socket(s)": "1"
+  },
+  "memoria_total_mib": 3758.22265625,
+  "swap_total_mib": 1024.0,
+  "wsl": true,
+  "host_windows": {
+    "cpu": "13th Gen Intel(R) Core(TM) i3-1315U",
+    "memoria_fisica_mib": 7875.0
+  },
+  "disco_destino": "Filesystem     Type  Size  Used Avail Use% Mounted on\n/dev/sdd       ext4 1007G   17G  940G   2% /",
+  "versoes": {
+    "numpy": "2.5.3",
+    "pandas": "3.0.6",
+    "scipy": "1.18.1",
+    "sklearn": "1.9.1",
+    "torch": "2.14.1+cpu",
+    "torch_geometric": "2.8.1"
+  }
+}

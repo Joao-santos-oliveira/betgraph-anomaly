@@ -1,0 +1,28 @@
+{
+  "commits": {
+    "v3": "a67bcb5",
+    "v2": "5176508"
+  },
+  "checkout_main": "601bf65f9570184e118618f1272e75703ed84d1b",
+  "repeticoes": 3,
+  "epocas": {
+    "v3": 60,
+    "v2": 100
+  },
+  "escopo": "5000",
+  "cenario": "original",
+  "seeds_redes": [
+    42,
+    73,
+    2026
+  ],
+  "seed_floresta": 42,
+  "seed_divisao": 9103,
+  "threads": {
+    "OMP_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2",
+    "OPENBLAS_NUM_THREADS": "2"
+  },
+  "medicao": "os.wait4 por processo: tempo de parede e ru_maxrss; segundos_metodo vem de custos.json (tempo interno do método, sem a carga do interpretador)",
+  "sistema_de_arquivos": "Filesystem     Type  1K-blocks     Used Available Use% Mounted on\n/dev/sdd       ext4 1055762868 16778988 985280408   2% /"
+}

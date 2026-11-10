@@ -1,0 +1,68 @@
+{
+  "identicos_entre_repeticoes": {
+    "v3": true,
+    "v2": true
+  },
+  "por_repeticao": {
+    "v3_r1": {
+      "floresta_42/ranking.csv": "4c07aee543f2637a16596dafda3c7d480f4079a76d768394e13474e3be74f838",
+      "gnn_2026/ranking.csv": "1d46901b46c99bb789cc3de33e93ce4a23ae98d8528bc382437634719b0fb499",
+      "gnn_42/ranking.csv": "a3cc3b64b6e8fc90035e8051efdc0c217cd238e8c80b87976d771e1baa4e37e9",
+      "gnn_73/ranking.csv": "57c7deafac19bfea416a35d6b12b4211c3b987ecf857c59e35a975bd1eeeb979",
+      "mlp_2026/ranking.csv": "45bb4e89e9858e2e254b610f4387372536c07c30b842db048ff5069537b3522d",
+      "mlp_42/ranking.csv": "98ca63dea4f1b31d090d013b784c73309220a5d3847b7a6efd56d21da42329bc",
+      "mlp_73/ranking.csv": "660408b43670630002734d59ea964ed5a4926826c9dbc535a22258d9630ddd80",
+      "relacional_42/ranking.csv": "60e18bc7b73c05a596a7a8ea3ef0e87ab138698c01e83ce1bee9e2075b62fcc0"
+    },
+    "v2_r1": {
+      "floresta_42/ranking.csv": "4c07aee543f2637a16596dafda3c7d480f4079a76d768394e13474e3be74f838",
+      "gnn_2026/ranking.csv": "3cb4ba7b2de9612949e1469898d4ad2b2658fa7277e30a21f8231fa6799c3e27",
+      "gnn_42/ranking.csv": "c28e33efd2fb72497aa06a0012d213443b9da688032c41597f21478c5174d715",
+      "gnn_73/ranking.csv": "113488bbfd0f49dda72cef1880e5265e624c491476fb187b5a38aebccc409cff",
+      "mlp_2026/ranking.csv": "687c179b935418d827b488328997159a800e3fe0903dd8cf936d893848b09e7f",
+      "mlp_42/ranking.csv": "7da63b4eea3c29444519160ab068e8c0534cbd8a420ac94e1fa26b847b045897",
+      "mlp_73/ranking.csv": "04c5eda655be84a2d166a7706599ddb8248fa01e802c6baff6ca47074b750346",
+      "relacional_42/ranking.csv": "60e18bc7b73c05a596a7a8ea3ef0e87ab138698c01e83ce1bee9e2075b62fcc0"
+    },
+    "v2_r2": {
+      "floresta_42/ranking.csv": "4c07aee543f2637a16596dafda3c7d480f4079a76d768394e13474e3be74f838",
+      "gnn_2026/ranking.csv": "3cb4ba7b2de9612949e1469898d4ad2b2658fa7277e30a21f8231fa6799c3e27",
+      "gnn_42/ranking.csv": "c28e33efd2fb72497aa06a0012d213443b9da688032c41597f21478c5174d715",
+      "gnn_73/ranking.csv": "113488bbfd0f49dda72cef1880e5265e624c491476fb187b5a38aebccc409cff",
+      "mlp_2026/ranking.csv": "687c179b935418d827b488328997159a800e3fe0903dd8cf936d893848b09e7f",
+      "mlp_42/ranking.csv": "7da63b4eea3c29444519160ab068e8c0534cbd8a420ac94e1fa26b847b045897",
+      "mlp_73/ranking.csv": "04c5eda655be84a2d166a7706599ddb8248fa01e802c6baff6ca47074b750346",
+      "relacional_42/ranking.csv": "60e18bc7b73c05a596a7a8ea3ef0e87ab138698c01e83ce1bee9e2075b62fcc0"
+    },
+    "v3_r2": {
+      "floresta_42/ranking.csv": "4c07aee543f2637a16596dafda3c7d480f4079a76d768394e13474e3be74f838",
+      "gnn_2026/ranking.csv": "1d46901b46c99bb789cc3de33e93ce4a23ae98d8528bc382437634719b0fb499",
+      "gnn_42/ranking.csv": "a3cc3b64b6e8fc90035e8051efdc0c217cd238e8c80b87976d771e1baa4e37e9",
+      "gnn_73/ranking.csv": "57c7deafac19bfea416a35d6b12b4211c3b987ecf857c59e35a975bd1eeeb979",
+      "mlp_2026/ranking.csv": "45bb4e89e9858e2e254b610f4387372536c07c30b842db048ff5069537b3522d",
+      "mlp_42/ranking.csv": "98ca63dea4f1b31d090d013b784c73309220a5d3847b7a6efd56d21da42329bc",
+      "mlp_73/ranking.csv": "660408b43670630002734d59ea964ed5a4926826c9dbc535a22258d9630ddd80",
+      "relacional_42/ranking.csv": "60e18bc7b73c05a596a7a8ea3ef0e87ab138698c01e83ce1bee9e2075b62fcc0"
+    },
+    "v3_r3": {
+      "floresta_42/ranking.csv": "4c07aee543f2637a16596dafda3c7d480f4079a76d768394e13474e3be74f838",
+      "gnn_2026/ranking.csv": "1d46901b46c99bb789cc3de33e93ce4a23ae98d8528bc382437634719b0fb499",
+      "gnn_42/ranking.csv": "a3cc3b64b6e8fc90035e8051efdc0c217cd238e8c80b87976d771e1baa4e37e9",
+      "gnn_73/ranking.csv": "57c7deafac19bfea416a35d6b12b4211c3b987ecf857c59e35a975bd1eeeb979",
+      "mlp_2026/ranking.csv": "45bb4e89e9858e2e254b610f4387372536c07c30b842db048ff5069537b3522d",
+      "mlp_42/ranking.csv": "98ca63dea4f1b31d090d013b784c73309220a5d3847b7a6efd56d21da42329bc",
+      "mlp_73/ranking.csv": "660408b43670630002734d59ea964ed5a4926826c9dbc535a22258d9630ddd80",
+      "relacional_42/ranking.csv": "60e18bc7b73c05a596a7a8ea3ef0e87ab138698c01e83ce1bee9e2075b62fcc0"
+    },
+    "v2_r3": {
+      "floresta_42/ranking.csv": "4c07aee543f2637a16596dafda3c7d480f4079a76d768394e13474e3be74f838",
+      "gnn_2026/ranking.csv": "3cb4ba7b2de9612949e1469898d4ad2b2658fa7277e30a21f8231fa6799c3e27",
+      "gnn_42/ranking.csv": "c28e33efd2fb72497aa06a0012d213443b9da688032c41597f21478c5174d715",
+      "gnn_73/ranking.csv": "113488bbfd0f49dda72cef1880e5265e624c491476fb187b5a38aebccc409cff",
+      "mlp_2026/ranking.csv": "687c179b935418d827b488328997159a800e3fe0903dd8cf936d893848b09e7f",
+      "mlp_42/ranking.csv": "7da63b4eea3c29444519160ab068e8c0534cbd8a420ac94e1fa26b847b045897",
+      "mlp_73/ranking.csv": "04c5eda655be84a2d166a7706599ddb8248fa01e802c6baff6ca47074b750346",
+      "relacional_42/ranking.csv": "60e18bc7b73c05a596a7a8ea3ef0e87ab138698c01e83ce1bee9e2075b62fcc0"
+    }
+  }
+}
