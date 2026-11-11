@@ -25,6 +25,12 @@ def features_contexto(split, users, events, edges):
     validar_divisao(split)
     result = copy.deepcopy(split)
     graph = result['context']
+    raw, bundle, report = atribuir_features(graph, users, events, edges)
+    return result, raw, bundle, report
+
+
+def atribuir_features(graph, users, events, edges, ajuste=None):
+    """Na inferência reutiliza os transformadores e medianas do contexto de treino."""
     users = alinhar(users, 'wallet_id', graph['user'].original_id)
     events = alinhar(events, 'condition_node_id', graph['event'].original_id)
     pairs = graph[FORWARD].edge_index.numpy()
@@ -47,7 +53,7 @@ def features_contexto(split, users, events, edges):
     volume = aggregate.volume_total_usd.fillna(0)
     trades = aggregate.n_trades_total.fillna(0)
     price = (aggregate.preco_x_volume / volume.replace(0, np.nan)).fillna(aggregate.preco_simples)
-    median_price = float(price.loc[active].median())
+    median_price = ajuste['mediana_preco'] if ajuste is not None else float(price.loc[active].median())
     if not np.isfinite(median_price):
         raise ValueError('Sem preco observado para imputacao')
     raw = pd.DataFrame({'wallet_id': users.wallet_id.to_numpy(),
@@ -58,18 +64,20 @@ def features_contexto(split, users, events, edges):
                         'preco_medio_ponderado': price.fillna(median_price).to_numpy(),
                         'sem_contexto': ~active})
     numeric = np.column_stack([log_positivo(raw, USER_LOG), raw.preco_medio_ponderado])
-    user_scaler = StandardScaler().fit(numeric[active])
+    user_scaler = ajuste['user_scaler'] if ajuste is not None else StandardScaler().fit(numeric[active])
     ux = np.column_stack([user_scaler.transform(numeric), ~active]).astype(np.float32)
     event_active = np.bincount(pairs[1], minlength=len(events)) > 0
     missing = (events.duracao_mercado_segundos.isna() | ~events.duracao_mercado_valida |
                (events.duracao_mercado_segundos < 0))
-    duration_median = float(events.loc[event_active & ~missing, 'duracao_mercado_segundos'].median())
+    duration_median = (ajuste['mediana_duracao'] if ajuste is not None else
+                       float(events.loc[event_active & ~missing, 'duracao_mercado_segundos'].median()))
     if not np.isfinite(duration_median):
         raise ValueError('Sem duracao valida no contexto')
     duration = np.log1p(events.duracao_mercado_segundos.mask(missing, duration_median).to_numpy()).reshape(-1, 1)
-    event_scaler = StandardScaler().fit(duration[event_active])
-    encoder = OneHotEncoder(handle_unknown='ignore', sparse_output=False, dtype=np.float32)
-    encoder.fit(events.loc[event_active, ['categoria_principal']])
+    event_scaler = ajuste['event_scaler'] if ajuste is not None else StandardScaler().fit(duration[event_active])
+    encoder = (ajuste['categorias'] if ajuste is not None else
+               OneHotEncoder(handle_unknown='ignore', sparse_output=False, dtype=np.float32)
+               .fit(events.loc[event_active, ['categoria_principal']]))
     ex = np.column_stack([event_scaler.transform(duration), missing,
                           encoder.transform(events[['categoria_principal']])]).astype(np.float32)
     if not np.isfinite(ux).all() or not np.isfinite(ex).all():
@@ -84,4 +92,4 @@ def features_contexto(split, users, events, edges):
               'sem_contexto': 'contagens, volume e ticket zero; preco mediano dos ativos; flag binaria adicional',
               'preco': 'ponderado por volume; media simples dos precos das arestas quando volume zero',
               'limite': 'metadados dos mercados permanecem transdutivos; nao ha separacao temporal'}
-    return result, raw, bundle, report
+    return raw, bundle, report

@@ -10,6 +10,7 @@ from tempfile import mkdtemp
 from experimentos.artigo.filtrar import ROOT, filtrar
 from experimentos.artigo.preparar import FORWARD, preparar, protocol
 from experimentos.artigo.ablacao import avaliar
+from experimentos.artigo.cobertura import cobertura
 from experimentos.gnn.detectores import hibrido, ranking
 from experimentos.gnn.treino import treinar
 from construir_hetero import construir
@@ -47,6 +48,7 @@ def executar(raw, destino, processos):
     with ProcessPoolExecutor(max_workers=processos, mp_context=multiprocessing.get_context('spawn')) as pool:
         list(pool.map(treinar_cenario, tasks))
     avaliar(run, run / 'resultados')
+    cobertura(run, run / 'resultados')
     print(run / 'resultados', flush=True)
 
 

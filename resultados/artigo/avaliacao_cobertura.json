@@ -1,0 +1,29 @@
+{
+  "42": {
+    "n": 45814,
+    "positivos": 22907,
+    "auc": 0.9610996374256005,
+    "ap": 0.9607170393736237,
+    "top100_comuns": 94,
+    "primeiro_contexto": 18753,
+    "primeiro_total": 17762
+  },
+  "73": {
+    "n": 45814,
+    "positivos": 22907,
+    "auc": 0.962618975016266,
+    "ap": 0.9618813547689423,
+    "top100_comuns": 94,
+    "primeiro_contexto": 18753,
+    "primeiro_total": 17762
+  },
+  "2026": {
+    "n": 45814,
+    "positivos": 22907,
+    "auc": 0.9622649781602522,
+    "ap": 0.9618018840862308,
+    "top100_comuns": 94,
+    "primeiro_contexto": 18753,
+    "primeiro_total": 17762
+  }
+}

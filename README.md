@@ -17,13 +17,15 @@ Um par é uma ligação entre uma carteira e um mercado. Se uma carteira operou 
 | Contexto | 137.444 | Ligações visíveis pelas quais a GNN agrega informações dos vizinhos. |
 | Alvos positivos de treino | 45.814 | Ligações reais que a GNN aprende a prever a partir do contexto. |
 | Validação | 22.907 | Ligações reservadas para acompanhar o aprendizado e selecionar o checkpoint. |
-| Teste | 22.907 | Ligações reservadas para avaliação final. |
+| Teste | 22.907 | Ligações usadas no teste final de previsão, antes da inferência de cobertura total. |
 
 No treino, a rede **vê** cerca de 60% das ligações (contexto) e **aprende a prever** outros 20% (alvos de treino). Os dois conjuntos restantes, de aproximadamente 10% cada, servem para validação e teste. Por exemplo, se a carteira A operou em dois mercados, a ligação com o primeiro pode estar visível enquanto a ligação com o segundo serve de alvo.
 
-O ranking publicado ordena todas as 27.039 carteiras usando as 137.444 ligações de contexto. Gerar um ranking com todas as 229.072 ligações seria uma etapa adicional de inferência após o treino e a avaliação, recalculando as representações com os pesos da GNN já fixados.
+O ranking de contexto ordena as 27.039 carteiras com 137.444 ligações. Para a análise retrospectiva do dia, primeiro avaliamos os checkpoints congelados no teste de previsão de ligações, ainda com o contexto de treino. Depois recalculamos os atributos, as representações e os scores usando as 229.072 ligações observadas, preservando pesos, medianas, escalas e categorias do treino.
 
-A carteira 18753 ocupa a primeira posição da GNN nas seeds 42, 73 e 2026. Ela compartilhou 64 mercados com a carteira 18626, ante uma sobreposição esperada de aproximadamente 7,51 pelo modelo relacional. Mercados de uma mesma partida podem explicar parte de uma coincidência. Os dados permitem investigar essa relação, mas atribuir coordenação ou fraude exige evidência independente. [Top 100 da GNN na seed 42](resultados/artigo/top100_dia_real.csv) · [Posições das 27.039 carteiras por método e seed](resultados/artigo/posicoes_dia_real.csv)
+**Com cobertura total, 94 das 100 carteiras permaneceram no topo em cada seed.** A carteira 17762 subiu de 4ª para 1ª, e a 18753 passou de 1ª para 4ª nas três seeds. Essa comparação usa o dia original. A tabela de recuperação artificial abaixo continua medindo o protocolo de contexto. [Ranking com ambas as coberturas](resultados/artigo/cobertura_total.csv) · [Teste de ligações e sobreposição por seed](resultados/artigo/avaliacao_cobertura.json)
+
+No contexto de treino, a carteira 18753 ocupa a primeira posição da GNN nas seeds 42, 73 e 2026. Ela compartilhou 64 mercados com a carteira 18626, ante uma sobreposição esperada de aproximadamente 7,51 pelo modelo relacional. Mercados de uma mesma partida podem explicar parte de uma coincidência. Os dados permitem investigar essa relação, mas atribuir coordenação ou fraude exige evidência independente. [Top 100 da GNN na seed 42](resultados/artigo/top100_dia_real.csv) · [Posições das 27.039 carteiras por método e seed](resultados/artigo/posicoes_dia_real.csv)
 
 ### Controle positivo e ablação do score
 
@@ -82,6 +84,8 @@ betgraph-anomaly/
 │   ├── entradas.json                  # Hashes de referência dos dados
 │   └── artigo/
 │       ├── top100_dia_real.csv        # As 100 primeiras carteiras da GNN na seed 42
+│       ├── cobertura_total.csv        # Ranking retrospectivo comparado ao contexto
+│       ├── avaliacao_cobertura.json   # Teste de ligações e estabilidade do top 100
 │       ├── posicoes_dia_real.csv      # Posições de todas as carteiras
 │       ├── resumo.csv                 # Recuperação por método e intensidade
 │       └── por_realizacao_seed.csv    # Contagens por sorteio e seed
