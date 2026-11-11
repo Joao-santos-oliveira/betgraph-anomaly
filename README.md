@@ -17,7 +17,11 @@ Um par é uma ligação entre uma carteira e um mercado. Se uma carteira operou 
 | Validação | 22.907 | Ligações reservadas para acompanhar o aprendizado e selecionar o checkpoint. |
 | Teste | 22.907 | Ligações reservadas para avaliação final. |
 
-Essa divisão é por ligação. O ranking continua cobrindo as 27.039 carteiras do recorte. A carteira 18753 ocupa a primeira posição da GNN nas seeds 42, 73 e 2026. Ela compartilhou 64 mercados com a carteira 18626, ante uma sobreposição esperada de aproximadamente 7,51 pelo modelo relacional. Mercados de uma mesma partida podem explicar parte de uma coincidência. Os dados permitem investigar essa relação, mas atribuir coordenação ou fraude exige evidência independente. [Top 100 da GNN na seed 42](resultados/artigo/top100_dia_real.csv) · [Posições das 27.039 carteiras por método e seed](resultados/artigo/posicoes_dia_real.csv)
+No treino, a rede **vê** cerca de 60% das ligações (contexto) e **aprende a prever** outros 20% (alvos de treino). Os dois conjuntos restantes, de aproximadamente 10% cada, servem para validação e teste. Por exemplo, se a carteira A operou em dois mercados, a ligação com o primeiro pode estar visível enquanto a ligação com o segundo serve de alvo.
+
+O ranking publicado ordena todas as 27.039 carteiras usando as 137.444 ligações de contexto. Gerar um ranking com todas as 229.072 ligações seria uma etapa adicional de inferência após o treino e a avaliação, recalculando as representações com os pesos da GNN já fixados.
+
+A carteira 18753 ocupa a primeira posição da GNN nas seeds 42, 73 e 2026. Ela compartilhou 64 mercados com a carteira 18626, ante uma sobreposição esperada de aproximadamente 7,51 pelo modelo relacional. Mercados de uma mesma partida podem explicar parte de uma coincidência. Os dados permitem investigar essa relação, mas atribuir coordenação ou fraude exige evidência independente. [Top 100 da GNN na seed 42](resultados/artigo/top100_dia_real.csv) · [Posições das 27.039 carteiras por método e seed](resultados/artigo/posicoes_dia_real.csv)
 
 ### Controle positivo e ablação do score
 
@@ -25,13 +29,23 @@ Em cada realização, 50 carteiras existentes formam dez grupos de cinco. Cada g
 
 Os três scores consideram os mesmos pares candidatos com pelo menos dois mercados em comum e agregam as três maiores contribuições por carteira, dividindo a soma por três. O relacional mede a surpresa da sobreposição. A ablação usa apenas a similaridade de cosseno dos embeddings da GNN, reescalada para o intervalo de 0 a 1. A GNN híbrida multiplica os dois termos para cada par. É uma ablação do **score final**. Os embeddings continuam recebendo os atributos estruturais usados no treinamento original.
 
-| Novos mercados comuns por grupo | GNN híbrida | Apenas similaridade da GNN | Relacional direto |
-|---|---:|---:|---:|
-| 4 | 2 / 7 | 0 / 0 | 2 / 7 |
-| 10 | 0 / 24,33 | 0 / 0 | 0 / 26 |
-| 20 | 50 / 50 | 0 / 0 | 50 / 50 |
+Cada ranking ordena as 27.039 carteiras de uma realização. Contamos quantos alvos artificiais aparecem nas **primeiras 100 posições** e repetimos a contagem nas **primeiras 541 posições** (cerca de 2% do ranking). A tabela reúne os três sorteios, com 50 participações-alvo por intensidade. Para a GNN, mostramos a média dos totais obtidos com as seeds 42, 73 e 2026.
 
-Cada célula informa **alvos no top 100 / alvos no top 541** após a intervenção, acumulados nos três sorteios. As contagens das redes são médias entre as três seeds sobre os mesmos alvos. O top 100 é o corte principal. O top 541 cobre cerca de 2% do dia. Esse corte complementar foi introduzido após a primeira análise do dia completo e constava do protocolo do teste de grupos antes de calcular seus rankings. O sinal de surpresa sozinho recuperou todos os casos fortes. A ponderação aprendida preservou essa recuperação e não acrescentou ganho médio no nível intermediário. A interpretação se limita às intervenções e ao dia avaliados. [Resumo antes e depois, com controles](resultados/artigo/resumo.csv) · [Resultados por realização e seed](resultados/artigo/por_realizacao_seed.csv)
+| Novos mercados em comum | Método | Alvos no top 100 | Alvos no top 541 |
+|---:|---|---:|---:|
+| 4 | GNN híbrida | 2 | 7 |
+| 4 | Apenas similaridade da GNN | 0 | 0 |
+| 4 | Relacional direto | 2 | 7 |
+| 10 | GNN híbrida | 0 | 24,33 |
+| 10 | Apenas similaridade da GNN | 0 | 0 |
+| 10 | Relacional direto | 0 | 26 |
+| 20 | GNN híbrida | 50 | 50 |
+| 20 | Apenas similaridade da GNN | 0 | 0 |
+| 20 | Relacional direto | 50 | 50 |
+
+Na linha da GNN híbrida com 4 mercados, **2** alvos entraram nas primeiras 100 posições e **7** entraram nas primeiras 541. Os 7 já incluem os 2 primeiros, portanto 5 ficaram entre as posições 101 e 541. Com 10 mercados, o relacional colocou todos os seus **26** alvos recuperados nessa faixa intermediária. O valor **24,33** da GNN é uma média entre treinamentos.
+
+O top 100 é o corte principal. Esse corte complementar foi introduzido após a primeira análise do dia completo e constava do protocolo do teste de grupos antes de calcular seus rankings. O sinal de surpresa sozinho recuperou todos os casos fortes. A ponderação aprendida preservou essa recuperação e não acrescentou ganho médio no nível intermediário. A interpretação se limita às intervenções e ao dia avaliados. [Resumo antes e depois, com controles](resultados/artigo/resumo.csv) · [Resultados por realização e seed](resultados/artigo/por_realizacao_seed.csv)
 
 
 ### Reprodução do estudo principal
