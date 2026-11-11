@@ -10,8 +10,8 @@ from tempfile import mkdtemp
 from experimentos.artigo.filtrar import ROOT, filtrar
 from experimentos.artigo.preparar import FORWARD, preparar, protocol
 from experimentos.artigo.ablacao import avaliar
-from experimentos.gnn_v2.detectores import hibrido, ranking
-from experimentos.gnn_v2.treino import treinar
+from experimentos.gnn.detectores import hibrido, ranking
+from experimentos.gnn.treino import treinar
 from construir_hetero import construir
 from preparar_features import preparar as preparar_csv
 import torch
@@ -21,7 +21,7 @@ def treinar_cenario(task):
     folder, seed = task
     split = torch.load(folder / 'rede.pt', weights_only=False)
     graph = split['context']
-    dest = folder / f'v2_{seed}'
+    dest = folder / f'gnn_{seed}'
     z, report = treinar(split, dest, 'gnn', seed, contrast=True)
     assert report['teste_avaliado'] is False
     scores = hibrido(graph[FORWARD].edge_index.numpy(), graph['user'].num_nodes,

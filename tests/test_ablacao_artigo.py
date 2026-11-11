@@ -2,7 +2,7 @@ import unittest
 
 import numpy as np
 
-from experimentos.gnn_v2.detectores import hibrido
+from experimentos.gnn.detectores import hibrido
 
 
 class ScoreSimilaridadeTest(unittest.TestCase):

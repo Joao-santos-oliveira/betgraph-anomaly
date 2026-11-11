@@ -13,8 +13,8 @@ legacy_imports()
 from preparar_gnn import FORWARD, REVERSE, separar
 from features_contexto import features_contexto
 from treinar_gnn import validar_divisao
-from experimentos.gnn_v2.features import enriquecer
-from experimentos.gnn_v2.detectores import ranking
+from experimentos.gnn.features import enriquecer
+from experimentos.gnn.detectores import ranking
 
 protocol = json.loads(Path(__file__).with_name('protocolo.json').read_text())
 

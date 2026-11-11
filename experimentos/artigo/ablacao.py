@@ -6,7 +6,7 @@ import numpy as np
 import pandas as pd
 import torch
 
-from experimentos.gnn_v2.detectores import hibrido, ranking
+from experimentos.gnn.detectores import hibrido, ranking
 from experimentos.artigo.preparar import FORWARD, protocol
 from experimentos.relacional import scores_relacionais
 
@@ -22,16 +22,18 @@ def classificar(folder):
     pd.testing.assert_frame_equal(ordenado, pd.read_csv(folder / 'relacional.csv'))
     ranks = {('Relacional', 0): ordenado.set_index('wallet_id').posicao}
     for seed in protocol['seeds_modelo']:
-        treino = folder / f'v2_{seed}'
+        treino = folder / f'gnn_{seed}'
+        if not treino.exists():
+            treino = folder / f'v2_{seed}'  # Rodadas anteriores à adoção do nome principal.
         with np.load(treino / 'embeddings.npz') as emb:
             np.testing.assert_array_equal(emb['user_original_id'], users)
             np.testing.assert_array_equal(emb['event_original_id'], events)
             z = emb['user']
         hybrid = ranking(users, hibrido(pairs, *dims, z))
         pd.testing.assert_frame_equal(hybrid, pd.read_csv(treino / 'ranking.csv'))
-        ranks['V2 híbrida', seed] = hybrid.set_index('wallet_id').posicao
+        ranks['GNN híbrida', seed] = hybrid.set_index('wallet_id').posicao
         sim = ranking(users, hibrido(pairs, *dims, z, apenas_similaridade=True))
-        ranks['Similaridade V2', seed] = sim.set_index('wallet_id').posicao
+        ranks['Similaridade da GNN', seed] = sim.set_index('wallet_id').posicao
     return ranks
 
 
@@ -41,7 +43,7 @@ def avaliar(rodada, destino):
     real = pd.DataFrame(original).sort_index()
     real.columns = [f'{method}_{seed}' for method, seed in real.columns]
     real.to_csv(destino / 'posicoes_dia_real.csv')
-    real.nsmallest(100, 'V2 híbrida_42').to_csv(destino / 'top100_dia_real.csv')
+    real.nsmallest(100, 'GNN híbrida_42').to_csv(destino / 'top100_dia_real.csv')
     counts = []
     for realization in protocol['realizacoes']:
         folder = rodada / str(realization)

@@ -1,4 +1,16 @@
 metodo,fase,mercados,papel,n,top100,top541
+GNN híbrida,antes,4,alvo,50.0,4.0,14.0
+GNN híbrida,antes,4,controle,50.0,2.0,17.0
+GNN híbrida,antes,10,alvo,50.0,3.0,11.0
+GNN híbrida,antes,10,controle,50.0,2.0,11.0
+GNN híbrida,antes,20,alvo,50.0,3.0,13.0
+GNN híbrida,antes,20,controle,50.0,5.0,13.0
+GNN híbrida,depois,4,alvo,50.0,2.0,7.0
+GNN híbrida,depois,4,controle,50.0,1.0,17.0
+GNN híbrida,depois,10,alvo,50.0,0.0,24.333333333333332
+GNN híbrida,depois,10,controle,50.0,2.0,10.0
+GNN híbrida,depois,20,alvo,50.0,50.0,50.0
+GNN híbrida,depois,20,controle,50.0,3.0,12.0
 Relacional,antes,4,alvo,50.0,4.0,15.0
 Relacional,antes,4,controle,50.0,2.0,17.0
 Relacional,antes,10,alvo,50.0,3.0,11.0
@@ -11,27 +23,15 @@ Relacional,depois,10,alvo,50.0,0.0,26.0
 Relacional,depois,10,controle,50.0,2.0,10.0
 Relacional,depois,20,alvo,50.0,50.0,50.0
 Relacional,depois,20,controle,50.0,3.0,12.0
-Similaridade V2,antes,4,alvo,50.0,0.0,0.0
-Similaridade V2,antes,4,controle,50.0,0.0,0.0
-Similaridade V2,antes,10,alvo,50.0,0.0,0.0
-Similaridade V2,antes,10,controle,50.0,0.0,0.0
-Similaridade V2,antes,20,alvo,50.0,0.0,0.0
-Similaridade V2,antes,20,controle,50.0,0.0,0.0
-Similaridade V2,depois,4,alvo,50.0,0.0,0.0
-Similaridade V2,depois,4,controle,50.0,0.0,0.0
-Similaridade V2,depois,10,alvo,50.0,0.0,0.0
-Similaridade V2,depois,10,controle,50.0,0.0,0.0
-Similaridade V2,depois,20,alvo,50.0,0.0,0.0
-Similaridade V2,depois,20,controle,50.0,0.0,0.0
-V2 híbrida,antes,4,alvo,50.0,4.0,14.0
-V2 híbrida,antes,4,controle,50.0,2.0,17.0
-V2 híbrida,antes,10,alvo,50.0,3.0,11.0
-V2 híbrida,antes,10,controle,50.0,2.0,11.0
-V2 híbrida,antes,20,alvo,50.0,3.0,13.0
-V2 híbrida,antes,20,controle,50.0,5.0,13.0
-V2 híbrida,depois,4,alvo,50.0,2.0,7.0
-V2 híbrida,depois,4,controle,50.0,1.0,17.0
-V2 híbrida,depois,10,alvo,50.0,0.0,24.333333333333332
-V2 híbrida,depois,10,controle,50.0,2.0,10.0
-V2 híbrida,depois,20,alvo,50.0,50.0,50.0
-V2 híbrida,depois,20,controle,50.0,3.0,12.0
+Similaridade da GNN,antes,4,alvo,50.0,0.0,0.0
+Similaridade da GNN,antes,4,controle,50.0,0.0,0.0
+Similaridade da GNN,antes,10,alvo,50.0,0.0,0.0
+Similaridade da GNN,antes,10,controle,50.0,0.0,0.0
+Similaridade da GNN,antes,20,alvo,50.0,0.0,0.0
+Similaridade da GNN,antes,20,controle,50.0,0.0,0.0
+Similaridade da GNN,depois,4,alvo,50.0,0.0,0.0
+Similaridade da GNN,depois,4,controle,50.0,0.0,0.0
+Similaridade da GNN,depois,10,alvo,50.0,0.0,0.0
+Similaridade da GNN,depois,10,controle,50.0,0.0,0.0
+Similaridade da GNN,depois,20,alvo,50.0,0.0,0.0
+Similaridade da GNN,depois,20,controle,50.0,0.0,0.0

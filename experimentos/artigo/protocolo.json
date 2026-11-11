@@ -34,7 +34,7 @@
   ],
   "metodos": [
     "relacional direto",
-    "GNN V2 hibrida com contraste, ate 100 epocas"
+    "GNN hibrida com contraste, ate 100 epocas"
   ],
   "desenho": "Tres sorteios independentes de carteiras e mercados, doses atribuidas aleatoriamente a grupos. Em cada realizacao uma dose tem 4 grupos e as outras duas tem 3. Alternar a dose extra nas tres realizacoes. Cada alvo tem controle de mesmo grau protegido de trocas. Comparar ao ranking do grafo original. Sem escolha de participantes por score, sem tuning. Outcomes e atributos acompanham o mercado. Os pares reservados e os graus dos dois tipos de no devem permanecer identicos."
 }
