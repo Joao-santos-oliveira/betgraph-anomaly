@@ -3,7 +3,7 @@ import copy
 import numpy as np
 import torch
 from sklearn.preprocessing import StandardScaler
-from experimentos.investigacao_anomalias.relacional import scores_relacionais
+from experimentos.relacional import scores_relacionais
 
 NAMES=['grau_contexto','contagem_coparticipacao','surpresa_coparticipacao',
        'mercados_compartilhados','sobreposicao_esperada_aprox']

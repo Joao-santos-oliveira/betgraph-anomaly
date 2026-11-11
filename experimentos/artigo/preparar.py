@@ -8,7 +8,7 @@ import numpy as np
 import pandas as pd
 import torch
 
-from experimentos.piloto_sintetico.comum import legacy_imports
+from experimentos.comum import legacy_imports
 legacy_imports()
 from preparar_gnn import FORWARD, REVERSE, separar
 from features_contexto import features_contexto

@@ -8,7 +8,7 @@ import torch
 
 from experimentos.gnn_v2.detectores import hibrido, ranking
 from experimentos.artigo.preparar import FORWARD, protocol
-from experimentos.investigacao_anomalias.relacional import scores_relacionais
+from experimentos.relacional import scores_relacionais
 
 
 def classificar(folder):

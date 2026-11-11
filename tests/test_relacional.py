@@ -6,7 +6,7 @@ import numpy as np
 from scipy.stats import poisson
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT));sys.path.insert(0,str(ROOT/'src'))
-from experimentos.investigacao_anomalias.relacional import scores_relacionais
+from experimentos.relacional import scores_relacionais
 
 
 class RelacionalTest(unittest.TestCase):

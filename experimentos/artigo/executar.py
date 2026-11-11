@@ -7,7 +7,7 @@ from pathlib import Path
 import shutil
 from tempfile import mkdtemp
 
-from scripts.pipeline import ROOT, filtrar
+from experimentos.artigo.filtrar import ROOT, filtrar
 from experimentos.artigo.preparar import FORWARD, preparar, protocol
 from experimentos.artigo.ablacao import avaliar
 from experimentos.gnn_v2.detectores import hibrido, ranking

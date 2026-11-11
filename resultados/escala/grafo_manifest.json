@@ -1,9 +1,0 @@
-{
-  "users": 27039,
-  "events": 16693,
-  "arestas_diretas": 358689,
-  "arestas_reversas": 358689,
-  "grau_medio_user_com_multiarestas": 13.265616331964939,
-  "grau_medio_event_com_multiarestas": 21.487389923920205,
-  "pares_user_event_distintos": 229072
-}

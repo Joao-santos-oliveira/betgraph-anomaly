@@ -5,7 +5,7 @@ import numpy as np
 import pandas as pd
 import torch
 from torch.nn import functional as F
-from experimentos.piloto_sintetico.comum import legacy_imports,write_json,sha
+from experimentos.comum import legacy_imports,write_json,sha
 legacy_imports()
 from modelo_gnn import MODELOS
 from treinar_gnn import validar_divisao,amostrar_negativos,codigos,exemplos,avaliar_validacao
