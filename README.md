@@ -2,7 +2,7 @@
 
 # Betgraph Anomaly
 
-[Estudo](#estudo-principal) · [Resultados](#controle-positivo-e-ablação-do-score) · [Reprodução](#reprodução-do-estudo-principal) · [Comandos Make](#comandos-make) · [Autores](#autores)
+[Estudo](#estudo-principal) · [Estrutura do projeto](#estrutura-do-projeto) · [Resultados](#controle-positivo-e-ablação-do-score) · [Reprodução](#reprodução-do-estudo-principal) · [Comandos Make](#comandos-make) · [Autores](#autores)
 
 ## Estudo principal
 
@@ -57,7 +57,42 @@ Imagine dois pares de carteiras com a mesma similaridade aprendida. Um par compa
 
 Com 20 novos mercados em comum, a híbrida colocou **50 de 50 casos no top 100** e a similaridade isolada recuperou **zero até o top 541**. O relacional direto também recuperou os 50. Com 10 mercados, o relacional recuperou 26 no top 541 e a híbrida recuperou 24,33 em média. Portanto, a vantagem observada foi sobre a similaridade isolada. Nestes cenários, a surpresa sozinha já explicou a recuperação dos grupos fortes. A avaliação mede recuperação de padrões inseridos em um dia de dados. A identificação de fraude real exigiria evidência independente. [Resumo com controles](resultados/artigo/resumo.csv) · [Contagens por realização e seed](resultados/artigo/por_realizacao_seed.csv)
 
-### Reprodução do estudo principal
+## Estrutura do projeto
+
+```text
+betgraph-anomaly/
+├── data/                              # Pasta local usada na reprodução
+│   ├── raw/                           # Coloque aqui os dois CSVs brutos
+│   └── execucoes/                     # O Makefile cria uma pasta por execução
+├── experimentos/
+│   ├── artigo/
+│   │   ├── protocolo.json             # Intensidades, sorteios e seeds do estudo
+│   │   ├── executar.py                # Executa o estudo a partir dos CSVs
+│   │   ├── filtrar.py                 # Filtra os dados e verifica os hashes
+│   │   ├── preparar.py                # Cria os grupos artificiais e os controles
+│   │   └── ablacao.py                 # Compara os três rankings
+│   ├── gnn/
+│   │   ├── features.py                # Atributos estruturais das carteiras
+│   │   ├── objetivos.py               # Objetivo contrastivo do treinamento
+│   │   ├── treino.py                  # Treina a rede e salva os embeddings
+│   │   └── detectores.py              # Score híbrido e similaridade isolada
+│   └── relacional.py                  # Calcula a surpresa da coparticipação
+├── src/                               # Preparo dos CSVs, grafo e arquitetura da GNN
+├── resultados/
+│   ├── entradas.json                  # Hashes de referência dos dados
+│   └── artigo/
+│       ├── top100_dia_real.csv        # As 100 primeiras carteiras da GNN na seed 42
+│       ├── posicoes_dia_real.csv      # Posições de todas as carteiras
+│       ├── resumo.csv                 # Recuperação por método e intensidade
+│       └── por_realizacao_seed.csv    # Contagens por sorteio e seed
+├── tests/                             # Testes da preparação, dos modelos e da ablação
+├── assets/                            # Banner do README
+├── mapeamento_*.json                  # IDs de carteiras, mercados e resultados
+├── requirements.txt                   # Versões das dependências
+└── Makefile                           # Comandos de instalação, teste e reprodução
+```
+
+## Reprodução do estudo principal
 
 Em Linux ou WSL, use Python 3.12 e GNU Make. Coloque os dois arquivos brutos `betgraph_arestas_16set.csv` e `betgraph_nos_evento_16set.csv` em `data/raw/`. O executor confere os hashes dos dados, filtra os CSVs, monta o grafo do dia, recria as três intervenções, treina a GNN e calcula os três rankings. As dependências e os dados volumosos permanecem locais. [Hashes das entradas](resultados/entradas.json)
 
