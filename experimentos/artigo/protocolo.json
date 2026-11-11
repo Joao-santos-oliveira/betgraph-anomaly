@@ -1,0 +1,40 @@
+{
+  "dia": "2026-09-16",
+  "divisao": 42,
+  "realizacoes": [
+    51011,
+    51012,
+    51013
+  ],
+  "seeds_modelo": [
+    42,
+    73,
+    2026
+  ],
+  "grau_carteira": [
+    24,
+    44
+  ],
+  "grau_mercado": [
+    20,
+    120
+  ],
+  "carteiras_por_grupo": 5,
+  "grupos_por_realizacao": 10,
+  "mercados_novos_comuns": [
+    4,
+    10,
+    20
+  ],
+  "criterio_primario": "alvos no top 100 do dia, antes e depois por dose",
+  "secundarios": [
+    "top 541",
+    "mediana das posicoes",
+    "controles pareados por grau original no top 100"
+  ],
+  "metodos": [
+    "relacional direto",
+    "GNN V2 hibrida com contraste, ate 100 epocas"
+  ],
+  "desenho": "Tres sorteios independentes de carteiras e mercados, doses atribuidas aleatoriamente a grupos. Em cada realizacao uma dose tem 4 grupos e as outras duas tem 3. Alternar a dose extra nas tres realizacoes. Cada alvo tem controle de mesmo grau protegido de trocas. Comparar ao ranking do grafo original. Sem escolha de participantes por score, sem tuning. Outcomes e atributos acompanham o mercado. Os pares reservados e os graus dos dois tipos de no devem permanecer identicos."
+}

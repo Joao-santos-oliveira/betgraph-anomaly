@@ -13,6 +13,7 @@ RUN = $(VENV) -B scripts/pipeline.py $(ESTUDO) --raw "$(BRUTOS)" --destino "$(DE
 
 .PHONY: comparar baselines redes anomalias-volume anomalias-estrutura ajuda ambiente validar testes reproduzir historico baselines-5000 redes-5000 comparar-5000 escala-completa
 ajuda:
+	@echo "artigo: reproduzir o estudo da GNN V2 com a ablação a partir dos dois CSVs brutos"
 	@echo "comparar | baselines | redes: dia completo por padrão (ESCOPO=5000 para a amostra)"
 	@echo "anomalias-volume | anomalias-estrutura: 50 alvos; GRUPO=todos, baselines ou redes"
 	@echo "ambiente    instalar as dependências CPU em Python 3.12"
@@ -68,3 +69,8 @@ anomalias-volume:
 
 anomalias-estrutura:
 	$(RUN) --modelos "$(GRUPO)" $(OPCOES) --cenario estrutura
+
+PROCESSOS ?= 1
+.PHONY: artigo
+artigo:
+	OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 OPENBLAS_NUM_THREADS=2 $(VENV) -B -m experimentos.artigo.executar --raw "$(BRUTOS)" --destino "$(DESTINO)" --processos "$(PROCESSOS)"

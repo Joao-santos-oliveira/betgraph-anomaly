@@ -2,9 +2,55 @@
 
 # Betgraph Anomaly
 
-Estudo de priorização de carteiras no Polymarket em **16 de setembro de 2026**. O grafo bipartido liga carteiras aos mercados em que operaram. Uma mesma partida pode originar mercados de vencedor, handicap e totais. A pesquisa investiga quanto a estrutura dessas ligações e os atributos das operações ajudam a colocar comportamentos incomuns no início da fila de revisão.
+## Estudo principal
 
-**Branch principal.** Aqui estão as referências relacional e de atributos, o benchmark do dia completo e a revisão descritiva. As branches [GNN v2](https://github.com/Joao-santos-oliveira/betgraph-anomaly/tree/feat/gnn-v2-anomalias) e [GNN v3](https://github.com/Joao-santos-oliveira/betgraph-anomaly/tree/feat/gnn-v3-anomalias) têm o mesmo roteiro de instalação e seus próprios resultados.
+O Betgraph Anomaly avalia uma **rede neural em grafos heterogêneos (GNN V2 híbrida)** para priorizar carteiras com coparticipação atípica na Polymarket. O recorte de 16/09/2026 contém 27.039 carteiras e 16.693 mercados após a filtragem. No grafo bipartido, cada ligação representa uma carteira que operou em um mercado. A pergunta de pesquisa é quais padrões de atuação em grupo a GNN consegue trazer ao topo da fila de investigação e como a recuperação varia com a intensidade.
+
+### Um dia de atividade real
+
+Contamos 229.072 pares distintos no dia, dos quais 137.444 entram no contexto da rede. A carteira 18753 ocupa a primeira posição da V2 nas seeds 42, 73 e 2026. Ela compartilhou 64 mercados com a carteira 18626, ante uma sobreposição esperada de aproximadamente 7,51 pelo modelo relacional. Mercados de uma mesma partida podem explicar parte de uma coincidência. Os dados permitem investigar essa relação, mas atribuir coordenação ou fraude exige evidência independente. [Top 100 da V2 na seed 42](resultados/artigo/top100_dia_real.csv) · [Posições das 27.039 carteiras por método e seed](resultados/artigo/posicoes_dia_real.csv)
+
+### Controle positivo e ablação do score
+
+Em cada realização, 50 carteiras existentes formam dez grupos de cinco. Cada grupo passa a compartilhar a mesma lista de 4, 10 ou 20 novos mercados. As trocas preservam o grau de cada carteira e mercado e os pares reservados. Cada alvo tem um controle intacto de mesmo grau. O desenho alterna as doses entre três sorteios e totaliza 50 participações-alvo por intensidade. [Protocolo](experimentos/artigo/protocolo.json)
+
+Os três scores consideram os mesmos pares candidatos com pelo menos dois mercados em comum e agregam as três maiores contribuições por carteira, dividindo a soma por três. O relacional mede a surpresa da sobreposição. A ablação usa apenas a similaridade de cosseno dos embeddings da V2, reescalada para o intervalo de 0 a 1. A V2 híbrida multiplica os dois termos para cada par. É uma ablação do **score final**. Os embeddings continuam recebendo os atributos estruturais usados no treinamento original.
+
+| Novos mercados comuns por grupo | V2 híbrida | Apenas similaridade V2 | Relacional direto |
+|---|---:|---:|---:|
+| 4 | 2 / 7 | 0 / 0 | 2 / 7 |
+| 10 | 0 / 24,33 | 0 / 0 | 0 / 26 |
+| 20 | 50 / 50 | 0 / 0 | 50 / 50 |
+
+Cada célula informa **alvos no top 100 / alvos no top 541** após a intervenção, acumulados nos três sorteios. As contagens das redes são médias entre as três seeds sobre os mesmos alvos. O top 100 é o corte principal. O top 541 cobre cerca de 2% do dia. Esse corte complementar foi introduzido após a primeira análise do dia completo e constava do protocolo do teste de grupos antes de calcular seus rankings. O sinal de surpresa sozinho recuperou todos os casos fortes. A ponderação aprendida preservou essa recuperação e não acrescentou ganho médio no nível intermediário. A interpretação se limita às intervenções e ao dia avaliados. [Resumo antes e depois, com controles](resultados/artigo/resumo.csv) · [Resultados por realização e seed](resultados/artigo/por_realizacao_seed.csv)
+
+O experimento anterior de concentração em um conjunto de dez mercados permitia que as carteiras escolhessem subconjuntos diferentes. Naquele desenho, o top 100 do dia completo não recuperou nenhum alvo estrutural pela V2 ou pelo relacional. A tabela de intensidades acima usa listas idênticas impostas a todos os integrantes de cada grupo. Os tempos da comparação de escalas foram medidos com processos concorrentes. [Comparação anterior entre 5.000 carteiras e o dia completo](resultados/artigo/comparacao_escalas.csv)
+
+### Reprodução do estudo principal
+
+Em Linux ou WSL, use Python 3.12 e GNU Make. Coloque os dois arquivos brutos `betgraph_arestas_16set.csv` e `betgraph_nos_evento_16set.csv` em `data/raw/`. O executor confere os hashes dos dados, filtra os CSVs, monta o grafo do dia, recria as três intervenções, treina a V2 e calcula os três rankings. As dependências e os dados volumosos permanecem locais. [Hashes das entradas](resultados/entradas.json)
+
+```bash
+make ambiente
+make validar
+make testes
+make artigo
+```
+
+Use `BRUTOS=/caminho/para/csvs` e `DESTINO=/caminho/para/execucoes` para escolher as pastas. O padrão é um processo de treino por vez. `make artigo PROCESSOS=3` permite treinar as três seeds em paralelo quando há memória disponível. Cada chamada cria uma pasta exclusiva e imprime a localização dos CSVs de resultados. O código do artigo fica em [experimentos/artigo](experimentos/artigo) e o modelo em [experimentos/gnn_v2](experimentos/gnn_v2).
+
+Para reavaliar embeddings salvos de uma execução, use:
+
+```bash
+.venv/bin/python -m experimentos.artigo.ablacao PASTA_DA_EXECUCAO PASTA_DE_SAIDA
+```
+
+## Estudos de desenvolvimento
+
+Os comandos abaixo reproduzem os estudos anteriores. As branches [V2](https://github.com/Joao-santos-oliveira/betgraph-anomaly/tree/feat/gnn-v2-anomalias), [V3](https://github.com/Joao-santos-oliveira/betgraph-anomaly/tree/feat/gnn-v3-anomalias) e [evidências da comparação anterior](https://github.com/Joao-santos-oliveira/betgraph-anomaly/tree/feat/evidencias-artigo) preservam as respectivas rodadas.
+
+<details>
+<summary>Comandos históricos, comparação das versões, revisão de casos e proveniência</summary>
 
 ## Testar os modelos e as anomalias na main
 
@@ -33,7 +79,7 @@ Use **um clone Git com histórico**, Linux ou Ubuntu no WSL, GNU Make, Python 3.
 | `betgraph_arestas_16set.csv` | Operações já agregadas por carteira, mercado e outcome, incluindo primeiro e último trade |
 | `betgraph_nos_evento_16set.csv` | Mercado identificado por condition_id, pergunta, tags e metadados |
 
-A distribuição prevista é um depósito de dados, como Zenodo. O identificador da edição está nos [hashes SHA-256](resultados/entradas.json). A etapa inicial confere ambos os arquivos. A partir da raiz do clone:
+A publicação dos brutos no Zenodo está prevista. O identificador da edição está nos [hashes SHA-256](resultados/entradas.json). A etapa inicial confere ambos os arquivos. A partir da raiz do clone:
 
 ```bash
 make ambiente
@@ -54,7 +100,7 @@ Cada chamada cria uma pasta exclusiva em `data/execucoes/` por padrão. Dentro d
 | `make ambiente` | Criar a venv CPU e instalar as versões de requirements.txt |
 | `make validar` | Conferir dependências e executar uma operação PyTorch/PyG |
 | `make testes` | Rodar os testes da branch |
-| `make reproduzir` | Partir dos CSVs brutos e executar a análise principal desta branch |
+| `make reproduzir` | Partir dos CSVs brutos e executar o benchmark histórico dos dois detectores de referência |
 | `make historico` | Executar também o controle GNN/MLP de ligações e suas curvas ROC, o piloto viável, a investigação relacional e a validação ampliada com as fichas de casos |
 
 **Saída esperada de `make reproduzir`.** O pipeline primeiro verifica a amostra de 256 carteiras (3.084 mercados, 5.228 linhas e 2.241 pares de contexto) e a ordem integral dos dois rankings. Depois mede o dia completo e confere o resumo e os SHA-256 dos dois rankings completos contra a referência. Para a reprodução em outra máquina, devolver `execucao.json` e o comprovante da amostra acessível em `resultados/` da execução.
@@ -110,3 +156,5 @@ As três seeds de encoder são 42, 73 e 2026. As intervenções artificiais forn
 | `data/` | Dados locais e execuções geradas |
 
 Os mapeamentos JSON versionados na raiz conservam os identificadores anteriores à filtragem. O executor reconstrói os experimentos históricos em uma cópia de trabalho isolada, usando a base `1a1d456` para o pipeline principal, `c0b7390` para a v2 e a implementação congelada em `deb24e5` sobre a base original para a v3. Essa cópia permite respeitar os caminhos, protocolos e hashes das rodadas publicadas. Resultados de desenvolvimento referem-se a um dia, e carteiras representam endereços. As informações de maker/taker exigiriam nova extração.
+
+</details>

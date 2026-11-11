@@ -1,0 +1,253 @@
+realizacao,metodo,seed,fase,mercados,papel,n,top100,top541
+51011,Relacional,0,antes,4,alvo,20,3,6
+51011,Relacional,0,antes,4,controle,20,1,5
+51011,Relacional,0,antes,10,alvo,15,2,6
+51011,Relacional,0,antes,10,controle,15,0,1
+51011,Relacional,0,antes,20,alvo,15,0,3
+51011,Relacional,0,antes,20,controle,15,2,4
+51011,Relacional,0,depois,4,alvo,20,2,3
+51011,Relacional,0,depois,4,controle,20,0,5
+51011,Relacional,0,depois,10,alvo,15,0,8
+51011,Relacional,0,depois,10,controle,15,0,1
+51011,Relacional,0,depois,20,alvo,15,15,15
+51011,Relacional,0,depois,20,controle,15,2,4
+51011,V2 híbrida,42,antes,4,alvo,20,3,6
+51011,V2 híbrida,42,antes,4,controle,20,1,5
+51011,V2 híbrida,42,antes,10,alvo,15,2,6
+51011,V2 híbrida,42,antes,10,controle,15,0,1
+51011,V2 híbrida,42,antes,20,alvo,15,0,3
+51011,V2 híbrida,42,antes,20,controle,15,2,4
+51011,V2 híbrida,42,depois,4,alvo,20,2,3
+51011,V2 híbrida,42,depois,4,controle,20,0,5
+51011,V2 híbrida,42,depois,10,alvo,15,0,8
+51011,V2 híbrida,42,depois,10,controle,15,0,1
+51011,V2 híbrida,42,depois,20,alvo,15,15,15
+51011,V2 híbrida,42,depois,20,controle,15,2,4
+51011,Similaridade V2,42,antes,4,alvo,20,0,0
+51011,Similaridade V2,42,antes,4,controle,20,0,0
+51011,Similaridade V2,42,antes,10,alvo,15,0,0
+51011,Similaridade V2,42,antes,10,controle,15,0,0
+51011,Similaridade V2,42,antes,20,alvo,15,0,0
+51011,Similaridade V2,42,antes,20,controle,15,0,0
+51011,Similaridade V2,42,depois,4,alvo,20,0,0
+51011,Similaridade V2,42,depois,4,controle,20,0,0
+51011,Similaridade V2,42,depois,10,alvo,15,0,0
+51011,Similaridade V2,42,depois,10,controle,15,0,0
+51011,Similaridade V2,42,depois,20,alvo,15,0,0
+51011,Similaridade V2,42,depois,20,controle,15,0,0
+51011,V2 híbrida,73,antes,4,alvo,20,3,6
+51011,V2 híbrida,73,antes,4,controle,20,1,5
+51011,V2 híbrida,73,antes,10,alvo,15,2,6
+51011,V2 híbrida,73,antes,10,controle,15,0,1
+51011,V2 híbrida,73,antes,20,alvo,15,0,3
+51011,V2 híbrida,73,antes,20,controle,15,2,4
+51011,V2 híbrida,73,depois,4,alvo,20,2,3
+51011,V2 híbrida,73,depois,4,controle,20,0,5
+51011,V2 híbrida,73,depois,10,alvo,15,0,8
+51011,V2 híbrida,73,depois,10,controle,15,0,1
+51011,V2 híbrida,73,depois,20,alvo,15,15,15
+51011,V2 híbrida,73,depois,20,controle,15,2,4
+51011,Similaridade V2,73,antes,4,alvo,20,0,0
+51011,Similaridade V2,73,antes,4,controle,20,0,0
+51011,Similaridade V2,73,antes,10,alvo,15,0,0
+51011,Similaridade V2,73,antes,10,controle,15,0,0
+51011,Similaridade V2,73,antes,20,alvo,15,0,0
+51011,Similaridade V2,73,antes,20,controle,15,0,0
+51011,Similaridade V2,73,depois,4,alvo,20,0,0
+51011,Similaridade V2,73,depois,4,controle,20,0,0
+51011,Similaridade V2,73,depois,10,alvo,15,0,0
+51011,Similaridade V2,73,depois,10,controle,15,0,0
+51011,Similaridade V2,73,depois,20,alvo,15,0,0
+51011,Similaridade V2,73,depois,20,controle,15,0,0
+51011,V2 híbrida,2026,antes,4,alvo,20,3,6
+51011,V2 híbrida,2026,antes,4,controle,20,1,5
+51011,V2 híbrida,2026,antes,10,alvo,15,2,6
+51011,V2 híbrida,2026,antes,10,controle,15,0,1
+51011,V2 híbrida,2026,antes,20,alvo,15,0,3
+51011,V2 híbrida,2026,antes,20,controle,15,2,4
+51011,V2 híbrida,2026,depois,4,alvo,20,2,3
+51011,V2 híbrida,2026,depois,4,controle,20,0,5
+51011,V2 híbrida,2026,depois,10,alvo,15,0,8
+51011,V2 híbrida,2026,depois,10,controle,15,0,1
+51011,V2 híbrida,2026,depois,20,alvo,15,15,15
+51011,V2 híbrida,2026,depois,20,controle,15,2,4
+51011,Similaridade V2,2026,antes,4,alvo,20,0,0
+51011,Similaridade V2,2026,antes,4,controle,20,0,0
+51011,Similaridade V2,2026,antes,10,alvo,15,0,0
+51011,Similaridade V2,2026,antes,10,controle,15,0,0
+51011,Similaridade V2,2026,antes,20,alvo,15,0,0
+51011,Similaridade V2,2026,antes,20,controle,15,0,0
+51011,Similaridade V2,2026,depois,4,alvo,20,0,0
+51011,Similaridade V2,2026,depois,4,controle,20,0,0
+51011,Similaridade V2,2026,depois,10,alvo,15,0,0
+51011,Similaridade V2,2026,depois,10,controle,15,0,0
+51011,Similaridade V2,2026,depois,20,alvo,15,0,0
+51011,Similaridade V2,2026,depois,20,controle,15,0,0
+51012,Relacional,0,antes,4,alvo,15,1,4
+51012,Relacional,0,antes,4,controle,15,0,7
+51012,Relacional,0,antes,10,alvo,20,0,3
+51012,Relacional,0,antes,10,controle,20,2,5
+51012,Relacional,0,antes,20,alvo,15,3,5
+51012,Relacional,0,antes,20,controle,15,1,3
+51012,Relacional,0,depois,4,alvo,15,0,2
+51012,Relacional,0,depois,4,controle,15,0,7
+51012,Relacional,0,depois,10,alvo,20,0,10
+51012,Relacional,0,depois,10,controle,20,2,4
+51012,Relacional,0,depois,20,alvo,15,15,15
+51012,Relacional,0,depois,20,controle,15,0,3
+51012,V2 híbrida,42,antes,4,alvo,15,1,3
+51012,V2 híbrida,42,antes,4,controle,15,0,7
+51012,V2 híbrida,42,antes,10,alvo,20,0,3
+51012,V2 híbrida,42,antes,10,controle,20,2,5
+51012,V2 híbrida,42,antes,20,alvo,15,3,5
+51012,V2 híbrida,42,antes,20,controle,15,1,3
+51012,V2 híbrida,42,depois,4,alvo,15,0,2
+51012,V2 híbrida,42,depois,4,controle,15,0,7
+51012,V2 híbrida,42,depois,10,alvo,20,0,9
+51012,V2 híbrida,42,depois,10,controle,20,2,4
+51012,V2 híbrida,42,depois,20,alvo,15,15,15
+51012,V2 híbrida,42,depois,20,controle,15,0,3
+51012,Similaridade V2,42,antes,4,alvo,15,0,0
+51012,Similaridade V2,42,antes,4,controle,15,0,0
+51012,Similaridade V2,42,antes,10,alvo,20,0,0
+51012,Similaridade V2,42,antes,10,controle,20,0,0
+51012,Similaridade V2,42,antes,20,alvo,15,0,0
+51012,Similaridade V2,42,antes,20,controle,15,0,0
+51012,Similaridade V2,42,depois,4,alvo,15,0,0
+51012,Similaridade V2,42,depois,4,controle,15,0,0
+51012,Similaridade V2,42,depois,10,alvo,20,0,0
+51012,Similaridade V2,42,depois,10,controle,20,0,0
+51012,Similaridade V2,42,depois,20,alvo,15,0,0
+51012,Similaridade V2,42,depois,20,controle,15,0,0
+51012,V2 híbrida,73,antes,4,alvo,15,1,4
+51012,V2 híbrida,73,antes,4,controle,15,0,7
+51012,V2 híbrida,73,antes,10,alvo,20,0,3
+51012,V2 híbrida,73,antes,10,controle,20,2,5
+51012,V2 híbrida,73,antes,20,alvo,15,3,5
+51012,V2 híbrida,73,antes,20,controle,15,1,3
+51012,V2 híbrida,73,depois,4,alvo,15,0,2
+51012,V2 híbrida,73,depois,4,controle,15,0,7
+51012,V2 híbrida,73,depois,10,alvo,20,0,9
+51012,V2 híbrida,73,depois,10,controle,20,2,4
+51012,V2 híbrida,73,depois,20,alvo,15,15,15
+51012,V2 híbrida,73,depois,20,controle,15,0,3
+51012,Similaridade V2,73,antes,4,alvo,15,0,0
+51012,Similaridade V2,73,antes,4,controle,15,0,0
+51012,Similaridade V2,73,antes,10,alvo,20,0,0
+51012,Similaridade V2,73,antes,10,controle,20,0,0
+51012,Similaridade V2,73,antes,20,alvo,15,0,0
+51012,Similaridade V2,73,antes,20,controle,15,0,0
+51012,Similaridade V2,73,depois,4,alvo,15,0,0
+51012,Similaridade V2,73,depois,4,controle,15,0,0
+51012,Similaridade V2,73,depois,10,alvo,20,0,0
+51012,Similaridade V2,73,depois,10,controle,20,0,0
+51012,Similaridade V2,73,depois,20,alvo,15,0,0
+51012,Similaridade V2,73,depois,20,controle,15,0,0
+51012,V2 híbrida,2026,antes,4,alvo,15,1,4
+51012,V2 híbrida,2026,antes,4,controle,15,0,7
+51012,V2 híbrida,2026,antes,10,alvo,20,0,3
+51012,V2 híbrida,2026,antes,10,controle,20,2,5
+51012,V2 híbrida,2026,antes,20,alvo,15,3,5
+51012,V2 híbrida,2026,antes,20,controle,15,1,3
+51012,V2 híbrida,2026,depois,4,alvo,15,0,2
+51012,V2 híbrida,2026,depois,4,controle,15,0,7
+51012,V2 híbrida,2026,depois,10,alvo,20,0,10
+51012,V2 híbrida,2026,depois,10,controle,20,2,4
+51012,V2 híbrida,2026,depois,20,alvo,15,15,15
+51012,V2 híbrida,2026,depois,20,controle,15,0,3
+51012,Similaridade V2,2026,antes,4,alvo,15,0,0
+51012,Similaridade V2,2026,antes,4,controle,15,0,0
+51012,Similaridade V2,2026,antes,10,alvo,20,0,0
+51012,Similaridade V2,2026,antes,10,controle,20,0,0
+51012,Similaridade V2,2026,antes,20,alvo,15,0,0
+51012,Similaridade V2,2026,antes,20,controle,15,0,0
+51012,Similaridade V2,2026,depois,4,alvo,15,0,0
+51012,Similaridade V2,2026,depois,4,controle,15,0,0
+51012,Similaridade V2,2026,depois,10,alvo,20,0,0
+51012,Similaridade V2,2026,depois,10,controle,20,0,0
+51012,Similaridade V2,2026,depois,20,alvo,15,0,0
+51012,Similaridade V2,2026,depois,20,controle,15,0,0
+51013,Relacional,0,antes,4,alvo,15,0,5
+51013,Relacional,0,antes,4,controle,15,1,5
+51013,Relacional,0,antes,10,alvo,15,1,2
+51013,Relacional,0,antes,10,controle,15,0,5
+51013,Relacional,0,antes,20,alvo,20,0,5
+51013,Relacional,0,antes,20,controle,20,2,7
+51013,Relacional,0,depois,4,alvo,15,0,2
+51013,Relacional,0,depois,4,controle,15,1,5
+51013,Relacional,0,depois,10,alvo,15,0,8
+51013,Relacional,0,depois,10,controle,15,0,5
+51013,Relacional,0,depois,20,alvo,20,20,20
+51013,Relacional,0,depois,20,controle,20,1,5
+51013,V2 híbrida,42,antes,4,alvo,15,0,5
+51013,V2 híbrida,42,antes,4,controle,15,1,5
+51013,V2 híbrida,42,antes,10,alvo,15,1,2
+51013,V2 híbrida,42,antes,10,controle,15,0,5
+51013,V2 híbrida,42,antes,20,alvo,20,0,5
+51013,V2 híbrida,42,antes,20,controle,20,2,6
+51013,V2 híbrida,42,depois,4,alvo,15,0,2
+51013,V2 híbrida,42,depois,4,controle,15,1,5
+51013,V2 híbrida,42,depois,10,alvo,15,0,7
+51013,V2 híbrida,42,depois,10,controle,15,0,5
+51013,V2 híbrida,42,depois,20,alvo,20,20,20
+51013,V2 híbrida,42,depois,20,controle,20,1,5
+51013,Similaridade V2,42,antes,4,alvo,15,0,0
+51013,Similaridade V2,42,antes,4,controle,15,0,0
+51013,Similaridade V2,42,antes,10,alvo,15,0,0
+51013,Similaridade V2,42,antes,10,controle,15,0,0
+51013,Similaridade V2,42,antes,20,alvo,20,0,0
+51013,Similaridade V2,42,antes,20,controle,20,0,0
+51013,Similaridade V2,42,depois,4,alvo,15,0,0
+51013,Similaridade V2,42,depois,4,controle,15,0,0
+51013,Similaridade V2,42,depois,10,alvo,15,0,0
+51013,Similaridade V2,42,depois,10,controle,15,0,0
+51013,Similaridade V2,42,depois,20,alvo,20,0,0
+51013,Similaridade V2,42,depois,20,controle,20,0,0
+51013,V2 híbrida,73,antes,4,alvo,15,0,4
+51013,V2 híbrida,73,antes,4,controle,15,1,5
+51013,V2 híbrida,73,antes,10,alvo,15,1,2
+51013,V2 híbrida,73,antes,10,controle,15,0,5
+51013,V2 híbrida,73,antes,20,alvo,20,0,5
+51013,V2 híbrida,73,antes,20,controle,20,2,6
+51013,V2 híbrida,73,depois,4,alvo,15,0,2
+51013,V2 híbrida,73,depois,4,controle,15,1,5
+51013,V2 híbrida,73,depois,10,alvo,15,0,7
+51013,V2 híbrida,73,depois,10,controle,15,0,5
+51013,V2 híbrida,73,depois,20,alvo,20,20,20
+51013,V2 híbrida,73,depois,20,controle,20,1,5
+51013,Similaridade V2,73,antes,4,alvo,15,0,0
+51013,Similaridade V2,73,antes,4,controle,15,0,0
+51013,Similaridade V2,73,antes,10,alvo,15,0,0
+51013,Similaridade V2,73,antes,10,controle,15,0,0
+51013,Similaridade V2,73,antes,20,alvo,20,0,0
+51013,Similaridade V2,73,antes,20,controle,20,0,0
+51013,Similaridade V2,73,depois,4,alvo,15,0,0
+51013,Similaridade V2,73,depois,4,controle,15,0,0
+51013,Similaridade V2,73,depois,10,alvo,15,0,0
+51013,Similaridade V2,73,depois,10,controle,15,0,0
+51013,Similaridade V2,73,depois,20,alvo,20,0,0
+51013,Similaridade V2,73,depois,20,controle,20,0,0
+51013,V2 híbrida,2026,antes,4,alvo,15,0,4
+51013,V2 híbrida,2026,antes,4,controle,15,1,5
+51013,V2 híbrida,2026,antes,10,alvo,15,1,2
+51013,V2 híbrida,2026,antes,10,controle,15,0,5
+51013,V2 híbrida,2026,antes,20,alvo,20,0,5
+51013,V2 híbrida,2026,antes,20,controle,20,2,6
+51013,V2 híbrida,2026,depois,4,alvo,15,0,2
+51013,V2 híbrida,2026,depois,4,controle,15,1,5
+51013,V2 híbrida,2026,depois,10,alvo,15,0,7
+51013,V2 híbrida,2026,depois,10,controle,15,0,5
+51013,V2 híbrida,2026,depois,20,alvo,20,20,20
+51013,V2 híbrida,2026,depois,20,controle,20,1,5
+51013,Similaridade V2,2026,antes,4,alvo,15,0,0
+51013,Similaridade V2,2026,antes,4,controle,15,0,0
+51013,Similaridade V2,2026,antes,10,alvo,15,0,0
+51013,Similaridade V2,2026,antes,10,controle,15,0,0
+51013,Similaridade V2,2026,antes,20,alvo,20,0,0
+51013,Similaridade V2,2026,antes,20,controle,20,0,0
+51013,Similaridade V2,2026,depois,4,alvo,15,0,0
+51013,Similaridade V2,2026,depois,4,controle,15,0,0
+51013,Similaridade V2,2026,depois,10,alvo,15,0,0
+51013,Similaridade V2,2026,depois,10,controle,15,0,0
+51013,Similaridade V2,2026,depois,20,alvo,20,0,0
+51013,Similaridade V2,2026,depois,20,controle,20,0,0
