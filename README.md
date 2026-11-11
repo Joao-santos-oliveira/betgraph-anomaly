@@ -2,6 +2,8 @@
 
 # Betgraph Anomaly
 
+[Estudo](#estudo-principal) · [Resultados](#controle-positivo-e-ablação-do-score) · [Reprodução](#reprodução-do-estudo-principal) · [Comandos Make](#comandos-make) · [Autores](#autores)
+
 ## Estudo principal
 
 O Betgraph Anomaly avalia uma **rede neural em grafos heterogêneos (GNN híbrida)** para priorizar carteiras com coparticipação atípica na Polymarket. O recorte de 16/09/2026 contém 27.039 carteiras e 16.693 mercados após a filtragem. No grafo bipartido, cada ligação representa uma carteira que operou em um mercado. A pergunta de pesquisa é quais padrões de atuação em grupo a GNN consegue trazer ao topo da fila de investigação e como a recuperação varia com a intensidade.
@@ -25,7 +27,9 @@ A carteira 18753 ocupa a primeira posição da GNN nas seeds 42, 73 e 2026. Ela 
 
 ### Controle positivo e ablação do score
 
-Em cada realização, 50 carteiras existentes formam dez grupos de cinco. Cada grupo passa a compartilhar a mesma lista de 4, 10 ou 20 novos mercados. As trocas preservam o grau de cada carteira e mercado e os pares reservados. Cada alvo tem um controle intacto de mesmo grau. O desenho alterna as doses entre três sorteios e totaliza 50 participações-alvo por intensidade. [Protocolo](experimentos/artigo/protocolo.json)
+**As 50 carteiras-alvo de cada realização são casos artificiais usados para medir a capacidade de detecção.** Partimos de uma cópia do grafo real, selecionamos 50 carteiras existentes e modificamos suas ligações com os mercados. Os endereços são reais e o comportamento coordenado foi criado para o experimento. Como sabemos em quais carteiras inserimos o padrão, podemos contar quantas cada método recuperou. Os rótulos de alvo entram apenas nessa avaliação.
+
+Em cada realização, as 50 carteiras formam dez grupos de cinco. Cada grupo passa a compartilhar a mesma lista de 4, 10 ou 20 novos mercados. As trocas preservam o grau de cada carteira e mercado e os pares reservados. Cada alvo tem um controle intacto de mesmo grau. Nos três sorteios, a intensidade de 20 mercados foi atribuída a 15, 15 e 20 carteiras, respectivamente. Por isso, recuperar 50 nessa intensidade significa encontrar todos os casos ao somar três rankings. As outras duas intensidades também somam 50 participações-alvo cada. [Protocolo](experimentos/artigo/protocolo.json)
 
 Os três scores consideram os mesmos pares candidatos com pelo menos dois mercados em comum e agregam as três maiores contribuições por carteira, dividindo a soma por três. O relacional mede a surpresa da sobreposição. A ablação usa apenas a similaridade de cosseno dos embeddings da GNN, reescalada para o intervalo de 0 a 1. A GNN híbrida multiplica os dois termos para cada par. É uma ablação do **score final**. Os embeddings continuam recebendo os atributos estruturais usados no treinamento original.
 
@@ -45,8 +49,13 @@ Cada ranking ordena as 27.039 carteiras de uma realização. Contamos quantos al
 
 Na linha da GNN híbrida com 4 mercados, **2** alvos entraram nas primeiras 100 posições e **7** entraram nas primeiras 541. Os 7 já incluem os 2 primeiros, portanto 5 ficaram entre as posições 101 e 541. Com 10 mercados, o relacional colocou todos os seus **26** alvos recuperados nessa faixa intermediária. O valor **24,33** da GNN é uma média entre treinamentos.
 
-O top 100 é o corte principal. Esse corte complementar foi introduzido após a primeira análise do dia completo e constava do protocolo do teste de grupos antes de calcular seus rankings. O sinal de surpresa sozinho recuperou todos os casos fortes. A ponderação aprendida preservou essa recuperação e não acrescentou ganho médio no nível intermediário. A interpretação se limita às intervenções e ao dia avaliados. [Resumo antes e depois, com controles](resultados/artigo/resumo.csv) · [Resultados por realização e seed](resultados/artigo/por_realizacao_seed.csv)
+O top 100 é o corte principal. O top 541 foi introduzido após a primeira análise do dia completo e já constava do protocolo antes de calcular os rankings destes grupos.
 
+### Por que a híbrida recuperou mais alvos que a similaridade isolada?
+
+Imagine dois pares de carteiras com a mesma similaridade aprendida. Um par compartilhou dois mercados quando o esperado era dois. O outro compartilhou vinte quando o esperado também era dois. A ablação atribui a mesma contribuição aos dois pares. A híbrida multiplica a similaridade pela surpresa da sobreposição e, assim, atribui maior peso ao segundo. O cálculo da surpresa considera a atividade das carteiras e a distribuição da popularidade dos mercados.
+
+Com 20 novos mercados em comum, a híbrida colocou **50 de 50 casos no top 100** e a similaridade isolada recuperou **zero até o top 541**. O relacional direto também recuperou os 50. Com 10 mercados, o relacional recuperou 26 no top 541 e a híbrida recuperou 24,33 em média. Portanto, a vantagem observada foi sobre a similaridade isolada. Nestes cenários, a surpresa sozinha já explicou a recuperação dos grupos fortes. A avaliação mede recuperação de padrões inseridos em um dia de dados. A identificação de fraude real exigiria evidência independente. [Resumo com controles](resultados/artigo/resumo.csv) · [Contagens por realização e seed](resultados/artigo/por_realizacao_seed.csv)
 
 ### Reprodução do estudo principal
 
@@ -59,6 +68,32 @@ make testes
 make artigo
 ```
 
+### Do CSV bruto à tabela de resultados
+
+```mermaid
+flowchart TD
+    A["Dois CSVs brutos e mapeamentos de IDs"] --> B["Conferir hashes, filtrar registros e construir o grafo"]
+    B --> C["Dividir ligações em contexto, alvos de treino, validação e teste reservado"]
+    C --> D["Grafo original do dia"]
+    C --> E["Três cópias com grupos artificiais e controles pareados"]
+    D --> F["Treinar a GNN em cada grafo com as seeds 42, 73 e 2026"]
+    E --> F
+    F --> G["Calcular rankings híbrido, relacional e por similaridade"]
+    G --> H["Dia real: posições das carteiras e top 100"]
+    G --> I["Experimento: conferir alvos e controles antes e depois, no top 100 e top 541"]
+```
+
+### Comandos Make
+
+| Comando | Utilidade |
+|---|---|
+| `make` ou `make ajuda` | Lista os comandos disponíveis. |
+| `make ambiente` | Cria a pasta `.venv` e instala as versões das dependências fixadas em `requirements.txt`. |
+| `make validar` | Verifica as dependências e executa uma operação em CPU com propagação de gradientes no PyTorch Geometric. |
+| `make testes` | Executa os testes automatizados de preparação, divisão do grafo, treino e cálculo dos scores. |
+| `make artigo` | Executa o experimento completo a partir dos dois CSVs brutos e grava os resultados em uma nova pasta. |
+| `make reproduzir` | Atalho para `make artigo`. Basta executar um dos dois. |
+
 Use `BRUTOS=/caminho/para/csvs` e `DESTINO=/caminho/para/execucoes` para escolher as pastas. O padrão é um processo de treino por vez. `make artigo PROCESSOS=3` permite treinar as três seeds em paralelo quando há memória disponível. Cada chamada cria uma pasta exclusiva e imprime a localização dos CSVs de resultados. O código do artigo fica em [experimentos/artigo](experimentos/artigo) e o modelo em [experimentos/gnn](experimentos/gnn).
 
 Para reavaliar embeddings salvos de uma execução, use:
@@ -66,6 +101,15 @@ Para reavaliar embeddings salvos de uma execução, use:
 ```bash
 .venv/bin/python -m experimentos.artigo.ablacao PASTA_DA_EXECUCAO PASTA_DE_SAIDA
 ```
+
+### Onde encontrar cada resultado
+
+| Pergunta | Arquivo publicado |
+|---|---|
+| Quais carteiras lideraram o ranking híbrido na seed 42? | [Top 100 do dia real](resultados/artigo/top100_dia_real.csv) |
+| Uma carteira mudou de posição entre métodos ou seeds? | [Posições de todas as carteiras](resultados/artigo/posicoes_dia_real.csv) |
+| Quantos alvos e controles apareceram em cada corte, antes e depois da intervenção? | [Resumo por intensidade](resultados/artigo/resumo.csv) |
+| Quanto o resultado variou de um sorteio ou treinamento para outro? | [Resultados por realização e seed](resultados/artigo/por_realizacao_seed.csv) |
 
 ## O que há nas outras branches
 
@@ -76,3 +120,12 @@ Para reavaliar embeddings salvos de uma execução, use:
 | [feat/evidencias-artigo](https://github.com/Joao-santos-oliveira/betgraph-anomaly/tree/feat/evidencias-artigo) | Benchmark anterior na coorte de 5.000 carteiras, com tabelas comparativas, figuras, subgrafos e comprovantes de reprodução. |
 
 A comparação anterior de escalas e o resumo da revisão descritiva podem ser consultadas no [histórico da main](https://github.com/Joao-santos-oliveira/betgraph-anomaly/tree/e976ca3/resultados).
+
+## Autores
+
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/Joao-santos-oliveira"><img src="https://avatars.githubusercontent.com/u/80595573?v=4" width="96" alt="Avatar de João Gabriel Santos no GitHub"><br><strong>João Gabriel Santos</strong><br>@Joao-santos-oliveira</a></td>
+    <td align="center"><a href="https://github.com/alisson-h"><img src="https://avatars.githubusercontent.com/u/214649317?v=4" width="96" alt="Avatar de Alisson Henrique no GitHub"><br><strong>Alisson Henrique</strong><br>@alisson-h</a></td>
+  </tr>
+</table>
