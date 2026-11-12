@@ -3,9 +3,9 @@ PYTHON ?= python3.12
 VENV ?= .venv/bin/python
 BRUTOS ?= data/raw
 DESTINO ?= data/execucoes
-.PHONY: ajuda ambiente validar testes artigo reproduzir
+.PHONY: ajuda ambiente validar testes artigo reproduzir pareado
 ajuda:
-	@echo "ambiente | validar | testes | artigo (reproduzir)"
+	@echo "ambiente | validar | testes | artigo (reproduzir) | pareado"
 	@echo "artigo: refazer o estudo completo a partir dos dois CSVs brutos"
 
 ambiente:
@@ -24,3 +24,8 @@ artigo:
 	OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 OPENBLAS_NUM_THREADS=2 $(VENV) -B -m experimentos.artigo.executar --raw "$(BRUTOS)" --destino "$(DESTINO)" --processos "$(PROCESSOS)"
 
 reproduzir: artigo
+
+
+pareado:
+	@test -n "$(RODADA)" || (echo "Informe RODADA com a pasta gerada por make artigo"; exit 1)
+	OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 OPENBLAS_NUM_THREADS=2 $(VENV) -B -m experimentos.artigo.pareado "$(RODADA)" --processos "$(PROCESSOS)"

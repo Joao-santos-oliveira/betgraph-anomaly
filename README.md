@@ -59,6 +59,23 @@ Imagine dois pares de carteiras com a mesma similaridade aprendida. Um par compa
 
 Com 20 novos mercados em comum, a híbrida colocou **50 de 50 casos no top 100** e a similaridade isolada recuperou **zero até o top 541**. O relacional direto também recuperou os 50. Com 10 mercados, o relacional recuperou 26 no top 541 e a híbrida recuperou 24,33 em média. Portanto, a vantagem observada foi sobre a similaridade isolada. Nestes cenários, a surpresa sozinha já explicou a recuperação dos grupos fortes. A avaliação mede recuperação de padrões inseridos em um dia de dados. A identificação de fraude real exigiria evidência independente. [Resumo com controles](resultados/artigo/resumo.csv) · [Contagens por realização e seed](resultados/artigo/por_realizacao_seed.csv)
 
+### Sensibilidade à intensidade com grupos fixos
+
+Em cada um dos três sorteios, fixamos os mesmos dez grupos de cinco carteiras e os mesmos 50 controles do experimento misto. Em três cópias do contexto, todos os dez grupos recebem respectivamente 4, 10 ou 20 mercados novos por grupo. Cada grupo tem uma lista própria. As trocas dos quatro primeiros mercados permanecem ao expandir a lista para dez, e as dez primeiras permanecem ao expandi-la para vinte. As trocas preservam os graus das carteiras e dos mercados e as partições reservadas. A regra de elegibilidade dos parceiros permanece a mesma.
+
+Cada célula indica a **média de alvos entre 50 por sorteio**. A GNN híbrida e a ablação utilizam as mesmas três seeds. Na análise mista acima, a tabela acumula casos até 50 por intensidade. Aqui há 50 alvos em **cada** sorteio e intensidade. O cenário original serve de referência antes da intervenção. Todas as posições pertencem ao ranking global das 27.039 carteiras.
+
+| Método e corte | Original | 4 mercados | 10 mercados | 20 mercados |
+|---|---:|---:|---:|---:|
+| GNN híbrida · top 100 | 3,33 | 1,33 | 0 | 36,67 |
+| GNN híbrida · top 541 | 12,67 | 9,78 | 27,89 | 50 |
+| Relacional · top 100 | 3,33 | 1,67 | 0 | 37 |
+| Relacional · top 541 | 13 | 9,67 | 28,33 | 50 |
+| Similaridade da GNN · top 100 | 0 | 0 | 0 | 0 |
+| Similaridade da GNN · top 541 | 0 | 0 | 0 | 0 |
+
+De 4 para 10 mercados, entre **39 e 42 dos mesmos 50 alvos subiram de posição** na GNN híbrida em cada combinação de sorteio e seed. Nenhum chegou ao top 100 com 10 mercados. Com 20, todos entraram no top 541 e, em média, 36,67 entraram no top 100. Como os dez grupos mudam juntos em cada cópia, a comparação mede sua recuperação sob esse regime de concorrência. [Trajetórias das carteiras](resultados/artigo/pareado/trajetorias.csv) · [Mudanças de posição por sorteio e seed](resultados/artigo/pareado/mudancas_pareadas.csv) · [Contagens por corte](resultados/artigo/pareado/por_sorteio_seed.csv) · [Resumo com controles](resultados/artigo/pareado/resumo.csv)
+
 ## Estrutura do projeto
 
 ```text
@@ -131,6 +148,7 @@ flowchart TD
 | `make validar` | Verifica as dependências e executa uma operação em CPU com propagação de gradientes no PyTorch Geometric. |
 | `make testes` | Executa os testes automatizados de preparação, divisão do grafo, treino e cálculo dos scores. |
 | `make artigo` | Executa o experimento completo a partir dos dois CSVs brutos e grava os resultados em uma nova pasta. |
+| `make pareado RODADA=data/execucoes/artigo-…` | Reutiliza a pasta de uma execução completa de `make artigo`, treina as três doses para os mesmos grupos e grava trajetórias em `pareado-*/resultados/`. Aceita `PROCESSOS=3`. |
 | `make reproduzir` | Atalho para `make artigo`. Basta executar um dos dois. |
 
 Use `BRUTOS=/caminho/para/csvs` e `DESTINO=/caminho/para/execucoes` para escolher as pastas. O padrão é um processo de treino por vez. `make artigo PROCESSOS=3` permite treinar as três seeds em paralelo quando há memória disponível. Cada chamada cria uma pasta exclusiva e imprime a localização dos CSVs de resultados. O código do artigo fica em [experimentos/artigo](experimentos/artigo) e o modelo em [experimentos/gnn](experimentos/gnn).

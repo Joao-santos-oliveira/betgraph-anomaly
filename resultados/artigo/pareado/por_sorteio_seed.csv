@@ -1,0 +1,169 @@
+realizacao,dose,metodo,seed,papel,top100,top541
+51011,0,GNN híbrida,42,alvo,5,15
+51011,0,GNN híbrida,42,controle,3,10
+51011,0,GNN híbrida,73,alvo,5,15
+51011,0,GNN híbrida,73,controle,3,10
+51011,0,GNN híbrida,2026,alvo,5,15
+51011,0,GNN híbrida,2026,controle,3,10
+51011,0,Relacional,0,alvo,5,15
+51011,0,Relacional,0,controle,3,10
+51011,0,Similaridade da GNN,42,alvo,0,0
+51011,0,Similaridade da GNN,42,controle,0,0
+51011,0,Similaridade da GNN,73,alvo,0,0
+51011,0,Similaridade da GNN,73,controle,0,0
+51011,0,Similaridade da GNN,2026,alvo,0,0
+51011,0,Similaridade da GNN,2026,controle,0,0
+51011,4,GNN híbrida,42,alvo,2,11
+51011,4,GNN híbrida,42,controle,3,10
+51011,4,GNN híbrida,73,alvo,2,11
+51011,4,GNN híbrida,73,controle,3,10
+51011,4,GNN híbrida,2026,alvo,2,11
+51011,4,GNN híbrida,2026,controle,3,10
+51011,4,Relacional,0,alvo,3,11
+51011,4,Relacional,0,controle,3,10
+51011,4,Similaridade da GNN,42,alvo,0,0
+51011,4,Similaridade da GNN,42,controle,0,0
+51011,4,Similaridade da GNN,73,alvo,0,0
+51011,4,Similaridade da GNN,73,controle,0,0
+51011,4,Similaridade da GNN,2026,alvo,0,0
+51011,4,Similaridade da GNN,2026,controle,0,0
+51011,10,GNN híbrida,42,alvo,0,31
+51011,10,GNN híbrida,42,controle,3,10
+51011,10,GNN híbrida,73,alvo,0,31
+51011,10,GNN híbrida,73,controle,3,10
+51011,10,GNN híbrida,2026,alvo,0,31
+51011,10,GNN híbrida,2026,controle,3,10
+51011,10,Relacional,0,alvo,0,32
+51011,10,Relacional,0,controle,3,10
+51011,10,Similaridade da GNN,42,alvo,0,0
+51011,10,Similaridade da GNN,42,controle,0,0
+51011,10,Similaridade da GNN,73,alvo,0,0
+51011,10,Similaridade da GNN,73,controle,0,0
+51011,10,Similaridade da GNN,2026,alvo,0,0
+51011,10,Similaridade da GNN,2026,controle,0,0
+51011,20,GNN híbrida,42,alvo,39,50
+51011,20,GNN híbrida,42,controle,0,10
+51011,20,GNN híbrida,73,alvo,39,50
+51011,20,GNN híbrida,73,controle,0,10
+51011,20,GNN híbrida,2026,alvo,39,50
+51011,20,GNN híbrida,2026,controle,0,10
+51011,20,Relacional,0,alvo,40,50
+51011,20,Relacional,0,controle,0,10
+51011,20,Similaridade da GNN,42,alvo,0,0
+51011,20,Similaridade da GNN,42,controle,0,0
+51011,20,Similaridade da GNN,73,alvo,0,0
+51011,20,Similaridade da GNN,73,controle,0,0
+51011,20,Similaridade da GNN,2026,alvo,0,0
+51011,20,Similaridade da GNN,2026,controle,0,0
+51012,0,GNN híbrida,42,alvo,4,11
+51012,0,GNN híbrida,42,controle,3,15
+51012,0,GNN híbrida,73,alvo,4,12
+51012,0,GNN híbrida,73,controle,3,15
+51012,0,GNN híbrida,2026,alvo,4,12
+51012,0,GNN híbrida,2026,controle,3,15
+51012,0,Relacional,0,alvo,4,12
+51012,0,Relacional,0,controle,3,15
+51012,0,Similaridade da GNN,42,alvo,0,0
+51012,0,Similaridade da GNN,42,controle,0,0
+51012,0,Similaridade da GNN,73,alvo,0,0
+51012,0,Similaridade da GNN,73,controle,0,0
+51012,0,Similaridade da GNN,2026,alvo,0,0
+51012,0,Similaridade da GNN,2026,controle,0,0
+51012,4,GNN híbrida,42,alvo,2,9
+51012,4,GNN híbrida,42,controle,3,14
+51012,4,GNN híbrida,73,alvo,2,9
+51012,4,GNN híbrida,73,controle,3,14
+51012,4,GNN híbrida,2026,alvo,2,10
+51012,4,GNN híbrida,2026,controle,3,14
+51012,4,Relacional,0,alvo,2,9
+51012,4,Relacional,0,controle,3,14
+51012,4,Similaridade da GNN,42,alvo,0,0
+51012,4,Similaridade da GNN,42,controle,0,0
+51012,4,Similaridade da GNN,73,alvo,0,0
+51012,4,Similaridade da GNN,73,controle,0,0
+51012,4,Similaridade da GNN,2026,alvo,0,0
+51012,4,Similaridade da GNN,2026,controle,0,0
+51012,10,GNN híbrida,42,alvo,0,23
+51012,10,GNN híbrida,42,controle,3,13
+51012,10,GNN híbrida,73,alvo,0,22
+51012,10,GNN híbrida,73,controle,3,13
+51012,10,GNN híbrida,2026,alvo,0,23
+51012,10,GNN híbrida,2026,controle,4,13
+51012,10,Relacional,0,alvo,0,23
+51012,10,Relacional,0,controle,4,13
+51012,10,Similaridade da GNN,42,alvo,0,0
+51012,10,Similaridade da GNN,42,controle,0,0
+51012,10,Similaridade da GNN,73,alvo,0,0
+51012,10,Similaridade da GNN,73,controle,0,0
+51012,10,Similaridade da GNN,2026,alvo,0,0
+51012,10,Similaridade da GNN,2026,controle,0,0
+51012,20,GNN híbrida,42,alvo,34,50
+51012,20,GNN híbrida,42,controle,2,12
+51012,20,GNN híbrida,73,alvo,34,50
+51012,20,GNN híbrida,73,controle,2,12
+51012,20,GNN híbrida,2026,alvo,34,50
+51012,20,GNN híbrida,2026,controle,2,12
+51012,20,Relacional,0,alvo,34,50
+51012,20,Relacional,0,controle,2,12
+51012,20,Similaridade da GNN,42,alvo,0,0
+51012,20,Similaridade da GNN,42,controle,0,0
+51012,20,Similaridade da GNN,73,alvo,0,0
+51012,20,Similaridade da GNN,73,controle,0,0
+51012,20,Similaridade da GNN,2026,alvo,0,0
+51012,20,Similaridade da GNN,2026,controle,0,0
+51013,0,GNN híbrida,42,alvo,1,12
+51013,0,GNN híbrida,42,controle,3,16
+51013,0,GNN híbrida,73,alvo,1,11
+51013,0,GNN híbrida,73,controle,3,16
+51013,0,GNN híbrida,2026,alvo,1,11
+51013,0,GNN híbrida,2026,controle,3,16
+51013,0,Relacional,0,alvo,1,12
+51013,0,Relacional,0,controle,3,17
+51013,0,Similaridade da GNN,42,alvo,0,0
+51013,0,Similaridade da GNN,42,controle,0,0
+51013,0,Similaridade da GNN,73,alvo,0,0
+51013,0,Similaridade da GNN,73,controle,0,0
+51013,0,Similaridade da GNN,2026,alvo,0,0
+51013,0,Similaridade da GNN,2026,controle,0,0
+51013,4,GNN híbrida,42,alvo,0,9
+51013,4,GNN híbrida,42,controle,3,15
+51013,4,GNN híbrida,73,alvo,0,9
+51013,4,GNN híbrida,73,controle,3,15
+51013,4,GNN híbrida,2026,alvo,0,9
+51013,4,GNN híbrida,2026,controle,3,15
+51013,4,Relacional,0,alvo,0,9
+51013,4,Relacional,0,controle,3,16
+51013,4,Similaridade da GNN,42,alvo,0,0
+51013,4,Similaridade da GNN,42,controle,0,0
+51013,4,Similaridade da GNN,73,alvo,0,0
+51013,4,Similaridade da GNN,73,controle,0,0
+51013,4,Similaridade da GNN,2026,alvo,0,0
+51013,4,Similaridade da GNN,2026,controle,0,0
+51013,10,GNN híbrida,42,alvo,0,30
+51013,10,GNN híbrida,42,controle,3,14
+51013,10,GNN híbrida,73,alvo,0,30
+51013,10,GNN híbrida,73,controle,3,14
+51013,10,GNN híbrida,2026,alvo,0,30
+51013,10,GNN híbrida,2026,controle,3,14
+51013,10,Relacional,0,alvo,0,30
+51013,10,Relacional,0,controle,3,15
+51013,10,Similaridade da GNN,42,alvo,0,0
+51013,10,Similaridade da GNN,42,controle,0,0
+51013,10,Similaridade da GNN,73,alvo,0,0
+51013,10,Similaridade da GNN,73,controle,0,0
+51013,10,Similaridade da GNN,2026,alvo,0,0
+51013,10,Similaridade da GNN,2026,controle,0,0
+51013,20,GNN híbrida,42,alvo,37,50
+51013,20,GNN híbrida,42,controle,0,14
+51013,20,GNN híbrida,73,alvo,37,50
+51013,20,GNN híbrida,73,controle,0,14
+51013,20,GNN híbrida,2026,alvo,37,50
+51013,20,GNN híbrida,2026,controle,0,14
+51013,20,Relacional,0,alvo,37,50
+51013,20,Relacional,0,controle,0,15
+51013,20,Similaridade da GNN,42,alvo,0,0
+51013,20,Similaridade da GNN,42,controle,0,0
+51013,20,Similaridade da GNN,73,alvo,0,0
+51013,20,Similaridade da GNN,73,controle,0,0
+51013,20,Similaridade da GNN,2026,alvo,0,0
+51013,20,Similaridade da GNN,2026,controle,0,0

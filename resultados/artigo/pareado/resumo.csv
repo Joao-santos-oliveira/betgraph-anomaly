@@ -1,0 +1,25 @@
+dose,metodo,papel,top100,top541
+0,GNN híbrida,alvo,3.3333333333333335,12.666666666666666
+0,GNN híbrida,controle,3.0,13.666666666666666
+0,Relacional,alvo,3.3333333333333335,13.0
+0,Relacional,controle,3.0,14.0
+0,Similaridade da GNN,alvo,0.0,0.0
+0,Similaridade da GNN,controle,0.0,0.0
+4,GNN híbrida,alvo,1.3333333333333333,9.777777777777779
+4,GNN híbrida,controle,3.0,13.0
+4,Relacional,alvo,1.6666666666666667,9.666666666666666
+4,Relacional,controle,3.0,13.333333333333334
+4,Similaridade da GNN,alvo,0.0,0.0
+4,Similaridade da GNN,controle,0.0,0.0
+10,GNN híbrida,alvo,0.0,27.88888888888889
+10,GNN híbrida,controle,3.111111111111111,12.333333333333334
+10,Relacional,alvo,0.0,28.333333333333332
+10,Relacional,controle,3.3333333333333335,12.666666666666666
+10,Similaridade da GNN,alvo,0.0,0.0
+10,Similaridade da GNN,controle,0.0,0.0
+20,GNN híbrida,alvo,36.666666666666664,50.0
+20,GNN híbrida,controle,0.6666666666666666,12.0
+20,Relacional,alvo,37.0,50.0
+20,Relacional,controle,0.6666666666666666,12.333333333333334
+20,Similaridade da GNN,alvo,0.0,0.0
+20,Similaridade da GNN,controle,0.0,0.0
