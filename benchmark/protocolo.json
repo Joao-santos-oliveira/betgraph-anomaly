@@ -1,0 +1,18 @@
+{
+  "commit": "e6b6212",
+  "alteracoes_nao_commitadas": true,
+  "repeticoes": 3,
+  "seeds_modelo": [
+    42,
+    73,
+    2026
+  ],
+  "seed_scores": 42,
+  "threads": {
+    "OMP_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2",
+    "OPENBLAS_NUM_THREADS": "2"
+  },
+  "medicao": "os.wait4 por etapa: tempo de parede e ru_maxrss",
+  "pasta_por_repeticao": "nova a cada repetição, apagada ao fim"
+}

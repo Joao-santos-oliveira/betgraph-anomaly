@@ -14,7 +14,7 @@ import numpy as np
 import pandas as pd
 
 from experimentos.conteudo.estilo import (ENTREGA, EXTRA, FONTE, GRADE, METODOS, NEUTRO, ORDEM_METODOS, RESULTADOS,
-                                          ROOT, SUPERFICIE, TINTA, TINTA_SUAVE, contagem, numero, tex)
+                                          ROOT, SUPERFICIE, TINTA, TINTA_SUAVE, contagem, exportar_imagens, numero, tex)
 
 DENOMINADOR = 50
 INTENSIDADES = (4, 10, 20)
@@ -474,9 +474,14 @@ def s4():
                              showlegend=False,
                              error_x=dict(type='data', symmetric=False, array=resumo[mx] - resumo[med],
                                           arrayminus=resumo[med] - resumo[mn], color=TINTA_SUAVE, thickness=1.2),
-                             text=[numero(v, 1 if coluna == 1 else 0) for v in resumo[med]],
-                             textposition='outside', textfont=dict(color=TINTA, size=11.5), cliponaxis=False,
-                             hovertemplate='%{y}: %{x:.1f}<extra></extra>'), row=1, col=coluna)
+                             customdata=resumo[[mn, mx]],
+                             hovertemplate='%{y}: mediana %{x:.1f} (%{customdata[0]:.1f} a %{customdata[1]:.1f})'
+                                           '<extra></extra>'), row=1, col=coluna)
+        # Rótulo da mediana depois do fim da barra de erro, para não colidir com ela.
+        fig.add_trace(go.Scatter(x=resumo[mx], y=resumo.rotulo, mode='text', showlegend=False, hoverinfo='skip',
+                                 text=[numero(v, 1 if coluna == 1 else 0) for v in resumo[med]],
+                                 textposition='middle right', textfont=dict(color=TINTA, size=11.5),
+                                 cliponaxis=False), row=1, col=coluna)
     cpu = hardware.get('cpu', {}).get('Model name', hardware.get('maquina', ''))
     fig.update_xaxes(rangemode='tozero')
     estilizar(fig, 980, 120 + 34 * len(resumo))
@@ -504,12 +509,7 @@ def escrever_tex(graficos, caminho):
 
 
 def exportar(graficos, destino):
-    import plotly.io as pio
-    figuras = [g.figura for g in graficos]
-    bases = [destino / g.nome for g in graficos]
-    tamanho = dict(width=[f.layout.width for f in figuras], height=[f.layout.height for f in figuras])
-    pio.write_images(figuras, [b.with_suffix('.png') for b in bases], scale=3, **tamanho)
-    pio.write_images(figuras, [b.with_suffix('.pdf') for b in bases], **tamanho)
+    exportar_imagens([g.figura for g in graficos], [destino / g.nome for g in graficos])
 
 
 def gerar(destino, imagens=True, apenas=None):
@@ -528,7 +528,8 @@ def gerar(destino, imagens=True, apenas=None):
                             config={'displaylogo': False})
         feitos.append(g)
         print(f'{g.nome}: {len(g.dados)} linhas de dados', flush=True)
-    escrever_tex(feitos, destino / 'graficos.tex')
+    if not apenas:  # uma lista parcial não sobrescreve o índice completo
+        escrever_tex(feitos, destino / 'graficos.tex')
     if imagens and feitos:
         exportar(feitos, destino)
         print(f'{len(feitos)} gráficos em PNG e PDF', flush=True)

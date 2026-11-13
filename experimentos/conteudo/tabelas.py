@@ -12,7 +12,7 @@ import pandas as pd
 
 from experimentos.conteudo.estilo import (ENTREGA, EXTRA, FONTE, FUNDO_ALTERNADO, FUNDO_CABECALHO, LINHA,
                                           METODOS, ORDEM_METODOS, RESULTADOS, TINTA, TINTA_SUAVE,
-                                          contagem, numero, percentual, tex)
+                                          contagem, exportar_imagens, numero, percentual, tex)
 
 DENOMINADOR = 50
 CORTES = (100, 541)
@@ -344,12 +344,7 @@ def figura(t):
 
 
 def exportar(figuras, bases):
-    """Exporta PNG (3x) e PDF em lote: um único navegador para todas as imagens."""
-    import plotly.io as pio
-    # Em lote, o tamanho do layout não é respeitado: passa largura e altura de cada figura.
-    tamanho = dict(width=[f.layout.width for f in figuras], height=[f.layout.height for f in figuras])
-    pio.write_images(figuras, [b.with_suffix('.png') for b in bases], scale=3, **tamanho)
-    pio.write_images(figuras, [b.with_suffix('.pdf') for b in bases], **tamanho)
+    exportar_imagens(figuras, bases)
 
 
 GERADORES = (t1, t2, t3, t4, t5, t6)

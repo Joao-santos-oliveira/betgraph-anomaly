@@ -15,9 +15,23 @@
 
 \begin{figure*}[htbp]
 \centering
+\includegraphics[width=\textwidth]{G3_curva_roc.pdf}
+\caption{Curva ROC da previsão de ligações no teste reservado (22.907 positivos e 22.907 negativos), com o grafo de contexto: uma curva por seed. A ROC avalia a previsão de ligações; a recuperação artificial (G1) avalia o ranking de carteiras.}
+\label{fig:g3}
+\end{figure*}
+
+\begin{figure*}[htbp]
+\centering
 \includegraphics[width=\textwidth]{G4_comparacao_gnns.pdf}
 \caption{GNN híbrida versus similaridade isolada. As duas usam os mesmos embeddings e o mesmo treino (mesma AUROC); só muda o score de carteira. À esquerda, distribuição das posições dos 50 alvos em cada ranking do teste pareado (3 sorteios $\times$ 3 seeds; caixa: quartis; posição 1 no alto). À direita, carteiras do top 100 de cada GNN que também estão no top 100 do relacional no dia real.}
 \label{fig:g4}
+\end{figure*}
+
+\begin{figure*}[htbp]
+\centering
+\includegraphics[width=\textwidth]{G5_trajetorias_pareadas.pdf}
+\caption{Trajetória de cada carteira do teste pareado ao longo das intensidades (GNN híbrida, seed 42, três sorteios: 150 alvos e 150 controles). Linhas finas: carteiras; linha forte: mediana. As intensidades são cumulativas e os controles mantêm suas ligações.}
+\label{fig:g5}
 \end{figure*}
 
 \begin{figure}[htbp]
@@ -46,4 +60,11 @@
 \includegraphics[width=\textwidth]{S3_perdas_treino.pdf}
 \caption{Treino da GNN híbrida por seed (traço: 42 contínuo, 73 tracejado, 2026 pontilhado). A perda de treino inclui só o termo de ligações; o contraste (peso 0,1) fica de fora.}
 \label{fig:s3}
+\end{figure*}
+
+\begin{figure*}[htbp]
+\centering
+\includegraphics[width=\textwidth]{S4_tempos_memoria.pdf}
+\caption{Custo por etapa do pipeline do dia real: mediana de 3 repetições (barras: mínimo e máximo). Máquina: 13th Gen Intel(R) Core(TM) i3-1315U, 8 núcleos lógicos, 3,7 GiB; 2 threads por processo.}
+\label{fig:s4}
 \end{figure*}

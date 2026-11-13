@@ -26,6 +26,27 @@ SUPERFICIE = '#ffffff'
 ORDEM_METODOS = list(METODOS)
 
 
+def exportar_imagens(figuras, bases):
+    """PNG (3x) e PDF em lote, com o tamanho de cada figura (em lote o kaleido ignora o layout).
+
+    No Windows, o kaleido às vezes falha ao fechar o navegador depois de gravar tudo; essa falha é
+    ignorada quando todos os arquivos daquele formato existem e são mais novos que o início.
+    """
+    import time
+    import plotly.io as pio
+    tamanho = dict(width=[f.layout.width for f in figuras], height=[f.layout.height for f in figuras])
+    for sufixo, extra in (('.png', dict(scale=3)), ('.pdf', {})):
+        caminhos = [b.with_suffix(sufixo) for b in bases]
+        inicio = time.time()
+        try:
+            pio.write_images(figuras, caminhos, **tamanho, **extra)
+        except RuntimeError as erro:
+            gravados = all(c.exists() and c.stat().st_mtime >= inicio - 1 for c in caminhos)
+            if 'close' not in str(erro) or not gravados:
+                raise
+            print(f'Aviso: o navegador não fechou sozinho depois de gravar os {sufixo}; arquivos conferidos.', flush=True)
+
+
 def numero(valor, casas=0):
     """Número no padrão brasileiro: ponto nos milhares e vírgula decimal."""
     texto = f'{valor:,.{casas}f}'
