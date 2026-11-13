@@ -5,13 +5,13 @@ BRUTOS ?= data/raw
 DESTINO ?= data/execucoes
 PYTHON_FIGURAS ?= .venv-figuras/bin/python
 TABELAS_OPCOES ?=
-.PHONY: ajuda ambiente validar testes artigo reproduzir pareado artigo-original dados-artigo figuras-ambiente tabelas graficos conteudo benchmark
+.PHONY: ajuda ambiente validar testes artigo reproduzir pareado artigo-original dados-artigo figuras-ambiente tabelas graficos graficos-publicacao conteudo benchmark
 ajuda:
 	@echo "ambiente | validar | testes | artigo (reproduzir) | pareado"
 	@echo "artigo: refazer o estudo completo a partir dos dois CSVs brutos"
 	@echo "artigo-original: treinar só o dia real (3 seeds)"
 	@echo "dados-artigo RODADA=<pasta>: extrair da execução os dados das tabelas e gráficos"
-	@echo "figuras-ambiente | tabelas | graficos | conteudo (tabelas + graficos)"
+	@echo "figuras-ambiente | tabelas | graficos | graficos-publicacao | conteudo (os três)"
 	@echo "benchmark REPETICOES=3: tempo e memória por etapa (depende da máquina)"
 
 ambiente:
@@ -56,7 +56,11 @@ tabelas:
 graficos:
 	$(PYTHON_FIGURAS) -B -m experimentos.conteudo.graficos $(GRAFICOS_OPCOES)
 
-conteudo: tabelas graficos
+# Versão de publicação dos gráficos (tamanho de impressão, PNG 600 dpi, PDF, SVG, HTML, validação e comparação)
+graficos-publicacao:
+	$(PYTHON_FIGURAS) -B -m experimentos.conteudo.graficos_publicacao $(GRAFICOS_OPCOES)
+
+conteudo: tabelas graficos graficos-publicacao
 
 # Único alvo que depende da máquina: tempo e pico de memória por etapa (Linux ou WSL).
 REPETICOES ?= 3

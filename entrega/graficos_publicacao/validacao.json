@@ -1,0 +1,185 @@
+{
+  "G1_recuperacao_intensidade": {
+    "pontos": 168,
+    "rankings_por_celula": [
+      1,
+      3,
+      9
+    ],
+    "maior_diferenca_media_vs_T3_pp": 1.4210854715202004e-14,
+    "ok": true
+  },
+  "G2_alvos_vs_controles": {
+    "sorteios_por_ponto": [
+      3
+    ],
+    "maior_diferenca_vs_resumo": 7.105427357601002e-15,
+    "ok": true
+  },
+  "G3_curva_roc": {
+    "curvas": 3,
+    "pares_por_seed": {
+      "42": 45814,
+      "73": 45814,
+      "2026": 45814
+    },
+    "auroc_oficial": {
+      "42": 0.9610996374256005,
+      "73": 0.962618975016266,
+      "2026": 0.9622649781602522
+    },
+    "auroc_recalculado_das_curvas": {
+      "42": 0.9610999776001268,
+      "73": 0.9626188073111773,
+      "2026": 0.9622651782629149
+    },
+    "maior_diferenca_auroc": 3.401745263253986e-07,
+    "auroc_medio": 0.9619945302007062,
+    "auroc_dp_amostral": 0.0007949548746434114,
+    "auc_da_curva_media_interpolada": 0.9619756340230787,
+    "melhor_seed": 73,
+    "pior_seed": 42,
+    "diferenca_melhor_pior": 0.0015193375906655815,
+    "banda_em_0_1": true,
+    "dp_maximo_tpr": 0.011267340190607184,
+    "interpolacao": "TPR máximo por FPR distinto; interpolação linear numa grade de 1.001 FPR (0 a 1); só para média e banda",
+    "ok": true
+  },
+  "G3_curva_roc_detalhe": {
+    "curvas": 3,
+    "pares_por_seed": {
+      "42": 45814,
+      "73": 45814,
+      "2026": 45814
+    },
+    "auroc_oficial": {
+      "42": 0.9610996374256005,
+      "73": 0.962618975016266,
+      "2026": 0.9622649781602522
+    },
+    "auroc_recalculado_das_curvas": {
+      "42": 0.9610999776001268,
+      "73": 0.9626188073111773,
+      "2026": 0.9622651782629149
+    },
+    "maior_diferenca_auroc": 3.401745263253986e-07,
+    "auroc_medio": 0.9619945302007062,
+    "auroc_dp_amostral": 0.0007949548746434114,
+    "auc_da_curva_media_interpolada": 0.9619756340230787,
+    "melhor_seed": 73,
+    "pior_seed": 42,
+    "diferenca_melhor_pior": 0.0015193375906655815,
+    "banda_em_0_1": true,
+    "dp_maximo_tpr": 0.011267340190607184,
+    "interpolacao": "TPR máximo por FPR distinto; interpolação linear numa grade de 1.001 FPR (0 a 1); só para média e banda",
+    "ok": true
+  },
+  "G4_comparacao_gnns": {
+    "pontos_por_caixa": [
+      450
+    ],
+    "pontos_omitidos": 0,
+    "sobreposicao": [
+      {
+        "metodo": "GNN híbrida",
+        "seed": 42,
+        "comuns": 100
+      },
+      {
+        "metodo": "GNN híbrida",
+        "seed": 73,
+        "comuns": 100
+      },
+      {
+        "metodo": "GNN híbrida",
+        "seed": 2026,
+        "comuns": 100
+      },
+      {
+        "metodo": "Similaridade da GNN",
+        "seed": 42,
+        "comuns": 0
+      },
+      {
+        "metodo": "Similaridade da GNN",
+        "seed": 73,
+        "comuns": 0
+      },
+      {
+        "metodo": "Similaridade da GNN",
+        "seed": 2026,
+        "comuns": 0
+      }
+    ],
+    "ok": true
+  },
+  "G5_trajetorias_pareadas": {
+    "carteiras": {
+      "alvo": 150,
+      "controle": 150
+    },
+    "pares_completos": true,
+    "mediana_log_razao": {
+      "alvo": 1.5475147117236006,
+      "controle": 0.001003768979026221
+    },
+    "ok": true
+  },
+  "G6_entradas_saidas_top100": {
+    "contagens": {
+      "permaneceu": 94,
+      "entrou": 6,
+      "saiu": 6
+    },
+    "permaneceram_oficial": 94,
+    "lider_contexto": 18753,
+    "lider_total": 17762,
+    "ok": true
+  },
+  "S1_recuperacao_acumulada": {
+    "rankings_por_curva": [
+      3,
+      9
+    ],
+    "monotona": true,
+    "termina_em_100": true,
+    "ok": true
+  },
+  "S2_precisao_revocacao": {
+    "ap_oficial": {
+      "42": 0.9607170393736237,
+      "73": 0.9618813547689423,
+      "2026": 0.9618018840862308
+    },
+    "ap_recalculado": {
+      "42": 0.9607173331851829,
+      "73": 0.9618808388536835,
+      "2026": 0.9618024199592407
+    },
+    "maior_diferenca": 5.358730098548037e-07,
+    "definicao": "AP = soma de (R_n − R_{n−1}) · P_n por limiar (sem trapézio)",
+    "melhor_seed": 73,
+    "pior_seed": 42,
+    "ok": true
+  },
+  "S3_perdas_treino": {
+    "epocas_por_seed": {
+      "42": 100,
+      "73": 100,
+      "2026": 100
+    },
+    "melhor_epoca": [
+      100
+    ],
+    "linhas": 300,
+    "suavizacao": "nenhuma",
+    "ok": true
+  },
+  "S4_tempos_memoria": {
+    "etapas": 11,
+    "repeticoes": 3,
+    "mediana_confere": true,
+    "pipeline_total_mediana_s": 523.2479927149999,
+    "ok": true
+  }
+}

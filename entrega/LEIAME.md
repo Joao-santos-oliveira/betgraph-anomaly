@@ -6,6 +6,7 @@ Tudo nesta pasta é gerado pelo Makefile a partir de `resultados/artigo/`. Nenhu
 |---|---|
 | `tabelas/` | T1 a T6: `.csv` (dados), `.tex` (booktabs), `.png` (3×) e `.pdf`; `tabelas.tex` reúne todas |
 | `graficos/` | G1 a G6 e S1 a S4: `.pdf` (vetorial), `.png` (3×), `.html` (interativo) e `.csv` (valores desenhados, por sorteio e seed); `graficos.tex` traz as figuras com legenda |
+| `graficos_publicacao/` | **Versão para o artigo** das mesmas dez figuras: tamanho real de impressão, PNG 600 dpi, PDF, SVG e HTML; `graficos.tex`, `validacao.json` (conferência contra as fontes), `comparacao.html` (antes e depois) e `AUDITORIA.md` (diagnóstico, notas e limitações). Gerada por `make graficos-publicacao` |
 
 ## Como reproduzir
 

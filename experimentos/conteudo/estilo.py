@@ -26,8 +26,8 @@ SUPERFICIE = '#ffffff'
 ORDEM_METODOS = list(METODOS)
 
 
-def exportar_imagens(figuras, bases):
-    """PNG (3x) e PDF em lote, com o tamanho de cada figura (em lote o kaleido ignora o layout).
+def exportar_imagens(figuras, bases, escala_png=3, formatos=('.png', '.pdf')):
+    """PNG e formatos vetoriais em lote, com o tamanho de cada figura (em lote o kaleido ignora o layout).
 
     No Windows, o kaleido às vezes falha ao fechar o navegador depois de gravar tudo; essa falha é
     ignorada quando todos os arquivos daquele formato existem e são mais novos que o início.
@@ -35,7 +35,8 @@ def exportar_imagens(figuras, bases):
     import time
     import plotly.io as pio
     tamanho = dict(width=[f.layout.width for f in figuras], height=[f.layout.height for f in figuras])
-    for sufixo, extra in (('.png', dict(scale=3)), ('.pdf', {})):
+    for sufixo in formatos:
+        extra = dict(scale=escala_png) if sufixo == '.png' else {}
         caminhos = [b.with_suffix(sufixo) for b in bases]
         inicio = time.time()
         try:
