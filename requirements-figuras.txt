@@ -1,0 +1,6 @@
+# Ambiente só para tabelas e gráficos (make figuras-ambiente). Não precisa de torch.
+# A exportação para PNG e PDF usa o kaleido, que precisa de um Chrome ou Chromium instalado.
+numpy==2.5.3
+pandas==3.0.6
+plotly==7.1.0
+kaleido==1.5.0

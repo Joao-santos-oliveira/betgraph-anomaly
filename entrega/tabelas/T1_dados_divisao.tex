@@ -1,0 +1,27 @@
+% Gerado por experimentos/conteudo/tabelas.py a partir de T1_dados_divisao.csv. Requer \usepackage{booktabs}.
+\begin{table}[htbp]
+\centering
+\small
+\caption{Dados do dia 16/09/2026 e divisão das ligações}
+\label{tab:t1}
+\begin{tabular}{llrl}
+\toprule
+\textbf{Item} & \textbf{Valor} & \textbf{\% das ligações} & \textbf{Detalhe} \\
+\midrule
+Dia & 16/09/2026 &  & Negociações registradas em um único dia \\
+Carteiras & 27.039 &  & 21.763 com ligação no contexto \\
+Mercados & 16.693 &  & 15.736 com ligação no contexto \\
+Ligações distintas carteira–mercado & 229.072 & 100,0\% & Cobertura total, usada no ranking do dia real \\
+\midrule
+Contexto & 137.444 & 60,0\% & Passagem de mensagens e scores de carteira \\
+Treino & 45.814 & 20,0\% & Positivos; negativos renovados a cada época \\
+Validação & 22.907 & 10,0\% & Parada antecipada; negativos 1:1 (seed 43) \\
+Teste reservado & 22.907 & 10,0\% & Avaliado uma única vez; negativos 1:1 (seed 44) \\
+\midrule
+Seed da divisão & 42 &  & Mesma divisão para todas as seeds \\
+Seeds do modelo & 42, 73, 2026 &  & Uma GNN treinada por seed \\
+Sorteios de alvos & 51011, 51012, 51013 &  & 10 grupos de 5 carteiras e 50 controles por sorteio \\
+\bottomrule
+\end{tabular}
+\par\smallskip\parbox{\linewidth}{\scriptsize\textit{Nota.} Contexto, treino, validação e teste somam as 229.072 ligações distintas. O ranking do dia real aplica os pesos treinados no contexto à cobertura total. Negativos amostrados uniformemente entre pares carteira–mercado não observados.}
+\end{table}

@@ -1,5 +1,6 @@
 data/
 .venv/
+.venv-figuras/
 __pycache__/
 *.pyc
 .ipynb_checkpoints/

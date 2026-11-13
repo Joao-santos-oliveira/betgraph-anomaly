@@ -1,0 +1,24 @@
+% Gerado por experimentos/conteudo/tabelas.py a partir de T4_alvos_controles.csv. Requer \usepackage{booktabs}.
+\begin{table}[htbp]
+\centering
+\small
+\caption{GNN híbrida antes e depois da intervenção: alvos e controles}
+\label{tab:t4}
+\begin{tabular}{llrrrrrr}
+\toprule
+ &  & \multicolumn{3}{c}{Top 100} & \multicolumn{3}{c}{Top 541} \\
+\cmidrule(lr){3-5} \cmidrule(lr){6-8}
+\textbf{Mercados novos} & \textbf{Grupo} & \textbf{Antes} & \textbf{Depois} & \textbf{Variação} & \textbf{Antes} & \textbf{Depois} & \textbf{Variação} \\
+\midrule
+4 & Alvos & 4/50 & 2/50 & -2 & 14/50 & 7/50 & -7 \\
+ & Controles & 2/50 & 1/50 & -1 & 17/50 & 17/50 & 0 \\
+\midrule
+10 & Alvos & 3/50 & 0/50 & -3 & 11/50 & 24,33/50 & +13,33 \\
+ & Controles & 2/50 & 2/50 & 0 & 11/50 & 10/50 & -1 \\
+\midrule
+20 & Alvos & 3/50 & 50/50 & +47 & 13/50 & 50/50 & +37 \\
+ & Controles & 5/50 & 3/50 & -2 & 13/50 & 12/50 & -1 \\
+\bottomrule
+\end{tabular}
+\par\smallskip\parbox{\linewidth}{\scriptsize\textit{Nota.} Teste misto, média entre as três seeds. "Antes" é a posição das mesmas carteiras no grafo original, ou seja, quantas já estavam no corte. Alvos recebem o padrão artificial; cada controle tem o mesmo grau inicial do seu alvo e ligações intactas.}
+\end{table}

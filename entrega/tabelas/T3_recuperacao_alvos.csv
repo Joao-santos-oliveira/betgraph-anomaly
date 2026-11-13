@@ -1,0 +1,37 @@
+desenho,mercados,metodo,corte,contagem,denominador,percentual,agregacao
+Misto,4,GNN híbrida,100,2.0,50,4.0,soma dos 3 sorteios por ranking; média entre seeds
+Misto,4,GNN híbrida,541,7.0,50,14.0,soma dos 3 sorteios por ranking; média entre seeds
+Misto,4,Relacional,100,2.0,50,4.0,soma dos 3 sorteios por ranking; média entre seeds
+Misto,4,Relacional,541,7.0,50,14.0,soma dos 3 sorteios por ranking; média entre seeds
+Misto,4,Similaridade da GNN,100,0.0,50,0.0,soma dos 3 sorteios por ranking; média entre seeds
+Misto,4,Similaridade da GNN,541,0.0,50,0.0,soma dos 3 sorteios por ranking; média entre seeds
+Misto,10,GNN híbrida,100,0.0,50,0.0,soma dos 3 sorteios por ranking; média entre seeds
+Misto,10,GNN híbrida,541,24.33333333333333,50,48.66666666666666,soma dos 3 sorteios por ranking; média entre seeds
+Misto,10,Relacional,100,0.0,50,0.0,soma dos 3 sorteios por ranking; média entre seeds
+Misto,10,Relacional,541,26.0,50,52.0,soma dos 3 sorteios por ranking; média entre seeds
+Misto,10,Similaridade da GNN,100,0.0,50,0.0,soma dos 3 sorteios por ranking; média entre seeds
+Misto,10,Similaridade da GNN,541,0.0,50,0.0,soma dos 3 sorteios por ranking; média entre seeds
+Misto,20,GNN híbrida,100,50.0,50,100.0,soma dos 3 sorteios por ranking; média entre seeds
+Misto,20,GNN híbrida,541,50.0,50,100.0,soma dos 3 sorteios por ranking; média entre seeds
+Misto,20,Relacional,100,50.0,50,100.0,soma dos 3 sorteios por ranking; média entre seeds
+Misto,20,Relacional,541,50.0,50,100.0,soma dos 3 sorteios por ranking; média entre seeds
+Misto,20,Similaridade da GNN,100,0.0,50,0.0,soma dos 3 sorteios por ranking; média entre seeds
+Misto,20,Similaridade da GNN,541,0.0,50,0.0,soma dos 3 sorteios por ranking; média entre seeds
+Pareado,4,GNN híbrida,100,1.3333333333333333,50,2.666666666666666,média de sorteio × seed (cada ranking com os 50 alvos)
+Pareado,4,GNN híbrida,541,9.77777777777778,50,19.55555555555556,média de sorteio × seed (cada ranking com os 50 alvos)
+Pareado,4,Relacional,100,1.6666666666666667,50,3.333333333333334,média de sorteio × seed (cada ranking com os 50 alvos)
+Pareado,4,Relacional,541,9.666666666666666,50,19.333333333333332,média de sorteio × seed (cada ranking com os 50 alvos)
+Pareado,4,Similaridade da GNN,100,0.0,50,0.0,média de sorteio × seed (cada ranking com os 50 alvos)
+Pareado,4,Similaridade da GNN,541,0.0,50,0.0,média de sorteio × seed (cada ranking com os 50 alvos)
+Pareado,10,GNN híbrida,100,0.0,50,0.0,média de sorteio × seed (cada ranking com os 50 alvos)
+Pareado,10,GNN híbrida,541,27.88888888888889,50,55.777777777777786,média de sorteio × seed (cada ranking com os 50 alvos)
+Pareado,10,Relacional,100,0.0,50,0.0,média de sorteio × seed (cada ranking com os 50 alvos)
+Pareado,10,Relacional,541,28.33333333333333,50,56.66666666666666,média de sorteio × seed (cada ranking com os 50 alvos)
+Pareado,10,Similaridade da GNN,100,0.0,50,0.0,média de sorteio × seed (cada ranking com os 50 alvos)
+Pareado,10,Similaridade da GNN,541,0.0,50,0.0,média de sorteio × seed (cada ranking com os 50 alvos)
+Pareado,20,GNN híbrida,100,36.66666666666666,50,73.33333333333331,média de sorteio × seed (cada ranking com os 50 alvos)
+Pareado,20,GNN híbrida,541,50.0,50,100.0,média de sorteio × seed (cada ranking com os 50 alvos)
+Pareado,20,Relacional,100,37.0,50,74.0,média de sorteio × seed (cada ranking com os 50 alvos)
+Pareado,20,Relacional,541,50.0,50,100.0,média de sorteio × seed (cada ranking com os 50 alvos)
+Pareado,20,Similaridade da GNN,100,0.0,50,0.0,média de sorteio × seed (cada ranking com os 50 alvos)
+Pareado,20,Similaridade da GNN,541,0.0,50,0.0,média de sorteio × seed (cada ranking com os 50 alvos)

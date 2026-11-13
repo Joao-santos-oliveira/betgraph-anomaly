@@ -1,0 +1,21 @@
+% Gerado por experimentos/conteudo/tabelas.py a partir de T6_fichas_casos.csv. Requer \usepackage{booktabs}.
+\begin{table*}[htbp]
+\centering
+\footnotesize
+\caption{Fichas dos casos e controles do dia real (seed 42)}
+\label{tab:t6}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lllrrrrrrlll}
+\toprule
+\textbf{Seleção} & \textbf{Papel} & \textbf{Carteira} & \textbf{Posição (contexto $\rightarrow$ total)} & \textbf{Score} & \textbf{Mercados} & \textbf{Parceiros} & \textbf{Eventos distintos} & \textbf{Mercados de evento indeterminado} & \textbf{Contribuição 1} & \textbf{Contribuição 2} & \textbf{Contribuição 3} \\
+\midrule
+Permaneceu & Caso & 17762 & 4 $\rightarrow$ 1 & 84,14 & 171 & 3.901 & 70 & 51 & 17487: 84,5 (obs. 160; esp. 20,21) & 18767: 84,5 (obs. 160; esp. 20,21) & 20748: 83,4 (obs. 160; esp. 20,57) \\
+ & Controle & 1507 & 3.599 $\rightarrow$ 698 & 15,77 & 171 & 2.033 & 30 & 36 & 8299: 21,9 (obs. 101; esp. 31,77) & 1844: 14,1 (obs. 41; esp. 9,01) & 7825: 11,3 (obs. 23; esp. 3,29) \\
+\midrule
+Entrou & Caso & 16179 & 123 $\rightarrow$ 85 & 44,89 & 41 & 1.161 & 14 & 4 & 16469: 45,3 (obs. 40; esp. 1,20) & 17181: 44,9 (obs. 40; esp. 1,23) & 16795: 44,5 (obs. 40; esp. 1,26) \\
+ & Controle & 53 & 6.864 $\rightarrow$ 6.063 & 5,64 & 41 & 346 & 0 & 41 & 4987: 6,9 (obs. 7; esp. 0,35) & 409: 5,2 (obs. 5; esp. 0,20) & 3924: 4,8 (obs. 7; esp. 0,76) \\
+\bottomrule
+\end{tabular}
+}
+\par\smallskip\parbox{\linewidth}{\scriptsize\textit{Nota.} Pelo ranking total da seed 42: o primeiro que permaneceu no top 100 e o primeiro que entrou. Cada controle está fora do top 100 com o número de mercados mais próximo (desempate pelo menor ID). Score = média das três maiores contribuições; contribuição = surpresa (log10 da cauda de Poisson da sobreposição) $\times$ (1 + cosseno)/2. obs./esp.: mercados compartilhados observados e esperados pelos graus. Parceiros: carteiras com 2 ou mais mercados em comum. Evento identificado quando a pergunta nomeia um confronto (“A vs. B” ou placar exato); os demais mercados contam como evento indeterminado.}
+\end{table*}

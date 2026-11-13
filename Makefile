@@ -3,10 +3,15 @@ PYTHON ?= python3.12
 VENV ?= .venv/bin/python
 BRUTOS ?= data/raw
 DESTINO ?= data/execucoes
-.PHONY: ajuda ambiente validar testes artigo reproduzir pareado
+PYTHON_FIGURAS ?= .venv-figuras/bin/python
+TABELAS_OPCOES ?=
+.PHONY: ajuda ambiente validar testes artigo reproduzir pareado artigo-original dados-artigo figuras-ambiente tabelas conteudo
 ajuda:
 	@echo "ambiente | validar | testes | artigo (reproduzir) | pareado"
 	@echo "artigo: refazer o estudo completo a partir dos dois CSVs brutos"
+	@echo "artigo-original: treinar só o dia real (3 seeds)"
+	@echo "dados-artigo RODADA=<pasta>: extrair da execução os dados das tabelas e gráficos"
+	@echo "figuras-ambiente | tabelas | conteudo"
 
 ambiente:
 	$(PYTHON) -m venv .venv
@@ -25,6 +30,28 @@ artigo:
 
 reproduzir: artigo
 
+# Só o dia real (3 treinos em vez de 12): cobertura total, scores das ligações reservadas e embeddings.
+artigo-original:
+	OMP_NUM_THREADS=2 MKL_NUM_THREADS=2 OPENBLAS_NUM_THREADS=2 $(VENV) -B -m experimentos.artigo.executar --raw "$(BRUTOS)" --destino "$(DESTINO)" --processos "$(PROCESSOS)" --apenas-original
+
+
+# Conteúdo do artigo -----------------------------------------------------------------------------
+# Tabelas e gráficos leem só resultados/artigo: não dependem da máquina nem treinam nada.
+
+dados-artigo:
+	@test -n "$(RODADA)" || (echo "Informe RODADA com a pasta gerada por make artigo ou make artigo-original"; exit 1)
+	$(VENV) -B -m experimentos.artigo.extrair "$(RODADA)"
+
+figuras-ambiente:
+	$(PYTHON) -m venv .venv-figuras
+	$(PYTHON_FIGURAS) -m pip install -r requirements-figuras.txt
+	@echo "Para exportar PNG e PDF, o kaleido precisa de um Chrome: $(PYTHON_FIGURAS) -c 'import kaleido; kaleido.get_chrome_sync()'"
+
+# TABELAS_OPCOES=--sem-imagens gera só CSV e LaTeX (sem navegador)
+tabelas:
+	$(PYTHON_FIGURAS) -B -m experimentos.conteudo.tabelas $(TABELAS_OPCOES)
+
+conteudo: tabelas
 
 pareado:
 	@test -n "$(RODADA)" || (echo "Informe RODADA com a pasta gerada por make artigo"; exit 1)

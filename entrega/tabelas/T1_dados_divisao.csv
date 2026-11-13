@@ -1,0 +1,12 @@
+bloco,item,valor,percentual,detalhe
+Grafo do dia,Dia,16/09/2026,,Negociações registradas em um único dia
+Grafo do dia,Carteiras,27039,,21.763 com ligação no contexto
+Grafo do dia,Mercados,16693,,15.736 com ligação no contexto
+Grafo do dia,Ligações distintas carteira–mercado,229072,100.0,"Cobertura total, usada no ranking do dia real"
+Divisão das ligações,Contexto,137444,60.000349235174966,Passagem de mensagens e scores de carteira
+Divisão das ligações,Treino,45814,19.999825382412517,Positivos; negativos renovados a cada época
+Divisão das ligações,Validação,22907,9.999912691206259,Parada antecipada; negativos 1:1 (seed 43)
+Divisão das ligações,Teste reservado,22907,9.999912691206259,Avaliado uma única vez; negativos 1:1 (seed 44)
+Sorteios e seeds,Seed da divisão,42,,Mesma divisão para todas as seeds
+Sorteios e seeds,Seeds do modelo,"42, 73, 2026",,Uma GNN treinada por seed
+Sorteios e seeds,Sorteios de alvos,"51011, 51012, 51013",,10 grupos de 5 carteiras e 50 controles por sorteio

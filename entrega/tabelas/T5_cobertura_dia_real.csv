@@ -1,0 +1,4 @@
+seed,permaneceram,entraram,sairam,lider_contexto,lider_total,mudou_lideranca,spearman,caso_permaneceu,caso_permaneceu_contexto,caso_permaneceu_total,caso_entrou,caso_entrou_contexto,caso_entrou_total
+42,94,6,6,18753,17762,True,0.7972296311976778,17762,4,1,16179,123,85
+73,94,6,6,18753,17762,True,0.7976268749357359,17762,4,1,16179,123,85
+2026,94,6,6,18753,17762,True,0.7973239249087167,17762,4,1,16179,123,85

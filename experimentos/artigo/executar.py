@@ -30,7 +30,7 @@ def treinar_cenario(task):
     ranking(graph['user'].original_id.numpy(), scores).to_csv(dest / 'ranking.csv', index=False)
 
 
-def executar(raw, destino, processos):
+def executar(raw, destino, processos, apenas_original=False):
     destino.mkdir(parents=True, exist_ok=True)
     run = Path(mkdtemp(dir=destino.resolve(), prefix='artigo-'))
     print(f'Execução em {run}', flush=True)
@@ -43,11 +43,13 @@ def executar(raw, destino, processos):
     preparar_csv(run / 'data/raw', source, sample_size=0, seed=42)
     construir(source, run)
     preparar(source, run)
-    folders = ['original', *map(str, protocol['realizacoes'])]
+    # apenas_original treina só o dia real: basta para a cobertura, a curva ROC e as fichas dos casos.
+    folders = ['original'] if apenas_original else ['original', *map(str, protocol['realizacoes'])]
     tasks = [(run / folder, seed) for folder in folders for seed in protocol['seeds_modelo']]
     with ProcessPoolExecutor(max_workers=processos, mp_context=multiprocessing.get_context('spawn')) as pool:
         list(pool.map(treinar_cenario, tasks))
-    avaliar(run, run / 'resultados')
+    if not apenas_original:
+        avaliar(run, run / 'resultados')
     cobertura(run, run / 'resultados')
     print(run / 'resultados', flush=True)
 
@@ -57,5 +59,7 @@ if __name__ == '__main__':
     parser.add_argument('--raw', type=Path, required=True)
     parser.add_argument('--destino', type=Path, required=True)
     parser.add_argument('--processos', type=int, choices=[1, 2, 3], default=1)
+    parser.add_argument('--apenas-original', action='store_true',
+                        help='treina só o grafo do dia real, sem as três intervenções')
     args = parser.parse_args()
-    executar(args.raw, args.destino, args.processos)
+    executar(args.raw, args.destino, args.processos, args.apenas_original)

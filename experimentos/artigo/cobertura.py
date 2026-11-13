@@ -30,7 +30,7 @@ def cobertura(run, destino):
     for k in ('user','event'):
         assert torch.equal(restored[k].x, context[k].x)
     ids = context['user'].original_id.numpy()
-    models, report = {}, {}
+    models, report, held_scores = {}, {}, []
     for seed in protocol['seeds_modelo']:
         path = original / f'gnn_{seed}'
         if not path.exists():
@@ -43,6 +43,11 @@ def cobertura(run, destino):
         assert torch.equal(held['positive'],split['test_positive'])
         inputs, labels = exemplos(held['positive'],held['pairs'])
         test = avaliar_validacao(model,context,inputs,labels)
+        # Score individual de cada ligação reservada: permite reconstruir as curvas ROC e PR.
+        with torch.inference_mode():
+            logits = model.decode(model(context.x_dict,context.edge_index_dict),inputs)
+        held_scores.append(pd.DataFrame({'seed':seed,'carteira':inputs[0].numpy(),'mercado':inputs[1].numpy(),
+                                         'rotulo':labels.numpy().astype(int),'score':logits.numpy()}))
         models[seed] = (model, pd.read_csv(path/'ranking.csv'))
         report[seed] = {k:test[k] for k in ('n','positivos','auc','ap')}
 
@@ -52,9 +57,11 @@ def cobertura(run, destino):
     atribuir_features(full,*frames,ajuste=ajuste)
     _, stats = enriquecer_grafo(full,estrutural['scaler'])
     data = pd.DataFrame({'wallet_id':ids})
+    embeddings = {}
     for seed,(model,before) in models.items():
         with torch.inference_mode():
             z = model(full.x_dict,full.edge_index_dict)['user'].numpy()
+        embeddings[f'z_{seed}'] = z
         score = hibrido(pairs.numpy(),len(ids),full['event'].num_nodes,z)
         rank = ranking(ids,score).set_index('wallet_id')
         data[f'contexto_{seed}'] = data.wallet_id.map(before.set_index('wallet_id').posicao)
@@ -69,6 +76,8 @@ def cobertura(run, destino):
     destino.mkdir(parents=True,exist_ok=True)
     data.sort_values('total_42').to_csv(destino/'cobertura_total.csv',index=False)
     (destino/'avaliacao_cobertura.json').write_text(json.dumps(report,indent=2)+'\n')
+    pd.concat(held_scores,ignore_index=True).to_csv(destino/'scores_teste.csv.gz',index=False)
+    np.savez_compressed(destino/'embeddings_total.npz',user_original_id=ids,**embeddings)
 
 
 if __name__ == '__main__':

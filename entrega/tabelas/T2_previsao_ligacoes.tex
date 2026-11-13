@@ -1,0 +1,19 @@
+% Gerado por experimentos/conteudo/tabelas.py a partir de T2_previsao_ligacoes.csv. Requer \usepackage{booktabs}.
+\begin{table}[htbp]
+\centering
+\small
+\caption{Previsão de ligações no teste reservado}
+\label{tab:t2}
+\begin{tabular}{lrrrr}
+\toprule
+\textbf{Seed} & \textbf{AUROC} & \textbf{AP} & \textbf{Positivos} & \textbf{Negativos} \\
+\midrule
+42 & 0,9611 & 0,9607 & 22.907 & 22.907 \\
+73 & 0,9626 & 0,9619 & 22.907 & 22.907 \\
+2026 & 0,9623 & 0,9618 & 22.907 & 22.907 \\
+\midrule
+Média & 0,9620 $\pm$ 0,0008 & 0,9615 $\pm$ 0,0007 & 22.907 & 22.907 \\
+\bottomrule
+\end{tabular}
+\par\smallskip\parbox{\linewidth}{\scriptsize\textit{Nota.} Teste reservado: 22.907 ligações positivas e 22.907 negativas (1:1), amostradas uniformemente entre pares não observados em nenhuma parte da divisão (seed 44), com o grafo de contexto. Média $\pm$ desvio padrão amostral entre as três seeds. O MLP não entra: não foi avaliado nos mesmos pares.}
+\end{table}

@@ -1,0 +1,5 @@
+tipo,papel,wallet_id,posicao_contexto,posicao_total,score,mercados_contexto,mercados_total,parceiros,eventos_distintos,mercados_evento_indeterminado
+permaneceu,caso,17762,4,1,84.14047415676613,96,171,3901,70,51
+permaneceu,controle,1507,3599,698,15.76845245753512,97,171,2033,30,36
+entrou,caso,16179,123,85,44.89275193729654,21,41,1161,14,4
+entrou,controle,53,6864,6063,5.635649300864645,20,41,346,0,41

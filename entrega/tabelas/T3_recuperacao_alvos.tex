@@ -1,0 +1,25 @@
+% Gerado por experimentos/conteudo/tabelas.py a partir de T3_recuperacao_alvos.csv. Requer \usepackage{booktabs}.
+\begin{table*}[htbp]
+\centering
+\footnotesize
+\caption{Recuperação dos alvos artificiais por intensidade}
+\label{tab:t3}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llrrrrrr}
+\toprule
+ &  & \multicolumn{2}{c}{GNN híbrida} & \multicolumn{2}{c}{Relacional direto} & \multicolumn{2}{c}{Similaridade isolada} \\
+\cmidrule(lr){3-4} \cmidrule(lr){5-6} \cmidrule(lr){7-8}
+\textbf{Desenho} & \textbf{Mercados novos} & \textbf{top 100} & \textbf{top 541} & \textbf{top 100} & \textbf{top 541} & \textbf{top 100} & \textbf{top 541} \\
+\midrule
+Misto & 4 & 2/50 (4,0\%) & 7/50 (14,0\%) & 2/50 (4,0\%) & 7/50 (14,0\%) & 0/50 (0,0\%) & 0/50 (0,0\%) \\
+ & 10 & 0/50 (0,0\%) & 24,33/50 (48,7\%) & 0/50 (0,0\%) & 26/50 (52,0\%) & 0/50 (0,0\%) & 0/50 (0,0\%) \\
+ & 20 & 50/50 (100,0\%) & 50/50 (100,0\%) & 50/50 (100,0\%) & 50/50 (100,0\%) & 0/50 (0,0\%) & 0/50 (0,0\%) \\
+\midrule
+Pareado & 4 & 1,33/50 (2,7\%) & 9,78/50 (19,6\%) & 1,67/50 (3,3\%) & 9,67/50 (19,3\%) & 0/50 (0,0\%) & 0/50 (0,0\%) \\
+ & 10 & 0/50 (0,0\%) & 27,89/50 (55,8\%) & 0/50 (0,0\%) & 28,33/50 (56,7\%) & 0/50 (0,0\%) & 0/50 (0,0\%) \\
+ & 20 & 36,67/50 (73,3\%) & 50/50 (100,0\%) & 37/50 (74,0\%) & 50/50 (100,0\%) & 0/50 (0,0\%) & 0/50 (0,0\%) \\
+\bottomrule
+\end{tabular}
+}
+\par\smallskip\parbox{\linewidth}{\scriptsize\textit{Nota.} Contagem de alvos no corte / denominador (percentual). Misto: cada sorteio aplica uma intensidade a 3 ou 4 grupos (15 ou 20 alvos); soma-se os 3 sorteios em cada ranking (50 alvos) e faz-se a média entre as seeds. Pareado: os 50 alvos de cada sorteio recebem cada intensidade; média dos 9 rankings (3 sorteios $\times$ 3 seeds; 3 rankings no relacional). Corte 541 = 2\% das 27.039 carteiras.}
+\end{table*}

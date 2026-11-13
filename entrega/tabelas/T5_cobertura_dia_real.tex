@@ -1,0 +1,19 @@
+% Gerado por experimentos/conteudo/tabelas.py a partir de T5_cobertura_dia_real.csv. Requer \usepackage{booktabs}.
+\begin{table*}[htbp]
+\centering
+\footnotesize
+\caption{Ranking do dia real: contexto versus cobertura total (top 100)}
+\label{tab:t5}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lrrrrrrr}
+\toprule
+\textbf{Seed} & \textbf{Permaneceram} & \textbf{Entraram} & \textbf{Saíram} & \textbf{Líder (contexto $\rightarrow$ total)} & \textbf{$\rho$ de Spearman} & \textbf{Caso que permaneceu (17762)} & \textbf{Caso que entrou (16179)} \\
+\midrule
+42 & 94 & 6 & 6 & 18753 $\rightarrow$ 17762 & 0,797 & 4 $\rightarrow$ 1 & 123 $\rightarrow$ 85 \\
+73 & 94 & 6 & 6 & 18753 $\rightarrow$ 17762 & 0,798 & 4 $\rightarrow$ 1 & 123 $\rightarrow$ 85 \\
+2026 & 94 & 6 & 6 & 18753 $\rightarrow$ 17762 & 0,797 & 4 $\rightarrow$ 1 & 123 $\rightarrow$ 85 \\
+\bottomrule
+\end{tabular}
+}
+\par\smallskip\parbox{\linewidth}{\scriptsize\textit{Nota.} Contexto: ranking com as 137.444 ligações de contexto. Total: mesmos pesos aplicados às 229.072 ligações. Permaneceram, entraram e saíram referem-se ao top 100. $\rho$ de Spearman entre as posições das 27.039 carteiras. Casos selecionados na seed 42 (T6); posições como contexto $\rightarrow$ total.}
+\end{table*}
