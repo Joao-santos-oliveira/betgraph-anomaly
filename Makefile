@@ -5,13 +5,14 @@ BRUTOS ?= data/raw
 DESTINO ?= data/execucoes
 PYTHON_FIGURAS ?= .venv-figuras/bin/python
 TABELAS_OPCOES ?=
-.PHONY: ajuda ambiente validar testes artigo reproduzir pareado artigo-original dados-artigo figuras-ambiente tabelas conteudo
+.PHONY: ajuda ambiente validar testes artigo reproduzir pareado artigo-original dados-artigo figuras-ambiente tabelas graficos conteudo benchmark
 ajuda:
 	@echo "ambiente | validar | testes | artigo (reproduzir) | pareado"
 	@echo "artigo: refazer o estudo completo a partir dos dois CSVs brutos"
 	@echo "artigo-original: treinar só o dia real (3 seeds)"
 	@echo "dados-artigo RODADA=<pasta>: extrair da execução os dados das tabelas e gráficos"
-	@echo "figuras-ambiente | tabelas | conteudo"
+	@echo "figuras-ambiente | tabelas | graficos | conteudo (tabelas + graficos)"
+	@echo "benchmark REPETICOES=3: tempo e memória por etapa (depende da máquina)"
 
 ambiente:
 	$(PYTHON) -m venv .venv
@@ -51,7 +52,16 @@ figuras-ambiente:
 tabelas:
 	$(PYTHON_FIGURAS) -B -m experimentos.conteudo.tabelas $(TABELAS_OPCOES)
 
-conteudo: tabelas
+# GRAFICOS_OPCOES=--sem-imagens gera só CSV, HTML e LaTeX; --apenas G1 G3 limita a lista
+graficos:
+	$(PYTHON_FIGURAS) -B -m experimentos.conteudo.graficos $(GRAFICOS_OPCOES)
+
+conteudo: tabelas graficos
+
+# Único alvo que depende da máquina: tempo e pico de memória por etapa (Linux ou WSL).
+REPETICOES ?= 3
+benchmark:
+	$(VENV) -B -m experimentos.conteudo.benchmark --raw "$(BRUTOS)" --repeticoes "$(REPETICOES)"
 
 pareado:
 	@test -n "$(RODADA)" || (echo "Informe RODADA com a pasta gerada por make artigo"; exit 1)

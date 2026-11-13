@@ -13,11 +13,16 @@ LINHA = '#d0d7de'
 FUNDO_CABECALHO = '#24292f'
 FUNDO_ALTERNADO = '#f6f8fa'
 
+# Slots 1-3 da paleta categórica de referência (validada para daltonismo em todos os pares).
+# O verde-água fica abaixo de 3:1 de contraste: cada método tem também marcador próprio e legenda.
 METODOS = {
-    'GNN híbrida': {'rotulo': 'GNN híbrida', 'cor': '#2a6fdb', 'marcador': 'circle'},
-    'Relacional': {'rotulo': 'Relacional direto', 'cor': '#e07b00', 'marcador': 'square'},
-    'Similaridade da GNN': {'rotulo': 'Similaridade isolada', 'cor': '#7a52c7', 'marcador': 'diamond'},
+    'GNN híbrida': {'rotulo': 'GNN híbrida', 'cor': '#2a78d6', 'marcador': 'circle'},
+    'Relacional': {'rotulo': 'Relacional direto', 'cor': '#eb6834', 'marcador': 'square'},
+    'Similaridade da GNN': {'rotulo': 'Similaridade isolada', 'cor': '#1baf7a', 'marcador': 'diamond'},
 }
+NEUTRO = '#8a8986'  # séries de referência (controles, diagonal)
+GRADE = '#e6e5e1'
+SUPERFICIE = '#ffffff'
 ORDEM_METODOS = list(METODOS)
 
 

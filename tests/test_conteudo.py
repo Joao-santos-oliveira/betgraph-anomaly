@@ -53,6 +53,26 @@ class DenominadoresTest(unittest.TestCase):
         self.assertTrue(self.t3.query("metodo == 'Similaridade da GNN'").contagem.eq(0).all())
 
 
+class GraficosTest(unittest.TestCase):
+    def test_g1_media_por_ranking_bate_com_t3(self):
+        from experimentos.conteudo import graficos
+        pontos = graficos.recuperacao_por_ranking()
+        t3 = tabelas.t3().dados
+        media = pontos.groupby(['desenho', 'mercados', 'metodo', 'corte']).percentual.mean()
+        for _, r in t3.iterrows():
+            self.assertAlmostEqual(media[r.desenho, r.mercados, r.metodo, r.corte], r.percentual)
+
+    @unittest.skipUnless((estilo.EXTRA / 'scores_teste.csv.gz').exists(), 'rode make dados-artigo')
+    def test_curva_roc_reproduz_auroc_da_t2(self):
+        import json
+        from experimentos.conteudo import graficos
+        _, metricas = graficos.curvas_ligacoes()
+        publicadas = json.loads((estilo.RESULTADOS / 'avaliacao_cobertura.json').read_text())
+        for seed, m in metricas.items():
+            self.assertAlmostEqual(m['auroc'], publicadas[str(seed)]['auc'], places=5)
+            self.assertAlmostEqual(m['ap'], publicadas[str(seed)]['ap'], places=4)
+
+
 class EventoTest(unittest.TestCase):
     def test_confrontos_identificados(self):
         from experimentos.artigo.extrair import evento
