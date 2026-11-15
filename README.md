@@ -4,7 +4,13 @@
 
 [![DOI dos dados](https://zenodo.org/badge/DOI/10.5281/zenodo.24230223.svg)](https://doi.org/10.5281/zenodo.24230223)
 
-[Estudo](#estudo-principal) · [Estrutura do projeto](#estrutura-do-projeto) · [Resultados](#controle-positivo-e-ablação-do-score) · [Reprodução](#reprodução-do-estudo-principal) · [Comandos Make](#comandos-make) · [Autores](#autores)
+[**Abrir painel interativo**](https://joao-santos-oliveira.github.io/betgraph-anomaly/) · [Estudo](#estudo-principal) · [Estrutura do projeto](#estrutura-do-projeto) · [Resultados](#controle-positivo-e-ablação-do-score) · [Reprodução](#reprodução-do-estudo-principal) · [Comandos Make](#comandos-make) · [Autores](#autores)
+
+## Painel interativo
+
+O [painel público no GitHub Pages](https://joao-santos-oliveira.github.io/betgraph-anomaly/) reúne uma leitura guiada da metodologia, o ranking de 27.039 carteiras, os testes artificiais e 17 gráficos e tabelas com downloads. A biblioteca também apresenta as quatro figuras de grafos recebidas do Gephi, com links para os PDFs, recortes e legendas. Os esquemas da GNN são didáticos.
+
+O site está em [`docs/`](docs/), separado dos scripts e resultados científicos. O Pages publica a pasta `/docs` da branch `main`, sem instalar dependências ou executar os experimentos. Para atualizar a apresentação, edite os arquivos dessa pasta e envie o commit à `main`; os dados em `docs/data.js` e os arquivos de `docs/downloads/` são uma cópia dos resultados conferidos em 15/11/2026 e precisam acompanhar futuras revisões dos resultados. Para visualizar localmente, abra `docs/index.html` ou execute `python3 -m http.server --directory docs 8000`.
 
 ## Estudo principal
 
