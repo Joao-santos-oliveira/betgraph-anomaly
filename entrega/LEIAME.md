@@ -1,5 +1,7 @@
 # Tabelas e gráficos do artigo
 
+Dados brutos e tratados: [Zenodo — DOI 10.5281/zenodo.24230223](https://doi.org/10.5281/zenodo.24230223). O download, a conferência dos hashes e os comandos para reprodução estão no [README principal](../README.md#baixar-e-usar-o-pacote-do-zenodo). A [verificação do ZIP publicado](../resultados/zenodo_verificacao.json) confirmou os cinco CSVs e a reprodução dos três tratados a partir dos brutos.
+
 Tudo nesta pasta é gerado pelo Makefile a partir de `resultados/artigo/`. Nenhum número é digitado à mão.
 
 | Pasta | Conteúdo |

@@ -1,0 +1,119 @@
+{
+  "registro": "https://zenodo.org/records/24230223",
+  "doi": "10.5281/zenodo.24230223",
+  "data_verificacao": "2026-11-15",
+  "arquivo_zip": "betgraph_data_16set.zip",
+  "zip_md5": "0395cdbc161dd5146278e7e4052f977b",
+  "zip_sha256": "b514204d79896726286f71744372fefe924856da2ef8e4c142cd0462e488580a",
+  "zip_crc_ok": true,
+  "arquivos": [
+    {
+      "arquivo": "brutos/betgraph_arestas_16set.csv",
+      "sha256": "9724e0fa7878f82f6836feeec234099f355efeb838f6e1f1006ccfea78242102",
+      "linhas": 560985,
+      "colunas": [
+        "wallet",
+        "condition_id",
+        "token_outcome",
+        "n_trades",
+        "volume_usd",
+        "ticket_medio",
+        "preco_medio",
+        "primeiro_trade",
+        "ultimo_trade"
+      ],
+      "confere_manifesto": true,
+      "confere_local": true,
+      "confere_sha256sums": true
+    },
+    {
+      "arquivo": "brutos/betgraph_nos_evento_16set.csv",
+      "sha256": "bb97d2b009762fe3448a501eb2990753a92e89b11371f339a04213c45dfa00e0",
+      "linhas": 22418,
+      "colunas": [
+        "condition_id",
+        "question",
+        "tags",
+        "closed",
+        "active",
+        "archived",
+        "outcome_status",
+        "market_start_time",
+        "market_end_time"
+      ],
+      "confere_manifesto": true,
+      "confere_local": true,
+      "confere_sha256sums": true
+    },
+    {
+      "arquivo": "tratados/betgraph_wallets_16set_nos.csv",
+      "sha256": "54068ca834bd06d1e41614ea2e3678e7e49aa7c97bd88ba8e262f00855b54022",
+      "linhas": 27039,
+      "colunas": [
+        "wallet",
+        "wallet_id",
+        "volume_total_usd",
+        "n_trades_total",
+        "n_mercados_distintos",
+        "n_outcomes_distintos",
+        "ticket_medio_geral",
+        "preco_medio_ponderado",
+        "duracao_total_segundos",
+        "primeira_atividade"
+      ],
+      "confere_manifesto": true,
+      "confere_local": true,
+      "confere_sha256sums": true
+    },
+    {
+      "arquivo": "tratados/betgraph_nos_evento_16set_final.csv",
+      "sha256": "b4ed0ba834d04e7f3577c6f1c864505c9bcb6079888acb9de4db0d1d9341ce7f",
+      "linhas": 16693,
+      "colunas": [
+        "condition_node_id",
+        "condition_id",
+        "question",
+        "tags",
+        "closed",
+        "active",
+        "archived",
+        "outcome_status",
+        "categoria_principal",
+        "eh_mercado_recorrente",
+        "duracao_mercado_segundos",
+        "duracao_mercado_valida"
+      ],
+      "confere_manifesto": true,
+      "confere_local": true,
+      "confere_sha256sums": true
+    },
+    {
+      "arquivo": "tratados/betgraph_arestas_16set_final.csv",
+      "sha256": "00c60a7dbd4a33056ef9a8525965d5dfc6aef139a778edec63e59c688078c657",
+      "linhas": 358689,
+      "colunas": [
+        "wallet",
+        "condition_id",
+        "token_outcome",
+        "n_trades",
+        "volume_usd",
+        "ticket_medio",
+        "preco_medio",
+        "primeiro_trade",
+        "wallet_id",
+        "condition_node_id",
+        "token_outcome_id",
+        "duracao_trade_segundos"
+      ],
+      "confere_manifesto": true,
+      "confere_local": true,
+      "confere_sha256sums": true
+    }
+  ],
+  "reproducao_filtragem": {
+    "brutos_origem": "ZIP publicado no Zenodo",
+    "tratados_recriados": 3,
+    "hashes_finais_conferem": true,
+    "treinamento_reexecutado": false
+  }
+}

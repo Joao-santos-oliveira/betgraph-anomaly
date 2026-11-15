@@ -2,6 +2,8 @@
 
 # Betgraph Anomaly
 
+[![DOI dos dados](https://zenodo.org/badge/DOI/10.5281/zenodo.24230223.svg)](https://doi.org/10.5281/zenodo.24230223)
+
 [Estudo](#estudo-principal) · [Estrutura do projeto](#estrutura-do-projeto) · [Resultados](#controle-positivo-e-ablação-do-score) · [Reprodução](#reprodução-do-estudo-principal) · [Comandos Make](#comandos-make) · [Autores](#autores)
 
 ## Estudo principal
@@ -113,6 +115,24 @@ betgraph-anomaly/
 └── Makefile                           # Comandos de instalação, teste e reprodução
 ```
 
+## Dados publicados
+
+O dataset está disponível em acesso aberto no **[Zenodo — DOI 10.5281/zenodo.24230223](https://doi.org/10.5281/zenodo.24230223)**, publicado em 14/11/2026, com licença declarada CC BY 4.0. O recorte de atividade é de 16/09/2026; a extração ocorreu em 18/09/2026. O DOI identifica a edição dos dados usada neste estudo.
+
+O arquivo `betgraph_data_16set.zip` contém:
+
+| Pasta | Conteúdo | Registros (sem cabeçalho) |
+|---|---|---:|
+| `brutos/` | Arestas agregadas por carteira, mercado e outcome | 560.985 |
+| `brutos/` | Metadados dos mercados | 22.418 |
+| `tratados/` | Arestas após a filtragem | 358.689 |
+| `tratados/` | Mercados após a filtragem | 16.693 |
+| `tratados/` | Carteiras e atributos agregados | 27.039 |
+
+O pacote inclui `LEIAME.txt` e `SHA256SUMS`. Os cinco CSVs publicados são idênticos, byte a byte, aos arquivos registrados em [resultados/entradas.json](resultados/entradas.json). A filtragem foi reexecutada a partir dos brutos baixados do Zenodo e reproduziu os três tratados com os mesmos hashes. [Registro da conferência](resultados/zenodo_verificacao.json). Essa conferência verifica os dados e o pré-processamento; não representa um novo treinamento dos modelos.
+
+Para citar o dataset, use os metadados do [registro publicado](https://zenodo.org/records/24230223): Gomes, Alisson Henrique (2026). *BetGraph: Polymarket Trading Network Dataset on Polygon — September 16, 2026*. Zenodo. https://doi.org/10.5281/zenodo.24230223. A autoria desta referência acompanha o depósito e é distinta da lista de autores do código/artigo.
+
 ## Reprodução do estudo principal
 
 Em Linux ou WSL, use Python 3.12 e GNU Make. Coloque os dois arquivos brutos `betgraph_arestas_16set.csv` e `betgraph_nos_evento_16set.csv` em `data/raw/`. O executor confere os hashes dos dados, filtra os CSVs, monta o grafo do dia, recria as três intervenções, treina a GNN e calcula os três rankings. As dependências e os dados volumosos permanecem locais. [Hashes das entradas](resultados/entradas.json)
@@ -124,11 +144,31 @@ make testes
 make artigo
 ```
 
+### Baixar e usar o pacote do Zenodo
+
+Na raiz do repositório, com `curl` e `unzip` disponíveis, os comandos abaixo mantêm os dados publicados em uma pasta própria. Não é necessário copiar os tratados para iniciar a reprodução: o pipeline os reconstrói a partir de `brutos/`.
+
+```bash
+mkdir -p data/zenodo
+curl --fail --location --retry 3 \
+  'https://zenodo.org/records/24230223/files/betgraph_data_16set.zip?download=1' \
+  --output data/zenodo/betgraph_data_16set.zip
+unzip -n data/zenodo/betgraph_data_16set.zip -d data/zenodo
+(cd data/zenodo/betgraph_data_16set && sha256sum -c SHA256SUMS)
+make ambiente
+make validar
+make testes
+make artigo BRUTOS=data/zenodo/betgraph_data_16set/brutos
+```
+
+Para executar somente o dia real, substitua o último comando por `make artigo-original BRUTOS=data/zenodo/betgraph_data_16set/brutos`. O protocolo pareado continua usando `make pareado RODADA=<pasta gerada por make artigo>`. As verificações do executor também comparam os dados com o manifesto do repositório, além da conferência interna do ZIP.
+
 ### Do CSV bruto à tabela de resultados
 
 ```mermaid
 flowchart TD
-    A["Dois CSVs brutos e mapeamentos de IDs"] --> B["Conferir hashes, filtrar registros e construir o grafo"]
+    Z["Zenodo: baixar ZIP e conferir SHA-256"] --> A["Dois CSVs brutos e mapeamentos de IDs do repositório"]
+    A --> B["Conferir hashes, filtrar registros e construir o grafo"]
     B --> C["Dividir ligações em contexto, alvos de treino, validação e teste reservado"]
     C --> D["Grafo original do dia"]
     C --> E["Três cópias com grupos artificiais e controles pareados"]
