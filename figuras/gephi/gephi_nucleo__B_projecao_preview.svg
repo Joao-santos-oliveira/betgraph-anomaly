@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+    "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg contentScriptType="text/ecmascript" width="286.98422"
+     xmlns:xlink="http://www.w3.org/1999/xlink" zoomAndPan="magnify"
+     contentStyleType="text/css"
+     viewBox="-143.492111 -140.232758 286.984222 255.001114" height="255.00111"
+     preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg"
+     version="1.1">
+    <g id="edges">
+        <path fill="none" stroke-width="96.0"
+              d="M -3.236068,-130.982208 L -123.571472,-43.553413"
+              class="id_w17762 id_w18767" stroke-opacity="0.5372549"
+              stroke="#4d5d6e"/>
+        <path fill="none" stroke-width="96.0"
+              d="M -1.236068,-129.529114 L -77.135300,104.064713"
+              class="id_w17762 id_w20748" stroke-opacity="0.5372549"
+              stroke="#4d5d6e"/>
+        <path fill="none" stroke-width="93.0"
+              d="M 1.236068,-129.529114 L 77.135300,104.064713"
+              class="id_w17762 id_w18753" stroke-opacity="0.5372549"
+              stroke="#4d5d6e"/>
+        <path fill="none" stroke-width="96.0"
+              d="M 3.236068,-130.982208 L 123.571472,-43.553413"
+              class="id_w17762 id_w17487" stroke-opacity="0.5372549"
+              stroke="#4d5d6e"/>
+        <path fill="none" stroke-width="94.8"
+              d="M -125.571472,-37.398045 L -79.607437,104.064713"
+              class="id_w18767 id_w20748" stroke-opacity="0.5372549"
+              stroke="#4d5d6e"/>
+        <path fill="none" stroke-width="92.4"
+              d="M -123.571472,-38.851128 L 75.135300,105.517799"
+              class="id_w18767 id_w18753" stroke-opacity="0.5372549"
+              stroke="#4d5d6e"/>
+        <path fill="none" stroke-width="92.4"
+              d="M -122.807541,-41.202271 L 122.807541,-41.202271"
+              class="id_w18767 id_w17487" stroke-opacity="0.5372549"
+              stroke="#4d5d6e"/>
+        <path fill="none" stroke-width="93.600006"
+              d="M -74.371368,107.868942 L 74.371368,107.868942"
+              class="id_w20748 id_w18753" stroke-opacity="0.5372549"
+              stroke="#4d5d6e"/>
+        <path fill="none" stroke-width="93.600006"
+              d="M -75.135300,105.517799 L 123.571472,-38.851128"
+              class="id_w20748 id_w17487" stroke-opacity="0.5372549"
+              stroke="#4d5d6e"/>
+        <path fill="none" stroke-width="91.8"
+              d="M 79.607437,104.064713 L 125.571472,-37.398045"
+              class="id_w18753 id_w17487" stroke-opacity="0.5372549"
+              stroke="#4d5d6e"/>
+    </g>
+    <g id="nodes">
+        <circle fill-opacity="1.0" fill="#b2182b" r="3.68" cx="0.0"
+                class="id_w17762" cy="-133.33334" stroke="#7c101e"
+                stroke-opacity="1.0" stroke-width="0.64"/>
+        <circle fill-opacity="1.0" fill="#0072b2" r="3.68" cx="-126.80754"
+                class="id_w18767" cy="-41.20227" stroke="#004f7c"
+                stroke-opacity="1.0" stroke-width="0.64"/>
+        <circle fill-opacity="1.0" fill="#0072b2" r="3.68" cx="-78.37137"
+                class="id_w20748" cy="107.86894" stroke="#004f7c"
+                stroke-opacity="1.0" stroke-width="0.64"/>
+        <circle fill-opacity="1.0" fill="#0072b2" r="3.68" cx="78.37137"
+                class="id_w18753" cy="107.86894" stroke="#004f7c"
+                stroke-opacity="1.0" stroke-width="0.64"/>
+        <circle fill-opacity="1.0" fill="#0072b2" r="3.68" cx="126.80754"
+                class="id_w17487" cy="-41.20227" stroke="#004f7c"
+                stroke-opacity="1.0" stroke-width="0.64"/>
+    </g>
+    <g id="node-labels-outline">
+        <text stroke-linecap="round" font-size="12" x="0.0" y="-131.13998"
+              fill="#000000" stroke-linejoin="round"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_w17762" stroke="#ffffff"
+              stroke-opacity="0.8" stroke-width="0.75px">
+            17762
+        </text>
+        <text stroke-linecap="round" font-size="12" x="-126.80754" y="-39.00891"
+              fill="#000000" stroke-linejoin="round"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_w18767" stroke="#ffffff"
+              stroke-opacity="0.8" stroke-width="0.75px">
+            18767
+        </text>
+        <text stroke-linecap="round" font-size="12" x="-78.37137" y="110.0623"
+              fill="#000000" stroke-linejoin="round"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_w20748" stroke="#ffffff"
+              stroke-opacity="0.8" stroke-width="0.75px">
+            20748
+        </text>
+        <text stroke-linecap="round" font-size="12" x="78.37137" y="110.06328"
+              fill="#000000" stroke-linejoin="round"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_w18753" stroke="#ffffff"
+              stroke-opacity="0.8" stroke-width="0.75px">
+            18753
+        </text>
+        <text stroke-linecap="round" font-size="12" x="126.80754" y="-39.00891"
+              fill="#000000" stroke-linejoin="round"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_w17487" stroke="#ffffff"
+              stroke-opacity="0.8" stroke-width="0.75px">
+            17487
+        </text>
+    </g>
+    <g id="node-labels">
+        <text font-size="12" x="0.0" y="-131.13998" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_w17762">
+            17762
+        </text>
+        <text font-size="12" x="-126.80754" y="-39.00891" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_w18767">
+            18767
+        </text>
+        <text font-size="12" x="-78.37137" y="110.0623" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_w20748">
+            20748
+        </text>
+        <text font-size="12" x="78.37137" y="110.06328" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_w18753">
+            18753
+        </text>
+        <text font-size="12" x="126.80754" y="-39.00891" fill="#000000"
+              style="text-anchor: middle; dominant-baseline: central;"
+              font-family="Arial" class="id_w17487">
+            17487
+        </text>
+    </g>
+</svg>

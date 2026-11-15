@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://gexf.net/1.3" xmlns:viz="http://gexf.net/1.3/viz" version="1.3">
+<graph defaultedgetype="undirected" mode="static">
+<attributes class="node">
+<attribute id="n0" title="Tipo" type="string"/>
+<attribute id="n1" title="GrauGlobal" type="long"/>
+</attributes>
+<attributes class="edge">
+<attribute id="e0" title="Peso" type="long"/>
+</attributes>
+<nodes>
+<node id="w17762" label="17762"><attvalues><attvalue for="n0" value="carteira"/><attvalue for="n1" value="171"/></attvalues><viz:color r="178" g="24" b="43"/><viz:position x="0.0000" y="400.0000" z="0.0"/><viz:size value="12.0000"/></node>
+<node id="w18767" label="18767"><attvalues><attvalue for="n0" value="carteira"/><attvalue for="n1" value="166"/></attvalues><viz:color r="0" g="114" b="178"/><viz:position x="-380.4226" y="123.6068" z="0.0"/><viz:size value="12.0000"/></node>
+<node id="w20748" label="20748"><attvalues><attvalue for="n0" value="carteira"/><attvalue for="n1" value="169"/></attvalues><viz:color r="0" g="114" b="178"/><viz:position x="-235.1141" y="-323.6068" z="0.0"/><viz:size value="12.0000"/></node>
+<node id="w18753" label="18753"><attvalues><attvalue for="n0" value="carteira"/><attvalue for="n1" value="164"/></attvalues><viz:color r="0" g="114" b="178"/><viz:position x="235.1141" y="-323.6068" z="0.0"/><viz:size value="12.0000"/></node>
+<node id="w17487" label="17487"><attvalues><attvalue for="n0" value="carteira"/><attvalue for="n1" value="166"/></attvalues><viz:color r="0" g="114" b="178"/><viz:position x="380.4226" y="123.6068" z="0.0"/><viz:size value="12.0000"/></node>
+</nodes>
+<edges>
+<edge id="0" source="w17762" target="w18767" weight="160.0000"><attvalues><attvalue for="e0" value="160"/></attvalues><viz:color r="77" g="93" b="110" a="0.900"/></edge>
+<edge id="1" source="w17762" target="w20748" weight="160.0000"><attvalues><attvalue for="e0" value="160"/></attvalues><viz:color r="77" g="93" b="110" a="0.900"/></edge>
+<edge id="2" source="w17762" target="w18753" weight="155.0000"><attvalues><attvalue for="e0" value="155"/></attvalues><viz:color r="77" g="93" b="110" a="0.900"/></edge>
+<edge id="3" source="w17762" target="w17487" weight="160.0000"><attvalues><attvalue for="e0" value="160"/></attvalues><viz:color r="77" g="93" b="110" a="0.900"/></edge>
+<edge id="4" source="w18767" target="w20748" weight="158.0000"><attvalues><attvalue for="e0" value="158"/></attvalues><viz:color r="77" g="93" b="110" a="0.900"/></edge>
+<edge id="5" source="w18767" target="w18753" weight="154.0000"><attvalues><attvalue for="e0" value="154"/></attvalues><viz:color r="77" g="93" b="110" a="0.900"/></edge>
+<edge id="6" source="w18767" target="w17487" weight="154.0000"><attvalues><attvalue for="e0" value="154"/></attvalues><viz:color r="77" g="93" b="110" a="0.900"/></edge>
+<edge id="7" source="w20748" target="w18753" weight="156.0000"><attvalues><attvalue for="e0" value="156"/></attvalues><viz:color r="77" g="93" b="110" a="0.900"/></edge>
+<edge id="8" source="w20748" target="w17487" weight="156.0000"><attvalues><attvalue for="e0" value="156"/></attvalues><viz:color r="77" g="93" b="110" a="0.900"/></edge>
+<edge id="9" source="w18753" target="w17487" weight="153.0000"><attvalues><attvalue for="e0" value="153"/></attvalues><viz:color r="77" g="93" b="110" a="0.900"/></edge>
+</edges>
+</graph>
+</gexf>

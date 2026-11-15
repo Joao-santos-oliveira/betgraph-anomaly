@@ -1,0 +1,46 @@
+Id,Label,Tipo,Papel,GrauGlobal,Modalidade,Evento,x,y,size,color
+w53,53,carteira,foco,41,,,0.0,0.0,12.0,#B2182B
+w4987,4987,carteira,parceiro,12,,,3.061616997868383e-17,0.5,9.0,#6A3D9A
+w409,409,carteira,parceiro,7,,,-0.4330127018922193,-0.25000000000000006,9.0,#6A3D9A
+w3924,3924,carteira,parceiro,26,,,0.4330127018922192,-0.2500000000000002,9.0,#6A3D9A
+m13898,,mercado,exclusivo,3,Tênis,indeterminado,0.09944682451340701,0.9950428780179272,3.0,#BDBDBD
+m6460,,mercado,exclusivo,16,Luta (MMA),indeterminado,0.29440648807196323,0.9556802916148962,3.0,#BDBDBD
+m96,,mercado,compartilhado,130,Política,indeterminado,0.4777198185122626,0.8785122509109425,3.0,#009E73
+m751,,mercado,compartilhado,136,Política,indeterminado,0.601134862723246,0.7991475938890789,3.0,#009E73
+m772,,mercado,compartilhado,86,Política,indeterminado,0.7116074601618413,0.7025772716520321,3.0,#009E73
+m33,,mercado,compartilhado,460,Política,indeterminado,0.8067591333834381,0.5908804453545607,3.0,#009E73
+m35,,mercado,compartilhado,127,Política,indeterminado,0.8845412647776792,0.4664619501154446,3.0,#009E73
+m47,,mercado,compartilhado,152,Política,indeterminado,0.9432792033505231,0.3320005188646587,3.0,#009E73
+m347,,mercado,compartilhado,114,Política,indeterminado,0.9817083199968549,0.19039110916466867,3.0,#009E73
+m405,,mercado,compartilhado,207,Política,indeterminado,0.9990012349928439,0.04468257471064813,3.0,#009E73
+m551,,mercado,compartilhado,158,Política,indeterminado,0.9947856314995347,-0.10198797655641502,3.0,#009E73
+m558,,mercado,compartilhado,182,Política,indeterminado,0.9691522715525519,-0.24646272445245881,3.0,#009E73
+m643,,mercado,compartilhado,72,Política,indeterminado,0.9226530419534833,-0.3856311244881354,3.0,#009E73
+m1084,,mercado,compartilhado,34,Política,indeterminado,0.8562890721349435,-0.5164968779598552,3.0,#009E73
+m1128,,mercado,compartilhado,74,Política,indeterminado,0.7714891798219432,-0.6362424423265595,3.0,#009E73
+m3979,,mercado,compartilhado,18,Política,indeterminado,0.6700791085549471,-0.7422896929623954,3.0,#009E73
+m7418,,mercado,compartilhado,8,Política,indeterminado,0.554242219391425,-0.832355430236427,3.0,#009E73
+m354,,mercado,exclusivo,22,Política,indeterminado,0.42647248309442004,-0.9045005368507415,3.0,#BDBDBD
+m435,,mercado,exclusivo,40,Política,indeterminado,0.2895207848873491,-0.9571717270783824,3.0,#BDBDBD
+m602,,mercado,exclusivo,8,Política,indeterminado,0.14633569783483766,-0.9892349890391015,3.0,#BDBDBD
+m652,,mercado,exclusivo,30,Política,indeterminado,7.273661547324616e-16,-1.0,3.0,#BDBDBD
+m961,,mercado,exclusivo,79,Política,indeterminado,-0.14633569783483621,-0.9892349890391017,3.0,#BDBDBD
+m980,,mercado,exclusivo,15,Política,indeterminado,-0.28952078488734767,-0.9571717270783828,3.0,#BDBDBD
+m1604,,mercado,exclusivo,27,Política,indeterminado,-0.4264724830944185,-0.9045005368507423,3.0,#BDBDBD
+m1928,,mercado,exclusivo,40,Política,indeterminado,-0.5542422193914235,-0.832355430236428,3.0,#BDBDBD
+m3007,,mercado,exclusivo,21,Política,indeterminado,-0.6700791085549461,-0.7422896929623964,3.0,#BDBDBD
+m3012,,mercado,exclusivo,61,Política,indeterminado,-0.7714891798219421,-0.6362424423265608,3.0,#BDBDBD
+m4315,,mercado,exclusivo,16,Política,indeterminado,-0.8562890721349427,-0.5164968779598567,3.0,#BDBDBD
+m5133,,mercado,exclusivo,3,Política,indeterminado,-0.9226530419534826,-0.385631124488137,3.0,#BDBDBD
+m5393,,mercado,exclusivo,16,Política,indeterminado,-0.9691522715525515,-0.24646272445246067,3.0,#BDBDBD
+m5866,,mercado,exclusivo,7,Política,indeterminado,-0.9947856314995346,-0.10198797655641703,3.0,#BDBDBD
+m7455,,mercado,exclusivo,7,Política,indeterminado,-0.999001234992844,0.044682574710646,3.0,#BDBDBD
+m8480,,mercado,exclusivo,8,Política,indeterminado,-0.9817083199968554,0.19039110916466606,3.0,#BDBDBD
+m9774,,mercado,exclusivo,3,Política,indeterminado,-0.943279203350524,0.33200051886465604,3.0,#BDBDBD
+m15438,,mercado,exclusivo,5,Política,indeterminado,-0.8845412647776806,0.466461950115442,3.0,#BDBDBD
+m9448,,mercado,exclusivo,5,Cripto/Finanças,indeterminado,-0.7747292048968202,0.6322931749433492,3.0,#BDBDBD
+m2190,,mercado,compartilhado,13,Outros temas,indeterminado,-0.6342698775057926,0.7731117141065623,3.0,#009E73
+m877,,mercado,exclusivo,170,Outros temas,indeterminado,-0.5143081131342038,0.8576054831706331,3.0,#BDBDBD
+m2187,,mercado,exclusivo,53,Outros temas,indeterminado,-0.3832732838122784,0.9236349873817864,3.0,#BDBDBD
+m2625,,mercado,exclusivo,22,Outros temas,indeterminado,-0.24398657228783469,0.9697786100668715,3.0,#BDBDBD
+m11736,,mercado,exclusivo,5,Outros temas,indeterminado,-0.09944682451341066,0.9950428780179269,3.0,#BDBDBD

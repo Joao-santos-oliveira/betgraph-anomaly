@@ -1,0 +1,66 @@
+{
+  "figura": "gephi_global",
+  "gephi": "0.10.1",
+  "universo": {
+    "carteiras": 27039,
+    "mercados": 16693,
+    "nos": 43732,
+    "arestas": 229072
+  },
+  "cobertura": "total do dia 16/09/2026 (todas as ligações observadas; sem divisão de treino)",
+  "regra_aresta": "um par carteira–mercado = uma aresta não direcionada, independentemente do nº de trades/outcomes; sem duplicar as direções computacionais do PyG",
+  "filtros": "nenhum além da filtragem do estudo (CSV final); nenhum componente removido",
+  "componentes": {
+    "n_componentes": 16,
+    "maior_componente_nos": 43666,
+    "fracao_maior": 0.99849,
+    "nos_fora_da_maior": 66,
+    "tamanhos_top10": [
+      43666,
+      9,
+      9,
+      7,
+      5,
+      4,
+      4,
+      4,
+      3,
+      3
+    ]
+  },
+  "lideres": [
+    17762,
+    18767,
+    20748,
+    18753,
+    17487
+  ],
+  "layout": {
+    "algoritmo": "ForceAtlas2 (Gephi 0.10.1)",
+    "posicao_inicial": "uniforme em [-1000,1000]², seed 42",
+    "layout": "fa2",
+    "iter": 2500,
+    "iterAjuste": 150,
+    "linlog": "true",
+    "scaling": 1.0,
+    "gravity": 0.5,
+    "dissuade": "true",
+    "theta": 1.2,
+    "threads": 8,
+    "weightInfluence": 0.0,
+    "edgeOpacity": 6,
+    "edgeThickness": 0.1,
+    "labels": "false",
+    "border": 0.0
+  },
+  "codificacao": {
+    "cor": "azul=carteira, laranja=mercado, vermelho=cinco líderes",
+    "forma": "círculo=carteira, quadrado=mercado (composição final)",
+    "tamanho": "proporcional a log10(1+grau)",
+    "arestas": "cinza, finas, transparentes; sem peso"
+  },
+  "entradas_sha256": {
+    "betgraph_arestas_16set_final.csv": "e432e4eafe7379fe54a28599a14f9e529ef91e00785e3e0faf930e9102640274",
+    "betgraph_nos_evento_16set_final.csv": "fccb0064819aad55560fe1f48b06949ffe6326fe0f298bff0341ae9d1c80a01f"
+  }
+}

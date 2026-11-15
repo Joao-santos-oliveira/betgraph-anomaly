@@ -1,0 +1,93 @@
+{
+  "titulo": "Intervenção artificial — quatro condições do mesmo grupo",
+  "figura": "gephi_intervencao",
+  "selecao": "regra fixa: sorteio 51011, grupo de ID 0 do teste PAREADO; alvos 7896, 36905, 10780, 7219, 9621",
+  "fonte": "cópias regeneradas com experimentos.artigo.pareado.preparar_doses (mesma seed, divisão 42 e rótulos); ver recortes/gephi_intervencao/fonte/manifesto_intervencao.json",
+  "universo": "165 mercados (união das vizinhanças nas 4 condições) + 5 carteiras; 158 arestas em cada condição",
+  "graus": {
+    "7896": 34,
+    "36905": 27,
+    "10780": 24,
+    "7219": 31,
+    "9621": 42
+  },
+  "mercados_novos_ordem": [
+    1151,
+    270,
+    912,
+    5182,
+    1380,
+    228,
+    3311,
+    3676,
+    1553,
+    2238,
+    1423,
+    865,
+    1218,
+    1433,
+    477,
+    1331,
+    10,
+    247,
+    444,
+    2850
+  ],
+  "paineis": [
+    {
+      "painel": "A",
+      "dose": 0,
+      "mercados_novos": 0,
+      "arestas_novos": 0,
+      "trocas": 0,
+      "comuns_aos_5": 0,
+      "arestas_recorte": 158
+    },
+    {
+      "painel": "B",
+      "dose": 4,
+      "mercados_novos": 4,
+      "arestas_novos": 20,
+      "trocas": 20,
+      "comuns_aos_5": 4,
+      "arestas_recorte": 158
+    },
+    {
+      "painel": "C",
+      "dose": 10,
+      "mercados_novos": 10,
+      "arestas_novos": 50,
+      "trocas": 50,
+      "comuns_aos_5": 10,
+      "arestas_recorte": 158
+    },
+    {
+      "painel": "D",
+      "dose": 20,
+      "mercados_novos": 20,
+      "arestas_novos": 100,
+      "trocas": 100,
+      "comuns_aos_5": 20,
+      "arestas_recorte": 158
+    }
+  ],
+  "layout": "anel fixo: arco da intervenção no topo (ordem 1–20, lacunas em 4|10|20); demais mercados agrupados pela carteira-alvo dona e pela dose em que são trocados; carteiras em pentágono r=0,36. Mesmas coordenadas nos 4 painéis e nos projetos Gephi 0.10.1",
+  "omissoes": "carteiras doadoras e demais vizinhos dos mercados não são desenhados",
+  "codificacao": {
+    "cor": "azul=alvos; magenta=mercados da intervenção (cheio=ligado nesta condição); laranja=mercado original ligado; vazado cinza=mercado original já trocado",
+    "tamanho": "carteiras ∝ log10(1+grau)",
+    "arestas": "magenta=para mercado novo; cinza=demais"
+  },
+  "largura_cm": 17.5,
+  "altura_cm": 10.0,
+  "arquivos": {
+    "pdf": "gephi_intervencao.pdf",
+    "svg": "gephi_intervencao.svg",
+    "png": "gephi_intervencao.png"
+  },
+  "bytes": {
+    "pdf": 113606,
+    "svg": 464894,
+    "png": 1800969
+  }
+}

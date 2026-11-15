@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://gexf.net/1.3" xmlns:viz="http://gexf.net/1.3/viz" version="1.3">
+<graph defaultedgetype="undirected" mode="static">
+<attributes class="node">
+<attribute id="n0" title="Tipo" type="string"/>
+<attribute id="n1" title="Papel" type="string"/>
+<attribute id="n2" title="GrauGlobal" type="long"/>
+<attribute id="n3" title="Modalidade" type="string"/>
+<attribute id="n4" title="Evento" type="string"/>
+</attributes>
+<attributes class="edge">
+</attributes>
+<nodes>
+<node id="w53" label="53"><attvalues><attvalue for="n0" value="carteira"/><attvalue for="n1" value="foco"/><attvalue for="n2" value="41"/><attvalue for="n3" value=""/><attvalue for="n4" value=""/></attvalues><viz:color r="178" g="24" b="43"/><viz:position x="0.0000" y="0.0000" z="0.0"/><viz:size value="12.0000"/></node>
+<node id="w4987" label="4987"><attvalues><attvalue for="n0" value="carteira"/><attvalue for="n1" value="parceiro"/><attvalue for="n2" value="12"/><attvalue for="n3" value=""/><attvalue for="n4" value=""/></attvalues><viz:color r="106" g="61" b="154"/><viz:position x="0.0000" y="200.0000" z="0.0"/><viz:size value="9.0000"/></node>
+<node id="w409" label="409"><attvalues><attvalue for="n0" value="carteira"/><attvalue for="n1" value="parceiro"/><attvalue for="n2" value="7"/><attvalue for="n3" value=""/><attvalue for="n4" value=""/></attvalues><viz:color r="106" g="61" b="154"/><viz:position x="-173.2051" y="-100.0000" z="0.0"/><viz:size value="9.0000"/></node>
+<node id="w3924" label="3924"><attvalues><attvalue for="n0" value="carteira"/><attvalue for="n1" value="parceiro"/><attvalue for="n2" value="26"/><attvalue for="n3" value=""/><attvalue for="n4" value=""/></attvalues><viz:color r="106" g="61" b="154"/><viz:position x="173.2051" y="-100.0000" z="0.0"/><viz:size value="9.0000"/></node>
+<node id="m13898" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="exclusivo"/><attvalue for="n2" value="3"/><attvalue for="n3" value="Tênis"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="189" g="189" b="189"/><viz:position x="39.7787" y="398.0172" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m6460" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="exclusivo"/><attvalue for="n2" value="16"/><attvalue for="n3" value="Luta (MMA)"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="189" g="189" b="189"/><viz:position x="117.7626" y="382.2721" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m96" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="130"/><attvalue for="n3" value="Política"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="191.0879" y="351.4049" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m751" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="136"/><attvalue for="n3" value="Política"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="240.4539" y="319.6590" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m772" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="86"/><attvalue for="n3" value="Política"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="284.6430" y="281.0309" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m33" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="460"/><attvalue for="n3" value="Política"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="322.7037" y="236.3522" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m35" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="127"/><attvalue for="n3" value="Política"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="353.8165" y="186.5848" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m47" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="152"/><attvalue for="n3" value="Política"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="377.3117" y="132.8002" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m347" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="114"/><attvalue for="n3" value="Política"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="392.6833" y="76.1564" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m405" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="207"/><attvalue for="n3" value="Política"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="399.6005" y="17.8730" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m551" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="158"/><attvalue for="n3" value="Política"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="397.9143" y="-40.7952" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m558" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="182"/><attvalue for="n3" value="Política"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="387.6609" y="-98.5851" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m643" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="72"/><attvalue for="n3" value="Política"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="369.0612" y="-154.2524" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m1084" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="34"/><attvalue for="n3" value="Política"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="342.5156" y="-206.5988" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m1128" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="74"/><attvalue for="n3" value="Política"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="308.5957" y="-254.4970" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m3979" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="18"/><attvalue for="n3" value="Política"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="268.0316" y="-296.9159" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m7418" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="8"/><attvalue for="n3" value="Política"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="221.6969" y="-332.9422" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m354" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="exclusivo"/><attvalue for="n2" value="22"/><attvalue for="n3" value="Política"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="189" g="189" b="189"/><viz:position x="170.5890" y="-361.8002" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m435" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="exclusivo"/><attvalue for="n2" value="40"/><attvalue for="n3" value="Política"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="189" g="189" b="189"/><viz:position x="115.8083" y="-382.8687" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m602" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="exclusivo"/><attvalue for="n2" value="8"/><attvalue for="n3" value="Política"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="189" g="189" b="189"/><viz:position x="58.5343" y="-395.6940" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m652" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="exclusivo"/><attvalue for="n2" value="30"/><attvalue for="n3" value="Política"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="189" g="189" b="189"/><viz:position x="0.0000" y="-400.0000" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m961" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="exclusivo"/><attvalue for="n2" value="79"/><attvalue for="n3" value="Política"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="189" g="189" b="189"/><viz:position x="-58.5343" y="-395.6940" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m980" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="exclusivo"/><attvalue for="n2" value="15"/><attvalue for="n3" value="Política"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="189" g="189" b="189"/><viz:position x="-115.8083" y="-382.8687" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m1604" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="exclusivo"/><attvalue for="n2" value="27"/><attvalue for="n3" value="Política"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="189" g="189" b="189"/><viz:position x="-170.5890" y="-361.8002" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m1928" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="exclusivo"/><attvalue for="n2" value="40"/><attvalue for="n3" value="Política"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="189" g="189" b="189"/><viz:position x="-221.6969" y="-332.9422" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m3007" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="exclusivo"/><attvalue for="n2" value="21"/><attvalue for="n3" value="Política"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="189" g="189" b="189"/><viz:position x="-268.0316" y="-296.9159" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m3012" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="exclusivo"/><attvalue for="n2" value="61"/><attvalue for="n3" value="Política"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="189" g="189" b="189"/><viz:position x="-308.5957" y="-254.4970" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m4315" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="exclusivo"/><attvalue for="n2" value="16"/><attvalue for="n3" value="Política"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="189" g="189" b="189"/><viz:position x="-342.5156" y="-206.5988" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m5133" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="exclusivo"/><attvalue for="n2" value="3"/><attvalue for="n3" value="Política"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="189" g="189" b="189"/><viz:position x="-369.0612" y="-154.2524" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m5393" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="exclusivo"/><attvalue for="n2" value="16"/><attvalue for="n3" value="Política"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="189" g="189" b="189"/><viz:position x="-387.6609" y="-98.5851" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m5866" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="exclusivo"/><attvalue for="n2" value="7"/><attvalue for="n3" value="Política"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="189" g="189" b="189"/><viz:position x="-397.9143" y="-40.7952" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m7455" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="exclusivo"/><attvalue for="n2" value="7"/><attvalue for="n3" value="Política"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="189" g="189" b="189"/><viz:position x="-399.6005" y="17.8730" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m8480" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="exclusivo"/><attvalue for="n2" value="8"/><attvalue for="n3" value="Política"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="189" g="189" b="189"/><viz:position x="-392.6833" y="76.1564" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m9774" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="exclusivo"/><attvalue for="n2" value="3"/><attvalue for="n3" value="Política"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="189" g="189" b="189"/><viz:position x="-377.3117" y="132.8002" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m15438" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="exclusivo"/><attvalue for="n2" value="5"/><attvalue for="n3" value="Política"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="189" g="189" b="189"/><viz:position x="-353.8165" y="186.5848" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m9448" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="exclusivo"/><attvalue for="n2" value="5"/><attvalue for="n3" value="Cripto/Finanças"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="189" g="189" b="189"/><viz:position x="-309.8917" y="252.9173" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m2190" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="13"/><attvalue for="n3" value="Outros temas"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-253.7080" y="309.2447" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m877" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="exclusivo"/><attvalue for="n2" value="170"/><attvalue for="n3" value="Outros temas"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="189" g="189" b="189"/><viz:position x="-205.7232" y="343.0422" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m2187" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="exclusivo"/><attvalue for="n2" value="53"/><attvalue for="n3" value="Outros temas"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="189" g="189" b="189"/><viz:position x="-153.3093" y="369.4540" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m2625" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="exclusivo"/><attvalue for="n2" value="22"/><attvalue for="n3" value="Outros temas"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="189" g="189" b="189"/><viz:position x="-97.5946" y="387.9114" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m11736" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="exclusivo"/><attvalue for="n2" value="5"/><attvalue for="n3" value="Outros temas"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="189" g="189" b="189"/><viz:position x="-39.7787" y="398.0172" z="0.0"/><viz:size value="3.0000"/></node>
+</nodes>
+<edges>
+<edge id="0" source="w53" target="m33" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="1" source="w53" target="m35" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="2" source="w53" target="m47" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="3" source="w53" target="m96" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="4" source="w53" target="m347" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="5" source="w53" target="m354" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="6" source="w53" target="m405" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="7" source="w53" target="m435" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="8" source="w53" target="m551" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="9" source="w53" target="m558" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="10" source="w53" target="m602" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="11" source="w53" target="m643" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="12" source="w53" target="m652" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="13" source="w53" target="m751" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="14" source="w53" target="m772" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="15" source="w53" target="m877" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="16" source="w53" target="m961" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="17" source="w53" target="m980" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="18" source="w53" target="m1084" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="19" source="w53" target="m1128" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="20" source="w53" target="m1604" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="21" source="w53" target="m1928" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="22" source="w53" target="m2187" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="23" source="w53" target="m2190" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="24" source="w53" target="m2625" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="25" source="w53" target="m3007" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="26" source="w53" target="m3012" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="27" source="w53" target="m3979" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="28" source="w53" target="m4315" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="29" source="w53" target="m5133" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="30" source="w53" target="m5393" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="31" source="w53" target="m5866" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="32" source="w53" target="m6460" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="33" source="w53" target="m7418" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="34" source="w53" target="m7455" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="35" source="w53" target="m8480" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="36" source="w53" target="m9448" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="37" source="w53" target="m9774" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="38" source="w53" target="m11736" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="39" source="w53" target="m13898" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="40" source="w53" target="m15438" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="41" source="w409" target="m33" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="42" source="w409" target="m405" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="43" source="w409" target="m551" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="44" source="w409" target="m643" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="45" source="w409" target="m751" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="46" source="w3924" target="m35" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="47" source="w3924" target="m47" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="48" source="w3924" target="m96" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="49" source="w3924" target="m558" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="50" source="w3924" target="m772" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="51" source="w3924" target="m1128" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="52" source="w3924" target="m3979" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="53" source="w4987" target="m96" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="54" source="w4987" target="m347" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="55" source="w4987" target="m751" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="56" source="w4987" target="m772" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="57" source="w4987" target="m1084" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="58" source="w4987" target="m2190" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="59" source="w4987" target="m7418" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+</edges>
+</graph>
+</gexf>

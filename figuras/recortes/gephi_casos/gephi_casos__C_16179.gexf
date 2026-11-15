@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://gexf.net/1.3" xmlns:viz="http://gexf.net/1.3/viz" version="1.3">
+<graph defaultedgetype="undirected" mode="static">
+<attributes class="node">
+<attribute id="n0" title="Tipo" type="string"/>
+<attribute id="n1" title="Papel" type="string"/>
+<attribute id="n2" title="GrauGlobal" type="long"/>
+<attribute id="n3" title="Modalidade" type="string"/>
+<attribute id="n4" title="Evento" type="string"/>
+</attributes>
+<attributes class="edge">
+</attributes>
+<nodes>
+<node id="w16179" label="16179"><attvalues><attvalue for="n0" value="carteira"/><attvalue for="n1" value="foco"/><attvalue for="n2" value="41"/><attvalue for="n3" value=""/><attvalue for="n4" value=""/></attvalues><viz:color r="178" g="24" b="43"/><viz:position x="0.0000" y="0.0000" z="0.0"/><viz:size value="12.0000"/></node>
+<node id="w16469" label="16469"><attvalues><attvalue for="n0" value="carteira"/><attvalue for="n1" value="parceiro"/><attvalue for="n2" value="41"/><attvalue for="n3" value=""/><attvalue for="n4" value=""/></attvalues><viz:color r="106" g="61" b="154"/><viz:position x="0.0000" y="200.0000" z="0.0"/><viz:size value="9.0000"/></node>
+<node id="w17181" label="17181"><attvalues><attvalue for="n0" value="carteira"/><attvalue for="n1" value="parceiro"/><attvalue for="n2" value="42"/><attvalue for="n3" value=""/><attvalue for="n4" value=""/></attvalues><viz:color r="106" g="61" b="154"/><viz:position x="-173.2051" y="-100.0000" z="0.0"/><viz:size value="9.0000"/></node>
+<node id="w16795" label="16795"><attvalues><attvalue for="n0" value="carteira"/><attvalue for="n1" value="parceiro"/><attvalue for="n2" value="43"/><attvalue for="n3" value=""/><attvalue for="n4" value=""/></attvalues><viz:color r="106" g="61" b="154"/><viz:position x="173.2051" y="-100.0000" z="0.0"/><viz:size value="9.0000"/></node>
+<node id="m123" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="165"/><attvalue for="n3" value="CS2"/><attvalue for="n4" value="ALKA × Turma do Pagode"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="39.5246" y="398.0425" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m302" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="323"/><attvalue for="n3" value="CS2"/><attvalue for="n4" value="ALKA × Turma do Pagode"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="96.8514" y="388.0977" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m1331" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="111"/><attvalue for="n3" value="CS2"/><attvalue for="n4" value="ALKA × Turma do Pagode"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="152.1290" y="369.9416" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m395" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="336"/><attvalue for="n3" value="CS2"/><attvalue for="n4" value="Bounty Hunters Esports × Yawara Esports"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="204.1879" y="343.9583" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m706" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="128"/><attvalue for="n3" value="CS2"/><attvalue for="n4" value="Bounty Hunters Esports × Yawara Esports"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="251.9266" y="310.6976" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m1063" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="165"/><attvalue for="n3" value="CS2"/><attvalue for="n4" value="Bounty Hunters Esports × Yawara Esports"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="294.3351" y="270.8632" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m770" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="122"/><attvalue for="n3" value="CS2"/><attvalue for="n4" value="paiN × Turma do Pagode"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="330.5161" y="225.2979" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m1507" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="131"/><attvalue for="n3" value="CS2"/><attvalue for="n4" value="paiN × Turma do Pagode"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="359.7040" y="174.9658" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m3465" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="95"/><attvalue for="n3" value="CS2"/><attvalue for="n4" value="BLUEJAYS.de × Regnum4Games"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="381.2814" y="120.9317" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m1883" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="146"/><attvalue for="n3" value="CS2"/><attvalue for="n4" value="Honvéd × ENCE"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="394.7917" y="64.3390" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m549" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="357"/><attvalue for="n3" value="CS2"/><attvalue for="n4" value="Teletubisie × ex"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="399.9490" y="6.3851" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m506" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="211"/><attvalue for="n3" value="Dota 2"/><attvalue for="n4" value="Direborn × Team Nemesis"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="393.3947" y="-72.3919" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m642" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="208"/><attvalue for="n3" value="Dota 2"/><attvalue for="n4" value="Direborn × Team Nemesis"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="378.7310" y="-128.6967" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m923" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="226"/><attvalue for="n3" value="Dota 2"/><attvalue for="n4" value="Direborn × Team Nemesis"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="356.0541" y="-182.2786" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m1074" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="175"/><attvalue for="n3" value="Dota 2"/><attvalue for="n4" value="Direborn × Team Nemesis"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="325.8438" y="-232.0038" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m1407" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="150"/><attvalue for="n3" value="Dota 2"/><attvalue for="n4" value="Direborn × Team Nemesis"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="288.7394" y="-276.8204" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m215" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="377"/><attvalue for="n3" value="LoL"/><attvalue for="n4" value="Meavedron × eSuba"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="228.6628" y="-328.1971" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m230" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="332"/><attvalue for="n3" value="LoL"/><attvalue for="n4" value="Meavedron × eSuba"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="178.6315" y="-357.8977" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m272" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="340"/><attvalue for="n3" value="LoL"/><attvalue for="n4" value="Meavedron × eSuba"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="124.8207" y="-380.0260" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m402" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="358"/><attvalue for="n3" value="LoL"/><attvalue for="n4" value="Meavedron × eSuba"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="68.3690" y="-394.1138" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m482" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="344"/><attvalue for="n3" value="LoL"/><attvalue for="n4" value="Meavedron × eSuba"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="10.4708" y="-399.8629" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m496" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="108"/><attvalue for="n3" value="LoL"/><attvalue for="n4" value="The Ruddy Sack × Verdant"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-47.6490" y="-397.1518" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m819" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="177"/><attvalue for="n3" value="LoL"/><attvalue for="n4" value="The Ruddy Sack × Verdant"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-104.7606" y="-386.0378" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m899" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="215"/><attvalue for="n3" value="LoL"/><attvalue for="n4" value="The Ruddy Sack × Verdant"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-159.6558" y="-366.7561" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m1116" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="245"/><attvalue for="n3" value="LoL"/><attvalue for="n4" value="The Ruddy Sack × Verdant"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-211.1729" y="-339.7146" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m1192" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="274"/><attvalue for="n3" value="LoL"/><attvalue for="n4" value="The Ruddy Sack × Verdant"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-258.2221" y="-305.4854" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m102" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="244"/><attvalue for="n3" value="LoL"/><attvalue for="n4" value="9z Globant × Fuego"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-299.8078" y="-264.7929" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m882" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="94"/><attvalue for="n3" value="LoL"/><attvalue for="n4" value="9z Globant × Fuego"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-335.0503" y="-218.4978" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m893" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="99"/><attvalue for="n3" value="LoL"/><attvalue for="n4" value="9z Globant × Fuego"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-363.2038" y="-167.5799" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m1529" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="165"/><attvalue for="n3" value="LoL"/><attvalue for="n4" value="9z Globant × Fuego"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-383.6727" y="-113.1163" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m356" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="201"/><attvalue for="n3" value="LoL"/><attvalue for="n4" value="Esprit Shōnen × Skillcamp Esport"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-396.0238" y="-56.2593" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m634" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="226"/><attvalue for="n3" value="LoL"/><attvalue for="n4" value="Esprit Shōnen × Skillcamp Esport"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-399.9960" y="1.7879" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m847" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="124"/><attvalue for="n3" value="LoL"/><attvalue for="n4" value="Esprit Shōnen × Skillcamp Esport"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-395.5051" y="59.7973" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m298" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="236"/><attvalue for="n3" value="LoL"/><attvalue for="n4" value="Pyramid IV Esports × JSK Esports"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-382.6461" y="116.5415" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m1056" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="83"/><attvalue for="n3" value="LoL"/><attvalue for="n4" value="Pyramid IV Esports × JSK Esports"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-361.6912" y="170.8200" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m1359" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="86"/><attvalue for="n3" value="Outros esports"/><attvalue for="n4" value="999 × Elevate"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-321.0356" y="238.6130" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m1218" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="111"/><attvalue for="n3" value="Outros esportes"/><attvalue for="n4" value="Barbados Tridents × Jamaica Kingsmen"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-267.8420" y="297.0870" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m185" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="189"/><attvalue for="n3" value="Política"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-204.1879" y="343.9583" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m600" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="216"/><attvalue for="n3" value="Política"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-152.1290" y="369.9416" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m1358" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="57"/><attvalue for="n3" value="Política"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-96.8514" y="388.0977" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m7147" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="47"/><attvalue for="n3" value="Política"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-39.5246" y="398.0425" z="0.0"/><viz:size value="3.0000"/></node>
+</nodes>
+<edges>
+<edge id="0" source="w16179" target="m102" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="1" source="w16179" target="m123" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="2" source="w16179" target="m185" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="3" source="w16179" target="m215" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="4" source="w16179" target="m230" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="5" source="w16179" target="m272" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="6" source="w16179" target="m298" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="7" source="w16179" target="m302" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="8" source="w16179" target="m356" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="9" source="w16179" target="m395" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="10" source="w16179" target="m402" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="11" source="w16179" target="m482" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="12" source="w16179" target="m496" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="13" source="w16179" target="m506" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="14" source="w16179" target="m549" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="15" source="w16179" target="m600" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="16" source="w16179" target="m634" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="17" source="w16179" target="m642" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="18" source="w16179" target="m706" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="19" source="w16179" target="m770" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="20" source="w16179" target="m819" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="21" source="w16179" target="m847" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="22" source="w16179" target="m882" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="23" source="w16179" target="m893" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="24" source="w16179" target="m899" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="25" source="w16179" target="m923" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="26" source="w16179" target="m1056" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="27" source="w16179" target="m1063" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="28" source="w16179" target="m1074" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="29" source="w16179" target="m1116" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="30" source="w16179" target="m1192" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="31" source="w16179" target="m1218" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="32" source="w16179" target="m1331" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="33" source="w16179" target="m1358" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="34" source="w16179" target="m1359" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="35" source="w16179" target="m1407" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="36" source="w16179" target="m1507" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="37" source="w16179" target="m1529" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="38" source="w16179" target="m1883" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="39" source="w16179" target="m3465" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="40" source="w16179" target="m7147" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="41" source="w16469" target="m102" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="42" source="w16469" target="m123" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="43" source="w16469" target="m185" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="44" source="w16469" target="m215" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="45" source="w16469" target="m230" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="46" source="w16469" target="m272" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="47" source="w16469" target="m298" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="48" source="w16469" target="m302" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="49" source="w16469" target="m356" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="50" source="w16469" target="m395" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="51" source="w16469" target="m402" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="52" source="w16469" target="m482" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="53" source="w16469" target="m496" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="54" source="w16469" target="m506" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="55" source="w16469" target="m549" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="56" source="w16469" target="m600" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="57" source="w16469" target="m634" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="58" source="w16469" target="m642" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="59" source="w16469" target="m706" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="60" source="w16469" target="m770" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="61" source="w16469" target="m819" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="62" source="w16469" target="m847" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="63" source="w16469" target="m882" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="64" source="w16469" target="m893" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="65" source="w16469" target="m899" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="66" source="w16469" target="m923" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="67" source="w16469" target="m1056" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="68" source="w16469" target="m1063" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="69" source="w16469" target="m1074" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="70" source="w16469" target="m1116" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="71" source="w16469" target="m1192" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="72" source="w16469" target="m1218" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="73" source="w16469" target="m1331" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="74" source="w16469" target="m1358" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="75" source="w16469" target="m1359" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="76" source="w16469" target="m1407" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="77" source="w16469" target="m1507" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="78" source="w16469" target="m1529" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="79" source="w16469" target="m1883" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="80" source="w16469" target="m3465" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="81" source="w16795" target="m102" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="82" source="w16795" target="m123" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="83" source="w16795" target="m185" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="84" source="w16795" target="m215" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="85" source="w16795" target="m230" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="86" source="w16795" target="m272" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="87" source="w16795" target="m298" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="88" source="w16795" target="m302" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="89" source="w16795" target="m356" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="90" source="w16795" target="m395" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="91" source="w16795" target="m402" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="92" source="w16795" target="m482" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="93" source="w16795" target="m496" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="94" source="w16795" target="m506" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="95" source="w16795" target="m549" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="96" source="w16795" target="m600" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="97" source="w16795" target="m634" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="98" source="w16795" target="m642" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="99" source="w16795" target="m706" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="100" source="w16795" target="m770" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="101" source="w16795" target="m819" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="102" source="w16795" target="m847" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="103" source="w16795" target="m882" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="104" source="w16795" target="m893" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="105" source="w16795" target="m899" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="106" source="w16795" target="m923" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="107" source="w16795" target="m1056" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="108" source="w16795" target="m1063" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="109" source="w16795" target="m1074" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="110" source="w16795" target="m1116" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="111" source="w16795" target="m1192" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="112" source="w16795" target="m1331" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="113" source="w16795" target="m1358" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="114" source="w16795" target="m1359" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="115" source="w16795" target="m1407" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="116" source="w16795" target="m1507" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="117" source="w16795" target="m1529" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="118" source="w16795" target="m1883" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="119" source="w16795" target="m3465" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="120" source="w16795" target="m7147" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="121" source="w17181" target="m102" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="122" source="w17181" target="m123" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="123" source="w17181" target="m185" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="124" source="w17181" target="m215" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="125" source="w17181" target="m230" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="126" source="w17181" target="m272" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="127" source="w17181" target="m298" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="128" source="w17181" target="m302" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="129" source="w17181" target="m356" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="130" source="w17181" target="m395" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="131" source="w17181" target="m402" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="132" source="w17181" target="m482" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="133" source="w17181" target="m496" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="134" source="w17181" target="m506" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="135" source="w17181" target="m549" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="136" source="w17181" target="m600" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="137" source="w17181" target="m634" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="138" source="w17181" target="m642" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="139" source="w17181" target="m706" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="140" source="w17181" target="m770" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="141" source="w17181" target="m819" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="142" source="w17181" target="m847" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="143" source="w17181" target="m882" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="144" source="w17181" target="m893" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="145" source="w17181" target="m899" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="146" source="w17181" target="m923" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="147" source="w17181" target="m1056" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="148" source="w17181" target="m1063" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="149" source="w17181" target="m1074" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="150" source="w17181" target="m1116" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="151" source="w17181" target="m1192" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="152" source="w17181" target="m1218" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="153" source="w17181" target="m1331" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="154" source="w17181" target="m1358" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="155" source="w17181" target="m1359" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="156" source="w17181" target="m1407" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="157" source="w17181" target="m1507" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="158" source="w17181" target="m1529" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="159" source="w17181" target="m1883" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="160" source="w17181" target="m3465" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+</edges>
+</graph>
+</gexf>

@@ -1,0 +1,84 @@
+{
+  "titulo": "Casos e controles — quatro painéis",
+  "figura": "gephi_casos",
+  "universo": "cobertura total do dia (229.072 pares distintos); por painel: todos os mercados do foco e as arestas do foco e dos três parceiros para esses mercados",
+  "seed": "score híbrido da seed 42 (resultados/artigo/extra/contribuicoes_casos.csv, casos_dia_real.csv)",
+  "selecao": "focos e parceiros conforme o roteiro; parceiros = três maiores contribuições ao score",
+  "filtros": "arestas dos parceiros para mercados fora do foco omitidas (grau desenhado ≠ grau global)",
+  "layout": "anel determinístico: mercados ordenados por modalidade → evento → nº de parceiros; foco no centro, parceiros em 90°/210°/330° (r=0,5); mesmas coordenadas no projeto Gephi 0.10.1",
+  "codificacao": {
+    "cor": "vermelho=foco, roxo=parceiros, verde=mercado compartilhado, branco=só do foco; faixa externa = modalidade (pastel; hachura = indeterminado)",
+    "tamanho": "carteiras ∝ log10(1+grau global), mesma escala nos quatro painéis; mercados fixos",
+    "arestas": "coparticipação (sem direção); vermelho=foco, roxo=parceiros"
+  },
+  "paineis": [
+    {
+      "painel": "A",
+      "foco": 17762,
+      "mercados": 171,
+      "arestas_desenhadas": 651,
+      "compartilhados_ge1": 169,
+      "compartilhados_3": 148,
+      "score": 84.14047415676613,
+      "parceiros": [
+        17487,
+        18767,
+        20748
+      ]
+    },
+    {
+      "painel": "B",
+      "foco": 1507,
+      "mercados": 171,
+      "arestas_desenhadas": 336,
+      "compartilhados_ge1": 135,
+      "compartilhados_3": 0,
+      "score": 15.76845245753512,
+      "parceiros": [
+        8299,
+        1844,
+        7825
+      ]
+    },
+    {
+      "painel": "C",
+      "foco": 16179,
+      "mercados": 41,
+      "arestas_desenhadas": 161,
+      "compartilhados_ge1": 41,
+      "compartilhados_3": 39,
+      "score": 44.89275193729654,
+      "parceiros": [
+        16469,
+        17181,
+        16795
+      ]
+    },
+    {
+      "painel": "D",
+      "foco": 53,
+      "mercados": 41,
+      "arestas_desenhadas": 60,
+      "compartilhados_ge1": 16,
+      "compartilhados_3": 0,
+      "score": 5.635649300864645,
+      "parceiros": [
+        4987,
+        409,
+        3924
+      ]
+    }
+  ],
+  "largura_cm": 17.5,
+  "altura_cm": 10.0,
+  "arquivos": {
+    "pdf": "gephi_casos.pdf",
+    "svg": "gephi_casos.svg",
+    "png": "gephi_casos.png"
+  },
+  "bytes": {
+    "pdf": 102429,
+    "svg": 442391,
+    "png": 3002848
+  }
+}

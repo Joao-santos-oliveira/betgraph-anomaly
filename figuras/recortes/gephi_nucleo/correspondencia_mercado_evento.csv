@@ -1,0 +1,145 @@
+condition_node_id,question,tags,modalidade,evento,regra_evento,grau_global
+37,Spread: Club Atlético de Madrid (-1.5),[Sports La Liga Soccer Games],Futebol,indeterminado,indeterminado,250
+53,Will Aston Villa FC win on 2026-09-16?,[Sports Soccer Games Carabao Cup EFL Cup],Futebol,Coventry City FC × Aston Villa FC,nome_equipe,482
+58,RC Deportivo A Coruña vs. Sevilla FC: O/U 1.5,[Sports La Liga Soccer Games],Futebol,RC Deportivo A Coruña × Sevilla FC,pergunta_vs,242
+59,Spread: FC Barcelona (-3.5),[Sports La Liga Soccer Games],Futebol,indeterminado,indeterminado,358
+66,RSC Anderlecht vs. Olympique Lyonnais: O/U 3.5,[Sports Soccer Games UEL],Futebol,RSC Anderlecht × Olympique Lyonnais,pergunta_vs,162
+72,Club Atlético de Madrid vs. CA Osasuna: O/U 2.5,[Sports La Liga Soccer Games],Futebol,Club Atlético de Madrid × CA Osasuna,pergunta_vs,355
+90,Will CA Mineiro win on 2026-09-16?,[Sports Soccer Games Copa Sudamericana],Futebol,CA Mineiro × Santos FC,nome_equipe,255
+93,"Dana White's Contender Series: Ednilson Santos vs. Akbar Abdullaev (Lightweight, Main Card)",[Sports UFC Games],Luta (MMA),Dana White's Contender Series: Ednilson Santos × Akbar Abdullaev,pergunta_vs,79
+97,Counter-Strike: Nemiga vs Team Nemesis (BO5) - CIS LAN Championship Playoffs,[Sports Esports Games counter strike 2],CS2,Nemiga × Team Nemesis,pergunta_vs,457
+102,LoL: 9z Globant vs Fuego (BO5) - World Star Challengers Invitational Americas Qualifier Playoffs,[Sports Esports league of legends Games],LoL,9z Globant × Fuego,pergunta_vs,244
+104,Will Manchester United FC win on 2026-09-16?,[Sports Soccer Games Carabao Cup EFL Cup],Futebol,indeterminado,indeterminado,786
+109,Will Once Caldas win on 2026-08-27?,[Sports Soccer Games],Futebol,Once Caldas × CD Tolima,nome_equipe,98
+125,Will Brighton & Hove Albion FC win on 2026-09-16?,[Sports Soccer Games Carabao Cup EFL Cup],Futebol,indeterminado,indeterminado,487
+142,Counter-Strike: Nemiga vs Team Nemesis - Map 4 Winner,[Sports Esports Games counter strike 2],CS2,Nemiga × Team Nemesis,pergunta_vs,286
+143,Will Deportivo Toluca FC win on 2026-09-04?,[Sports Soccer Games Liga MX],Futebol,indeterminado,indeterminado,288
+144,Will Botafogo FR win on 2026-09-16?,[Sports Soccer Games Brazil Serie A],Futebol,indeterminado,indeterminado,242
+150,Will Kashiwa Reysol win on 2026-09-16?,[Sports Soccer Games AFC Champions League Elite],Futebol,indeterminado,indeterminado,312
+155,AS Omónoia Leukosías vs. RC Celta de Vigo: O/U 2.5,[Sports Soccer Games UEL],Futebol,AS Omónoia Leukosías × RC Celta de Vigo,pergunta_vs,148
+179,Will Everton FC win on 2026-09-09?,[Sports Soccer Games Carabao Cup EFL Cup],Futebol,indeterminado,indeterminado,456
+184,Counter-Strike: Black Phoenix vs ENCE (BO3) - CCT Europe Series #9 Group Stage,[Sports Esports Games counter strike 2],CS2,Black Phoenix × ENCE,pergunta_vs,587
+189,Counter-Strike: Just Players vs NAVI Junior (BO3) - CCT Europe Series #9 Group Stage,[Sports Esports Games counter strike 2],CS2,Just Players × NAVI Junior,pergunta_vs,536
+195,Will Vissel Kobe win on 2026-09-16?,[Sports Soccer Games AFC Champions League Elite],Futebol,Port FC × Vissel Kobe,nome_equipe,334
+197,Spread: FC Barcelona (-2.5),[Sports La Liga Soccer Games],Futebol,indeterminado,indeterminado,226
+215,LoL: Meavedron vs eSuba - Game 3 Winner,[Sports Esports league of legends Games],LoL,Meavedron × eSuba,pergunta_vs,377
+226,Will SE Palmeiras win on 2026-09-16?,[Sports Soccer Games Copa Libertadores],Futebol,LDU de Quito × SE Palmeiras,nome_equipe,274
+230,LoL: Meavedron vs eSuba - Game 1 Winner,[Sports Esports league of legends Games],LoL,Meavedron × eSuba,pergunta_vs,332
+231,Dota 2: Yellow Submarine vs Two Move (BO3) - European Pro League Group B,[Sports Esports Games Dota 2],Dota 2,Yellow Submarine × Two Move,pergunta_vs,458
+246,Dota 2: Zero Tenacity vs PuckChamp - Game 2 Winner,[Sports Esports Games Dota 2],Dota 2,Zero Tenacity × PuckChamp,pergunta_vs,306
+251,Dota 2: Zero Tenacity vs PuckChamp (BO3) - European Pro League Group A,[Sports Esports Games Dota 2],Dota 2,Zero Tenacity × PuckChamp,pergunta_vs,339
+272,LoL: Meavedron vs eSuba - Game 4 Winner,[Sports Esports league of legends Games],LoL,Meavedron × eSuba,pergunta_vs,340
+282,Counter-Strike: Nemiga vs Team Nemesis - Map 3 Winner,[Sports Esports Games counter strike 2],CS2,Nemiga × Team Nemesis,pergunta_vs,258
+287,Counter-Strike: SPARTA vs BakS eSports (BO3) - NODWIN Clutch Series Group Stage,[Sports Esports Games counter strike 2],CS2,SPARTA × BakS eSports,pergunta_vs,507
+298,LoL: Pyramid IV Esports vs JSK Esports (BO5) - Arabian League Playoffs,[Sports Esports league of legends Games],LoL,Pyramid IV Esports × JSK Esports,pergunta_vs,236
+299,Dota 2: Zero Tenacity vs PuckChamp - Game 1 Winner,[Sports Esports Games Dota 2],Dota 2,Zero Tenacity × PuckChamp,pergunta_vs,334
+302,Counter-Strike: ALKA vs Turma do Pagode (BO3) - Circuit X Curitiba Group A,[Sports Esports Games counter strike 2],CS2,ALKA × Turma do Pagode,pergunta_vs,323
+306,SK Puntigamer Sturm Graz vs. Stade Rennais FC 1901: O/U 3.5,[Sports Soccer Games UEL],Futebol,SK Puntigamer Sturm Graz × Stade Rennais FC 1901,pergunta_vs,120
+318,Counter-Strike: Just Players vs NAVI Junior - Map 2 Winner,[Sports Esports Games counter strike 2],CS2,Just Players × NAVI Junior,pergunta_vs,324
+319,Spread: Club Atlético de Madrid (-2.5),[Sports La Liga Soccer Games],Futebol,indeterminado,indeterminado,134
+356,LoL: Esprit Shōnen vs Skillcamp Esport - Game 1 Winner,[Sports Esports league of legends Games],LoL,Esprit Shōnen × Skillcamp Esport,pergunta_vs,201
+369,Counter-Strike: UPGRADE vs Team Nemesis - Map 2 Winner,[Sports Esports Games counter strike 2],CS2,UPGRADE × Team Nemesis,pergunta_vs,164
+377,Spread: Olympiakós SFP (-1.5),[Sports Soccer Games UEL],Futebol,Olympiakós SFP × Jagiellonia Białystok,nome_equipe,157
+387,Will Jeonbuk FC win on 2026-09-16?,[Sports Soccer Games AFC Champions League Elite],Futebol,indeterminado,indeterminado,169
+395,Counter-Strike: Bounty Hunters Esports vs Yawara Esports (BO3) - Circuit X Curitiba Group B,[Sports Esports Games counter strike 2],CS2,Bounty Hunters Esports × Yawara Esports,pergunta_vs,336
+441,Counter-Strike: CYBERSHOKE Esports vs Nemiga - Map 2 Winner,[Sports Esports Games counter strike 2],CS2,CYBERSHOKE Esports × Nemiga,pergunta_vs,250
+449,Counter-Strike: QUAZAR vs ex-RUSTEC (BO3) - NODWIN Clutch Series Group Stage,[Sports Esports Games counter strike 2],CS2,QUAZAR × ex,pergunta_vs,407
+454,AC Milan vs. Sport Lisboa e Benfica: O/U 2.5,[Sports Soccer Games UEL],Futebol,AC Milan × Sport Lisboa e Benfica,pergunta_vs,294
+459,Will FC Lugano win on 2026-09-16?,[Sports Soccer Games Switzerland Super League],Futebol,indeterminado,indeterminado,164
+462,Will Sheffield United FC win on 2026-09-16?,[Sports Soccer Games Carabao Cup EFL Cup],Futebol,Fleetwood Town FC × Sheffield United FC,nome_equipe,202
+480,Will Club Always Ready win on 2026-09-16?,[Sports Soccer Games],Futebol,CA Nacional Potosí × Club Always Ready,nome_equipe,169
+482,LoL: Meavedron vs eSuba (BO5) - Hitpoint Masters Playoffs,[Sports Esports league of legends Games],LoL,Meavedron × eSuba,pergunta_vs,344
+492,Raphinha: Anytime Goalscorer,[Sports La Liga Soccer Games],Futebol,indeterminado,indeterminado,119
+506,Dota 2: Direborn vs Team Nemesis - Game 4 Winner,[Sports Esports Games Dota 2],Dota 2,Direborn × Team Nemesis,pergunta_vs,211
+507,1st Half Spread: FC Barcelona (-1.5),[Sports La Liga Soccer Games],Futebol,indeterminado,indeterminado,64
+513,AS Omónoia Leukosías vs. RC Celta de Vigo: O/U 0.5,[Sports Soccer Games UEL],Futebol,AS Omónoia Leukosías × RC Celta de Vigo,pergunta_vs,136
+539,Dota 2: Yellow Submarine vs Two Move - Game 2 Winner,[Sports Esports Games Dota 2],Dota 2,Yellow Submarine × Two Move,pergunta_vs,268
+541,Dota 2: Yellow Submarine vs Two Move - Game 1 Winner,[Sports Esports Games Dota 2],Dota 2,Yellow Submarine × Two Move,pergunta_vs,178
+545,Counter-Strike: Drama eSports vs mellren (BO3) - European Pro League Series 9 Group A,[Sports Esports Games counter strike 2],CS2,Drama eSports × mellren,pergunta_vs,341
+549,Counter-Strike: Teletubisie vs ex-Zero Tenacity (BO3) - Exort Fiesta Group Stage,[Sports Esports Games counter strike 2],CS2,Teletubisie × ex,pergunta_vs,357
+563,SK Puntigamer Sturm Graz vs. Stade Rennais FC 1901: O/U 2.5,[Sports Soccer Games UEL],Futebol,SK Puntigamer Sturm Graz × Stade Rennais FC 1901,pergunta_vs,159
+571,Counter-Strike: UPGRADE vs WRAITH PCIFIC - Map 1 Winner,[Sports Esports Games counter strike 2],CS2,UPGRADE × WRAITH PCIFIC,pergunta_vs,96
+586,Spread: Bayer 04 Leverkusen (-2.5),[Sports Soccer Games UEL],Futebol,Bayer 04 Leverkusen × NK Celje,nome_equipe,166
+589,Will AGS Astéras Trípolis win on 2026-09-16?,[Sports Soccer Games Greek Cup],Futebol,GS Níki Vólou × AGS Astéras Trípolis,nome_equipe,82
+590,Set 1 Winner: Zeynep Sonmez vs Iva Jovic,[Sports Tennis Games],Tênis,Zeynep Sonmez × Iva Jovic,pergunta_vs,53
+592,Dota 2: Inner Circle vs uralan (BO3) - European Pro League Group B,[Sports Esports Games Dota 2],Dota 2,Inner Circle × uralan,pergunta_vs,297
+598,Dota 2: Inner Circle vs uralan - Game 1 Winner,[Sports Esports Games Dota 2],Dota 2,Inner Circle × uralan,pergunta_vs,183
+630,Will Panathinaikós AO win on 2026-09-16?,[Sports Soccer Games Greek Cup],Futebol,AE Kifisiás × Panathinaikós AO,nome_equipe,152
+632,Will LDU de Quito win on 2026-09-16?,[Sports Soccer Games Copa Libertadores],Futebol,indeterminado,indeterminado,245
+634,LoL: Esprit Shōnen vs Skillcamp Esport - Game 3 Winner,[Sports Esports league of legends Games],LoL,Esprit Shōnen × Skillcamp Esport,pergunta_vs,226
+642,Dota 2: Direborn vs Team Nemesis - Game 3 Winner,[Sports Esports Games Dota 2],Dota 2,Direborn × Team Nemesis,pergunta_vs,208
+669,Counter-Strike: OldMix vs EAC Extra (BO3) - United21 Playoffs,[Sports Esports Games counter strike 2],CS2,OldMix × EAC Extra,pergunta_vs,254
+670,Counter-Strike: Nemiga vs Team Nemesis - Map 2 Winner,[Sports Esports Games counter strike 2],CS2,Nemiga × Team Nemesis,pergunta_vs,149
+671,Will CA Boca Juniors win on 2026-09-15?,[Sports Soccer Games Copa Sudamericana],Futebol,São Paulo FC × CA Boca Juniors,nome_equipe,475
+679,Lamine Yamal: Anytime Goalscorer,[Sports La Liga Soccer Games],Futebol,indeterminado,indeterminado,144
+688,Valorant: Rising Esports GC vs wiwiwi (BO3) - VCT Game Changers Pacific Playoffs,[Sports Esports Games Valorant],Valorant,Rising Esports GC × wiwiwi,pergunta_vs,106
+692,Dota 2: BALU vs Team Synapse - Game 2 Winner,[Sports Esports Games Dota 2],Dota 2,BALU × Team Synapse,pergunta_vs,112
+710,Will São Paulo FC win on 2026-09-15?,[Sports Soccer Games Copa Sudamericana],Futebol,São Paulo FC × CA Boca Juniors,nome_equipe,194
+729,Counter-Strike: Lavked vs Honvéd (BO3) - CCT Europe Series #9 Group Stage,[Sports Esports Games counter strike 2],CS2,Lavked × Honvéd,pergunta_vs,220
+730,Will Zamalek SC win on 2026-09-16?,[Sports Soccer Games],Futebol,indeterminado,indeterminado,151
+757,Counter-Strike: ex-RUSTEC vs Nexus - Map 2 Winner,[Sports Esports Games counter strike 2],CS2,ex-RUSTEC × Nexus,pergunta_vs,161
+759,Will GS Níki Vólou win on 2026-09-16?,[Sports Soccer Games Greek Cup],Futebol,GS Níki Vólou × AGS Astéras Trípolis,nome_equipe,47
+770,Counter-Strike: paiN vs Turma do Pagode - Map 2 Winner,[Sports Esports Games counter strike 2],CS2,paiN × Turma do Pagode,pergunta_vs,122
+781,Counter-Strike: MEIA NOITE vs Semente do Mal (BO3) - CCT South America Challengers #3 Playoffs,[Sports Esports Games counter strike 2],CS2,MEIA NOITE × Semente do Mal,pergunta_vs,179
+794,Counter-Strike: Lavked vs Honvéd - Map 2 Winner,[Sports Esports Games counter strike 2],CS2,Lavked × Honvéd,pergunta_vs,135
+803,AC Milan vs. Sport Lisboa e Benfica: Both Teams to Score,[Sports Soccer Games UEL],Futebol,AC Milan × Sport Lisboa e Benfica,pergunta_vs,254
+835,Counter-Strike: UPGRADE vs WRAITH PCIFIC - Map 2 Winner,[Sports Esports Games counter strike 2],CS2,UPGRADE × WRAITH PCIFIC,pergunta_vs,76
+843,Will FK Spartak Moskva win on 2026-09-16?,[Sports Soccer Games Russian Premier League],Futebol,FK Spartak Moskva × FK Fakel Voronezh,nome_equipe,150
+855,Spread: Sevilla FC (-1.5),[Sports La Liga Soccer Games],Futebol,indeterminado,indeterminado,72
+870,MH Hapoel Be'er Sheva vs. GNK Dinamo Zagreb: O/U 2.5,[Sports Soccer Games UEL],Futebol,MH Hapoel Be'er Sheva × GNK Dinamo Zagreb,pergunta_vs,125
+872,Will Kidderminster Harriers FC win on 2026-09-16?,[Sports Soccer Games National League],Futebol,Kidderminster Harriers FC × Gateshead FC,nome_equipe,95
+899,LoL: The Ruddy Sack vs Verdant - Game 3 Winner,[Sports Esports league of legends Games],LoL,The Ruddy Sack × Verdant,pergunta_vs,215
+923,Dota 2: Direborn vs Team Nemesis - Game 2 Winner,[Sports Esports Games Dota 2],Dota 2,Direborn × Team Nemesis,pergunta_vs,226
+931,Counter-Strike: ex-RUSTEC vs Nexus (BO3) - CCT Europe Series #9 Group Stage,[Sports Esports Games counter strike 2],CS2,ex-RUSTEC × Nexus,pergunta_vs,289
+936,Will Monagas SC win on 2026-09-16?,[Sports Soccer Games Primera División (Venezuela)],Futebol,Monagas SC × Zamora FC,nome_equipe,102
+1013,Dota 2: Inner Circle vs uralan - Game 2 Winner,[Sports Esports Games Dota 2],Dota 2,Inner Circle × uralan,pergunta_vs,223
+1036,Set 1 Winner: Sloane Stephens vs Janice Tjen,[Sports Tennis Games],Tênis,Sloane Stephens × Janice Tjen,pergunta_vs,33
+1067,Botafogo FR vs. Grêmio FBPA: O/U 2.5,[Sports Soccer Games Brazil Serie A],Futebol,Botafogo FR × Grêmio FBPA,pergunta_vs,108
+1074,Dota 2: Direborn vs Team Nemesis (BO5) - EPL World Series Southeast Asia Playoffs,[Sports Esports Games Dota 2],Dota 2,Direborn × Team Nemesis,pergunta_vs,175
+1088,Counter-Strike: Rush vs Grêmio Esports (BO3) - CCT South America Challengers #3 Playoffs,[Sports Esports Games counter strike 2],CS2,Rush × Grêmio Esports,pergunta_vs,194
+1096,Counter-Strike: Color vs Honvéd (BO3) - NODWIN Clutch Series Group Stage,[Sports Esports Games counter strike 2],CS2,Color × Honvéd,pergunta_vs,120
+1116,LoL: The Ruddy Sack vs Verdant - Game 4 Winner,[Sports Esports league of legends Games],LoL,The Ruddy Sack × Verdant,pergunta_vs,245
+1165,Will AS Áris Thessaloníkis vs. GS Markó end in a draw?,[Sports Soccer Games Greek Cup],Futebol,AS Áris Thessaloníkis × GS Markó,pergunta_vs,48
+1176,Will CR Brasil win on 2026-09-15?,[Sports Soccer Games],Futebol,CR Brasil × SC Recife,nome_equipe,146
+1188,Will Portuguesa FC win on 2026-09-16?,[Sports Soccer Games Primera División (Venezuela)],Futebol,Portuguesa FC × Estudiantes de Merida,nome_equipe,67
+1192,LoL: The Ruddy Sack vs Verdant (BO5) - NLC Playoffs,[Sports Esports league of legends Games],LoL,The Ruddy Sack × Verdant,pergunta_vs,274
+1237,Vissel Kobe leading at halftime?,[Sports Soccer Games AFC Champions League Elite],Futebol,Port FC × Vissel Kobe,nome_equipe,66
+1239,Will Borneo Samarinda win on 2026-09-16?,[Sports Soccer Games Indonesia Liga 1],Futebol,Borneo Samarinda × Dewa United,nome_equipe,107
+1240,Counter-Strike: ex-RUSTEC vs Nexus - Map 1 Winner,[Sports Esports Games counter strike 2],CS2,ex-RUSTEC × Nexus,pergunta_vs,175
+1255,Ararat-Armenia FA vs. AC Sparta Praha: O/U 2.5,[Sports Soccer Games UEL],Futebol,Ararat-Armenia FA × AC Sparta Praha,pergunta_vs,151
+1274,Counter-Strike: Lavked vs Saint Sinners (BO3) - European Pro League Series 9 Group A,[Sports Esports Games counter strike 2],CS2,Lavked × Saint Sinners,pergunta_vs,329
+1279,Counter-Strike: Lavked vs Honvéd - Map 1 Winner,[Sports Esports Games counter strike 2],CS2,Lavked × Honvéd,pergunta_vs,143
+1329,Valorant: Nova Esports GC vs Havoc & Yonder GC (BO3) - VCT Game Changers China Qualifier Playoffs,[Sports Esports Games Valorant],Valorant,Nova Esports GC × Havoc & Yonder GC,pergunta_vs,134
+1331,Counter-Strike: ALKA vs Turma do Pagode - Map 1 Winner,[Sports Esports Games counter strike 2],CS2,ALKA × Turma do Pagode,pergunta_vs,111
+1359,Rainbow Six Siege: 999 vs Elevate (BO1) - Asia Pacific League Asia - Stage 2 Group Stage,[Sports Esports Games Rainbow Six Siege],Outros esports,999 × Elevate,pergunta_vs,86
+1369,Valorant: Team Falcons VEGA vs FULL SENSE SISU - Map 2 Winner,[Sports Esports Games Valorant],Valorant,Team Falcons VEGA × FULL SENSE SISU,pergunta_vs,101
+1407,Dota 2: Direborn vs Team Nemesis - Game 1 Winner,[Sports Esports Games Dota 2],Dota 2,Direborn × Team Nemesis,pergunta_vs,150
+1410,Will Portuguesa FC vs. Estudiantes de Merida end in a draw?,[Sports Soccer Games Primera División (Venezuela)],Futebol,Portuguesa FC × Estudiantes de Merida,pergunta_vs,58
+1420,Will LDU de Quito vs. SE Palmeiras end in a draw?,[Sports Soccer Games Copa Libertadores],Futebol,LDU de Quito × SE Palmeiras,pergunta_vs,147
+1502,Spread: AC Sparta Praha (-1.5),[Sports Soccer Games UEL],Futebol,Ararat-Armenia FA × AC Sparta Praha,nome_equipe,93
+1507,Counter-Strike: paiN vs Turma do Pagode (BO3) - Circuit X Curitiba Group A,[Sports Esports Games counter strike 2],CS2,paiN × Turma do Pagode,pergunta_vs,131
+1529,LoL: 9z Globant vs Fuego - Game 3 Winner,[Sports Esports league of legends Games],LoL,9z Globant × Fuego,pergunta_vs,165
+1546,Counter-Strike: Inner Circle Prospect vs Eternal Fire Academy (BO3) - United21 Playoffs,[Sports Esports Games counter strike 2],CS2,Inner Circle Prospect × Eternal Fire Academy,pergunta_vs,153
+1571,Valorant: Team Falcons VEGA vs FULL SENSE SISU (BO3) - VCT Game Changers Pacific Playoffs,[Sports Esports Games Valorant],Valorant,Team Falcons VEGA × FULL SENSE SISU,pergunta_vs,156
+1644,Counter-Strike: Lavked vs Saint Sinners - Map 2 Winner,[Sports Esports Games counter strike 2],CS2,Lavked × Saint Sinners,pergunta_vs,156
+1675,Counter-Strike: Inner Circle Prospect vs Eternal Fire Academy - Map 2 Winner,[Sports Esports Games counter strike 2],CS2,Inner Circle Prospect × Eternal Fire Academy,pergunta_vs,94
+1776,"Dana White's Contender Series: Oscar Ravello vs. Igor Cavalcanti (Middleweight, Main Card)",[Sports UFC Games],Luta (MMA),Dana White's Contender Series: Oscar Ravello × Igor Cavalcanti,pergunta_vs,85
+1867,Will Clube Náutico Capibaribe win on 2026-09-15?,[Sports Soccer Games],Futebol,Clube Náutico Capibaribe × Operário Ferroviário EC,nome_equipe,88
+1883,Counter-Strike: Honvéd vs ENCE (BO3) - Exort Fiesta Group Stage,[Sports Esports Games counter strike 2],CS2,Honvéd × ENCE,pergunta_vs,146
+1908,LDU de Quito leading at halftime?,[Sports Soccer Games Copa Libertadores],Futebol,indeterminado,indeterminado,30
+2005,Counter-Strike: Rush vs Grêmio Esports - Map 1 Winner,[Sports Esports Games counter strike 2],CS2,Rush × Grêmio Esports,pergunta_vs,90
+2048,AC Milan vs. Sport Lisboa e Benfica: Draw at halftime?,[Sports Soccer Games UEL],Futebol,AC Milan × Sport Lisboa e Benfica,pergunta_vs,33
+2106,Counter-Strike: Teletubisie vs ex-Zero Tenacity - Map 1 Winner,[Sports Esports Games counter strike 2],CS2,Teletubisie × ex,pergunta_vs,98
+2146,Counter-Strike: MEIA NOITE vs Los Niños (BO3) - CCT South America Challengers #3 Playoffs,[Sports Esports Games counter strike 2],CS2,MEIA NOITE × Los Niños,pergunta_vs,89
+2412,Counter-Strike: QUINTESSÊNCIA vs Peak Agency (BO3) - CCT South America Challengers #3 Playoffs,[Sports Esports Games counter strike 2],CS2,QUINTESSÊNCIA × Peak Agency,pergunta_vs,82
+2721,Rocket League: Ninjas in Pyjamas vs FURIA Esports (BO5) - RLCS World Championship Group B,[Sports Esports Games Rocket League],Rocket League,Ninjas in Pyjamas × FURIA Esports,pergunta_vs,66
+2844,Will Borneo Samarinda vs. Dewa United end in a draw?,[Sports Soccer Games Indonesia Liga 1],Futebol,Borneo Samarinda × Dewa United,pergunta_vs,72
+2929,Counter-Strike: Lavked vs Saint Sinners - Map 1 Winner,[Sports Esports Games counter strike 2],CS2,Lavked × Saint Sinners,pergunta_vs,81
+3042,Will Union Espanola win on 2026-09-15?,[Sports Soccer Games Primera B (Chile)],Futebol,Union Espanola × Deportes Temuco,nome_equipe,24
+3095,Valorant: Yew Reign Gaming vs 101 Outlaws (BO3) - VCT Game Changers China Qualifier Playoffs,[Sports Esports Games Valorant],Valorant,Yew Reign Gaming × 101 Outlaws,pergunta_vs,93
+3407,Rocket League: Twisted Minds vs FUT Esports (BO5) - RLCS World Championship Group B,[Sports Esports Games Rocket League],Rocket League,Twisted Minds × FUT Esports,pergunta_vs,50
+3681,Valorant: swaglord9000 vs Sasanqua (BO3) - VCT Game Changers Pacific Playoffs,[Sports Esports Games Valorant],Valorant,swaglord9000 × Sasanqua,pergunta_vs,94
+3847,Counter-Strike: MEIA NOITE vs Los Niños - Map 1 Winner,[Sports Esports Games counter strike 2],CS2,MEIA NOITE × Los Niños,pergunta_vs,74
+4185,Dota 2: BALU vs Team Synapse (BO3) - European Pro League Group A,[Sports Esports Games Dota 2],Dota 2,BALU × Team Synapse,pergunta_vs,78
+5514,Counter-Strike: Huskies eSport vs Sissi State Punks (BO3) - DACH CS Masters Regular Season,[Sports Esports Games counter strike 2],CS2,Huskies eSport × Sissi State Punks,pergunta_vs,61
+6404,Rocket League: Ninjas in Pyjamas vs FUT Esports (BO5) - RLCS World Championship Group B,[Sports Esports Games Rocket League],Rocket League,Ninjas in Pyjamas × FUT Esports,pergunta_vs,53

@@ -1,0 +1,176 @@
+Id,Label,Tipo,Papel,GrauGlobal,Modalidade,Evento,x,y,size,color
+w1507,1507,carteira,foco,171,,,0.0,0.0,12.0,#B2182B
+w8299,8299,carteira,parceiro,261,,,3.061616997868383e-17,0.5,9.0,#6A3D9A
+w1844,1844,carteira,parceiro,74,,,-0.4330127018922193,-0.25000000000000006,9.0,#6A3D9A
+w7825,7825,carteira,parceiro,27,,,0.4330127018922192,-0.2500000000000002,9.0,#6A3D9A
+m870,,mercado,compartilhado,125,Futebol,MH Hapoel Be'er Sheva × GNK Dinamo Zagreb,0.04423119251108045,0.9990213218991113,3.0,#009E73
+m1051,,mercado,compartilhado,62,Futebol,MH Hapoel Be'er Sheva × GNK Dinamo Zagreb,0.08029048753427728,0.9967715072229483,3.0,#009E73
+m1083,,mercado,compartilhado,54,Futebol,MH Hapoel Be'er Sheva × GNK Dinamo Zagreb,0.11624497662020444,0.9932205723858967,3.0,#009E73
+m1257,,mercado,compartilhado,68,Futebol,MH Hapoel Be'er Sheva × GNK Dinamo Zagreb,0.1520477271365732,0.9883731525454352,3.0,#009E73
+m1792,,mercado,compartilhado,28,Futebol,MH Hapoel Be'er Sheva × GNK Dinamo Zagreb,0.18765200452067307,0.9822355752055477,3.0,#009E73
+m2958,,mercado,compartilhado,19,Futebol,MH Hapoel Be'er Sheva × GNK Dinamo Zagreb,0.22301133328360598,0.9748158519572138,3.0,#009E73
+m2976,,mercado,compartilhado,8,Futebol,MH Hapoel Be'er Sheva × GNK Dinamo Zagreb,0.25807955767634033,0.9661236680206031,3.0,#009E73
+m3027,,mercado,compartilhado,13,Futebol,MH Hapoel Be'er Sheva × GNK Dinamo Zagreb,0.2928109019384002,0.956170369602625,3.0,#009E73
+m3682,,mercado,compartilhado,5,Futebol,MH Hapoel Be'er Sheva × GNK Dinamo Zagreb,0.3271600300505405,0.9449689490863334,3.0,#009E73
+m3775,,mercado,compartilhado,15,Futebol,MH Hapoel Be'er Sheva × GNK Dinamo Zagreb,0.36108210491341464,0.9325340280715217,3.0,#009E73
+m3982,,mercado,compartilhado,24,Futebol,MH Hapoel Be'er Sheva × GNK Dinamo Zagreb,0.3945328468749824,0.9188818382886462,3.0,#009E73
+m16597,,mercado,exclusivo,2,Futebol,MH Hapoel Be'er Sheva × GNK Dinamo Zagreb,0.42746859153026473,0.9040302004109882,3.0,#BDBDBD
+m132,,mercado,compartilhado,50,Futebol,LDU de Quito × SE Palmeiras,0.4598463467179945,0.8879985007927176,3.0,#009E73
+m868,,mercado,compartilhado,32,Futebol,LDU de Quito × SE Palmeiras,0.49162384863976516,0.870807666163215,3.0,#009E73
+m875,,mercado,compartilhado,55,Futebol,LDU de Quito × SE Palmeiras,0.5227596170284206,0.8524801363106939,3.0,#009E73
+m1078,,mercado,compartilhado,36,Futebol,LDU de Quito × SE Palmeiras,0.553213009293676,0.833039834790771,3.0,#009E73
+m2210,,mercado,compartilhado,31,Futebol,LDU de Quito × SE Palmeiras,0.5829442735742911,0.8125121376982266,3.0,#009E73
+m2947,,mercado,compartilhado,17,Futebol,LDU de Quito × SE Palmeiras,0.6119146006275419,0.7909238405427137,3.0,#009E73
+m7127,,mercado,compartilhado,26,Futebol,LDU de Quito × SE Palmeiras,0.6400861744882612,0.7683031232716572,3.0,#009E73
+m1420,,mercado,exclusivo,147,Futebol,LDU de Quito × SE Palmeiras,0.6674222218313204,0.7446795134859987,3.0,#BDBDBD
+m16540,,mercado,exclusivo,5,Futebol,LDU de Quito × SE Palmeiras,0.6938870599731163,0.7200838478968021,3.0,#BDBDBD
+m586,,mercado,compartilhado,166,Futebol,Bayer 04 Leverkusen × NK Celje,0.7194461434494059,0.6945482320730337,3.0,#009E73
+m1003,,mercado,compartilhado,25,Futebol,Bayer 04 Leverkusen × NK Celje,0.7440661091086911,0.6681059985330572,3.0,#009E73
+m1869,,mercado,compartilhado,35,Futebol,Bayer 04 Leverkusen × NK Celje,0.7677148196622875,0.6407916632345504,3.0,#009E73
+m2059,,mercado,compartilhado,78,Futebol,Bayer 04 Leverkusen × NK Celje,0.7903614056342347,0.6126408805196375,3.0,#009E73
+m413,,mercado,exclusivo,78,Futebol,Bayer 04 Leverkusen × NK Celje,0.8119763056562855,0.5836903965740488,3.0,#BDBDBD
+m1364,,mercado,exclusivo,33,Futebol,Bayer 04 Leverkusen × NK Celje,0.8325313050553774,0.5539780014610599,3.0,#BDBDBD
+m916,,mercado,compartilhado,72,Futebol,Olympiakós SFP × Jagiellonia Białystok,0.8519995726832168,0.5235424797928205,3.0,#009E73
+m280,,mercado,compartilhado,685,Futebol,Olympiakós SFP × Jagiellonia Białystok,0.8703556959399001,0.4924235601034663,3.0,#009E73
+m377,,mercado,compartilhado,157,Futebol,Olympiakós SFP × Jagiellonia Białystok,0.8875757139458559,0.460661862990094,3.0,#009E73
+m2052,,mercado,compartilhado,40,Futebol,Olympiakós SFP × Jagiellonia Białystok,0.9036371488188051,0.4282988480892994,3.0,#009E73
+m2815,,mercado,compartilhado,27,Futebol,Olympiakós SFP × Jagiellonia Białystok,0.9185190350149147,0.39537675995848554,3.0,#009E73
+m914,,mercado,exclusivo,147,Futebol,Olympiakós SFP × Jagiellonia Białystok,0.9322019466958443,0.36193857293258774,3.0,#BDBDBD
+m306,,mercado,compartilhado,120,Futebol,SK Puntigamer Sturm Graz × Stade Rennais FC 1901,0.9446680230859611,0.3280279350281954,3.0,#009E73
+m1235,,mercado,compartilhado,109,Futebol,SK Puntigamer Sturm Graz × Stade Rennais FC 1901,0.9559009917866252,0.2936891109682929,3.0,#009E73
+m479,,mercado,compartilhado,114,Futebol,SK Puntigamer Sturm Graz × Stade Rennais FC 1901,0.9658861900171118,0.2589669244019932,3.0,#009E73
+m4076,,mercado,compartilhado,8,Futebol,SK Puntigamer Sturm Graz × Stade Rennais FC 1901,0.9746105837544439,0.22390669939468563,3.0,#009E73
+m786,,mercado,exclusivo,9,Futebol,SK Puntigamer Sturm Graz × Stade Rennais FC 1901,0.9820627847471505,0.18855420126497294,3.0,#BDBDBD
+m1964,,mercado,compartilhado,89,Futebol,Botafogo FR × Grêmio FBPA,0.988233065380744,0.15295557684562586,3.0,#009E73
+m884,,mercado,compartilhado,33,Futebol,Botafogo FR × Grêmio FBPA,0.9931133713755098,0.11715729424653333,3.0,#009E73
+m1191,,mercado,exclusivo,28,Futebol,Botafogo FR × Grêmio FBPA,0.996697332300035,0.08120608219827949,3.0,#BDBDBD
+m2134,,mercado,exclusivo,21,Futebol,Botafogo FR × Grêmio FBPA,0.9989802698867517,0.04514886905552271,3.0,#BDBDBD
+m290,,mercado,compartilhado,67,Futebol,Levante UD × Athletic Club,0.999959204138641,0.009032721539799036,3.0,#009E73
+m346,,mercado,compartilhado,35,Futebol,Levante UD × Athletic Club,0.9996328572191255,-0.027095216698289758,3.0,#009E73
+m436,,mercado,compartilhado,119,Futebol,Levante UD × Athletic Club,0.9980016551200733,-0.0631877866173061,3.0,#009E73
+m1622,,mercado,compartilhado,47,Futebol,Levante UD × Athletic Club,0.9950677271057361,-0.0991978753432968,3.0,#009E73
+m3488,,mercado,compartilhado,22,Futebol,SC Corinthians Paulista × Estudiantes de La Plata,0.9908349029333476,-0.13507847766784928,3.0,#009E73
+m3934,,mercado,compartilhado,6,Futebol,SC Corinthians Paulista × Estudiantes de La Plata,0.9853087078540091,-0.17078275740560805,3.0,#009E73
+m4233,,mercado,compartilhado,10,Futebol,SC Corinthians Paulista × Estudiantes de La Plata,0.9784963554003898,-0.2062641085311599,3.0,#009E73
+m841,,mercado,exclusivo,25,Futebol,SC Corinthians Paulista × Estudiantes de La Plata,0.970406737970653,-0.24147621601548322,3.0,#BDBDBD
+m454,,mercado,compartilhado,294,Futebol,AC Milan × Sport Lisboa e Benfica,0.9610504152209042,-0.27637311628254946,3.0,#009E73
+m803,,mercado,compartilhado,254,Futebol,AC Milan × Sport Lisboa e Benfica,0.9504396002813073,-0.3109092572071615,3.0,#009E73
+m427,,mercado,compartilhado,73,Futebol,AC Milan × Sport Lisboa e Benfica,0.9385881438138658,-0.34503955757571053,3.0,#009E73
+m155,,mercado,compartilhado,148,Futebol,AS Omónoia Leukosías × RC Celta de Vigo,0.9255115159326771,-0.37871946593223604,3.0,#009E73
+m2117,,mercado,compartilhado,28,Futebol,AS Omónoia Leukosías × RC Celta de Vigo,0.9112267860102596,-0.41190501873297497,3.0,#009E73
+m5296,,mercado,exclusivo,17,Futebol,AS Omónoia Leukosías × RC Celta de Vigo,0.8957526003963139,-0.4445528977334887,3.0,#BDBDBD
+m279,,mercado,compartilhado,162,Futebol,FC Barcelona × Real Racing Club,0.8791091580779994,-0.47662048653345895,3.0,#009E73
+m103,,mercado,compartilhado,59,Futebol,FC Barcelona × Real Racing Club,0.8613181843135023,-0.5080659262053417,3.0,#009E73
+m3092,,mercado,compartilhado,46,Futebol,FC Barcelona × Real Racing Club,0.8424029022733076,-0.5388481699342664,3.0,#009E73
+m70,,mercado,compartilhado,173,Futebol,Sunderland AFC × AZ,0.8223880027261954,-0.5689270365978568,3.0,#009E73
+m2269,,mercado,compartilhado,13,Futebol,Sunderland AFC × AZ,0.8012996118095305,-0.5982632632160324,3.0,#009E73
+m4569,,mercado,exclusivo,13,Futebol,Sunderland AFC × AZ,0.7791652569259154,-0.6268185562023288,3.0,#BDBDBD
+m1255,,mercado,compartilhado,151,Futebol,Ararat-Armenia FA × AC Sparta Praha,0.7560138308107253,-0.6545556413498336,3.0,#009E73
+m3805,,mercado,compartilhado,27,Futebol,Ararat-Armenia FA × AC Sparta Praha,0.7318755538174246,-0.681438312486492,3.0,#009E73
+m426,,mercado,compartilhado,149,Futebol,Club Atlético de Madrid × CA Osasuna,0.7067819344699003,-0.70743147873627,3.0,#009E73
+m1222,,mercado,exclusivo,48,Futebol,Club Atlético de Madrid × CA Osasuna,0.6807657283333006,-0.7325012103244818,3.0,#BDBDBD
+m40,,mercado,compartilhado,27,Futebol,RC Deportivo A Coruña × Sevilla FC,0.6538608952570683,-0.7566147828674941,3.0,#009E73
+m238,,mercado,compartilhado,82,Futebol,RC Deportivo A Coruña × Sevilla FC,0.6261025550459803,-0.7797407200889891,3.0,#009E73
+m1436,,mercado,compartilhado,28,Futebol,RSC Anderlecht × Olympique Lyonnais,0.5975269416170573,-0.8018488349070326,3.0,#009E73
+m9466,,mercado,compartilhado,11,Futebol,RSC Anderlecht × Olympique Lyonnais,0.5681713557021851,-0.8229102688383108,3.0,#009E73
+m59,,mercado,compartilhado,358,Futebol,indeterminado,0.5380741161581847,-0.8428975296681017,3.0,#009E73
+m319,,mercado,compartilhado,134,Futebol,indeterminado,0.5072745099478894,-0.8617845273368098,3.0,#009E73
+m1026,,mercado,compartilhado,103,Futebol,indeterminado,0.4758127408575207,-0.8795466079962186,3.0,#009E73
+m0,,mercado,compartilhado,929,Futebol,indeterminado,0.4437298770173006,-0.8961605861910081,3.0,#009E73
+m37,,mercado,compartilhado,250,Futebol,indeterminado,0.41106779729380916,-0.9116047751235268,3.0,#009E73
+m41,,mercado,compartilhado,997,Futebol,indeterminado,0.37786913662405736,-0.9258590149623157,3.0,#009E73
+m144,,mercado,compartilhado,242,Futebol,indeterminado,0.3441772303626366,-0.9389046991574302,3.0,#009E73
+m160,,mercado,compartilhado,130,Futebol,indeterminado,0.31003605771458775,-0.9507247987282107,3.0,#009E73
+m197,,mercado,compartilhado,226,Futebol,indeterminado,0.2754901843278323,-0.9613038844917964,3.0,#009E73
+m201,,mercado,compartilhado,167,Futebol,indeterminado,0.24058470412009678,-0.9706281472033693,3.0,#009E73
+m266,,mercado,compartilhado,25,Futebol,indeterminado,0.2053651804162706,-0.9786854155818369,3.0,#009E73
+m303,,mercado,compartilhado,116,Futebol,indeterminado,0.1698775864730284,-0.9854651721974241,3.0,#009E73
+m314,,mercado,compartilhado,53,Futebol,indeterminado,0.13416824546835684,-0.9909585672004368,3.0,#009E73
+m611,,mercado,compartilhado,15,Futebol,indeterminado,0.09828377003431513,-0.995158429873275,3.0,#009E73
+m758,,mercado,compartilhado,21,Futebol,indeterminado,0.062271001411962026,-0.9980592779906169,3.0,#009E73
+m763,,mercado,compartilhado,28,Futebol,indeterminado,0.026176948307870696,-0.9996573249755574,3.0,#009E73
+m788,,mercado,compartilhado,26,Futebol,indeterminado,-0.009951274467952922,-0.9999504848423563,3.0,#009E73
+m839,,mercado,compartilhado,24,Futebol,indeterminado,-0.04606650750265414,-0.998938374919348,3.0,#009E73
+m935,,mercado,compartilhado,16,Futebol,indeterminado,-0.08212160833933517,-0.9966223163484554,3.0,#009E73
+m957,,mercado,compartilhado,19,Futebol,indeterminado,-0.11806951301372562,-0.9930053323606585,3.0,#009E73
+m1090,,mercado,compartilhado,22,Futebol,indeterminado,-0.153863297488396,-0.988092144329666,3.0,#009E73
+m1102,,mercado,compartilhado,21,Futebol,indeterminado,-0.1894562389043187,-0.9818891656089448,3.0,#009E73
+m1264,,mercado,compartilhado,28,Futebol,indeterminado,-0.22480187656982514,-0.9744044931601481,3.0,#009E73
+m1314,,mercado,compartilhado,25,Futebol,indeterminado,-0.2598540726073445,-0.9656478969838732,3.0,#009E73
+m1844,,mercado,compartilhado,8,Futebol,indeterminado,-0.29456707217876466,-0.9556308073665428,3.0,#009E73
+m2062,,mercado,compartilhado,22,Futebol,indeterminado,-0.3288955632107967,-0.9443662999600594,3.0,#009E73
+m2320,,mercado,compartilhado,8,Futebol,indeterminado,-0.36279473554238517,-0.9318690787137058,3.0,#009E73
+m2654,,mercado,compartilhado,14,Futebol,indeterminado,-0.39622033941695217,-0.918155456680575,3.0,#009E73
+m2771,,mercado,compartilhado,12,Futebol,indeterminado,-0.42912874324312916,-0.9032433347235796,3.0,#009E73
+m3709,,mercado,compartilhado,19,Futebol,indeterminado,-0.4614769905485743,-0.88715217814884,3.0,#009E73
+m4045,,mercado,compartilhado,8,Futebol,indeterminado,-0.49322285605253574,-0.8699029912969489,3.0,#009E73
+m4213,,mercado,compartilhado,13,Futebol,indeterminado,-0.5243249007839619,-0.8515182901252847,3.0,#009E73
+m4228,,mercado,compartilhado,21,Futebol,indeterminado,-0.5547425261732194,-0.8320220728171549,3.0,#009E73
+m4413,,mercado,compartilhado,5,Futebol,indeterminado,-0.5844360270468025,-0.8114397884561424,3.0,#009E73
+m4506,,mercado,compartilhado,4,Futebol,indeterminado,-0.6133666434558616,-0.7897983038065415,3.0,#009E73
+m5145,,mercado,compartilhado,10,Futebol,indeterminado,-0.6414966112709009,-0.7671258682432439,3.0,#009E73
+m5386,,mercado,compartilhado,10,Futebol,indeterminado,-0.6687892114765955,-0.743452076876858,3.0,#009E73
+m5513,,mercado,compartilhado,15,Futebol,indeterminado,-0.6952088181023858,-0.7188078319221931,3.0,#009E73
+m5601,,mercado,compartilhado,9,Futebol,indeterminado,-0.7207209447262841,-0.693225302360533,3.0,#009E73
+m5761,,mercado,compartilhado,14,Futebol,indeterminado,-0.745292289491188,-0.6667378819483585,3.0,#009E73
+m6130,,mercado,compartilhado,7,Futebol,indeterminado,-0.7688907785749401,-0.6393801456273275,3.0,#009E73
+m8049,,mercado,compartilhado,9,Futebol,indeterminado,-0.7914856080573938,-0.6111878043924123,3.0,#009E73
+m8525,,mercado,compartilhado,7,Futebol,indeterminado,-0.8130472841298287,-0.5821976586771107,3.0,#009E73
+m8776,,mercado,compartilhado,9,Futebol,indeterminado,-0.8335476615942362,-0.5524475503165713,3.0,#009E73
+m9144,,mercado,compartilhado,9,Futebol,indeterminado,-0.8529599806022146,-0.5219763131513439,3.0,#009E73
+m9380,,mercado,compartilhado,8,Futebol,indeterminado,-0.8712589015855193,-0.4908237223362319,3.0,#009E73
+m9634,,mercado,compartilhado,5,Futebol,indeterminado,-0.8884205383326755,-0.4590304424204119,3.0,#009E73
+m525,,mercado,exclusivo,26,Futebol,indeterminado,-0.9044224891684712,-0.4266379742665982,3.0,#BDBDBD
+m544,,mercado,exclusivo,14,Futebol,indeterminado,-0.9192438661956347,-0.3936886008785397,3.0,#BDBDBD
+m768,,mercado,exclusivo,32,Futebol,indeterminado,-0.9328653225605267,-0.36022533220755654,3.0,#BDBDBD
+m1138,,mercado,exclusivo,31,Futebol,indeterminado,-0.9452690777072537,-0.32629184901017366,3.0,#BDBDBD
+m1585,,mercado,exclusivo,10,Futebol,indeterminado,-0.9564389405872403,-0.2919324458301223,3.0,#BDBDBD
+m1617,,mercado,exclusivo,28,Futebol,indeterminado,-0.9663603307939621,-0.257191973179149,3.0,#BDBDBD
+m2050,,mercado,exclusivo,9,Futebol,indeterminado,-0.9750202975952514,-0.22211577899209967,3.0,#BDBDBD
+m3475,,mercado,exclusivo,10,Futebol,indeterminado,-0.9824075368383351,-0.18674964943269678,3.0,#BDBDBD
+m4067,,mercado,exclusivo,3,Futebol,indeterminado,-0.9885124057055336,-0.15113974912728495,3.0,#BDBDBD
+m5271,,mercado,exclusivo,9,Futebol,indeterminado,-0.9933269353013623,-0.11533256090455633,3.0,#BDBDBD
+m6162,,mercado,exclusivo,6,Futebol,indeterminado,-0.9968448410546064,-0.07937482511991163,3.0,#BDBDBD
+m6774,,mercado,exclusivo,4,Futebol,indeterminado,-0.999061530921787,-0.0433134786436665,3.0,#BDBDBD
+m7895,,mercado,exclusivo,3,Futebol,indeterminado,-0.9999741113813138,-0.007195593592740328,3.0,#BDBDBD
+m15368,,mercado,exclusivo,8,Futebol,indeterminado,-0.9995813912104987,0.02893168411420146,3.0,#BDBDBD
+m74,,mercado,compartilhado,311,Beisebol,Philadelphia Phillies × Washington Nationals,-0.9931133713755091,0.11715729424653842,3.0,#009E73
+m121,,mercado,compartilhado,150,Beisebol,Philadelphia Phillies × Washington Nationals,-0.9882330653807432,0.1529555768456312,3.0,#009E73
+m1308,,mercado,compartilhado,80,Beisebol,Philadelphia Phillies × Washington Nationals,-0.9820627847471495,0.18855420126497816,3.0,#009E73
+m519,,mercado,exclusivo,56,Beisebol,Philadelphia Phillies × Washington Nationals,-0.9746105837544428,0.22390669939469066,3.0,#BDBDBD
+m4070,,mercado,exclusivo,46,Beisebol,Philadelphia Phillies × Washington Nationals,-0.9658861900171104,0.25896692440199853,3.0,#BDBDBD
+m169,,mercado,compartilhado,85,Beisebol,Miami Marlins × Arizona Diamondbacks,-0.9559009917866237,0.29368911096829803,3.0,#009E73
+m22,,mercado,compartilhado,589,Beisebol,Miami Marlins × Arizona Diamondbacks,-0.9446680230859593,0.3280279350282007,3.0,#009E73
+m2298,,mercado,exclusivo,34,Beisebol,Miami Marlins × Arizona Diamondbacks,-0.9322019466958423,0.36193857293259285,3.0,#BDBDBD
+m7954,,mercado,exclusivo,14,Beisebol,Miami Marlins × Arizona Diamondbacks,-0.9185190350149126,0.3953767599584904,3.0,#BDBDBD
+m1148,,mercado,compartilhado,98,Beisebol,Atlanta Braves × Chicago Cubs,-0.9036371488188026,0.42829884808930446,3.0,#009E73
+m773,,mercado,compartilhado,159,Beisebol,Atlanta Braves × Chicago Cubs,-0.8875757139458534,0.4606618629900988,3.0,#009E73
+m1498,,mercado,compartilhado,40,Beisebol,Atlanta Braves × Chicago Cubs,-0.8703556959398976,0.4924235601034708,3.0,#009E73
+m80,,mercado,compartilhado,164,Beisebol,Boston Red Sox × Texas Rangers,-0.8519995726832139,0.5235424797928253,3.0,#009E73
+m134,,mercado,compartilhado,107,Beisebol,Boston Red Sox × Texas Rangers,-0.8325313050553745,0.5539780014610644,3.0,#009E73
+m100,,mercado,exclusivo,322,Beisebol,Boston Red Sox × Texas Rangers,-0.8119763056562825,0.583690396574053,3.0,#BDBDBD
+m926,,mercado,compartilhado,38,Beisebol,Seattle Mariners × Los Angeles Angels,-0.7903614056342314,0.6126408805196417,3.0,#009E73
+m1686,,mercado,compartilhado,39,Beisebol,Seattle Mariners × Los Angeles Angels,-0.767714819662284,0.6407916632345545,3.0,#009E73
+m1900,,mercado,compartilhado,17,Beisebol,Seattle Mariners × Los Angeles Angels,-0.7440661091086873,0.6681059985330613,3.0,#009E73
+m8,,mercado,compartilhado,158,Beisebol,Detroit Tigers × Toronto Blue Jays,-0.7194461434494023,0.6945482320730376,3.0,#009E73
+m297,,mercado,compartilhado,98,Beisebol,Detroit Tigers × Toronto Blue Jays,-0.6938870599731125,0.7200838478968058,3.0,#009E73
+m36,,mercado,compartilhado,151,Beisebol,Kansas City Royals × Houston Astros,-0.6674222218313163,0.7446795134860024,3.0,#009E73
+m5091,,mercado,compartilhado,29,Beisebol,Kansas City Royals × Houston Astros,-0.640086174488257,0.7683031232716606,3.0,#009E73
+m48,,mercado,compartilhado,123,Beisebol,Milwaukee Brewers × Pittsburgh Pirates,-0.6119146006275378,0.7909238405427169,3.0,#009E73
+m65,,mercado,compartilhado,454,Beisebol,Milwaukee Brewers × Pittsburgh Pirates,-0.582944273574287,0.8125121376982296,3.0,#009E73
+m14,,mercado,compartilhado,714,Beisebol,New York Yankees × Minnesota Twins,-0.5532130092936712,0.8330398347907743,3.0,#009E73
+m453,,mercado,compartilhado,105,Beisebol,New York Yankees × Minnesota Twins,-0.5227596170284157,0.8524801363106967,3.0,#009E73
+m86,,mercado,compartilhado,91,Beisebol,San Diego Padres × Colorado Rockies,-0.49162384863976044,0.8708076661632176,3.0,#009E73
+m460,,mercado,compartilhado,63,Beisebol,San Diego Padres × Colorado Rockies,-0.4598463467179899,0.8879985007927199,3.0,#009E73
+m2030,,mercado,compartilhado,36,Beisebol,Athletics × Tampa Bay Rays,-0.42746859153026,0.9040302004109905,3.0,#009E73
+m316,,mercado,compartilhado,164,Beisebol,Chicago White Sox × Cleveland Guardians,-0.3945328468749778,0.9188818382886481,3.0,#009E73
+m68,,mercado,compartilhado,118,Beisebol,Los Angeles Dodgers × Cincinnati Reds,-0.36108210491340936,0.9325340280715239,3.0,#009E73
+m107,,mercado,compartilhado,125,Beisebol,San Francisco Giants × St. Louis Cardinals,-0.3271600300505354,0.9449689490863352,3.0,#009E73
+m2670,,mercado,compartilhado,22,Beisebol,indeterminado,-0.292810901938395,0.9561703696026266,3.0,#009E73
+m865,,mercado,compartilhado,65,Beisebol,indeterminado,-0.25807955767633534,0.9661236680206045,3.0,#009E73
+m1989,,mercado,compartilhado,18,Beisebol,indeterminado,-0.22301133328360112,0.9748158519572149,3.0,#009E73
+m6861,,mercado,compartilhado,8,Beisebol,indeterminado,-0.1876520045206684,0.9822355752055487,3.0,#009E73
+m380,,mercado,exclusivo,33,Beisebol,indeterminado,-0.1520477271365685,0.988373152545436,3.0,#BDBDBD
+m393,,mercado,exclusivo,115,Beisebol,indeterminado,-0.11624497662019993,0.9932205723858971,3.0,#BDBDBD
+m822,,mercado,exclusivo,38,Beisebol,indeterminado,-0.08029048753427209,0.9967715072229487,3.0,#BDBDBD
+m1907,,mercado,exclusivo,44,Beisebol,indeterminado,-0.04423119251107525,0.9990213218991115,3.0,#BDBDBD

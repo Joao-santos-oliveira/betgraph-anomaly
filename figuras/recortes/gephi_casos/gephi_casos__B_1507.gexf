@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://gexf.net/1.3" xmlns:viz="http://gexf.net/1.3/viz" version="1.3">
+<graph defaultedgetype="undirected" mode="static">
+<attributes class="node">
+<attribute id="n0" title="Tipo" type="string"/>
+<attribute id="n1" title="Papel" type="string"/>
+<attribute id="n2" title="GrauGlobal" type="long"/>
+<attribute id="n3" title="Modalidade" type="string"/>
+<attribute id="n4" title="Evento" type="string"/>
+</attributes>
+<attributes class="edge">
+</attributes>
+<nodes>
+<node id="w1507" label="1507"><attvalues><attvalue for="n0" value="carteira"/><attvalue for="n1" value="foco"/><attvalue for="n2" value="171"/><attvalue for="n3" value=""/><attvalue for="n4" value=""/></attvalues><viz:color r="178" g="24" b="43"/><viz:position x="0.0000" y="0.0000" z="0.0"/><viz:size value="12.0000"/></node>
+<node id="w8299" label="8299"><attvalues><attvalue for="n0" value="carteira"/><attvalue for="n1" value="parceiro"/><attvalue for="n2" value="261"/><attvalue for="n3" value=""/><attvalue for="n4" value=""/></attvalues><viz:color r="106" g="61" b="154"/><viz:position x="0.0000" y="200.0000" z="0.0"/><viz:size value="9.0000"/></node>
+<node id="w1844" label="1844"><attvalues><attvalue for="n0" value="carteira"/><attvalue for="n1" value="parceiro"/><attvalue for="n2" value="74"/><attvalue for="n3" value=""/><attvalue for="n4" value=""/></attvalues><viz:color r="106" g="61" b="154"/><viz:position x="-173.2051" y="-100.0000" z="0.0"/><viz:size value="9.0000"/></node>
+<node id="w7825" label="7825"><attvalues><attvalue for="n0" value="carteira"/><attvalue for="n1" value="parceiro"/><attvalue for="n2" value="27"/><attvalue for="n3" value=""/><attvalue for="n4" value=""/></attvalues><viz:color r="106" g="61" b="154"/><viz:position x="173.2051" y="-100.0000" z="0.0"/><viz:size value="9.0000"/></node>
+<node id="m870" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="125"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="MH Hapoel Be'er Sheva × GNK Dinamo Zagreb"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="17.6925" y="399.6085" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m1051" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="62"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="MH Hapoel Be'er Sheva × GNK Dinamo Zagreb"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="32.1162" y="398.7086" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m1083" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="54"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="MH Hapoel Be'er Sheva × GNK Dinamo Zagreb"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="46.4980" y="397.2882" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m1257" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="68"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="MH Hapoel Be'er Sheva × GNK Dinamo Zagreb"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="60.8191" y="395.3493" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m1792" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="28"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="MH Hapoel Be'er Sheva × GNK Dinamo Zagreb"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="75.0608" y="392.8942" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m2958" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="19"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="MH Hapoel Be'er Sheva × GNK Dinamo Zagreb"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="89.2045" y="389.9263" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m2976" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="8"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="MH Hapoel Be'er Sheva × GNK Dinamo Zagreb"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="103.2318" y="386.4495" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m3027" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="13"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="MH Hapoel Be'er Sheva × GNK Dinamo Zagreb"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="117.1244" y="382.4681" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m3682" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="5"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="MH Hapoel Be'er Sheva × GNK Dinamo Zagreb"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="130.8640" y="377.9876" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m3775" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="15"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="MH Hapoel Be'er Sheva × GNK Dinamo Zagreb"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="144.4328" y="373.0136" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m3982" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="24"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="MH Hapoel Be'er Sheva × GNK Dinamo Zagreb"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="157.8131" y="367.5527" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m16597" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="exclusivo"/><attvalue for="n2" value="2"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="MH Hapoel Be'er Sheva × GNK Dinamo Zagreb"/></attvalues><viz:color r="189" g="189" b="189"/><viz:position x="170.9874" y="361.6121" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m132" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="50"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="LDU de Quito × SE Palmeiras"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="183.9385" y="355.1994" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m868" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="32"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="LDU de Quito × SE Palmeiras"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="196.6495" y="348.3231" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m875" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="55"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="LDU de Quito × SE Palmeiras"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="209.1038" y="340.9921" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m1078" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="36"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="LDU de Quito × SE Palmeiras"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="221.2852" y="333.2159" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m2210" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="31"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="LDU de Quito × SE Palmeiras"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="233.1777" y="325.0049" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m2947" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="17"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="LDU de Quito × SE Palmeiras"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="244.7658" y="316.3695" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m7127" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="26"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="LDU de Quito × SE Palmeiras"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="256.0345" y="307.3212" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m1420" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="exclusivo"/><attvalue for="n2" value="147"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="LDU de Quito × SE Palmeiras"/></attvalues><viz:color r="189" g="189" b="189"/><viz:position x="266.9689" y="297.8718" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m16540" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="exclusivo"/><attvalue for="n2" value="5"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="LDU de Quito × SE Palmeiras"/></attvalues><viz:color r="189" g="189" b="189"/><viz:position x="277.5548" y="288.0335" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m586" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="166"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="Bayer 04 Leverkusen × NK Celje"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="287.7785" y="277.8193" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m1003" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="25"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="Bayer 04 Leverkusen × NK Celje"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="297.6264" y="267.2424" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m1869" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="35"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="Bayer 04 Leverkusen × NK Celje"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="307.0859" y="256.3167" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m2059" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="78"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="Bayer 04 Leverkusen × NK Celje"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="316.1446" y="245.0564" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m413" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="exclusivo"/><attvalue for="n2" value="78"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="Bayer 04 Leverkusen × NK Celje"/></attvalues><viz:color r="189" g="189" b="189"/><viz:position x="324.7905" y="233.4762" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m1364" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="exclusivo"/><attvalue for="n2" value="33"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="Bayer 04 Leverkusen × NK Celje"/></attvalues><viz:color r="189" g="189" b="189"/><viz:position x="333.0125" y="221.5912" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m916" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="72"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="Olympiakós SFP × Jagiellonia Białystok"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="340.7998" y="209.4170" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m280" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="685"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="Olympiakós SFP × Jagiellonia Białystok"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="348.1423" y="196.9694" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m377" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="157"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="Olympiakós SFP × Jagiellonia Białystok"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="355.0303" y="184.2647" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m2052" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="40"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="Olympiakós SFP × Jagiellonia Białystok"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="361.4549" y="171.3195" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m2815" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="27"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="Olympiakós SFP × Jagiellonia Białystok"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="367.4076" y="158.1507" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m914" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="exclusivo"/><attvalue for="n2" value="147"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="Olympiakós SFP × Jagiellonia Białystok"/></attvalues><viz:color r="189" g="189" b="189"/><viz:position x="372.8808" y="144.7754" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m306" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="120"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="SK Puntigamer Sturm Graz × Stade Rennais FC 1901"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="377.8672" y="131.2112" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m1235" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="109"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="SK Puntigamer Sturm Graz × Stade Rennais FC 1901"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="382.3604" y="117.4756" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m479" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="114"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="SK Puntigamer Sturm Graz × Stade Rennais FC 1901"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="386.3545" y="103.5868" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m4076" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="8"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="SK Puntigamer Sturm Graz × Stade Rennais FC 1901"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="389.8442" y="89.5627" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m786" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="exclusivo"/><attvalue for="n2" value="9"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="SK Puntigamer Sturm Graz × Stade Rennais FC 1901"/></attvalues><viz:color r="189" g="189" b="189"/><viz:position x="392.8251" y="75.4217" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m1964" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="89"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="Botafogo FR × Grêmio FBPA"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="395.2932" y="61.1822" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m884" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="33"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="Botafogo FR × Grêmio FBPA"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="397.2453" y="46.8629" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m1191" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="exclusivo"/><attvalue for="n2" value="28"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="Botafogo FR × Grêmio FBPA"/></attvalues><viz:color r="189" g="189" b="189"/><viz:position x="398.6789" y="32.4824" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m2134" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="exclusivo"/><attvalue for="n2" value="21"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="Botafogo FR × Grêmio FBPA"/></attvalues><viz:color r="189" g="189" b="189"/><viz:position x="399.5921" y="18.0595" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m290" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="67"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="Levante UD × Athletic Club"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="399.9837" y="3.6131" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m346" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="35"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="Levante UD × Athletic Club"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="399.8531" y="-10.8381" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m436" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="119"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="Levante UD × Athletic Club"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="399.2007" y="-25.2751" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m1622" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="47"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="Levante UD × Athletic Club"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="398.0271" y="-39.6792" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m3488" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="22"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="SC Corinthians Paulista × Estudiantes de La Plata"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="396.3340" y="-54.0314" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m3934" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="6"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="SC Corinthians Paulista × Estudiantes de La Plata"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="394.1235" y="-68.3131" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m4233" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="10"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="SC Corinthians Paulista × Estudiantes de La Plata"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="391.3985" y="-82.5056" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m841" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="exclusivo"/><attvalue for="n2" value="25"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="SC Corinthians Paulista × Estudiantes de La Plata"/></attvalues><viz:color r="189" g="189" b="189"/><viz:position x="388.1627" y="-96.5905" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m454" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="294"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="AC Milan × Sport Lisboa e Benfica"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="384.4202" y="-110.5492" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m803" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="254"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="AC Milan × Sport Lisboa e Benfica"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="380.1758" y="-124.3637" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m427" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="73"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="AC Milan × Sport Lisboa e Benfica"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="375.4353" y="-138.0158" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m155" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="148"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="AS Omónoia Leukosías × RC Celta de Vigo"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="370.2046" y="-151.4878" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m2117" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="28"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="AS Omónoia Leukosías × RC Celta de Vigo"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="364.4907" y="-164.7620" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m5296" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="exclusivo"/><attvalue for="n2" value="17"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="AS Omónoia Leukosías × RC Celta de Vigo"/></attvalues><viz:color r="189" g="189" b="189"/><viz:position x="358.3010" y="-177.8212" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m279" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="162"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="FC Barcelona × Real Racing Club"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="351.6437" y="-190.6482" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m103" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="59"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="FC Barcelona × Real Racing Club"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="344.5273" y="-203.2264" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m3092" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="46"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="FC Barcelona × Real Racing Club"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="336.9612" y="-215.5393" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m70" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="173"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="Sunderland AFC × AZ"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="328.9552" y="-227.5708" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m2269" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="13"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="Sunderland AFC × AZ"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="320.5198" y="-239.3053" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m4569" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="exclusivo"/><attvalue for="n2" value="13"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="Sunderland AFC × AZ"/></attvalues><viz:color r="189" g="189" b="189"/><viz:position x="311.6661" y="-250.7274" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m1255" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="151"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="Ararat-Armenia FA × AC Sparta Praha"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="302.4055" y="-261.8223" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m3805" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="27"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="Ararat-Armenia FA × AC Sparta Praha"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="292.7502" y="-272.5753" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m426" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="149"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="Club Atlético de Madrid × CA Osasuna"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="282.7128" y="-282.9726" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m1222" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="exclusivo"/><attvalue for="n2" value="48"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="Club Atlético de Madrid × CA Osasuna"/></attvalues><viz:color r="189" g="189" b="189"/><viz:position x="272.3063" y="-293.0005" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m40" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="27"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="RC Deportivo A Coruña × Sevilla FC"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="261.5444" y="-302.6459" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m238" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="82"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="RC Deportivo A Coruña × Sevilla FC"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="250.4410" y="-311.8963" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m1436" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="28"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="RSC Anderlecht × Olympique Lyonnais"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="239.0108" y="-320.7395" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m9466" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="11"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="RSC Anderlecht × Olympique Lyonnais"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="227.2685" y="-329.1641" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m59" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="358"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="215.2296" y="-337.1590" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m319" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="134"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="202.9098" y="-344.7138" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m1026" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="103"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="190.3251" y="-351.8186" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m0" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="929"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="177.4920" y="-358.4642" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m37" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="250"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="164.4271" y="-364.6419" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m41" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="997"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="151.1477" y="-370.3436" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m144" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="242"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="137.6709" y="-375.5619" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m160" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="130"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="124.0144" y="-380.2899" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m197" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="226"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="110.1961" y="-384.5216" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m201" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="167"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="96.2339" y="-388.2513" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m266" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="25"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="82.1461" y="-391.4742" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m303" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="116"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="67.9510" y="-394.1861" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m314" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="53"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="53.6673" y="-396.3834" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m611" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="15"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="39.3135" y="-398.0634" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m758" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="21"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="24.9084" y="-399.2237" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m763" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="28"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="10.4708" y="-399.8629" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m788" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="26"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-3.9805" y="-399.9802" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m839" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="24"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-18.4266" y="-399.5753" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m935" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="16"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-32.8486" y="-398.6489" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m957" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="19"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-47.2278" y="-397.2021" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m1090" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="22"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-61.5453" y="-395.2369" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m1102" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="21"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-75.7825" y="-392.7557" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m1264" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="28"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-89.9208" y="-389.7618" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m1314" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="25"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-103.9416" y="-386.2592" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m1844" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="8"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-117.8268" y="-382.2523" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m2062" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="22"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-131.5582" y="-377.7465" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m2320" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="8"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-145.1179" y="-372.7476" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m2654" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="14"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-158.4881" y="-367.2622" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m2771" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="12"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-171.6515" y="-361.2973" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m3709" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="19"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-184.5908" y="-354.8609" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m4045" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="8"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-197.2891" y="-347.9612" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m4213" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="13"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-209.7300" y="-340.6073" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m4228" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="21"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-221.8970" y="-332.8088" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m4413" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="5"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-233.7744" y="-324.5759" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m4506" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="4"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-245.3467" y="-315.9193" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m5145" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="10"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-256.5986" y="-306.8503" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m5386" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="10"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-267.5157" y="-297.3808" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m5513" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="15"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-278.0835" y="-287.5231" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m5601" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="9"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-288.2884" y="-277.2901" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m5761" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="14"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-298.1169" y="-266.6952" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m6130" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="7"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-307.5563" y="-255.7521" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m8049" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="9"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-316.5942" y="-244.4751" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m8525" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="7"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-325.2189" y="-232.8791" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m8776" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="9"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-333.4191" y="-220.9790" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m9144" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="9"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-341.1840" y="-208.7905" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m9380" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="8"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-348.5036" y="-196.3295" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m9634" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="5"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-355.3682" y="-183.6122" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m525" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="exclusivo"/><attvalue for="n2" value="26"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="189" g="189" b="189"/><viz:position x="-361.7690" y="-170.6552" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m544" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="exclusivo"/><attvalue for="n2" value="14"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="189" g="189" b="189"/><viz:position x="-367.6975" y="-157.4754" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m768" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="exclusivo"/><attvalue for="n2" value="32"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="189" g="189" b="189"/><viz:position x="-373.1461" y="-144.0901" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m1138" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="exclusivo"/><attvalue for="n2" value="31"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="189" g="189" b="189"/><viz:position x="-378.1076" y="-130.5167" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m1585" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="exclusivo"/><attvalue for="n2" value="10"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="189" g="189" b="189"/><viz:position x="-382.5756" y="-116.7730" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m1617" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="exclusivo"/><attvalue for="n2" value="28"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="189" g="189" b="189"/><viz:position x="-386.5441" y="-102.8768" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m2050" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="exclusivo"/><attvalue for="n2" value="9"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="189" g="189" b="189"/><viz:position x="-390.0081" y="-88.8463" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m3475" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="exclusivo"/><attvalue for="n2" value="10"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="189" g="189" b="189"/><viz:position x="-392.9630" y="-74.6999" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m4067" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="exclusivo"/><attvalue for="n2" value="3"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="189" g="189" b="189"/><viz:position x="-395.4050" y="-60.4559" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m5271" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="exclusivo"/><attvalue for="n2" value="9"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="189" g="189" b="189"/><viz:position x="-397.3308" y="-46.1330" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m6162" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="exclusivo"/><attvalue for="n2" value="6"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="189" g="189" b="189"/><viz:position x="-398.7379" y="-31.7499" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m6774" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="exclusivo"/><attvalue for="n2" value="4"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="189" g="189" b="189"/><viz:position x="-399.6246" y="-17.3254" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m7895" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="exclusivo"/><attvalue for="n2" value="3"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="189" g="189" b="189"/><viz:position x="-399.9896" y="-2.8782" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m15368" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="exclusivo"/><attvalue for="n2" value="8"/><attvalue for="n3" value="Futebol"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="189" g="189" b="189"/><viz:position x="-399.8326" y="11.5727" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m74" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="311"/><attvalue for="n3" value="Beisebol"/><attvalue for="n4" value="Philadelphia Phillies × Washington Nationals"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-397.2453" y="46.8629" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m121" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="150"/><attvalue for="n3" value="Beisebol"/><attvalue for="n4" value="Philadelphia Phillies × Washington Nationals"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-395.2932" y="61.1822" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m1308" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="80"/><attvalue for="n3" value="Beisebol"/><attvalue for="n4" value="Philadelphia Phillies × Washington Nationals"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-392.8251" y="75.4217" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m519" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="exclusivo"/><attvalue for="n2" value="56"/><attvalue for="n3" value="Beisebol"/><attvalue for="n4" value="Philadelphia Phillies × Washington Nationals"/></attvalues><viz:color r="189" g="189" b="189"/><viz:position x="-389.8442" y="89.5627" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m4070" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="exclusivo"/><attvalue for="n2" value="46"/><attvalue for="n3" value="Beisebol"/><attvalue for="n4" value="Philadelphia Phillies × Washington Nationals"/></attvalues><viz:color r="189" g="189" b="189"/><viz:position x="-386.3545" y="103.5868" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m169" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="85"/><attvalue for="n3" value="Beisebol"/><attvalue for="n4" value="Miami Marlins × Arizona Diamondbacks"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-382.3604" y="117.4756" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m22" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="589"/><attvalue for="n3" value="Beisebol"/><attvalue for="n4" value="Miami Marlins × Arizona Diamondbacks"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-377.8672" y="131.2112" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m2298" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="exclusivo"/><attvalue for="n2" value="34"/><attvalue for="n3" value="Beisebol"/><attvalue for="n4" value="Miami Marlins × Arizona Diamondbacks"/></attvalues><viz:color r="189" g="189" b="189"/><viz:position x="-372.8808" y="144.7754" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m7954" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="exclusivo"/><attvalue for="n2" value="14"/><attvalue for="n3" value="Beisebol"/><attvalue for="n4" value="Miami Marlins × Arizona Diamondbacks"/></attvalues><viz:color r="189" g="189" b="189"/><viz:position x="-367.4076" y="158.1507" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m1148" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="98"/><attvalue for="n3" value="Beisebol"/><attvalue for="n4" value="Atlanta Braves × Chicago Cubs"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-361.4549" y="171.3195" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m773" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="159"/><attvalue for="n3" value="Beisebol"/><attvalue for="n4" value="Atlanta Braves × Chicago Cubs"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-355.0303" y="184.2647" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m1498" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="40"/><attvalue for="n3" value="Beisebol"/><attvalue for="n4" value="Atlanta Braves × Chicago Cubs"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-348.1423" y="196.9694" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m80" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="164"/><attvalue for="n3" value="Beisebol"/><attvalue for="n4" value="Boston Red Sox × Texas Rangers"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-340.7998" y="209.4170" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m134" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="107"/><attvalue for="n3" value="Beisebol"/><attvalue for="n4" value="Boston Red Sox × Texas Rangers"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-333.0125" y="221.5912" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m100" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="exclusivo"/><attvalue for="n2" value="322"/><attvalue for="n3" value="Beisebol"/><attvalue for="n4" value="Boston Red Sox × Texas Rangers"/></attvalues><viz:color r="189" g="189" b="189"/><viz:position x="-324.7905" y="233.4762" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m926" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="38"/><attvalue for="n3" value="Beisebol"/><attvalue for="n4" value="Seattle Mariners × Los Angeles Angels"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-316.1446" y="245.0564" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m1686" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="39"/><attvalue for="n3" value="Beisebol"/><attvalue for="n4" value="Seattle Mariners × Los Angeles Angels"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-307.0859" y="256.3167" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m1900" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="17"/><attvalue for="n3" value="Beisebol"/><attvalue for="n4" value="Seattle Mariners × Los Angeles Angels"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-297.6264" y="267.2424" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m8" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="158"/><attvalue for="n3" value="Beisebol"/><attvalue for="n4" value="Detroit Tigers × Toronto Blue Jays"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-287.7785" y="277.8193" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m297" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="98"/><attvalue for="n3" value="Beisebol"/><attvalue for="n4" value="Detroit Tigers × Toronto Blue Jays"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-277.5548" y="288.0335" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m36" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="151"/><attvalue for="n3" value="Beisebol"/><attvalue for="n4" value="Kansas City Royals × Houston Astros"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-266.9689" y="297.8718" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m5091" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="29"/><attvalue for="n3" value="Beisebol"/><attvalue for="n4" value="Kansas City Royals × Houston Astros"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-256.0345" y="307.3212" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m48" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="123"/><attvalue for="n3" value="Beisebol"/><attvalue for="n4" value="Milwaukee Brewers × Pittsburgh Pirates"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-244.7658" y="316.3695" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m65" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="454"/><attvalue for="n3" value="Beisebol"/><attvalue for="n4" value="Milwaukee Brewers × Pittsburgh Pirates"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-233.1777" y="325.0049" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m14" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="714"/><attvalue for="n3" value="Beisebol"/><attvalue for="n4" value="New York Yankees × Minnesota Twins"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-221.2852" y="333.2159" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m453" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="105"/><attvalue for="n3" value="Beisebol"/><attvalue for="n4" value="New York Yankees × Minnesota Twins"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-209.1038" y="340.9921" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m86" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="91"/><attvalue for="n3" value="Beisebol"/><attvalue for="n4" value="San Diego Padres × Colorado Rockies"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-196.6495" y="348.3231" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m460" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="63"/><attvalue for="n3" value="Beisebol"/><attvalue for="n4" value="San Diego Padres × Colorado Rockies"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-183.9385" y="355.1994" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m2030" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="36"/><attvalue for="n3" value="Beisebol"/><attvalue for="n4" value="Athletics × Tampa Bay Rays"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-170.9874" y="361.6121" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m316" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="164"/><attvalue for="n3" value="Beisebol"/><attvalue for="n4" value="Chicago White Sox × Cleveland Guardians"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-157.8131" y="367.5527" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m68" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="118"/><attvalue for="n3" value="Beisebol"/><attvalue for="n4" value="Los Angeles Dodgers × Cincinnati Reds"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-144.4328" y="373.0136" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m107" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="125"/><attvalue for="n3" value="Beisebol"/><attvalue for="n4" value="San Francisco Giants × St. Louis Cardinals"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-130.8640" y="377.9876" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m2670" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="22"/><attvalue for="n3" value="Beisebol"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-117.1244" y="382.4681" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m865" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="65"/><attvalue for="n3" value="Beisebol"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-103.2318" y="386.4495" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m1989" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="18"/><attvalue for="n3" value="Beisebol"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-89.2045" y="389.9263" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m6861" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="compartilhado"/><attvalue for="n2" value="8"/><attvalue for="n3" value="Beisebol"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="0" g="158" b="115"/><viz:position x="-75.0608" y="392.8942" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m380" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="exclusivo"/><attvalue for="n2" value="33"/><attvalue for="n3" value="Beisebol"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="189" g="189" b="189"/><viz:position x="-60.8191" y="395.3493" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m393" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="exclusivo"/><attvalue for="n2" value="115"/><attvalue for="n3" value="Beisebol"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="189" g="189" b="189"/><viz:position x="-46.4980" y="397.2882" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m822" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="exclusivo"/><attvalue for="n2" value="38"/><attvalue for="n3" value="Beisebol"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="189" g="189" b="189"/><viz:position x="-32.1162" y="398.7086" z="0.0"/><viz:size value="3.0000"/></node>
+<node id="m1907" label=""><attvalues><attvalue for="n0" value="mercado"/><attvalue for="n1" value="exclusivo"/><attvalue for="n2" value="44"/><attvalue for="n3" value="Beisebol"/><attvalue for="n4" value="indeterminado"/></attvalues><viz:color r="189" g="189" b="189"/><viz:position x="-17.6925" y="399.6085" z="0.0"/><viz:size value="3.0000"/></node>
+</nodes>
+<edges>
+<edge id="0" source="w1507" target="m0" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="1" source="w1507" target="m8" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="2" source="w1507" target="m14" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="3" source="w1507" target="m22" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="4" source="w1507" target="m36" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="5" source="w1507" target="m37" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="6" source="w1507" target="m40" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="7" source="w1507" target="m41" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="8" source="w1507" target="m48" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="9" source="w1507" target="m59" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="10" source="w1507" target="m65" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="11" source="w1507" target="m68" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="12" source="w1507" target="m70" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="13" source="w1507" target="m74" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="14" source="w1507" target="m80" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="15" source="w1507" target="m86" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="16" source="w1507" target="m100" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="17" source="w1507" target="m103" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="18" source="w1507" target="m107" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="19" source="w1507" target="m121" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="20" source="w1507" target="m132" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="21" source="w1507" target="m134" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="22" source="w1507" target="m144" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="23" source="w1507" target="m155" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="24" source="w1507" target="m160" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="25" source="w1507" target="m169" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="26" source="w1507" target="m197" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="27" source="w1507" target="m201" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="28" source="w1507" target="m238" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="29" source="w1507" target="m266" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="30" source="w1507" target="m279" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="31" source="w1507" target="m280" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="32" source="w1507" target="m290" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="33" source="w1507" target="m297" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="34" source="w1507" target="m303" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="35" source="w1507" target="m306" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="36" source="w1507" target="m314" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="37" source="w1507" target="m316" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="38" source="w1507" target="m319" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="39" source="w1507" target="m346" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="40" source="w1507" target="m377" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="41" source="w1507" target="m380" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="42" source="w1507" target="m393" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="43" source="w1507" target="m413" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="44" source="w1507" target="m426" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="45" source="w1507" target="m427" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="46" source="w1507" target="m436" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="47" source="w1507" target="m453" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="48" source="w1507" target="m454" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="49" source="w1507" target="m460" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="50" source="w1507" target="m479" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="51" source="w1507" target="m519" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="52" source="w1507" target="m525" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="53" source="w1507" target="m544" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="54" source="w1507" target="m586" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="55" source="w1507" target="m611" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="56" source="w1507" target="m758" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="57" source="w1507" target="m763" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="58" source="w1507" target="m768" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="59" source="w1507" target="m773" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="60" source="w1507" target="m786" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="61" source="w1507" target="m788" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="62" source="w1507" target="m803" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="63" source="w1507" target="m822" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="64" source="w1507" target="m839" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="65" source="w1507" target="m841" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="66" source="w1507" target="m865" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="67" source="w1507" target="m868" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="68" source="w1507" target="m870" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="69" source="w1507" target="m875" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="70" source="w1507" target="m884" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="71" source="w1507" target="m914" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="72" source="w1507" target="m916" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="73" source="w1507" target="m926" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="74" source="w1507" target="m935" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="75" source="w1507" target="m957" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="76" source="w1507" target="m1003" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="77" source="w1507" target="m1026" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="78" source="w1507" target="m1051" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="79" source="w1507" target="m1078" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="80" source="w1507" target="m1083" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="81" source="w1507" target="m1090" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="82" source="w1507" target="m1102" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="83" source="w1507" target="m1138" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="84" source="w1507" target="m1148" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="85" source="w1507" target="m1191" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="86" source="w1507" target="m1222" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="87" source="w1507" target="m1235" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="88" source="w1507" target="m1255" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="89" source="w1507" target="m1257" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="90" source="w1507" target="m1264" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="91" source="w1507" target="m1308" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="92" source="w1507" target="m1314" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="93" source="w1507" target="m1364" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="94" source="w1507" target="m1420" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="95" source="w1507" target="m1436" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="96" source="w1507" target="m1498" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="97" source="w1507" target="m1585" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="98" source="w1507" target="m1617" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="99" source="w1507" target="m1622" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="100" source="w1507" target="m1686" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="101" source="w1507" target="m1792" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="102" source="w1507" target="m1844" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="103" source="w1507" target="m1869" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="104" source="w1507" target="m1900" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="105" source="w1507" target="m1907" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="106" source="w1507" target="m1964" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="107" source="w1507" target="m1989" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="108" source="w1507" target="m2030" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="109" source="w1507" target="m2050" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="110" source="w1507" target="m2052" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="111" source="w1507" target="m2059" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="112" source="w1507" target="m2062" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="113" source="w1507" target="m2117" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="114" source="w1507" target="m2134" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="115" source="w1507" target="m2210" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="116" source="w1507" target="m2269" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="117" source="w1507" target="m2298" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="118" source="w1507" target="m2320" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="119" source="w1507" target="m2654" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="120" source="w1507" target="m2670" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="121" source="w1507" target="m2771" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="122" source="w1507" target="m2815" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="123" source="w1507" target="m2947" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="124" source="w1507" target="m2958" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="125" source="w1507" target="m2976" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="126" source="w1507" target="m3027" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="127" source="w1507" target="m3092" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="128" source="w1507" target="m3475" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="129" source="w1507" target="m3488" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="130" source="w1507" target="m3682" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="131" source="w1507" target="m3709" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="132" source="w1507" target="m3775" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="133" source="w1507" target="m3805" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="134" source="w1507" target="m3934" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="135" source="w1507" target="m3982" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="136" source="w1507" target="m4045" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="137" source="w1507" target="m4067" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="138" source="w1507" target="m4070" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="139" source="w1507" target="m4076" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="140" source="w1507" target="m4213" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="141" source="w1507" target="m4228" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="142" source="w1507" target="m4233" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="143" source="w1507" target="m4413" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="144" source="w1507" target="m4506" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="145" source="w1507" target="m4569" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="146" source="w1507" target="m5091" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="147" source="w1507" target="m5145" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="148" source="w1507" target="m5271" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="149" source="w1507" target="m5296" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="150" source="w1507" target="m5386" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="151" source="w1507" target="m5513" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="152" source="w1507" target="m5601" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="153" source="w1507" target="m5761" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="154" source="w1507" target="m6130" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="155" source="w1507" target="m6162" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="156" source="w1507" target="m6774" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="157" source="w1507" target="m6861" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="158" source="w1507" target="m7127" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="159" source="w1507" target="m7895" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="160" source="w1507" target="m7954" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="161" source="w1507" target="m8049" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="162" source="w1507" target="m8525" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="163" source="w1507" target="m8776" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="164" source="w1507" target="m9144" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="165" source="w1507" target="m9380" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="166" source="w1507" target="m9466" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="167" source="w1507" target="m9634" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="168" source="w1507" target="m15368" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="169" source="w1507" target="m16540" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="170" source="w1507" target="m16597" weight="1.0000"><viz:color r="178" g="24" b="43" a="0.500"/></edge>
+<edge id="171" source="w1844" target="m14" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="172" source="w1844" target="m22" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="173" source="w1844" target="m36" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="174" source="w1844" target="m48" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="175" source="w1844" target="m59" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="176" source="w1844" target="m65" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="177" source="w1844" target="m68" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="178" source="w1844" target="m70" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="179" source="w1844" target="m74" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="180" source="w1844" target="m80" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="181" source="w1844" target="m86" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="182" source="w1844" target="m107" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="183" source="w1844" target="m155" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="184" source="w1844" target="m169" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="185" source="w1844" target="m279" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="186" source="w1844" target="m297" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="187" source="w1844" target="m306" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="188" source="w1844" target="m316" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="189" source="w1844" target="m319" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="190" source="w1844" target="m426" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="191" source="w1844" target="m436" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="192" source="w1844" target="m453" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="193" source="w1844" target="m454" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="194" source="w1844" target="m586" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="195" source="w1844" target="m773" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="196" source="w1844" target="m803" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="197" source="w1844" target="m865" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="198" source="w1844" target="m916" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="199" source="w1844" target="m926" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="200" source="w1844" target="m1026" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="201" source="w1844" target="m1148" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="202" source="w1844" target="m1235" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="203" source="w1844" target="m1255" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="204" source="w1844" target="m1308" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="205" source="w1844" target="m1964" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="206" source="w1844" target="m1989" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="207" source="w1844" target="m2030" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="208" source="w1844" target="m2670" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="209" source="w1844" target="m2815" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="210" source="w1844" target="m3092" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="211" source="w1844" target="m5091" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="212" source="w7825" target="m8" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="213" source="w7825" target="m14" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="214" source="w7825" target="m36" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="215" source="w7825" target="m48" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="216" source="w7825" target="m65" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="217" source="w7825" target="m68" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="218" source="w7825" target="m74" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="219" source="w7825" target="m80" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="220" source="w7825" target="m86" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="221" source="w7825" target="m107" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="222" source="w7825" target="m121" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="223" source="w7825" target="m134" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="224" source="w7825" target="m169" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="225" source="w7825" target="m316" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="226" source="w7825" target="m453" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="227" source="w7825" target="m460" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="228" source="w7825" target="m926" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="229" source="w7825" target="m1148" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="230" source="w7825" target="m1498" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="231" source="w7825" target="m1686" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="232" source="w7825" target="m1900" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="233" source="w7825" target="m2670" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="234" source="w7825" target="m6861" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="235" source="w8299" target="m0" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="236" source="w8299" target="m37" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="237" source="w8299" target="m40" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="238" source="w8299" target="m41" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="239" source="w8299" target="m59" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="240" source="w8299" target="m70" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="241" source="w8299" target="m103" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="242" source="w8299" target="m132" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="243" source="w8299" target="m144" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="244" source="w8299" target="m155" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="245" source="w8299" target="m160" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="246" source="w8299" target="m197" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="247" source="w8299" target="m201" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="248" source="w8299" target="m238" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="249" source="w8299" target="m266" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="250" source="w8299" target="m279" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="251" source="w8299" target="m280" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="252" source="w8299" target="m290" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="253" source="w8299" target="m303" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="254" source="w8299" target="m306" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="255" source="w8299" target="m314" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="256" source="w8299" target="m319" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="257" source="w8299" target="m346" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="258" source="w8299" target="m377" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="259" source="w8299" target="m426" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="260" source="w8299" target="m427" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="261" source="w8299" target="m454" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="262" source="w8299" target="m479" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="263" source="w8299" target="m586" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="264" source="w8299" target="m611" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="265" source="w8299" target="m758" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="266" source="w8299" target="m763" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="267" source="w8299" target="m788" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="268" source="w8299" target="m803" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="269" source="w8299" target="m839" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="270" source="w8299" target="m868" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="271" source="w8299" target="m870" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="272" source="w8299" target="m875" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="273" source="w8299" target="m884" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="274" source="w8299" target="m916" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="275" source="w8299" target="m935" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="276" source="w8299" target="m957" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="277" source="w8299" target="m1003" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="278" source="w8299" target="m1026" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="279" source="w8299" target="m1051" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="280" source="w8299" target="m1078" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="281" source="w8299" target="m1083" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="282" source="w8299" target="m1090" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="283" source="w8299" target="m1102" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="284" source="w8299" target="m1235" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="285" source="w8299" target="m1255" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="286" source="w8299" target="m1257" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="287" source="w8299" target="m1264" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="288" source="w8299" target="m1314" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="289" source="w8299" target="m1436" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="290" source="w8299" target="m1622" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="291" source="w8299" target="m1792" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="292" source="w8299" target="m1844" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="293" source="w8299" target="m1869" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="294" source="w8299" target="m1964" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="295" source="w8299" target="m2052" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="296" source="w8299" target="m2059" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="297" source="w8299" target="m2062" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="298" source="w8299" target="m2117" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="299" source="w8299" target="m2210" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="300" source="w8299" target="m2269" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="301" source="w8299" target="m2320" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="302" source="w8299" target="m2654" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="303" source="w8299" target="m2771" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="304" source="w8299" target="m2947" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="305" source="w8299" target="m2958" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="306" source="w8299" target="m2976" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="307" source="w8299" target="m3027" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="308" source="w8299" target="m3488" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="309" source="w8299" target="m3682" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="310" source="w8299" target="m3709" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="311" source="w8299" target="m3775" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="312" source="w8299" target="m3805" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="313" source="w8299" target="m3934" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="314" source="w8299" target="m3982" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="315" source="w8299" target="m4045" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="316" source="w8299" target="m4076" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="317" source="w8299" target="m4213" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="318" source="w8299" target="m4228" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="319" source="w8299" target="m4233" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="320" source="w8299" target="m4413" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="321" source="w8299" target="m4506" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="322" source="w8299" target="m5145" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="323" source="w8299" target="m5386" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="324" source="w8299" target="m5513" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="325" source="w8299" target="m5601" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="326" source="w8299" target="m5761" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="327" source="w8299" target="m6130" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="328" source="w8299" target="m7127" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="329" source="w8299" target="m8049" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="330" source="w8299" target="m8525" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="331" source="w8299" target="m8776" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="332" source="w8299" target="m9144" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="333" source="w8299" target="m9380" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="334" source="w8299" target="m9466" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+<edge id="335" source="w8299" target="m9634" weight="1.0000"><viz:color r="106" g="61" b="154" a="0.500"/></edge>
+</edges>
+</graph>
+</gexf>

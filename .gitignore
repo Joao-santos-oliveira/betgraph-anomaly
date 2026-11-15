@@ -11,3 +11,12 @@ __pycache__/
 .pytest_cache/
 .ruff_cache/
 .vscode/
+
+# Gephi headless: classes compiladas, argfiles e perfil temporário
+visualizacao_gephi/java/build/
+figuras/gephi/*_gephi.log
+# Rede global: arquivos > 50 MB, compartilhados fora do Git (regeneráveis com visualizacao_gephi.figuras)
+figuras/gephi_global.svg
+figuras/gephi/gephi_global_preview.svg
+figuras/recortes/gephi_global/gephi_global.gexf
+figuras/recortes/gephi_global/gephi_global_fa2.gexf

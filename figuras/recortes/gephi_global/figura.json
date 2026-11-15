@@ -1,0 +1,47 @@
+{
+  "titulo": "Rede bipartida completa do dia",
+  "figura": "gephi_global",
+  "universo": {
+    "carteiras": 27039,
+    "mercados": 16693,
+    "nos": 43732,
+    "arestas": 229072
+  },
+  "cobertura": "total do dia (sem divisão de treino)",
+  "filtros": "nenhum; nenhum componente removido",
+  "layout": {
+    "algoritmo": "ForceAtlas2",
+    "software": "Gephi 0.10.1 (bibliotecas do aplicativo instalado)",
+    "layout": "fa2",
+    "iter": 2500,
+    "iterAjuste": 150,
+    "linlog": "true",
+    "scaling": 1.0,
+    "gravity": 0.5,
+    "dissuade": "true",
+    "theta": 1.2,
+    "threads": 8,
+    "weightInfluence": 0.0,
+    "pdf": "false"
+  },
+  "codificacao": {
+    "cor": "azul=carteira, laranja=mercado, anel vermelho=cinco líderes",
+    "forma": "círculo=carteira, quadrado=mercado",
+    "tamanho": "área ∝ (log10(1+grau))²",
+    "arestas": "cinza, 0,08 pt, opacidade 3,5%"
+  },
+  "arquivo_completo": "figuras/gephi/gephi_global.gephi e recortes/gephi_global/{gephi_global.gexf,nos.csv,arestas.csv}",
+  "renderizacao": "totalmente vetorial",
+  "largura_cm": 17.5,
+  "altura_cm": 13.0,
+  "arquivos": {
+    "pdf": "gephi_global.pdf",
+    "svg": "gephi_global.svg",
+    "png": "gephi_global.png"
+  },
+  "bytes": {
+    "pdf": 7502228,
+    "svg": 65236082,
+    "png": 9930271
+  }
+}

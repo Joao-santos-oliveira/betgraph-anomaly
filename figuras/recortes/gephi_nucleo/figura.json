@@ -1,0 +1,95 @@
+{
+  "titulo": "Núcleo das cinco líderes — dois painéis",
+  "figura": "gephi_nucleo",
+  "universo": {
+    "A": "5 carteiras + 144 mercados comuns às cinco = 149 nós, 720 arestas",
+    "B": "5 carteiras, 10 pares; peso = |mercados(a) ∩ mercados(b)| com todas as participações do dia"
+  },
+  "seed": "cobertura total; líderes da seed 42",
+  "ids": [
+    17762,
+    18767,
+    20748,
+    18753,
+    17487
+  ],
+  "pesos": {
+    "17762-18767": 160,
+    "17762-20748": 160,
+    "17762-18753": 155,
+    "17762-17487": 160,
+    "18767-20748": 158,
+    "18767-18753": 154,
+    "18767-17487": 154,
+    "20748-18753": 156,
+    "20748-17487": 156,
+    "18753-17487": 153
+  },
+  "modalidade_evento": {
+    "CS2": {
+      "mercados": 42,
+      "eventos": 25,
+      "indeterminados": 0
+    },
+    "Dota 2": {
+      "mercados": 16,
+      "eventos": 5,
+      "indeterminados": 0
+    },
+    "Futebol": {
+      "mercados": 60,
+      "eventos": 30,
+      "indeterminados": 19
+    },
+    "LoL": {
+      "mercados": 12,
+      "eventos": 5,
+      "indeterminados": 0
+    },
+    "Luta (MMA)": {
+      "mercados": 2,
+      "eventos": 2,
+      "indeterminados": 0
+    },
+    "Outros esports": {
+      "mercados": 1,
+      "eventos": 1,
+      "indeterminados": 0
+    },
+    "Rocket League": {
+      "mercados": 3,
+      "eventos": 3,
+      "indeterminados": 0
+    },
+    "Tênis": {
+      "mercados": 2,
+      "eventos": 2,
+      "indeterminados": 0
+    },
+    "Valorant": {
+      "mercados": 6,
+      "eventos": 5,
+      "indeterminados": 0
+    }
+  },
+  "regra_evento": "pergunta \"A vs B\" → evento; pergunta que cita uma equipe de um único evento com as mesmas tags → esse evento; senão indeterminado (não significa ausência de evento). Correspondência: recortes/gephi_nucleo/correspondencia_mercado_evento.csv",
+  "layout": "A: anel determinístico (modalidade → evento; lacuna de 4° entre modalidades e 0,9° entre eventos), carteiras em pentágono r=0,3; B: pentágono regular. Mesmas coordenadas no projeto Gephi 0.10.1",
+  "codificacao": {
+    "cor": "vermelho=17762; azul=demais líderes; laranja=mercado; vazado=evento indeterminado; faixa=modalidade",
+    "tamanho": "carteiras ∝ log10(1+grau global)",
+    "espessura": "B: linear em 153–160",
+    "rotulos": "IDs internos e pesos; sem setas"
+  },
+  "largura_cm": 17.5,
+  "altura_cm": 10.0,
+  "arquivos": {
+    "pdf": "gephi_nucleo.pdf",
+    "svg": "gephi_nucleo.svg",
+    "png": "gephi_nucleo.png"
+  },
+  "bytes": {
+    "pdf": 89912,
+    "svg": 330576,
+    "png": 2536944
+  }
+}

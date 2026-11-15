@@ -1,0 +1,46 @@
+Id,Label,Tipo,Papel,GrauGlobal,Modalidade,Evento,x,y,size,color
+w16179,16179,carteira,foco,41,,,0.0,0.0,12.0,#B2182B
+w16469,16469,carteira,parceiro,41,,,3.061616997868383e-17,0.5,9.0,#6A3D9A
+w17181,17181,carteira,parceiro,42,,,-0.4330127018922193,-0.25000000000000006,9.0,#6A3D9A
+w16795,16795,carteira,parceiro,43,,,0.4330127018922192,-0.2500000000000002,9.0,#6A3D9A
+m123,,mercado,compartilhado,165,CS2,ALKA × Turma do Pagode,0.09881143448715198,0.9951061754479223,3.0,#009E73
+m302,,mercado,compartilhado,323,CS2,ALKA × Turma do Pagode,0.2421284127418911,0.9702442124244248,3.0,#009E73
+m1331,,mercado,compartilhado,111,CS2,ALKA × Turma do Pagode,0.38032246867841546,0.9248539451277459,3.0,#009E73
+m395,,mercado,compartilhado,336,CS2,Bounty Hunters Esports × Yawara Esports,0.510469709948095,0.8598957350897304,3.0,#009E73
+m706,,mercado,compartilhado,128,CS2,Bounty Hunters Esports × Yawara Esports,0.6298164976887893,0.7767439598986446,3.0,#009E73
+m1063,,mercado,compartilhado,165,CS2,Bounty Hunters Esports × Yawara Esports,0.7358377076674497,0.6771579342920769,3.0,#009E73
+m770,,mercado,compartilhado,122,CS2,paiN × Turma do Pagode,0.826290156539118,0.5632446867983398,3.0,#009E73
+m1507,,mercado,compartilhado,131,CS2,paiN × Turma do Pagode,0.8992600628362889,0.4374143794934888,3.0,#009E73
+m3465,,mercado,compartilhado,95,CS2,BLUEJAYS.de × Regnum4Games,0.9532035385150329,0.30232931409709535,3.0,#009E73
+m1883,,mercado,compartilhado,146,CS2,Honvéd × ENCE,0.9869792543428685,0.1608476033293483,3.0,#009E73
+m549,,mercado,compartilhado,357,CS2,Teletubisie × ex,0.9998725879982402,0.01596269932378114,3.0,#009E73
+m506,,mercado,compartilhado,211,Dota 2,Direborn × Team Nemesis,0.9834868332576727,-0.18097969170267314,3.0,#009E73
+m642,,mercado,compartilhado,208,Dota 2,Direborn × Team Nemesis,0.9468274560464134,-0.3217417729743485,3.0,#009E73
+m923,,mercado,compartilhado,226,Dota 2,Direborn × Team Nemesis,0.8901352233302962,-0.45569648252616973,3.0,#009E73
+m1074,,mercado,compartilhado,175,Dota 2,Direborn × Team Nemesis,0.8146096221953761,-0.5800096235638739,3.0,#009E73
+m1407,,mercado,compartilhado,150,Dota 2,Direborn × Team Nemesis,0.7218486137535657,-0.6920509943797896,3.0,#009E73
+m215,,mercado,compartilhado,377,LoL,Meavedron × eSuba,0.5716569891649044,-0.8204927097414799,3.0,#009E73
+m230,,mercado,compartilhado,332,LoL,Meavedron × eSuba,0.44657873733349257,-0.8947443385468407,3.0,#009E73
+m272,,mercado,compartilhado,340,LoL,Meavedron × eSuba,0.3120518290870042,-0.9500650798568776,3.0,#009E73
+m402,,mercado,compartilhado,358,LoL,Meavedron × eSuba,0.17092256772727835,-0.9852844644271592,3.0,#009E73
+m482,,mercado,compartilhado,344,LoL,Meavedron × eSuba,0.026176948307872695,-0.9996573249755573,3.0,#009E73
+m496,,mercado,compartilhado,108,LoL,The Ruddy Sack × Verdant,-0.11912251967143811,-0.9928795623373098,3.0,#009E73
+m819,,mercado,compartilhado,177,LoL,The Ruddy Sack × Verdant,-0.26190160845313115,-0.9650945795566686,3.0,#009E73
+m899,,mercado,compartilhado,215,LoL,The Ruddy Sack × Verdant,-0.3991394161438226,-0.9168902477834348,3.0,#009E73
+m1116,,mercado,compartilhado,245,LoL,The Ruddy Sack × Verdant,-0.5279322825742655,-0.8492864681695605,3.0,#009E73
+m1192,,mercado,compartilhado,274,LoL,The Ruddy Sack × Verdant,-0.6455552245737867,-0.7637135929296321,3.0,#009E73
+m102,,mercado,compartilhado,244,LoL,9z Globant × Fuego,-0.749519590819397,-0.6619821621297085,3.0,#009E73
+m882,,mercado,compartilhado,94,LoL,9z Globant × Fuego,-0.8376257164055723,-0.5462445965097064,3.0,#009E73
+m893,,mercado,compartilhado,99,LoL,9z Globant × Fuego,-0.9080094630759807,-0.41894965683775076,3.0,#009E73
+m1529,,mercado,compartilhado,165,LoL,9z Globant × Fuego,-0.9591816604248277,-0.2827906333397033,3.0,#009E73
+m356,,mercado,compartilhado,201,LoL,Esprit Shōnen × Skillcamp Esport,-0.9900596135758615,-0.14064836140537068,3.0,#009E73
+m634,,mercado,compartilhado,226,LoL,Esprit Shōnen × Skillcamp Esport,-0.999990010703564,0.004469730762137181,3.0,#009E73
+m847,,mercado,compartilhado,124,LoL,Esprit Shōnen × Skillcamp Esport,-0.9887627457220853,0.14949325293177254,3.0,#009E73
+m298,,mercado,compartilhado,236,LoL,Pyramid IV Esports × JSK Esports,-0.9566153636832216,0.2913538157725372,3.0,#009E73
+m1056,,mercado,compartilhado,83,LoL,Pyramid IV Esports × JSK Esports,-0.9042280348282683,0.42704995144667557,3.0,#009E73
+m1359,,mercado,compartilhado,86,Outros esports,999 × Elevate,-0.8025889899739266,0.5965324074789503,3.0,#009E73
+m1218,,mercado,compartilhado,111,Outros esportes,Barbados Tridents × Jamaica Kingsmen,-0.6696049939649367,0.7427174106328848,3.0,#009E73
+m185,,mercado,compartilhado,189,Política,indeterminado,-0.5104697099480945,0.8598957350897306,3.0,#009E73
+m600,,mercado,compartilhado,216,Política,indeterminado,-0.38032246867841474,0.9248539451277462,3.0,#009E73
+m1358,,mercado,compartilhado,57,Política,indeterminado,-0.24212841274189034,0.970244212424425,3.0,#009E73
+m7147,,mercado,compartilhado,47,Política,indeterminado,-0.09881143448715099,0.9951061754479225,3.0,#009E73

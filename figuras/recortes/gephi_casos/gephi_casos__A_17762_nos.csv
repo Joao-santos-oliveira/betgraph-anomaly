@@ -1,0 +1,176 @@
+Id,Label,Tipo,Papel,GrauGlobal,Modalidade,Evento,x,y,size,color
+w17762,17762,carteira,foco,171,,,0.0,0.0,12.0,#B2182B
+w17487,17487,carteira,parceiro,166,,,3.061616997868383e-17,0.5,9.0,#6A3D9A
+w18767,18767,carteira,parceiro,166,,,-0.4330127018922193,-0.25000000000000006,9.0,#6A3D9A
+w20748,20748,carteira,parceiro,169,,,0.4330127018922192,-0.2500000000000002,9.0,#6A3D9A
+m454,,mercado,compartilhado,294,Futebol,AC Milan × Sport Lisboa e Benfica,0.04316052275818725,0.9990681504658429,3.0,#009E73
+m803,,mercado,compartilhado,254,Futebol,AC Milan × Sport Lisboa e Benfica,0.07708537774684732,0.9970244954551648,3.0,#009E73
+m2048,,mercado,compartilhado,33,Futebol,AC Milan × Sport Lisboa e Benfica,0.11092119355002703,0.9938292050555958,3.0,#009E73
+m620,,mercado,compartilhado,115,Futebol,AC Milan × Sport Lisboa e Benfica,0.1446288873537446,0.9894859700586046,3.0,#009E73
+m155,,mercado,compartilhado,148,Futebol,AS Omónoia Leukosías × RC Celta de Vigo,0.178169524334193,0.98399980721468,3.0,#009E73
+m513,,mercado,compartilhado,136,Futebol,AS Omónoia Leukosías × RC Celta de Vigo,0.21150436263027544,0.9773770534386209,3.0,#009E73
+m198,,mercado,compartilhado,55,Futebol,AS Omónoia Leukosías × RC Celta de Vigo,0.24459489809325805,0.9696253584899421,3.0,#009E73
+m1188,,mercado,compartilhado,67,Futebol,Portuguesa FC × Estudiantes de Merida,0.2774029087618443,0.9607536761368483,3.0,#009E73
+m1236,,mercado,compartilhado,45,Futebol,Portuguesa FC × Estudiantes de Merida,0.30989049901130605,0.9507722538139844,3.0,#009E73
+m1410,,mercado,compartilhado,58,Futebol,Portuguesa FC × Estudiantes de Merida,0.3420201433256686,0.9396926207859084,3.0,#009E73
+m306,,mercado,compartilhado,120,Futebol,SK Puntigamer Sturm Graz × Stade Rennais FC 1901,0.37375472964239614,0.9275275748299558,3.0,#009E73
+m563,,mercado,compartilhado,159,Futebol,SK Puntigamer Sturm Graz × Stade Rennais FC 1901,0.40505760221950804,0.9142911674538822,3.0,#009E73
+m1235,,mercado,compartilhado,109,Futebol,SK Puntigamer Sturm Graz × Stade Rennais FC 1901,0.4358926039756102,0.8999986876653554,3.0,#009E73
+m1165,,mercado,compartilhado,48,Futebol,AS Áris Thessaloníkis × GS Markó,0.46622411825394,0.884666644312046,3.0,#009E73
+m902,,mercado,compartilhado,46,Futebol,AS Áris Thessaloníkis × GS Markó,0.4960171099621792,0.8683127470127151,3.0,#009E73
+m1255,,mercado,compartilhado,151,Futebol,Ararat-Armenia FA × AC Sparta Praha,0.5252371660405201,0.8509558857013231,3.0,#009E73
+m1502,,mercado,compartilhado,93,Futebol,Ararat-Armenia FA × AC Sparta Praha,0.5538505352112368,0.8326161088077906,3.0,#009E73
+m586,,mercado,compartilhado,166,Futebol,Bayer 04 Leverkusen × NK Celje,0.5818241669638532,0.813314600100612,3.0,#009E73
+m1671,,mercado,compartilhado,26,Futebol,Bayer 04 Leverkusen × NK Celje,0.609125749730871,0.793073654218071,3.0,#009E73
+m1239,,mercado,compartilhado,107,Futebol,Borneo Samarinda × Dewa United,0.6357237482099676,0.7719166509163212,3.0,#009E73
+m2844,,mercado,compartilhado,72,Futebol,Borneo Samarinda × Dewa United,0.6615874397895505,0.7498680280640774,3.0,#009E73
+m480,,mercado,compartilhado,169,Futebol,CA Nacional Potosí × Club Always Ready,0.686686950035595,0.7269532534151094,3.0,#009E73
+m1880,,mercado,compartilhado,71,Futebol,CA Nacional Potosí × Club Always Ready,0.7109932871987761,0.7031987951911456,3.0,#009E73
+m589,,mercado,compartilhado,82,Futebol,GS Níki Vólou × AGS Astéras Trípolis,0.7344783757020351,0.6786320915091624,3.0,#009E73
+m759,,mercado,compartilhado,47,Futebol,GS Níki Vólou × AGS Astéras Trípolis,0.7571150885699017,0.6532815186883751,3.0,#009E73
+m226,,mercado,compartilhado,274,Futebol,LDU de Quito × SE Palmeiras,0.778877278762112,0.6271763584735375,3.0,#009E73
+m1420,,mercado,compartilhado,147,Futebol,LDU de Quito × SE Palmeiras,0.7997398093753307,0.6003467642124088,3.0,#009E73
+m195,,mercado,compartilhado,334,Futebol,Port FC × Vissel Kobe,0.8196785826780923,0.5728237260264571,3.0,#009E73
+m1237,,mercado,compartilhado,66,Futebol,Port FC × Vissel Kobe,0.8386705679454236,0.5446390350150276,3.0,#009E73
+m671,,mercado,compartilhado,475,Futebol,São Paulo FC × CA Boca Juniors,0.8566938280609959,0.5158252465343246,3.0,#009E73
+m710,,mercado,compartilhado,194,Futebol,São Paulo FC × CA Boca Juniors,0.8737275448560814,0.4864156425936201,3.0,#009E73
+m630,,mercado,compartilhado,152,Futebol,AE Kifisiás × Panathinaikós AO,0.8897520431560427,0.4564441934121272,3.0,#009E73
+m1067,,mercado,compartilhado,108,Futebol,Botafogo FR × Grêmio FBPA,0.9047488135065833,0.4259455181809402,3.0,#009E73
+m90,,mercado,compartilhado,255,Futebol,CA Mineiro × Santos FC,0.9187005335535048,0.3949548450753652,3.0,#009E73
+m1176,,mercado,compartilhado,146,Futebol,CR Brasil × SC Recife,0.9315910880512787,0.36350797056383066,3.0,#009E73
+m72,,mercado,compartilhado,355,Futebol,Club Atlético de Madrid × CA Osasuna,0.943405587477321,0.3316412180603777,3.0,#009E73
+m5433,,mercado,compartilhado,46,Futebol,Club Puebla × Deportivo Toluca FC,0.9541303852304667,0.29939139596849024,3.0,#009E73
+m1867,,mercado,compartilhado,88,Futebol,Clube Náutico Capibaribe × Operário Ferroviário EC,0.9637530933937816,0.2667957551647271,3.0,#009E73
+m53,,mercado,compartilhado,482,Futebol,Coventry City FC × Aston Villa FC,0.9722625970435016,0.2338919459712662,3.0,#009E73
+m843,,mercado,compartilhado,150,Futebol,FK Spartak Moskva × FK Fakel Voronezh,0.9796490670875737,0.20071797466705987,3.0,#009E73
+m462,,mercado,compartilhado,202,Futebol,Fleetwood Town FC × Sheffield United FC,0.9859039716189681,0.16731215958783419,3.0,#009E73
+m872,,mercado,compartilhado,95,Futebol,Kidderminster Harriers FC × Gateshead FC,0.9910200857706476,0.13371308686564043,3.0,#009E73
+m870,,mercado,compartilhado,125,Futebol,MH Hapoel Be'er Sheva × GNK Dinamo Zagreb,0.9949915000608115,0.0999595658590823,3.0,#009E73
+m936,,mercado,compartilhado,102,Futebol,Monagas SC × Zamora FC,0.9978136272187745,0.06609058432570038,3.0,#009E73
+m377,,mercado,compartilhado,157,Futebol,Olympiakós SFP × Jagiellonia Białystok,0.9994832074835961,0.032145263388292857,3.0,#009E73
+m109,,mercado,compartilhado,98,Futebol,Once Caldas × CD Tolima,0.9999983123693401,-0.0018371876528101225,3.0,#009E73
+m58,,mercado,compartilhado,242,Futebol,RC Deportivo A Coruña × Sevilla FC,0.9993583468926153,-0.035817516609323766,3.0,#009E73
+m66,,mercado,compartilhado,162,Futebol,RSC Anderlecht × Olympique Lyonnais,0.9975640502598243,-0.06975647374412437,3.0,#009E73
+m801,,mercado,compartilhado,108,Futebol,Sunderland AFC × AZ,0.9946174950133269,-0.10361485710753404,3.0,#009E73
+m3042,,mercado,compartilhado,24,Futebol,Union Espanola × Deportes Temuco,0.9905220846375034,-0.13735355781840725,3.0,#009E73
+m37,,mercado,compartilhado,250,Futebol,indeterminado,0.9852825496274845,-0.17093360523771658,3.0,#009E73
+m59,,mercado,compartilhado,358,Futebol,indeterminado,0.9789049420250869,-0.20431621198245897,3.0,#009E73
+m104,,mercado,compartilhado,786,Futebol,indeterminado,0.9713966284282679,-0.2374628187278877,3.0,#009E73
+m125,,mercado,compartilhado,487,Futebol,indeterminado,0.9627662814821712,-0.27033513874632087,3.0,#009E73
+m143,,mercado,compartilhado,288,Futebol,indeterminado,0.9530238698615958,-0.30289520213108034,3.0,#009E73
+m144,,mercado,compartilhado,242,Futebol,indeterminado,0.9421806467564547,-0.33510539965447983,3.0,#009E73
+m150,,mercado,compartilhado,312,Futebol,indeterminado,0.9302491368735274,-0.3669285262092023,3.0,#009E73
+m179,,mercado,compartilhado,456,Futebol,indeterminado,0.9172431219695176,-0.3983278237828894,3.0,#009E73
+m183,,mercado,compartilhado,82,Futebol,indeterminado,0.9031776249321279,-0.42926702391630367,3.0,#009E73
+m197,,mercado,compartilhado,226,Futebol,indeterminado,0.8880688924275381,-0.4597103895960215,3.0,#009E73
+m319,,mercado,compartilhado,134,Futebol,indeterminado,0.8719343761343303,-0.48962275653326826,3.0,#009E73
+m387,,mercado,compartilhado,169,Futebol,indeterminado,0.8547927125855396,-0.5189695737812141,3.0,#009E73
+m459,,mercado,compartilhado,164,Futebol,indeterminado,0.8366637016421092,-0.5477169436438165,3.0,#009E73
+m492,,mercado,compartilhado,119,Futebol,indeterminado,0.8175682836226204,-0.5758316608301098,3.0,#009E73
+m507,,mercado,compartilhado,64,Futebol,indeterminado,0.7975285151157095,-0.6032812508087181,3.0,#009E73
+m632,,mercado,compartilhado,245,Futebol,indeterminado,0.7765675435031144,-0.6300340073182864,3.0,#009E73
+m679,,mercado,compartilhado,144,Futebol,indeterminado,0.7547095802227728,-0.6560590289905064,3.0,#009E73
+m730,,mercado,compartilhado,151,Futebol,indeterminado,0.7319798728028626,-0.6813262550434301,3.0,#009E73
+m855,,mercado,compartilhado,72,Futebol,indeterminado,0.7084046756990796,-0.7058065000038479,3.0,#009E73
+m1908,,mercado,compartilhado,30,Futebol,indeterminado,0.684011219968844,-0.7294714874186199,3.0,#009E73
+m983,,mercado,compartilhado,137,Futebol,indeterminado,0.658827681817459,-0.7522938825160238,3.0,#009E73
+m1672,,mercado,compartilhado,90,Futebol,indeterminado,0.6328831500525562,-0.7742473237793939,3.0,#009E73
+m1015,,mercado,exclusivo,166,Futebol,indeterminado,0.6062075924844205,-0.7953064533965777,3.0,#BDBDBD
+m97,,mercado,compartilhado,457,CS2,Nemiga × Team Nemesis,0.5353613567038616,-0.8446231217224642,3.0,#009E73
+m142,,mercado,compartilhado,286,CS2,Nemiga × Team Nemesis,0.5063506500250718,-0.8623276750859775,3.0,#009E73
+m282,,mercado,compartilhado,258,CS2,Nemiga × Team Nemesis,0.4767550717303738,-0.8790361776282966,3.0,#009E73
+m670,,mercado,compartilhado,149,CS2,Nemiga × Team Nemesis,0.44660880685280796,-0.8947293298207628,3.0,#009E73
+m302,,mercado,compartilhado,323,CS2,ALKA × Turma do Pagode,0.41594667650823824,-0.909389004937794,3.0,#009E73
+m1331,,mercado,compartilhado,111,CS2,ALKA × Turma do Pagode,0.3848040976744471,-0.9229982699945621,3.0,#009E73
+m123,,mercado,compartilhado,165,CS2,ALKA × Turma do Pagode,0.35321704228196316,-0.9355414053058164,3.0,#009E73
+m729,,mercado,compartilhado,220,CS2,Lavked × Honvéd,0.32122199566388193,-0.9470039226432555,3.0,#009E73
+m794,,mercado,compartilhado,135,CS2,Lavked × Honvéd,0.288855914412667,-0.9573725819704793,3.0,#009E73
+m1279,,mercado,compartilhado,143,CS2,Lavked × Honvéd,0.25615618369261295,-0.9666354067361884,3.0,#009E73
+m1274,,mercado,compartilhado,329,CS2,Lavked × Saint Sinners,0.2231605740572783,-0.9747816977079669,3.0,#009E73
+m1644,,mercado,compartilhado,156,CS2,Lavked × Saint Sinners,0.1899071978217635,-0.9818020453306693,3.0,#009E73
+m2929,,mercado,compartilhado,81,CS2,Lavked × Saint Sinners,0.15643446504023267,-0.9876883405951374,3.0,#009E73
+m191,,mercado,compartilhado,215,CS2,UPGRADE × Team Nemesis,0.12278103913952175,-0.9924337844046923,3.0,#009E73
+m369,,mercado,compartilhado,164,CS2,UPGRADE × Team Nemesis,0.08898579226008642,-0.9960328954285821,3.0,#009E73
+m799,,mercado,exclusivo,115,CS2,UPGRADE × Team Nemesis,0.05508776035586729,-0.9984815164333162,3.0,#BDBDBD
+m757,,mercado,compartilhado,161,CS2,ex-RUSTEC × Nexus,0.02112609810494177,-0.9997768190845697,3.0,#009E73
+m931,,mercado,compartilhado,289,CS2,ex-RUSTEC × Nexus,-0.012859966316960998,-0.9999173072141149,3.0,#009E73
+m1240,,mercado,compartilhado,175,CS2,ex-RUSTEC × Nexus,-0.04683117654784053,-0.9989028185480032,3.0,#009E73
+m184,,mercado,compartilhado,587,CS2,Black Phoenix × ENCE,-0.08074829338336022,-0.9967345248940035,3.0,#009E73
+m574,,mercado,compartilhado,255,CS2,Black Phoenix × ENCE,-0.11457214010096756,-0.9934149307880792,3.0,#009E73
+m441,,mercado,compartilhado,250,CS2,CYBERSHOKE Esports × Nemiga,-0.1482636477118399,-0.9889478706014688,3.0,#009E73
+m232,,mercado,compartilhado,325,CS2,CYBERSHOKE Esports × Nemiga,-0.18178390008839337,-0.9833385041117088,3.0,#009E73
+m1546,,mercado,compartilhado,153,CS2,Inner Circle Prospect × Eternal Fire Academy,-0.21509417891522298,-0.9765933105427183,3.0,#009E73
+m1675,,mercado,compartilhado,94,CS2,Inner Circle Prospect × Eternal Fire Academy,-0.2481560084115571,-0.9687200810808265,3.0,#009E73
+m189,,mercado,compartilhado,536,CS2,Just Players × NAVI Junior,-0.2809311997735674,-0.9597279098753896,3.0,#009E73
+m318,,mercado,compartilhado,324,CS2,Just Players × NAVI Junior,-0.31338189528519705,-0.9496271835343899,3.0,#009E73
+m2146,,mercado,compartilhado,89,CS2,MEIA NOITE × Los Niños,-0.34547061204656226,-0.9384295691271528,3.0,#009E73
+m3847,,mercado,compartilhado,74,CS2,MEIA NOITE × Los Niños,-0.3771602852694102,-0.9261480007080386,3.0,#009E73
+m1088,,mercado,compartilhado,194,CS2,Rush × Grêmio Esports,-0.40841431108963144,-0.9127966643766736,3.0,#009E73
+m2005,,mercado,compartilhado,90,CS2,Rush × Grêmio Esports,-0.43919658884736823,-0.8983909818919799,3.0,#009E73
+m549,,mercado,compartilhado,357,CS2,Teletubisie × ex,-0.469471562785889,-0.8829475928589279,3.0,#009E73
+m2106,,mercado,compartilhado,98,CS2,Teletubisie × ex,-0.4992042631210558,-0.8664843355085905,3.0,#009E73
+m571,,mercado,compartilhado,96,CS2,UPGRADE × WRAITH PCIFIC,-0.5283603464339569,-0.8490202260936951,3.0,#009E73
+m835,,mercado,compartilhado,76,CS2,UPGRADE × WRAITH PCIFIC,-0.5569061353400367,-0.830575436923477,3.0,#009E73
+m770,,mercado,compartilhado,122,CS2,paiN × Turma do Pagode,-0.5848086573889119,-0.8111712730632036,3.0,#009E73
+m1507,,mercado,compartilhado,131,CS2,paiN × Turma do Pagode,-0.6120356831499332,-0.790830147725284,3.0,#009E73
+m3465,,mercado,compartilhado,95,CS2,BLUEJAYS.de × Regnum4Games,-0.638555763439512,-0.7695755563803868,3.0,#009E73
+m2149,,mercado,compartilhado,163,CS2,Banger Gang × ZOTIX,-0.6643382656471987,-0.7474320496184734,3.0,#009E73
+m395,,mercado,compartilhado,336,CS2,Bounty Hunters Esports × Yawara Esports,-0.6893534091185641,-0.7244252047910906,3.0,#009E73
+m1096,,mercado,compartilhado,120,CS2,Color × Honvéd,-0.7135722995540091,-0.7005815964676801,3.0,#009E73
+m545,,mercado,compartilhado,341,CS2,Drama eSports × mellren,-0.7369669623837686,-0.6759287657400306,3.0,#009E73
+m1883,,mercado,compartilhado,146,CS2,Honvéd × ENCE,-0.759510375080564,-0.6504951884103226,3.0,#009E73
+m5514,,mercado,compartilhado,61,CS2,Huskies eSport × Sissi State Punks,-0.7811764983725756,-0.62431024209952,3.0,#009E73
+m781,,mercado,compartilhado,179,CS2,MEIA NOITE × Semente do Mal,-0.8019403063206852,-0.597404172314092,3.0,#009E73
+m669,,mercado,compartilhado,254,CS2,OldMix × EAC Extra,-0.8217778152252438,-0.5698080575102682,3.0,#009E73
+m449,,mercado,compartilhado,407,CS2,QUAZAR × ex,-0.8406661113289806,-0.5415537731961712,3.0,#009E73
+m2412,,mercado,compartilhado,82,CS2,QUINTESSÊNCIA × Peak Agency,-0.8585833772840494,-0.5126739551133017,3.0,#009E73
+m287,,mercado,compartilhado,507,CS2,SPARTA × BakS eSports,-0.8755089173526417,-0.4832019615398981,3.0,#009E73
+m506,,mercado,compartilhado,211,Dota 2,Direborn × Team Nemesis,-0.9139186981376256,-0.4058972938988723,3.0,#009E73
+m642,,mercado,compartilhado,208,Dota 2,Direborn × Team Nemesis,-0.9271838545667865,-0.3746065934159143,3.0,#009E73
+m923,,mercado,compartilhado,226,Dota 2,Direborn × Team Nemesis,-0.9393780465975852,-0.3428831952290826,3.0,#009E73
+m1074,,mercado,compartilhado,175,Dota 2,Direborn × Team Nemesis,-0.9504871890564421,-0.3107637421572588,3.0,#009E73
+m1407,,mercado,compartilhado,150,Dota 2,Direborn × Team Nemesis,-0.9604984500804955,-0.2782853344913561,3.0,#009E73
+m592,,mercado,compartilhado,297,Dota 2,Inner Circle × uralan,-0.9694002659393298,-0.24548548714080165,3.0,#009E73
+m598,,mercado,compartilhado,183,Dota 2,Inner Circle × uralan,-0.9771823543919219,-0.21240208630110108,3.0,#009E73
+m1013,,mercado,compartilhado,223,Dota 2,Inner Circle × uralan,-0.9838357265633721,-0.17907334569254463,3.0,#009E73
+m231,,mercado,compartilhado,458,Dota 2,Yellow Submarine × Two Move,-0.9893526973277054,-0.14553776242059616,3.0,#009E73
+m539,,mercado,compartilhado,268,Dota 2,Yellow Submarine × Two Move,-0.9937268941847464,-0.11183407250895411,3.0,#009E73
+m541,,mercado,compartilhado,178,Dota 2,Yellow Submarine × Two Move,-0.9969532646208192,-0.07800120615664066,3.0,#009E73
+m246,,mercado,compartilhado,306,Dota 2,Zero Tenacity × PuckChamp,-0.9990280819447658,-0.044078242770807914,3.0,#009E73
+m251,,mercado,compartilhado,339,Dota 2,Zero Tenacity × PuckChamp,-0.999948949592543,-0.010104365827198054,3.0,#009E73
+m299,,mercado,compartilhado,334,Dota 2,Zero Tenacity × PuckChamp,-0.9997148038954281,0.023881182389607142,3.0,#009E73
+m692,,mercado,compartilhado,112,Dota 2,BALU × Team Synapse,-0.9983259153086328,0.057839146113860956,3.0,#009E73
+m4185,,mercado,compartilhado,78,Dota 2,BALU × Team Synapse,-0.9957838880989077,0.0917303014419007,3.0,#009E73
+m215,,mercado,compartilhado,377,LoL,Meavedron × eSuba,-0.9841630575516908,0.17726555263363358,3.0,#009E73
+m230,,mercado,compartilhado,332,LoL,Meavedron × eSuba,-0.9775709277594051,0.21060646048878895,3.0,#009E73
+m272,,mercado,compartilhado,340,LoL,Meavedron × eSuba,-0.9698496328556401,0.24370410265274617,3.0,#009E73
+m482,,mercado,compartilhado,344,LoL,Meavedron × eSuba,-0.9610080914943498,0.27652024895545607,3.0,#009E73
+m899,,mercado,compartilhado,215,LoL,The Ruddy Sack × Verdant,-0.9510565162951545,0.30901699437494434,3.0,#009E73
+m1116,,mercado,compartilhado,245,LoL,The Ruddy Sack × Verdant,-0.9400064020470257,0.34115680282035354,3.0,#009E73
+m1192,,mercado,compartilhado,274,LoL,The Ruddy Sack × Verdant,-0.9278705124309736,0.37290255048884086,3.0,#009E73
+m819,,mercado,compartilhado,177,LoL,The Ruddy Sack × Verdant,-0.9146628652770729,0.4042175687462573,3.0,#009E73
+m356,,mercado,compartilhado,201,LoL,Esprit Shōnen × Skillcamp Esport,-0.9003987163728548,0.43506568648207056,3.0,#009E73
+m634,,mercado,compartilhado,226,LoL,Esprit Shōnen × Skillcamp Esport,-0.8850945418417706,0.4654112718896118,3.0,#009E73
+m218,,mercado,compartilhado,167,LoL,Esprit Shōnen × Skillcamp Esport,-0.8687680191120759,0.49521927362339174,3.0,#009E73
+m102,,mercado,compartilhado,244,LoL,9z Globant × Fuego,-0.8514380064981237,0.5244552612859376,3.0,#009E73
+m1529,,mercado,compartilhado,165,LoL,9z Globant × Fuego,-0.8331245214176476,0.5530854651973922,3.0,#009E73
+m298,,mercado,compartilhado,236,LoL,Pyramid IV Esports × JSK Esports,-0.8138487172701969,0.5810768154019356,3.0,#009E73
+m1369,,mercado,compartilhado,101,Valorant,Team Falcons VEGA × FULL SENSE SISU,-0.7607041750359325,0.6490987275314144,3.0,#009E73
+m1571,,mercado,compartilhado,156,Valorant,Team Falcons VEGA × FULL SENSE SISU,-0.7382075266383287,0.6745736784180963,3.0,#009E73
+m1329,,mercado,compartilhado,134,Valorant,Nova Esports GC × Havoc & Yonder GC,-0.7148581951663393,0.6992694479265656,3.0,#009E73
+m688,,mercado,compartilhado,106,Valorant,Rising Esports GC × wiwiwi,-0.690683150786247,0.7231575106572442,3.0,#009E73
+m3095,,mercado,compartilhado,93,Valorant,Yew Reign Gaming × 101 Outlaws,-0.6657103174224515,0.7462102741702896,3.0,#009E73
+m3681,,mercado,compartilhado,94,Valorant,swaglord9000 × Sasanqua,-0.6399685405033189,0.768401110856857,3.0,#009E73
+m4309,,mercado,compartilhado,53,Rocket League,NRG Esports × Bigodes,-0.571316855940207,0.8207295840400763,3.0,#009E73
+m2721,,mercado,compartilhado,66,Rocket League,Ninjas in Pyjamas × FURIA Esports,-0.543097320653291,0.8396697566896264,3.0,#009E73
+m6404,,mercado,compartilhado,53,Rocket League,Ninjas in Pyjamas × FUT Esports,-0.5142504686886724,0.8576400500521654,3.0,#009E73
+m3407,,mercado,compartilhado,50,Rocket League,Twisted Minds × FUT Esports,-0.48480962024633995,0.8746197071393942,3.0,#009E73
+m1359,,mercado,compartilhado,86,Outros esports,999 × Elevate,-0.4075756490420464,0.9131714462837494,3.0,#009E73
+m2277,,mercado,compartilhado,51,Outros esports,Daystar × Fury,-0.37630937194783853,0.9264940672148005,3.0,#009E73
+m2330,,mercado,compartilhado,64,Outros esports,Dolphin Esport × Sharper Esport,-0.3446084303174213,0.9387465205017609,3.0,#009E73
+m1637,,mercado,compartilhado,73,Outros esports,Weibo Gaming × F5 Esports,-0.31250944103073003,0.9499146536750871,3.0,#009E73
+m1036,,mercado,compartilhado,33,Tênis,Sloane Stephens × Janice Tjen,-0.229423920046755,0.9733265972480051,3.0,#009E73
+m590,,mercado,compartilhado,53,Tênis,Zeynep Sonmez × Iva Jovic,-0.19621637292214014,0.9805606228057905,3.0,#009E73
+m93,,mercado,compartilhado,79,Luta (MMA),Dana White's Contender Series: Ednilson Santos × Akbar Abdullaev,-0.11092119355003045,0.9938292050555954,3.0,#009E73
+m1776,,mercado,compartilhado,85,Luta (MMA),Dana White's Contender Series: Oscar Ravello × Igor Cavalcanti,-0.07708537774685098,0.9970244954551645,3.0,#009E73
+m811,,mercado,compartilhado,123,Luta (MMA),Dana White's Contender Series: Zevan Hunt × Mayton Perea,-0.04316052275819025,0.9990681504658427,3.0,#009E73
