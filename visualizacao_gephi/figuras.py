@@ -397,7 +397,7 @@ def fig_intervencao(com_gephi=True):
         axq.text(0.085, 0.992, titulos[d], fontsize=8.5, va='top')
         linhas = [('mercados novos comuns', f'{n_novos} / 20'),
                   ('arestas p/ mercados novos', f'{n_ar_novos}'),
-                  ('trocas acumuladas', f'{trocas}'),
+                  ('trocas', f'{trocas}'),
                   ('mercados comuns aos 5', f'{comuns5}'),
                   ('arestas no recorte', f'{len(E)}')]
         y = 0.87
@@ -592,7 +592,7 @@ def fig_global(com_gephi=True, rasterizar_arestas=None):
         legenda_marcadores(axl, [
             ('carteira', 'o', COR['carteira'], COR['carteira'], 5), ('mercado', 's', COR['mercado'], COR['mercado'], 4.5),
             ('cinco líderes', 'o', 'white', COR['foco'], 6.5),
-            ('aresta (coparticipação; 3,5% de opacidade)', 'linha', '#5F6B7A', 0.8, 0.6)],
+            ('aresta (participação; 3,5% de opacidade)', 'linha', '#5F6B7A', 0.8, 0.6)],
             loc='upper left', bbox_to_anchor=(0.0, 1.0), ncol=4, columnspacing=1.3)
         axl.text(0.0, 0.2, 'Vista de contexto da rede completa (cobertura total). Com 229.072 arestas o núcleo satura visualmente;\n'
                  'a exportação completa (.gephi, GEXF, CSV) acompanha a figura. A proximidade no desenho não indica relação '

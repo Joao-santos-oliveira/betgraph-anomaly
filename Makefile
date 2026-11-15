@@ -11,7 +11,7 @@ ajuda:
 	@echo "artigo: refazer o estudo completo a partir dos dois CSVs brutos"
 	@echo "artigo-original: treinar só o dia real (3 seeds)"
 	@echo "dados-artigo RODADA=<pasta>: extrair da execução os dados das tabelas e gráficos"
-	@echo "figuras-ambiente | tabelas | graficos | graficos-publicacao | conteudo (os três)"
+	@echo "figuras-ambiente | tabelas | graficos | graficos-publicacao | conteudo (tabelas + publicação)"
 	@echo "benchmark REPETICOES=3: tempo e memória por etapa (depende da máquina)"
 
 ambiente:
@@ -60,7 +60,7 @@ graficos:
 graficos-publicacao:
 	$(PYTHON_FIGURAS) -B -m experimentos.conteudo.graficos_publicacao $(GRAFICOS_OPCOES)
 
-conteudo: tabelas graficos graficos-publicacao
+conteudo: tabelas graficos-publicacao
 
 # Único alvo que depende da máquina: tempo e pico de memória por etapa (Linux ou WSL).
 REPETICOES ?= 3

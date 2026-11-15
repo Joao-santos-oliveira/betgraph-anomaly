@@ -43,7 +43,7 @@ condition_node_id,question,tags,modalidade,evento,regra_evento,grau_global
 387,Will Jeonbuk FC win on 2026-09-16?,[Sports Soccer Games AFC Champions League Elite],Futebol,indeterminado,indeterminado,169
 395,Counter-Strike: Bounty Hunters Esports vs Yawara Esports (BO3) - Circuit X Curitiba Group B,[Sports Esports Games counter strike 2],CS2,Bounty Hunters Esports × Yawara Esports,pergunta_vs,336
 441,Counter-Strike: CYBERSHOKE Esports vs Nemiga - Map 2 Winner,[Sports Esports Games counter strike 2],CS2,CYBERSHOKE Esports × Nemiga,pergunta_vs,250
-449,Counter-Strike: QUAZAR vs ex-RUSTEC (BO3) - NODWIN Clutch Series Group Stage,[Sports Esports Games counter strike 2],CS2,QUAZAR × ex,pergunta_vs,407
+449,Counter-Strike: QUAZAR vs ex-RUSTEC (BO3) - NODWIN Clutch Series Group Stage,[Sports Esports Games counter strike 2],CS2,QUAZAR × ex-RUSTEC,pergunta_vs,407
 454,AC Milan vs. Sport Lisboa e Benfica: O/U 2.5,[Sports Soccer Games UEL],Futebol,AC Milan × Sport Lisboa e Benfica,pergunta_vs,294
 459,Will FC Lugano win on 2026-09-16?,[Sports Soccer Games Switzerland Super League],Futebol,indeterminado,indeterminado,164
 462,Will Sheffield United FC win on 2026-09-16?,[Sports Soccer Games Carabao Cup EFL Cup],Futebol,Fleetwood Town FC × Sheffield United FC,nome_equipe,202
@@ -56,7 +56,7 @@ condition_node_id,question,tags,modalidade,evento,regra_evento,grau_global
 539,Dota 2: Yellow Submarine vs Two Move - Game 2 Winner,[Sports Esports Games Dota 2],Dota 2,Yellow Submarine × Two Move,pergunta_vs,268
 541,Dota 2: Yellow Submarine vs Two Move - Game 1 Winner,[Sports Esports Games Dota 2],Dota 2,Yellow Submarine × Two Move,pergunta_vs,178
 545,Counter-Strike: Drama eSports vs mellren (BO3) - European Pro League Series 9 Group A,[Sports Esports Games counter strike 2],CS2,Drama eSports × mellren,pergunta_vs,341
-549,Counter-Strike: Teletubisie vs ex-Zero Tenacity (BO3) - Exort Fiesta Group Stage,[Sports Esports Games counter strike 2],CS2,Teletubisie × ex,pergunta_vs,357
+549,Counter-Strike: Teletubisie vs ex-Zero Tenacity (BO3) - Exort Fiesta Group Stage,[Sports Esports Games counter strike 2],CS2,Teletubisie × ex-Zero Tenacity,pergunta_vs,357
 563,SK Puntigamer Sturm Graz vs. Stade Rennais FC 1901: O/U 2.5,[Sports Soccer Games UEL],Futebol,SK Puntigamer Sturm Graz × Stade Rennais FC 1901,pergunta_vs,159
 571,Counter-Strike: UPGRADE vs WRAITH PCIFIC - Map 1 Winner,[Sports Esports Games counter strike 2],CS2,UPGRADE × WRAITH PCIFIC,pergunta_vs,96
 586,Spread: Bayer 04 Leverkusen (-2.5),[Sports Soccer Games UEL],Futebol,Bayer 04 Leverkusen × NK Celje,nome_equipe,166
@@ -129,7 +129,7 @@ condition_node_id,question,tags,modalidade,evento,regra_evento,grau_global
 1908,LDU de Quito leading at halftime?,[Sports Soccer Games Copa Libertadores],Futebol,indeterminado,indeterminado,30
 2005,Counter-Strike: Rush vs Grêmio Esports - Map 1 Winner,[Sports Esports Games counter strike 2],CS2,Rush × Grêmio Esports,pergunta_vs,90
 2048,AC Milan vs. Sport Lisboa e Benfica: Draw at halftime?,[Sports Soccer Games UEL],Futebol,AC Milan × Sport Lisboa e Benfica,pergunta_vs,33
-2106,Counter-Strike: Teletubisie vs ex-Zero Tenacity - Map 1 Winner,[Sports Esports Games counter strike 2],CS2,Teletubisie × ex,pergunta_vs,98
+2106,Counter-Strike: Teletubisie vs ex-Zero Tenacity - Map 1 Winner,[Sports Esports Games counter strike 2],CS2,Teletubisie × ex-Zero Tenacity,pergunta_vs,98
 2146,Counter-Strike: MEIA NOITE vs Los Niños (BO3) - CCT South America Challengers #3 Playoffs,[Sports Esports Games counter strike 2],CS2,MEIA NOITE × Los Niños,pergunta_vs,89
 2412,Counter-Strike: QUINTESSÊNCIA vs Peak Agency (BO3) - CCT South America Challengers #3 Playoffs,[Sports Esports Games counter strike 2],CS2,QUINTESSÊNCIA × Peak Agency,pergunta_vs,82
 2721,Rocket League: Ninjas in Pyjamas vs FURIA Esports (BO5) - RLCS World Championship Group B,[Sports Esports Games Rocket League],Rocket League,Ninjas in Pyjamas × FURIA Esports,pergunta_vs,66

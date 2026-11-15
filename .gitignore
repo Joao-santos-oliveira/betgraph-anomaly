@@ -20,3 +20,9 @@ figuras/gephi_global.svg
 figuras/gephi/gephi_global_preview.svg
 figuras/recortes/gephi_global/gephi_global.gexf
 figuras/recortes/gephi_global/gephi_global_fa2.gexf
+
+# Exportações exploratórias substituídas pelas figuras de publicação
+entrega/graficos/
+entrega/graficos_publicacao/comparacao.html
+figuras/gephi/*_preview.pdf
+figuras/gephi/*_preview.svg

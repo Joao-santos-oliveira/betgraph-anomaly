@@ -1,0 +1,9 @@
+# O painel apresenta a pesquisa; não integra a implementação dos algoritmos.
+docs/** linguist-documentation
+assets/** linguist-documentation
+
+# Exportações dos experimentos e das visualizações.
+entrega/** linguist-generated
+figuras/** linguist-generated
+resultados/** linguist-generated
+benchmark/** linguist-generated

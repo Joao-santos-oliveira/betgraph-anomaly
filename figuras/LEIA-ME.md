@@ -5,12 +5,11 @@
 | `gephi_casos.{pdf,svg,png}` | Casos e controles, 4 painéis |
 | `gephi_nucleo.{pdf,svg,png}` | Núcleo das cinco líderes, 2 painéis |
 | `gephi_intervencao.{pdf,svg,png}` | Intervenção artificial, 4 condições |
-| `gephi_global.{pdf,svg,png}` | Rede bipartida completa do dia |
+| `gephi_global.{pdf,png}` | Rede bipartida completa do dia |
 | `LEGENDAS.md` | Legendas propostas e números de cada figura |
 | `gephi/*.gephi` | Projetos nativos do Gephi 0.10.1 (um por painel; mesmas coordenadas da figura) |
-| `gephi/*_preview.{pdf,svg}` | Prévia renderizada pelo próprio Gephi (sem PDF para a rede global, ver LEGENDAS) |
 | `gephi/*_posicoes.csv` | Coordenadas finais lidas do Gephi |
-| `recortes/<figura>/` | Listas de nós e arestas de cada recorte, GEXF, `manifesto.json` (universo, filtros, layout, codificação) e `figura.json` (tamanho, arquivos) |
+| `recortes/<figura>/` | Listas de nós e arestas de cada recorte, GEXF, `figura.json` (universo, layout, tamanho e arquivos); a rede global também inclui `manifesto.json` |
 
 PDF vetorial com fontes TrueType embutidas, SVG com texto editável e PNG de 600 dpi só para pré-visualização.
 
@@ -51,10 +50,14 @@ python -B -m visualizacao_gephi.intervencao_wsl /caminho/para/data/execucoes/<ro
   pelo Gephi.
 - Dois contornos para o modo sem interface do Gephi 0.10.1: o projeto é salvo sobre um arquivo pré-criado
   (a limpeza do `SaveTask` apaga o destino quando ele não existia) e o PDF nativo é desligado para a rede
-  global (exportador quadrático no número de arestas).
+  global (limitação observada no exportador utilizado).
 - Rede global: `gephi/gephi_global_posicoes_fa2.csv` traz as coordenadas brutas do ForceAtlas2. Ao reabrir o
   GEXF, o importador do Gephi reescala as posições: o `.gephi` e `gephi_global_posicoes.csv` são uma reescala
   uniforme exata delas (fator 0,005656 nos dois eixos, mais translação; resíduo < 0,001). A figura normaliza
   as coordenadas, então o desenho é o mesmo.
 - Modalidade: regra explícita por tags (`visualizacao_gephi/comum.py::modalidade`). Evento: regra textual
   registrada (`comum.py::eventos`), com categoria “indeterminado” preservada.
+
+As prévias nativas do Gephi são intermediárias regeneráveis e não são versionadas. Os projetos `.gephi`, coordenadas e figuras finais permanecem disponíveis. O roteiro inicial foi consolidado neste guia e em `LEGENDAS.md`.
+
+Em Linux, com pandas, numpy, matplotlib e networkx instalados, as coordenadas já versionadas permitem recompor as figuras sem Gephi: `python -m visualizacao_gephi.figuras casos nucleo intervencao global --sem-gephi`.

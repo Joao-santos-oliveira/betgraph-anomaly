@@ -29,6 +29,13 @@ class RegraModalidade(unittest.TestCase):
         self.assertEqual(ev.regra_evento[1], 'nome_equipe')
         self.assertEqual(ev.evento[2], 'indeterminado')
 
+    def test_evento_preserva_hifen_no_nome(self):
+        df = pd.DataFrame({'question': ['Counter-Strike: QUAZAR vs ex-RUSTEC (BO3) - Group Stage',
+                                        'Counter-Strike: Teletubisie vs ex-Zero Tenacity - Map 1 Winner'],
+                           'tags': ['[Sports Esports Games counter strike 2]'] * 2})
+        self.assertEqual(comum.eventos(df).evento.tolist(),
+                         ['QUAZAR × ex-RUSTEC', 'Teletubisie × ex-Zero Tenacity'])
+
 
 class Layout(unittest.TestCase):
     def test_anel_cobre_todos_e_respeita_grupos(self):
@@ -88,7 +95,8 @@ class Intervencao(unittest.TestCase):
 class Entregas(unittest.TestCase):
     def test_arquivos_e_largura(self):
         for nome in ('gephi_global', 'gephi_nucleo', 'gephi_casos', 'gephi_intervencao'):
-            for ext in ('pdf', 'svg', 'png'):
+            # O SVG global excede o limite de distribuição; PDF e PNG preservam a figura.
+            for ext in (('pdf', 'png') if nome == 'gephi_global' else ('pdf', 'svg', 'png')):
                 self.assertTrue((comum.FIGURAS / f'{nome}.{ext}').exists(), f'{nome}.{ext}')
             info = json.loads((comum.RECORTES / nome / 'figura.json').read_text(encoding='utf-8'))
             self.assertAlmostEqual(info['largura_cm'], 17.5, places=1)

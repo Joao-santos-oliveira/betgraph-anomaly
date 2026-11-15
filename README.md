@@ -8,9 +8,11 @@
 
 ## Painel interativo
 
-O [painel público no GitHub Pages](https://joao-santos-oliveira.github.io/betgraph-anomaly/) reúne uma leitura guiada da metodologia, o ranking de 27.039 carteiras, os testes artificiais e 17 gráficos e tabelas com downloads. A biblioteca também apresenta as quatro figuras de grafos recebidas do Gephi, com links para os PDFs, recortes e legendas. Os esquemas da GNN são didáticos.
+O [painel público no GitHub Pages](https://joao-santos-oliveira.github.io/betgraph-anomaly/) reúne uma leitura guiada da metodologia, o ranking de 27.039 carteiras, os testes artificiais e 17 gráficos e tabelas com downloads. A biblioteca também apresenta as quatro figuras de grafos revisadas, com links para os PDFs, recortes e legendas. Os esquemas da GNN são didáticos.
 
 O site está em [`docs/`](docs/), separado dos scripts e resultados científicos. O Pages publica a pasta `/docs` da branch `main`, sem instalar dependências ou executar os experimentos. Para atualizar a apresentação, edite os arquivos dessa pasta e envie o commit à `main`; os dados em `docs/data.js` e os arquivos de `docs/downloads/` são uma cópia dos resultados conferidos em 15/11/2026 e precisam acompanhar futuras revisões dos resultados. Para visualizar localmente, abra `docs/index.html` ou execute `python3 -m http.server --directory docs 8000`.
+
+O [artigo em PDF](docs/downloads/artigo.pdf) está disponível para revisão dos autores, com 14 páginas e os quatro grafos incorporados. As fontes LaTeX e o ZIP do Overleaf não fazem parte deste repositório.
 
 ## Estudo principal
 
@@ -114,12 +116,21 @@ betgraph-anomaly/
 │       ├── posicoes_dia_real.csv      # Posições de todas as carteiras
 │       ├── resumo.csv                 # Recuperação por método e intensidade
 │       └── por_realizacao_seed.csv    # Contagens por sorteio e seed
+├── entrega/                           # Tabelas e gráficos oficiais para publicação
+├── figuras/                           # Grafos finais, projetos Gephi e recortes auditáveis
+├── visualizacao_gephi/                # Geração e composição dos grafos
+├── benchmark/                        # Tempos, memória e hardware das execuções
+├── docs/                             # Painel GitHub Pages e seus arquivos de download
 ├── tests/                             # Testes da preparação, dos modelos e da ablação
 ├── assets/                            # Banner do README
 ├── mapeamento_*.json                  # IDs de carteiras, mercados e resultados
 ├── requirements.txt                   # Versões das dependências
 └── Makefile                           # Comandos de instalação, teste e reprodução
 ```
+
+As figuras de publicação estão em [entrega/graficos_publicacao](entrega/graficos_publicacao/), as tabelas em [entrega/tabelas](entrega/tabelas/) e os grafos em [figuras](figuras/LEIA-ME.md). `make conteudo` gera tabelas e gráficos oficiais; `make graficos` mantém a exportação exploratória como saída local. Os resultados numéricos ficam em `resultados/`.
+
+`docs/` contém cópias necessárias à hospedagem do painel pelo Pages: miniaturas leves e PDFs de download. Do manuscrito, apenas o [PDF para revisão](docs/downloads/artigo.pdf) é versionado; fontes LaTeX e ZIP do Overleaf ficam fora do repositório.
 
 ## Dados publicados
 
@@ -193,9 +204,18 @@ flowchart TD
 | `make ambiente` | Cria a pasta `.venv` e instala as versões das dependências fixadas em `requirements.txt`. |
 | `make validar` | Verifica as dependências e executa uma operação em CPU com propagação de gradientes no PyTorch Geometric. |
 | `make testes` | Executa os testes automatizados de preparação, divisão do grafo, treino e cálculo dos scores. |
-| `make artigo` | Executa o experimento completo a partir dos dois CSVs brutos e grava os resultados em uma nova pasta. |
+| `make artigo` | Reproduz o dia real e o teste de intensidades mistas a partir dos CSVs brutos. O teste pareado é executado separadamente com `make pareado`. |
 | `make pareado RODADA=data/execucoes/artigo-…` | Reutiliza a pasta de uma execução completa de `make artigo`, treina as três doses para os mesmos grupos e grava trajetórias em `pareado-*/resultados/`. Aceita `PROCESSOS=3`. |
 | `make reproduzir` | Atalho para `make artigo`. Basta executar um dos dois. |
+| `make artigo-original` | Executa somente o dia real nas três seeds, incluindo teste de ligações e cobertura total. |
+| `make dados-artigo RODADA=data/execucoes/artigo-…` | Extrai dados da execução para as tabelas e gráficos; atualiza os arquivos de resultados correspondentes. |
+| `make figuras-ambiente` | Instala o ambiente separado de tabelas e gráficos em `.venv-figuras`. |
+| `make tabelas` | Gera as tabelas T1–T6 em `entrega/tabelas/`. |
+| `make graficos-publicacao` | Gera os gráficos oficiais em `entrega/graficos_publicacao/`, com validação das fontes numéricas. |
+| `make conteudo` | Executa `tabelas` e `graficos-publicacao`, sem treinar os modelos. |
+| `make graficos` | Gera a apresentação exploratória antiga, como saída local ignorada pelo Git. |
+| `make benchmark REPETICOES=3` | Mede tempo e memória do pipeline do dia real na máquina utilizada; não inclui a bateria pareada. |
+
 
 Use `BRUTOS=/caminho/para/csvs` e `DESTINO=/caminho/para/execucoes` para escolher as pastas. O padrão é um processo de treino por vez. `make artigo PROCESSOS=3` permite treinar as três seeds em paralelo quando há memória disponível. Cada chamada cria uma pasta exclusiva e imprime a localização dos CSVs de resultados. O código do artigo fica em [experimentos/artigo](experimentos/artigo) e o modelo em [experimentos/gnn](experimentos/gnn).
 
@@ -205,14 +225,45 @@ Para reavaliar embeddings salvos de uma execução, use:
 .venv/bin/python -m experimentos.artigo.ablacao PASTA_DA_EXECUCAO PASTA_DE_SAIDA
 ```
 
+### Gerar tabelas, gráficos e grafos
+
+Para exportar novamente as tabelas e os gráficos usando os resultados já versionados, não é necessário repetir o treinamento:
+
+```bash
+make figuras-ambiente
+.venv-figuras/bin/python -c 'import kaleido; kaleido.get_chrome_sync()'
+make conteudo
+```
+
+A exportação de imagens precisa de Chrome/Chromium e suas bibliotecas de sistema. Sem navegador, use `make conteudo TABELAS_OPCOES=--sem-imagens GRAFICOS_OPCOES=--sem-imagens` para gerar os formatos textuais e interativos. O S4 lê os tempos de `benchmark/`; execute `make benchmark` se desejar substituí-los por medições da sua máquina.
+
+Os quatro grafos usam um fluxo separado, documentado em [figuras/LEIA-ME.md](figuras/LEIA-ME.md). Os projetos `.gephi`, recortes e coordenadas estão disponíveis para inspeção e recomposição. `make conteudo` não executa o Gephi nem recompila o manuscrito.
+
 ### Onde encontrar cada resultado
 
 | Pergunta | Arquivo publicado |
 |---|---|
-| Quais carteiras lideraram o ranking híbrido na seed 42? | [Top 100 do dia real](resultados/artigo/top100_dia_real.csv) |
+| Quais carteiras lideraram o ranking híbrido **no contexto** na seed 42? | [Top 100 do dia real](resultados/artigo/top100_dia_real.csv) |
 | Uma carteira mudou de posição entre métodos ou seeds? | [Posições de todas as carteiras](resultados/artigo/posicoes_dia_real.csv) |
 | Quantos alvos e controles apareceram em cada corte, antes e depois da intervenção? | [Resumo por intensidade](resultados/artigo/resumo.csv) |
 | Quanto o resultado variou de um sorteio ou treinamento para outro? | [Resultados por realização e seed](resultados/artigo/por_realizacao_seed.csv) |
+
+### Grafos e interpretação dos eventos
+
+A rede completa contém **43.732 vértices, 229.072 ligações e 16 componentes**; o maior reúne 43.666 vértices. As quatro figuras mostram a rede global, casos e controles de mesmo grau, o núcleo das cinco líderes e um grupo antes/depois da intervenção. [Figuras e instruções](figuras/LEIA-ME.md) · [Legendas e universos de cada painel](figuras/LEGENDAS.md).
+
+As cinco líderes compartilham 144 mercados. A regra textual usada no núcleo associa 125 mercados a **78 rótulos de confronto** (101 correspondências explícitas e 24 inferidas por nome de equipe), deixando 19 indeterminados. São agrupamentos heurísticos, não partidas verificadas externamente nem decisões estatisticamente independentes. A T6 utiliza uma regra mais conservadora, aplicada aos mercados de cada caso e controle; os universos e critérios não devem ser confundidos. [Correspondência mercado–evento do núcleo](figuras/recortes/gephi_nucleo/correspondencia_mercado_evento.csv).
+
+## Conclusões e limites
+
+A híbrida recuperou os padrões artificiais fortes e superou a similaridade isolada, mas **não demonstrou ganho incremental consistente sobre o detector relacional**. No teste pareado de maior intensidade, foram 36,67/50 alvos no top 100 para a híbrida e 37/50 para o relacional. O 50/50 do teste misto acumula alvos de três rankings e não é diretamente equivalente a essas médias por ranking.
+
+- Os testes artificiais aumentam a coparticipação, justamente o sinal capturado pela surpresa; não cobrem todas as formas de anomalia.
+- AUROC de previsão de ligações não mede detecção de fraude. Scores são prioridades relativas, não probabilidades de conduta ilícita.
+- O estudo cobre um dia, sem rótulos independentes de fraude. Carteiras não identificam necessariamente pessoas.
+- As operações agregadas não preservam a sequência de trades; as ligações representam participação, não contrapartes.
+- Maker/taker não está disponível e não foi substituído por volume ou frequência. Uma reextração com contagens por papel é uma melhoria futura.
+- Seeds e sorteios reutilizam a mesma base; não são repetições inteiramente independentes. O protocolo sintético retreina em cada cenário e não avalia um detector congelado diante de novos ataques.
 
 ## O que há nas outras branches
 
@@ -221,6 +272,8 @@ Para reavaliar embeddings salvos de uma execução, use:
 | [feat/gnn-v2-anomalias](https://github.com/Joao-santos-oliveira/betgraph-anomaly/tree/feat/gnn-v2-anomalias) | Desenvolvimento histórico do modelo principal, com treino contrastivo, score híbrido e Isolation Forest sobre embeddings. |
 | [feat/gnn-v3-anomalias](https://github.com/Joao-santos-oliveira/betgraph-anomaly/tree/feat/gnn-v3-anomalias) | Experimento com atributos de aresta, incluindo lado escolhido, horário e valor, além dos controles sintéticos. |
 | [feat/evidencias-artigo](https://github.com/Joao-santos-oliveira/betgraph-anomaly/tree/feat/evidencias-artigo) | Benchmark anterior na coorte de 5.000 carteiras, com tabelas comparativas, figuras, subgrafos e comprovantes de reprodução. |
+
+A `main` contém o estudo atual com GNN híbrida, relacional e ablação de similaridade; MLP e Isolation Forest não fazem parte dos comparadores deste protocolo. As branches abaixo preservam experimentos históricos.
 
 A comparação anterior de escalas e o resumo da revisão descritiva podem ser consultadas no [histórico da main](https://github.com/Joao-santos-oliveira/betgraph-anomaly/tree/e976ca3/resultados).
 

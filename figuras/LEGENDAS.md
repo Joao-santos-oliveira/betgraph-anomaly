@@ -1,9 +1,9 @@
 # Legendas das figuras de grafos (prontas para o LaTeX)
 
 Os nomes dos arquivos são os esperados pelo manuscrito. Todas as figuras têm 17,5 cm de largura, fundo
-branco, texto ≥ 8 pt na impressão, ligações sem setas (coparticipação) e identificadores internos (sem
+branco, texto ≥ 8 pt na impressão, ligações sem setas (participação no bipartido; coparticipação na projeção) e identificadores internos (sem
 endereço ou identificação civil). Os parâmetros completos de cada figura estão em
-`recortes/<figura>/manifesto.json` e `recortes/<figura>/figura.json`.
+`recortes/<figura>/figura.json`; a rede global também tem `manifesto.json`.
 
 Ordem de prioridade de interpretação: casos e controles → núcleo das líderes → intervenção → vista global.
 
@@ -11,7 +11,7 @@ Ordem de prioridade de interpretação: casos e controles → núcleo das líder
 
 ## `gephi_casos.pdf` — Casos e controles (quatro painéis, 17,5 × 10 cm)
 
-**Legenda proposta.** Vizinhança de quatro carteiras com o mesmo número de mercados, no grafo de cobertura
+**Legenda proposta.** Vizinhança de dois pares de carteiras com o mesmo número de mercados dentro de cada par, no grafo de cobertura
 total do dia e com o score híbrido da seed 42. (A) caso estável 17762 e (B) seu controle 1507, ambos com
 171 mercados; (C) caso entrante 16179 e (D) seu controle 53, ambos com 41 mercados. Em cada painel aparecem
 o foco (centro, vermelho), seus três parceiros de maior contribuição ao score (roxo), todos os mercados do
@@ -90,6 +90,6 @@ indica relação entre carteiras nem sustenta conclusões. A exportação comple
 (`gephi/gephi_global.gephi`, `recortes/gephi_global/{gephi_global.gexf, nos.csv, arestas.csv}`).
 
 **Limitação de renderização (declarar no texto).** O PDF da figura é totalmente vetorial (≈ 7,5 MB). O
-exportador de PDF do próprio Gephi 0.10.1 não conclui com 229 mil arestas (custo quadrático por aresta). Por
+exportador de PDF do próprio Gephi 0.10.1 não conclui com 229 mil arestas na exportação utilizada. Por
 isso o projeto nativo traz apenas a prévia SVG do Gephi, e a figura final foi desenhada a partir das
 coordenadas calculadas pelo Gephi.

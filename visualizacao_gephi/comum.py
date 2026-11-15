@@ -77,7 +77,7 @@ def modalidade(tags: str, categoria: str) -> str:
     return 'indeterminado'
 
 
-_VS = re.compile(r'^(?:[\w .\-]+?:\s*)?(?P<a>.+?)\s+vs\.?\s+(?P<b>.+?)(?:\s*[:(\-–]|\s+end in a draw|\?|$)', re.I)
+_VS = re.compile(r'^(?:[\w .\-]+?:\s*)?(?P<a>.+?)\s+vs\.?\s+(?P<b>.+?)(?:\s*[:(]|\s+[\-–]\s+|\s+end in a draw|\?|$)', re.I)
 
 
 def _norm(s: str) -> str:

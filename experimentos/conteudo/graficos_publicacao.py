@@ -35,7 +35,7 @@ TINTA_2 = '#4B5563'
 GRADE = '#E5E7EB'
 EIXO = '#9CA3AF'
 
-# Paleta validada (validate_palette.js, todos os pares, modo claro): ver AUDITORIA.md.
+# Paleta validada (validate_palette.js, todos os pares, modo claro): ver entrega/LEIAME.md (qualidade e validação).
 AZUL = '#2563EB'      # resultado principal (GNN híbrida, alvos, treino)
 AMBAR = '#D97706'     # comparador / destaque secundário (relacional, validação, saídas)
 ARDOSIA = '#64748B'   # neutro: ablação, controles, execuções individuais
