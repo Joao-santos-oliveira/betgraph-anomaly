@@ -58,7 +58,7 @@ def t1():
         ('Divisão das ligações', 'Contexto', d['contexto'], None, 'Passagem de mensagens e scores de carteira'),
         ('Divisão das ligações', 'Treino', d['treino'], None, 'Positivos; negativos renovados a cada época'),
         ('Divisão das ligações', 'Validação', d['validacao'], None, 'Parada antecipada; negativos 1:1 (seed 43)'),
-        ('Divisão das ligações', 'Teste reservado', d['teste'], None, 'Avaliado uma única vez; negativos 1:1 (seed 44)'),
+        ('Divisão das ligações', 'Teste reservado', d['teste'], None, 'Negativos 1:1; sorteio fixo com seed 44'),
         ('Sorteios e seeds', 'Seed da divisão', d['seed_divisao'], None, 'Mesma divisão para todas as seeds'),
         ('Sorteios e seeds', 'Seeds do modelo', ', '.join(map(str, d['seeds_modelo'])), None, 'Uma GNN treinada por seed'),
         ('Sorteios e seeds', 'Sorteios de alvos', ', '.join(map(str, d['realizacoes'])), None,
@@ -103,9 +103,9 @@ def t2():
                                       f'{numero(media.ap, 4)} ± {numero(dp.ap, 4)}']
     exibir = exibir.iloc[:4]
     return Tabela('T2_previsao_ligacoes', 'Previsão de ligações no teste reservado',
-                  'Teste reservado: 22.907 ligações positivas e 22.907 negativas (1:1), amostradas uniformemente entre '
-                  'pares não observados em nenhuma parte da divisão (seed 44), com o grafo de contexto. '
-                  'Média ± desvio padrão amostral entre as três seeds. O MLP não entra: não foi avaliado nos mesmos pares.',
+                  'Teste reservado: 22.907 ligações reais reservadas e 22.907 pares negativos (1:1). Negativos sorteados uniformemente entre '
+                  'pares não observados em nenhuma parte da divisão, com seed fixa 44. Avaliação no grafo de contexto. '
+                  'Média ± desvio padrão amostral entre os treinos com seeds 42, 73 e 2026.',
                   dados, exibir, 'lrrrr', divisores=[3])
 
 
@@ -147,9 +147,9 @@ def t3():
     grupos = [('', 2)] + [(METODOS[m]['rotulo'], len(CORTES)) for m in ORDEM_METODOS]
     return Tabela('T3_recuperacao_alvos', 'Recuperação dos alvos artificiais por intensidade',
                   'Contagem de alvos no corte / denominador (percentual). Misto: cada sorteio aplica uma intensidade a '
-                  '3 ou 4 grupos (15 ou 20 alvos); soma-se os 3 sorteios em cada ranking (50 alvos) e faz-se a média '
+                  '3 ou 4 grupos (15 ou 20 alvos); somam-se as contagens dos 3 sorteios por seed (50 participações-alvo) e faz-se a média '
                   'entre as seeds. Pareado: os 50 alvos de cada sorteio recebem cada intensidade; média dos 9 rankings '
-                  '(3 sorteios × 3 seeds; 3 rankings no relacional). Corte 541 = 2% das 27.039 carteiras.',
+                  '(3 sorteios × 3 seeds; 3 rankings no relacional). Corte 541 ≈ 2% das 27.039 carteiras.',
                   dados, exibir, 'll' + 'r' * 6, grupos_colunas=grupos, divisores=[3], larga=True)
 
 
@@ -258,9 +258,9 @@ def t6():
     return Tabela('T6_fichas_casos', 'Fichas dos casos e controles do dia real (seed 42)',
                   'Pelo ranking total da seed 42: o primeiro que permaneceu no top 100 e o primeiro que entrou. Cada '
                   'controle está fora do top 100 com o número de mercados mais próximo (desempate pelo menor ID). '
-                  'Score = média das três maiores contribuições; contribuição = surpresa (log10 da cauda de Poisson da '
+                  'Score = média das três maiores contribuições; contribuição = surpresa (−log10 da probabilidade de cauda de Poisson da '
                   'sobreposição) × (1 + cosseno)/2. obs./esp.: mercados compartilhados observados e esperados pelos graus. '
-                  'Parceiros: carteiras com 2 ou mais mercados em comum. Evento identificado quando a pergunta nomeia um '
+                  'Parceiros: carteiras com 2 ou mais mercados em comum. Eventos contados nos mercados de cada carteira. Evento identificado quando a pergunta nomeia um '
                   'confronto (“A vs. B” ou placar exato); os demais mercados contam como evento indeterminado.',
                   dados, exibir, 'lllrrrrrrlll', divisores=[2], larga=True)
 

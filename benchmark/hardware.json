@@ -1,29 +1,29 @@
 {
-  "data_utc": "2026-11-13T22:34:15+00:00",
-  "sistema": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
-  "kernel": "6.6.87.2-microsoft-standard-WSL2",
+  "data_utc": "2026-11-14T00:53:01+00:00",
+  "sistema": "Linux-6.18.58.1-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "kernel": "6.18.58.1-microsoft-standard-WSL2",
   "maquina": "x86_64",
   "python": "3.12.3",
-  "nucleos_logicos": 8,
+  "nucleos_logicos": 12,
   "threads_por_processo": {
     "OMP_NUM_THREADS": "2",
     "MKL_NUM_THREADS": "2",
     "OPENBLAS_NUM_THREADS": "2"
   },
   "cpu": {
-    "Model name": "13th Gen Intel(R) Core(TM) i3-1315U",
+    "Model name": "AMD Ryzen 5 4600G with Radeon Graphics",
     "Thread(s) per core": "2",
-    "Core(s) per socket": "4",
+    "Core(s) per socket": "6",
     "Socket(s)": "1"
   },
-  "memoria_total_mib": 3758.21875,
-  "swap_total_mib": 1024.0,
+  "memoria_total_mib": 7634.765625,
+  "swap_total_mib": 2048.0,
   "wsl": true,
   "host_windows": {
-    "cpu": "13th Gen Intel(R) Core(TM) i3-1315U",
-    "memoria_fisica_mib": 7875.0
+    "cpu": "AMD Ryzen 5 4600G with Radeon Graphics",
+    "memoria_fisica_mib": 15764.0
   },
-  "disco_destino": "Filesystem     Type  Size  Used Avail Use% Mounted on\n/dev/sdd       ext4 1007G   14G  942G   2% /",
+  "disco_destino": "Filesystem     Type  Size  Used Avail Use% Mounted on\n/dev/sdd       ext4 1007G   25G  932G   3% /",
   "versoes": {
     "numpy": "2.5.3",
     "pandas": "3.0.6",

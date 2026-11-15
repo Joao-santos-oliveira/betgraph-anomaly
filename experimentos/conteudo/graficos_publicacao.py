@@ -175,8 +175,9 @@ def g1():
                      maior_diferenca_media_vs_T3_pp=diff, ok=diff < 1e-9)
     return Figura('G1_recuperacao_intensidade',
                   'Recuperação dos alvos artificiais por intensidade. Percentual dos 50 alvos no top 100 (a, b) e no '
-                  'top 541 (c, d). Pontos claros: cada ranking (misto: 3 seeds; pareado: 3 sorteios × 3 seeds; o '
-                  'relacional é determinístico e tem 1 ranking por sorteio). Marcador cheio: média entre rankings; '
+                  'top 541 (c, d). No misto, cada ponto soma as contagens dos três sorteios por seed, totalizando 50 '
+                  'participações-alvo por intensidade. No pareado, cada ponto representa um sorteio e uma seed, '
+                  'com 50 alvos por ranking. O relacional tem um total agregado no misto e três rankings no pareado. Marcador cheio: média entre rankings; '
                   'barra: mínimo e máximo observados entre rankings (dispersão empírica, não intervalo de confiança). '
                   'Os métodos são deslocados horizontalmente para não se sobreporem.',
                   fig, pd.concat([dados.assign(tipo='ranking'), resumo.assign(tipo='resumo')], ignore_index=True),
@@ -313,14 +314,14 @@ def _figura_roc(d, regiao=None):
     fig.add_trace(go.Scatter(x=g, y=d['media'], mode='lines', line=dict(color=AZUL, width=3),
                              name=f'ROC média (AUROC = {numero(d["auc_media"], 4)} ± {numero(d["auc_dp"], 4)})',
                              hovertemplate='FPR %{x:.3f}<br>TPR média %{y:.3f}<extra></extra>', legendrank=2))
-    for rank, (s, cor, traco, rotulo) in enumerate(((d['melhor'], VERDE, 'solid', 'Melhor modelo'),
-                                                     (d['pior'], VERMELHO, 'dash', 'Pior modelo')), start=3):
+    for rank, (s, cor, traco, rotulo) in enumerate(((d['melhor'], VERDE, 'solid', 'Maior AUROC'),
+                                                     (d['pior'], VERMELHO, 'dash', 'Menor AUROC')), start=3):
         x, y = _afinar(curvas[s]['fpr'], curvas[s]['tpr'], 0.0004 if regiao is None else 0.00005)
         fig.add_trace(go.Scatter(x=x, y=y, mode='lines', line_shape='hv', line=dict(color=cor, width=1.8, dash=traco),
                                  name=f'{rotulo} (seed {s}) – AUROC = {numero(auroc[s], 4)}', legendrank=rank,
                                  hovertemplate=f'Seed {s}<br>FPR %{{x:.4f}}<br>TPR %{{y:.4f}}<extra></extra>'))
-    titulo = ('Curva ROC: previsão de ligações (3 modelos avaliados)' if regiao is None
-              else 'Curva ROC: detalhe até 10% de falsos positivos (3 modelos)')
+    titulo = ('Curva ROC: previsão de ligações (3 seeds da mesma GNN)' if regiao is None
+              else 'Curva ROC: detalhe até 10% de falsos positivos (3 seeds da mesma GNN)')
     largura, altura = int(4.6 * PX_POL), int(4.0 * PX_POL)
     tema(fig, largura, altura, margem=dict(l=52, r=14, t=30, b=42),
          legenda=dict(x=0.985, y=0.025, xanchor='right', yanchor='bottom', bgcolor='rgba(255,255,255,0.95)',
@@ -364,13 +365,13 @@ def _dados_csv_roc(d):
 def g3():
     d = _dados_roc()
     return Figura('G3_curva_roc',
-                  f'Curva ROC da previsão de ligações no teste reservado (22.907 positivos e 22.907 negativos por modelo, '
-                  f'grafo de contexto). Cinza: os 3 modelos (seeds 42, 73 e 2026), que compartilham a mesma divisão e os '
+                  f'Curva ROC da previsão de ligações no teste reservado (22.907 positivos e 22.907 negativos por seed, '
+                  f'grafo de contexto). Cinza: os 3 treinos da mesma GNN (seeds 42, 73 e 2026), que compartilham a mesma divisão e os '
                   f'mesmos pares de teste e diferem só na inicialização e no treino; a variação mede, portanto, a '
                   f'sensibilidade à seed. Azul: média vertical das curvas interpoladas numa grade comum de FPR, com faixa '
                   f'de ±1 desvio padrão amostral (n = 3, limitada a [0, 1]); a faixa é quase imperceptível porque o maior '
-                  f'DP da TPR entre seeds é {numero(float(d["dp"].max()), 3)}. A legenda traz o AUROC médio entre modelos '
-                  f'± DP; a área sob a curva média interpolada é {numero(d["auc_curva_media"], 4)}. Melhor e pior modelo '
+                  f'DP da TPR entre seeds é {numero(float(d["dp"].max()), 3)}. A legenda traz o AUROC médio entre seeds '
+                  f'± DP; a área sob a curva média interpolada é {numero(d["auc_curva_media"], 4)}. As seeds destacadas foram selecionadas '
                   f'pelo AUROC oficial (diferença de {numero(d["auroc"][d["melhor"]] - d["auroc"][d["pior"]], 4)}). '
                   f'Curvas empíricas em degraus. A região até 10% de falsos positivos está ampliada na figura de '
                   f'detalhe (G3_curva_roc_detalhe, suplemento).', _figura_roc(d), _dados_csv_roc(d), larga=False, validacao=_validacao_roc(d))
@@ -501,7 +502,7 @@ def g4():
                   'GNN híbrida versus similaridade isolada: mesmos embeddings e mesmo treino (mesma AUROC); só muda o '
                   'score de carteira. (a) Todas as posições dos 50 alvos em cada ranking do teste pareado (3 sorteios '
                   '× 3 seeds = 450 por caixa); caixa: quartis e mediana; bigodes: 1,5 × IQR; todos os pontos são '
-                  'mostrados. (b) Carteiras do top 100 de cada GNN presentes também no top 100 do relacional no dia real.',
+                  'mostrados. (b) Carteiras do top 100 de cada score presentes também no top 100 do relacional no grafo de contexto do dia real.',
                   fig, pd.concat([caixas.assign(painel='a'), sobre.assign(painel='b')], ignore_index=True),
                   validacao=validacao)
 
@@ -779,7 +780,7 @@ def s4():
     validacao['ok'] = validacao['mediana_confere']
     return Figura('S4_tempos_memoria',
                   f'Custo por etapa do pipeline do dia real: barra = mediana de {int(resumo.repeticoes.min())} repetições; '
-                  f'traços = cada repetição (a primeira inclui cache frio). Pipeline completo: mediana de '
+                  f'traços = cada repetição. Cache do sistema sem controle experimental. Pipeline do dia real: mediana de '
                   f'{numero(total.median() / 60, 1)} min. Máquina: {cpu}, {hardware.get("nucleos_logicos")} núcleos '
                   f'lógicos, {numero(hardware.get("memoria_total_mib", 0) / 1024, 1)} GiB, 2 threads por processo.',
                   fig, resumo, validacao=validacao)

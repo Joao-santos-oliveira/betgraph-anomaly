@@ -1,6 +1,45 @@
 {
-  "posicoes_identicas": false,
-  "maior_diferenca_score": 0.5199230482249115,
-  "avaliacao_identica": false,
-  "execucao": "artigo-olt_5b_c"
+  "por_seed": {
+    "42": {
+      "contexto_top100_identico": true,
+      "contexto_top541_identico": true,
+      "contexto_posicoes_diferentes": 0,
+      "total_top100_identico": true,
+      "total_top541_identico": true,
+      "total_posicoes_diferentes": 0,
+      "maior_diferenca_score": 0.0,
+      "diferenca_auc": 0.0,
+      "diferenca_ap": 0.0,
+      "lideres_e_comuns_identicos": true
+    },
+    "73": {
+      "contexto_top100_identico": true,
+      "contexto_top541_identico": true,
+      "contexto_posicoes_diferentes": 0,
+      "total_top100_identico": true,
+      "total_top541_identico": true,
+      "total_posicoes_diferentes": 0,
+      "maior_diferenca_score": 0.0,
+      "diferenca_auc": 0.0,
+      "diferenca_ap": 0.0,
+      "lideres_e_comuns_identicos": true
+    },
+    "2026": {
+      "contexto_top100_identico": true,
+      "contexto_top541_identico": true,
+      "contexto_posicoes_diferentes": 0,
+      "total_top100_identico": true,
+      "total_top541_identico": true,
+      "total_posicoes_diferentes": 0,
+      "maior_diferenca_score": 0.0,
+      "diferenca_auc": 0.0,
+      "diferenca_ap": 0.0,
+      "lideres_e_comuns_identicos": true
+    }
+  },
+  "posicoes_dos_casos_identicas": true,
+  "cortes_identicos": true,
+  "execucao": "benchmark-b1n2b87w",
+  "repeticao": 1,
+  "commit": "9c1102ebdddef0905f2c2dc49d7e4d537d3f3a05"
 }

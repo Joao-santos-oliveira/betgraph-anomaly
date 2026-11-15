@@ -5,7 +5,7 @@
 \begin{figure*}[htbp]
 \centering
 \includegraphics[width=\textwidth]{G1_recuperacao_intensidade.pdf}
-\caption{Recuperação dos alvos artificiais por intensidade. Percentual dos 50 alvos no top 100 (a, b) e no top 541 (c, d). Pontos claros: cada ranking (misto: 3 seeds; pareado: 3 sorteios $\times$ 3 seeds; o relacional é determinístico e tem 1 ranking por sorteio). Marcador cheio: média entre rankings; barra: mínimo e máximo observados entre rankings (dispersão empírica, não intervalo de confiança). Os métodos são deslocados horizontalmente para não se sobreporem.}
+\caption{Recuperação dos alvos artificiais por intensidade. Percentual dos 50 alvos no top 100 (a, b) e no top 541 (c, d). No misto, cada ponto soma as contagens dos três sorteios por seed, totalizando 50 participações-alvo por intensidade. No pareado, cada ponto representa um sorteio e uma seed, com 50 alvos por ranking. O relacional tem um total agregado no misto e três rankings no pareado. Marcador cheio: média entre rankings; barra: mínimo e máximo observados entre rankings (dispersão empírica, não intervalo de confiança). Os métodos são deslocados horizontalmente para não se sobreporem.}
 \label{fig:g1}
 \end{figure*}
 
@@ -19,7 +19,7 @@
 \begin{figure*}[htbp]
 \centering
 \includegraphics[width=4.6in]{G3_curva_roc.pdf}
-\caption{Curva ROC da previsão de ligações no teste reservado (22.907 positivos e 22.907 negativos por modelo, grafo de contexto). Cinza: os 3 modelos (seeds 42, 73 e 2026), que compartilham a mesma divisão e os mesmos pares de teste e diferem só na inicialização e no treino; a variação mede, portanto, a sensibilidade à seed. Azul: média vertical das curvas interpoladas numa grade comum de FPR, com faixa de $\pm$1 desvio padrão amostral (n = 3, limitada a [0, 1]); a faixa é quase imperceptível porque o maior DP da TPR entre seeds é 0,011. A legenda traz o AUROC médio entre modelos $\pm$ DP; a área sob a curva média interpolada é 0,9620. Melhor e pior modelo pelo AUROC oficial (diferença de 0,0015). Curvas empíricas em degraus. A região até 10\% de falsos positivos está ampliada na figura de detalhe (G3\_curva\_roc\_detalhe, suplemento).}
+\caption{Curva ROC da previsão de ligações no teste reservado (22.907 positivos e 22.907 negativos por seed, grafo de contexto). Cinza: os 3 treinos da mesma GNN (seeds 42, 73 e 2026), que compartilham a mesma divisão e os mesmos pares de teste e diferem só na inicialização e no treino; a variação mede, portanto, a sensibilidade à seed. Azul: média vertical das curvas interpoladas numa grade comum de FPR, com faixa de $\pm$1 desvio padrão amostral (n = 3, limitada a [0, 1]); a faixa é quase imperceptível porque o maior DP da TPR entre seeds é 0,011. A legenda traz o AUROC médio entre seeds $\pm$ DP; a área sob a curva média interpolada é 0,9620. As seeds destacadas foram selecionadas pelo AUROC oficial (diferença de 0,0015). Curvas empíricas em degraus. A região até 10\% de falsos positivos está ampliada na figura de detalhe (G3\_curva\_roc\_detalhe, suplemento).}
 \label{fig:g3}
 \end{figure*}
 
@@ -33,7 +33,7 @@
 \begin{figure*}[htbp]
 \centering
 \includegraphics[width=\textwidth]{G4_comparacao_gnns.pdf}
-\caption{GNN híbrida versus similaridade isolada: mesmos embeddings e mesmo treino (mesma AUROC); só muda o score de carteira. (a) Todas as posições dos 50 alvos em cada ranking do teste pareado (3 sorteios $\times$ 3 seeds = 450 por caixa); caixa: quartis e mediana; bigodes: 1,5 $\times$ IQR; todos os pontos são mostrados. (b) Carteiras do top 100 de cada GNN presentes também no top 100 do relacional no dia real.}
+\caption{GNN híbrida versus similaridade isolada: mesmos embeddings e mesmo treino (mesma AUROC); só muda o score de carteira. (a) Todas as posições dos 50 alvos em cada ranking do teste pareado (3 sorteios $\times$ 3 seeds = 450 por caixa); caixa: quartis e mediana; bigodes: 1,5 $\times$ IQR; todos os pontos são mostrados. (b) Carteiras do top 100 de cada score presentes também no top 100 do relacional no grafo de contexto do dia real.}
 \label{fig:g4}
 \end{figure*}
 
@@ -75,7 +75,7 @@
 \begin{figure*}[htbp]
 \centering
 \includegraphics[width=\textwidth]{S4_tempos_memoria.pdf}
-\caption{Custo por etapa do pipeline do dia real: barra = mediana de 3 repetições; traços = cada repetição (a primeira inclui cache frio). Pipeline completo: mediana de 8,7 min. Máquina: 13th Gen Intel(R) Core(TM) i3-1315U, 8 núcleos lógicos, 3,7 GiB, 2 threads por processo.}
+\caption{Custo por etapa do pipeline do dia real: barra = mediana de 3 repetições; traços = cada repetição. Cache do sistema sem controle experimental. Pipeline do dia real: mediana de 17,0 min. Máquina: AMD Ryzen 5 4600G with Radeon Graphics, 12 núcleos lógicos, 7,5 GiB, 2 threads por processo.}
 \label{fig:s4}
 \end{figure*}
 

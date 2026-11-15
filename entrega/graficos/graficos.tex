@@ -23,7 +23,7 @@
 \begin{figure*}[htbp]
 \centering
 \includegraphics[width=\textwidth]{G4_comparacao_gnns.pdf}
-\caption{GNN híbrida versus similaridade isolada. As duas usam os mesmos embeddings e o mesmo treino (mesma AUROC); só muda o score de carteira. À esquerda, distribuição das posições dos 50 alvos em cada ranking do teste pareado (3 sorteios $\times$ 3 seeds; caixa: quartis; posição 1 no alto). À direita, carteiras do top 100 de cada GNN que também estão no top 100 do relacional no dia real.}
+\caption{GNN híbrida versus similaridade isolada. As duas usam os mesmos embeddings e o mesmo treino (mesma AUROC); só muda o score de carteira. À esquerda, distribuição das posições dos 50 alvos em cada ranking do teste pareado (3 sorteios $\times$ 3 seeds; caixa: quartis; posição 1 no alto). À direita, carteiras do top 100 de cada GNN que também estão no top 100 do relacional no grafo de contexto do dia real.}
 \label{fig:g4}
 \end{figure*}
 
@@ -65,6 +65,6 @@
 \begin{figure*}[htbp]
 \centering
 \includegraphics[width=\textwidth]{S4_tempos_memoria.pdf}
-\caption{Custo por etapa do pipeline do dia real: mediana de 3 repetições (barras: mínimo e máximo). Máquina: 13th Gen Intel(R) Core(TM) i3-1315U, 8 núcleos lógicos, 3,7 GiB; 2 threads por processo.}
+\caption{Custo por etapa do pipeline do dia real: mediana de 3 repetições (barras: mínimo e máximo). Máquina: AMD Ryzen 5 4600G with Radeon Graphics, 12 núcleos lógicos, 7,5 GiB; 2 threads por processo.}
 \label{fig:s4}
 \end{figure*}

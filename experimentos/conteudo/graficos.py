@@ -294,7 +294,7 @@ def g4():
                    'GNN híbrida versus similaridade isolada. As duas usam os mesmos embeddings e o mesmo treino '
                    '(mesma AUROC); só muda o score de carteira. À esquerda, distribuição das posições dos 50 alvos '
                    'em cada ranking do teste pareado (3 sorteios × 3 seeds; caixa: quartis; posição 1 no alto). À '
-                   'direita, carteiras do top 100 de cada GNN que também estão no top 100 do relacional no dia real.',
+                   'direita, carteiras do top 100 de cada GNN que também estão no top 100 do relacional no grafo de contexto do dia real.',
                    fig, dados)
 
 

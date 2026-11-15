@@ -46,7 +46,7 @@ Cada `.tex` de tabela já traz `\caption`, `\label{tab:tN}` e a nota. Tabelas la
 | | Conteúdo | Fonte |
 |---|---|---|
 | T1 | Dados do dia e divisão das ligações (60/20/10/10%), cobertura, seeds e sorteios | `extra/divisao.json` |
-| T2 | AUROC e AP por seed e média no teste reservado; positivos, negativos e amostragem. O MLP não entra (não foi avaliado nos mesmos pares) | `avaliacao_cobertura.json` |
+| T2 | AUROC e AP por seed e média no teste reservado; positivos, negativos e amostragem. | `avaliacao_cobertura.json` |
 | T3 | Recuperação dos alvos: misto e pareado × 4, 10, 20 mercados × 3 métodos × top 100 e 541, com contagem, denominador, % e regra de agregação | `resumo.csv`, `pareado/resumo.csv` |
 | T4 | GNN híbrida antes e depois da intervenção, alvos e controles (teste misto); "antes" = quantos já estavam no corte | `resumo.csv` |
 | T5 | Contexto versus cobertura total por seed: permanências, entradas, saídas, liderança, Spearman e posições dos casos | `cobertura_total.csv` |
@@ -73,4 +73,4 @@ Cores: slots 1 a 3 da paleta categórica de referência (azul, laranja e verde-�
 
 ## Reprodução conferida
 
-`resultados/artigo/extra/verificacao.json` compara o dia real re-treinado com o publicado: top 100, top 541, líderes e posições dos casos idênticos nas três seeds; AUROC com diferença abaixo de 10⁻⁶. Cerca de 1.600 posições mudam na cauda do ranking, entre scores quase empatados (ponto flutuante).
+Na primeira repetição do benchmark local, o Ryzen 5 4600G reproduziu as posições das 27.039 carteiras em contexto e cobertura total nas seeds 42, 73 e 2026. Os scores de cobertura total e as métricas AUROC e AP coincidiram com os valores de referência. A conferência por seed está em `resultados/artigo/extra/verificacao.json`. O S4 registra os tempos e a memória das três repetições do protocolo do dia real. O CSV auxiliar de treino por seed registra a segunda repetição; sua coluna de segundos usa o cronômetro interno do treinamento. O preparo temporário das dependências de exportação coincidiu com parte da primeira filtragem. O protocolo registra o estado do Git ao fim da medição, após a escrita de resultados rastreados; o código executado foi o commit `9c1102e`.

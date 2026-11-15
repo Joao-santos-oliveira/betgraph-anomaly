@@ -34,7 +34,7 @@ Notas de 0 a 10 em cinco critérios: **C**lareza, **E**stética, **R**igor estat
 | S1 acumulada | 8/7/7/6/7 → **7,0** | Só 10 e 20 mercados (4 omitido); curvas amostradas em 160 pontos e ligadas por retas, não degraus | Três painéis (4, 10, 20); degraus exatos em todos os k, sem amostragem; rótulos de corte sem colisão | 9/8/10/9/9 → **9,0** |
 | S2 precisão–revocação | 7/7/6/5/6 → **6,2** | Eixo y iniciado em 0,45 sem aviso; definição do AP não explicitada; legenda com 4 entradas em 2 linhas | Eixo 0–1 com quadro ampliado; AP = Σ(Rₙ − Rₙ₋₁)·Pₙ na legenda (não trapézio); maior e menor AP no padrão do G3; sem curva média, com a justificativa na legenda | 9/9/10/9/9 → **9,2** |
 | S3 treino | 7/6/7/5/6 → **6,2** | Legenda de 6 entradas; não dizia que a parada antecipada nunca disparou | 2 entradas (treino × validação); anotação "melhor época = 100 (teto), paciência 15 não atingida"; perda e AUROC em painéis separados (sem eixo duplo) | 9/8/9/9/9 → **8,8** |
-| S4 custos | 7/7/6/6/7 → **6,6** | Mín.–máx. em barras de erro com n = 3, e a 1ª repetição (cache frio) inflava a faixa sem explicação | Barra = mediana; cada repetição como traço; cores por grupo de etapa (dados, treino, scores); cache frio citado na legenda | 9/8/9/9/9 → **8,8** |
+| S4 custos | 7/7/6/6/7 → **6,6** | Mín.–máx. em barras de erro com n = 3, e a faixa exigia explicitar as repetições | Barra = mediana; cada repetição como traço; cores por grupo de etapa (dados, treino, scores); cache do sistema sem controle experimental declarado na legenda | 9/8/9/9/9 → **8,8** |
 
 ## Verificação de integridade (`validacao.json`)
 
@@ -64,5 +64,5 @@ Notas de 0 a 10 em cinco critérios: **C**lareza, **E**stética, **R**igor estat
 - **G3 e S2:** não existe referência de 25 execuções: há 3. Melhor e pior são duas das três curvas.
 - **S2:** não há curva média. A média vertical de precisões não corresponde a nenhum AP.
 - **Barras com n = 3 (G1 e S4):** mínimo e máximo de 3 valores não são intervalo de confiança, e assim aparecem na legenda.
-- **S3:** a melhor época é a 100ª nas três seeds. O treino não convergiu dentro do teto, e isso é um resultado, não um problema do gráfico.
+- **S3:** a melhor época é a 100ª nas três seeds. O melhor checkpoint atingiu o teto de épocas; a convergência exigiria avaliação adicional.
 - **Fonte:** Arial/Liberation Sans, presentes no Windows e no Linux. Para combinar com uma fonte serifada do LaTeX, troque `FONTE` em `graficos_publicacao.py`.
