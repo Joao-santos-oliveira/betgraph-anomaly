@@ -3,16 +3,20 @@
 # Betgraph Anomaly
 
 [![DOI dos dados](https://zenodo.org/badge/DOI/10.5281/zenodo.24230223.svg)](https://doi.org/10.5281/zenodo.24230223)
+[![Artigo](https://img.shields.io/badge/artigo-PDF-8b1e3f)](docs/downloads/artigo.pdf)
+[![Resultados](https://img.shields.io/badge/estudo-conclu%C3%ADdo-1d5b4b)](https://joao-santos-oliveira.github.io/betgraph-anomaly/)
 
 [**Abrir painel interativo**](https://joao-santos-oliveira.github.io/betgraph-anomaly/) · [Estudo](#estudo-principal) · [Estrutura do projeto](#estrutura-do-projeto) · [Resultados](#controle-positivo-e-ablação-do-score) · [Reprodução](#reprodução-do-estudo-principal) · [Comandos Make](#comandos-make) · [Autores](#autores)
 
+> **Estudo concluído.** Este repositório reúne código, dados com DOI, resultados auditáveis, visualizações em Gephi e o manuscrito final do BetGraph Anomaly. A evidência obtida prioriza padrões atípicos de coparticipação; ela não atribui fraude a carteiras reais.
+
 ## Painel interativo
 
-O [painel público no GitHub Pages](https://joao-santos-oliveira.github.io/betgraph-anomaly/) reúne uma leitura guiada da metodologia, o ranking de 27.039 carteiras, os testes artificiais e 17 gráficos e tabelas com downloads. A biblioteca também apresenta as quatro figuras de grafos revisadas, com links para os PDFs, recortes e legendas. Os esquemas da GNN são didáticos.
+O [painel público no GitHub Pages](https://joao-santos-oliveira.github.io/betgraph-anomaly/) reúne uma leitura guiada da metodologia, o ranking de 27.039 carteiras, os testes artificiais e 17 gráficos e tabelas com downloads. A biblioteca também apresenta as quatro figuras de grafos finais, com links para PDFs, recortes e legendas. Os esquemas da GNN são didáticos.
 
-O site está em [`docs/`](docs/), separado dos scripts e resultados científicos. O Pages publica a pasta `/docs` da branch `main`, sem instalar dependências ou executar os experimentos. Para atualizar a apresentação, edite os arquivos dessa pasta e envie o commit à `main`; os dados em `docs/data.js` e os arquivos de `docs/downloads/` são uma cópia dos resultados conferidos em 15/11/2026 e precisam acompanhar futuras revisões dos resultados. Para visualizar localmente, abra `docs/index.html` ou execute `python3 -m http.server --directory docs 8000`.
+O site está em [`docs/`](docs/), separado dos scripts e resultados científicos. O Pages publica a pasta `/docs` da branch `main`, sem instalar dependências ou executar os experimentos. Os dados em `docs/data.js` e os arquivos de `docs/downloads/` correspondem aos resultados consolidados do estudo. Para visualizar localmente, abra `docs/index.html` ou execute `python3 -m http.server --directory docs 8000`.
 
-O [artigo em PDF](docs/downloads/artigo.pdf) está disponível para revisão dos autores, com 14 páginas e os quatro grafos incorporados. As fontes LaTeX e o ZIP do Overleaf não fazem parte deste repositório.
+O [artigo em PDF](docs/downloads/artigo.pdf) é o manuscrito final, com 14 páginas e os quatro grafos incorporados. As fontes LaTeX e o ZIP do Overleaf não fazem parte deste repositório.
 
 ## Estudo principal
 
@@ -130,7 +134,7 @@ betgraph-anomaly/
 
 As figuras de publicação estão em [entrega/graficos_publicacao](entrega/graficos_publicacao/), as tabelas em [entrega/tabelas](entrega/tabelas/) e os grafos em [figuras](figuras/LEIA-ME.md). `make conteudo` gera tabelas e gráficos oficiais; `make graficos` mantém a exportação exploratória como saída local. Os resultados numéricos ficam em `resultados/`.
 
-`docs/` contém cópias necessárias à hospedagem do painel pelo Pages: miniaturas leves e PDFs de download. Do manuscrito, apenas o [PDF para revisão](docs/downloads/artigo.pdf) é versionado; fontes LaTeX e ZIP do Overleaf ficam fora do repositório.
+`docs/` contém cópias necessárias à hospedagem do painel pelo Pages: miniaturas leves e PDFs de download. Do manuscrito, apenas o [PDF final](docs/downloads/artigo.pdf) é versionado; fontes LaTeX e ZIP do Overleaf ficam fora do repositório.
 
 ## Dados publicados
 
@@ -262,7 +266,7 @@ A híbrida recuperou os padrões artificiais fortes e superou a similaridade iso
 - AUROC de previsão de ligações não mede detecção de fraude. Scores são prioridades relativas, não probabilidades de conduta ilícita.
 - O estudo cobre um dia, sem rótulos independentes de fraude. Carteiras não identificam necessariamente pessoas.
 - As operações agregadas não preservam a sequência de trades; as ligações representam participação, não contrapartes.
-- Maker/taker não está disponível e não foi substituído por volume ou frequência. Uma reextração com contagens por papel é uma melhoria futura.
+- Maker/taker não está disponível e não foi substituído por volume ou frequência. Esse papel de negociação ficou fora do escopo do recorte disponível.
 - Seeds e sorteios reutilizam a mesma base; não são repetições inteiramente independentes. O protocolo sintético retreina em cada cenário e não avalia um detector congelado diante de novos ataques.
 
 ## O que há nas outras branches
