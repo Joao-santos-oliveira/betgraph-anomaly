@@ -156,9 +156,7 @@ Para citar o dataset, use os metadados do [registro publicado](https://zenodo.or
 
 ## Reprodução do estudo principal
 
-Em Linux ou WSL, use Python 3.12 e GNU Make. Coloque os dois arquivos brutos `betgraph_arestas_16set.csv` e `betgraph_nos_evento_16set.csv` em `data/raw/`. O executor confere os hashes dos dados, filtra os CSVs, monta o grafo do dia, recria as três intervenções, treina a GNN e calcula os três rankings. As dependências e os dados volumosos permanecem locais. [Hashes das entradas](resultados/entradas.json)
-
-No Ubuntu ou WSL, instale antes os pacotes de sistema: sudo apt install python3.12 python3.12-venv make.
+Em Linux ou WSL, use Python 3.12 e GNU Make. No Ubuntu ou WSL, instale antes os pacotes de sistema: `sudo apt install python3.12 python3.12-venv make`. Baixe do [Zenodo](https://doi.org/10.5281/zenodo.24230223) os dois arquivos brutos `betgraph_arestas_16set.csv` e `betgraph_nos_evento_16set.csv` (pasta `brutos/` do pacote) e coloque-os em `data/raw/`. O executor confere os hashes dos dados, filtra os CSVs, monta o grafo do dia, recria as três intervenções, treina a GNN e calcula os três rankings. As dependências e os dados volumosos permanecem locais. [Hashes das entradas](resultados/entradas.json)
 
 ```bash
 make ambiente
@@ -167,7 +165,9 @@ make testes
 make artigo
 ```
 
-### Baixar e usar o pacote do Zenodo
+### Alternativa: baixar o pacote do Zenodo pelo terminal
+
+Esta seção é opcional. Se você já baixou os dois CSVs brutos e os colocou em `data/raw/`, use os comandos acima; não é preciso repetir os passos abaixo.
 
 Na raiz do repositório, com `curl` e `unzip` disponíveis, os comandos abaixo mantêm os dados publicados em uma pasta própria. Não é necessário copiar os tratados para iniciar a reprodução: o pipeline os reconstrói a partir de `brutos/`.
 
