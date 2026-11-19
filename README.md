@@ -156,7 +156,15 @@ Para citar o dataset, use os metadados do [registro publicado](https://zenodo.or
 
 ## Reprodução do estudo principal
 
-Em Linux ou WSL, use Python 3.12 e GNU Make. No Ubuntu ou WSL, instale antes os pacotes de sistema: `sudo apt install python3.12 python3.12-venv make`. Baixe do [Zenodo](https://doi.org/10.5281/zenodo.24230223) os dois arquivos brutos `betgraph_arestas_16set.csv` e `betgraph_nos_evento_16set.csv` (pasta `brutos/` do pacote) e coloque-os em `data/raw/`. O executor confere os hashes dos dados, filtra os CSVs, monta o grafo do dia, recria as três intervenções, treina a GNN e calcula os três rankings. As dependências e os dados volumosos permanecem locais. [Hashes das entradas](resultados/entradas.json)
+Em Linux ou WSL, use Python 3.12 e GNU Make. No Ubuntu ou WSL, instale antes os pacotes de sistema: 
+
+`sudo apt install python3.12 python3.12-venv make`.
+
+Crie a pasta `data/raw/` para inserir os arquivos do dataset:
+
+`mkdir -p data/raw`
+
+Baixe do [Zenodo](https://doi.org/10.5281/zenodo.24230223) os dois arquivos brutos `betgraph_arestas_16set.csv` e `betgraph_nos_evento_16set.csv` (pasta `brutos/` do pacote) e coloque-os em `data/raw/`. O executor confere os hashes dos dados, filtra os CSVs, monta o grafo do dia, recria as três intervenções, treina a GNN e calcula os três rankings. As dependências e os dados volumosos permanecem locais. [Hashes das entradas](resultados/entradas.json)
 
 ```bash
 make ambiente
